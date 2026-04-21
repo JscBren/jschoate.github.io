@@ -1,11 +1,17 @@
 ---
-title: "jschoate.github.io"
+title: "Test for RHESSys manual"
+image: media/RhessysLogo_nobckgrnd.jpg
+about: 
+  template: jolla
+  image-shape: rectangle
+  image-width: 17em
+  links:
+    - text: TagueTeamLab
+      href: https://tagueteamlab.org/
+    - text: GitHub
+      href: https://github.com/JscBren/jschoate.github.io
+    - text: Email
+      href: mailto:jsc.eco@gmail.com
 ---
 
-This is a Quarto website.
-
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
-
-```{r}
-1 + 1
-```
+This is a test for setting up the RHESSys manual online.

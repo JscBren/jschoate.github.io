@@ -9,8 +9,113 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "jschoate.github.io",
+    "title": "Test for RHESSys manual",
     "section": "",
-    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\n\n1 + 1\n\n[1] 2"
+    "text": "This is a test for setting up the RHESSys manual online."
+  },
+  {
+    "objectID": "Outline.html",
+    "href": "Outline.html",
+    "title": "Outline and Plan for RHESSys manual",
+    "section": "",
+    "text": "The purpose of this project is to improve the usability and accessibility of the Regional Hydro-Ecologic Simulation System (RHESSys) by developing comprehensive documentation and training materials. These materials are intended to support California Air Resources Board (CARB) staff, researchers, and the broader RHESSys modeling community in efficiently learning and applying the model.\nBy reducing the learning curve associated with RHESSys, these training materials will allow users to focus more on scientific analysis of model results rather than model setup and execution.\nRHESSys is a key tool used to project carbon dynamics in forests, shrublands, and grasslands. However, its complexity presents a significant barrier for new users. This project addresses that challenge by developing a user manual and accompanying video tutorials that demonstrate common modeling workflows. All materials will be publicly available and designed to support both CARB staff and the broader RHESSys user community."
+  },
+  {
+    "objectID": "Outline.html#objective",
+    "href": "Outline.html#objective",
+    "title": "Outline and Plan for RHESSys manual",
+    "section": "Objective",
+    "text": "Objective\nDevelop high-quality documentation and video training materials that reduce barriers to learning and applying RHESSys, with a focus on CARB-specific modeling needs."
+  },
+  {
+    "objectID": "Outline.html#work-to-be-performed",
+    "href": "Outline.html#work-to-be-performed",
+    "title": "Outline and Plan for RHESSys manual",
+    "section": "Work to Be Performed",
+    "text": "Work to Be Performed\nThis project will produce two primary training resources:\n\n1. RHESSys Training Manual\nA comprehensive, standalone manual that includes:\n\nStep-by-step instructions\nGuided tutorial exercises\nExample datasets\n\nThe manual will be designed so that a user with limited programming experience can independently set up and run RHESSys for CARB-related applications.\n\n\n2. Training Videos\nA set of videos aligned with topics covered in the manual that:\n\nDemonstrate key workflows\nWalk through tutorial exercises\nProvide visual guidance for common tasks\n\nAll materials will be publicly accessible and designed for both CARB staff and external users, including graduate students and researchers."
+  },
+  {
+    "objectID": "Outline.html#methodology",
+    "href": "Outline.html#methodology",
+    "title": "Outline and Plan for RHESSys manual",
+    "section": "Methodology",
+    "text": "Methodology\n\nData Collection and Preparation\n\nCompile spatial datasets (e.g., DEM, soils, land cover)\nClimate data acquisition and formatting\nDevelop a standardized example dataset for training\n\n\n\nWorkflow Development\n\nCreate preprocessing workflows for RHESSys inputs\nDevelop simulation and analysis workflows\nSensitivity analysis and calibration approaches\nEnsure all processes are reproducible using R\n\n\n\nOutput Interpretation\n\nDevelop approaches for visualizing and interpreting model outputs\nProvide reproducible examples for evaluating model performance"
+  },
+  {
+    "objectID": "Outline.html#expected-outcomes",
+    "href": "Outline.html#expected-outcomes",
+    "title": "Outline and Plan for RHESSys manual",
+    "section": "Expected Outcomes",
+    "text": "Expected Outcomes\n\nFully developed RHESSys training manual\nSuite of instructional videos\nPublicly accessible example dataset for tutorials\nReduced time required for new users to learn/apply RHESSys\nIncreased adoption and consistency in RHESSys applications\nReproducible modeling workflows"
+  },
+  {
+    "objectID": "Outline.html#potential-challenges-and-mitigation-strategies",
+    "href": "Outline.html#potential-challenges-and-mitigation-strategies",
+    "title": "Outline and Plan for RHESSys manual",
+    "section": "Potential Challenges and Mitigation Strategies",
+    "text": "Potential Challenges and Mitigation Strategies\n\n\n\n\n\n\n\nChallenge\nMitigation Strategy\n\n\n\n\nSteep learning curve\nStructured tutorials and progressive exercises\n\n\nData complexity\nDevelop a standardized example dataset\n\n\nSoftware dependencies\nUse open-source tools and clear installation instructions\n\n\nUser experience/knowledge\nDesign materials that support a range of skill levels"
+  },
+  {
+    "objectID": "Outline.html#benchmarks-for-success",
+    "href": "Outline.html#benchmarks-for-success",
+    "title": "Outline and Plan for RHESSys manual",
+    "section": "Benchmarks for Success",
+    "text": "Benchmarks for Success\nSuccess will be evaluated based on:\n\nCompletion of all deliverables within the project timeline\nPositive feedback from CARB staff\nAbility of new users to independently run RHESSys using the provided materials\nPublic availability and usability of documentation, datasets, and videos"
+  },
+  {
+    "objectID": "Outline.html#task-1-rhessys-documentation-and-training-materials",
+    "href": "Outline.html#task-1-rhessys-documentation-and-training-materials",
+    "title": "Outline and Plan for RHESSys manual",
+    "section": "Task 1: RHESSys Documentation and Training Materials",
+    "text": "Task 1: RHESSys Documentation and Training Materials\n\nOverview\nThis task focuses on developing a comprehensive manual, training videos, and supporting datasets to enable independent use of RHESSys.\n\n\nDeliverables\n\nManual Development\n\n1.1 Draft outline and plan\n1.2 Final outline and plan\n1.4 Introduction and Installation sections\n1.5 Preprocessing sections\n1.6 Running RHESSys sections\n1.7 Sensitivity analysis and calibration\n1.8 Advanced features\n1.9 Appendices and figures\n1.12 Final manual\n\n\n\nDataset Development\n\n1.3 Standalone example dataset\n\n\n\nVideo Development\n\n1.10 Video outline\n1.11 Example videos\n1.13 Final videos\n\n\n\nFinal Package\n\n1.14 Complete deliverable package"
+  },
+  {
+    "objectID": "Outline.html#task-2-communication-and-finalization",
+    "href": "Outline.html#task-2-communication-and-finalization",
+    "title": "Outline and Plan for RHESSys manual",
+    "section": "Task 2: Communication and Finalization",
+    "text": "Task 2: Communication and Finalization\n\n2.1 Weekly meetings\n2.2 Conference presentations\n2.3 Publications and outreach\n2.4 CARB Contractor Symposium presentation\n\n\nTimelines\n\nDeliverables\n\n\n\nDeliverable\nDescription\nTimeline\n\n\n\n\n1.1\nDraft outline\n1 month\n\n\n1.2\nFinal outline\n2 months\n\n\n1.3\nExample dataset\n3 months\n\n\n1.4\nIntro + Installation\n5 months\n\n\n1.5\nPreprocessing\n7 months\n\n\n1.6\nRunning RHESSys\n9 months\n\n\n1.7\nSensitivity/Calibration\n11 months\n\n\n1.8\nAdvanced features\n15 months\n\n\n1.9\nAppendices\n16 months\n\n\n1.12–1.14\nFinal deliverables\nFinal 2 months\n\n\n\n\n\nCommunication\n\n\n\nType\nFrequency\n\n\n\n\nWeekly meetings\nWeekly\n\n\nConferences\nTBD\n\n\nPublications\nTBD\n\n\nSymposium\nAnnual"
+  },
+  {
+    "objectID": "Outline.html#part-1-introduction-and-setup",
+    "href": "Outline.html#part-1-introduction-and-setup",
+    "title": "Outline and Plan for RHESSys manual",
+    "section": "Part 1: Introduction and Setup",
+    "text": "Part 1: Introduction and Setup\n\nOverview of RHESSys\nInstallation (MacOS, Linux, Docker)\n\nalso address Singularity Container Platform using a Singularity Image Format (.sif file) for running RHESSys on a cloud computing service (AWS)"
+  },
+  {
+    "objectID": "Outline.html#part-2-data-and-preprocessing",
+    "href": "Outline.html#part-2-data-and-preprocessing",
+    "title": "Outline and Plan for RHESSys manual",
+    "section": "Part 2: Data and Preprocessing",
+    "text": "Part 2: Data and Preprocessing\n\nInput data requirements\n\nSpatial Data\nClimate\nDefinition Files - parameter configuration files that define the physical, biological, and hydrological characteristics of spatial units (soil, vegetation, landuse)\nWorldfile\n\nHierarchical spatial containment structure\nState variables and linking identifiers\n\nFlowtable\n\nPatch connectivity\nmovement of water and nutrients across the landscapte\n\nTecfile (Temporal Event Control file)\n\nManage timing of output printing\nControl simulation events (schedule when non-continuous events occur, i.e. fire, land use change)\nTrigger a worldfile redefinition to update properties of the landscape\n\nOutput filters - specify criteria for selecting and filtering the output data generated by a RHESSys simulation\n\nTime interval (i.e. daily, monthly)\nSpatial level (i.e. Basin, patch)\nParticular processes\n\n\nPreprocessing\n\nSpatial processing using WhiteboxTools and R\nWorldfile and flowtable generation\n\nWorldfile template\nRHESSysPreprocessing Tools"
+  },
+  {
+    "objectID": "Outline.html#part-3-running-rhessys",
+    "href": "Outline.html#part-3-running-rhessys",
+    "title": "Outline and Plan for RHESSys manual",
+    "section": "Part 3: Running RHESSys",
+    "text": "Part 3: Running RHESSys\n\nModel configuration - RHESSysIOinR tools\nExecuting simulations\nOutput handling"
+  },
+  {
+    "objectID": "Outline.html#part-4-calibration-and-sensitivity-analysis",
+    "href": "Outline.html#part-4-calibration-and-sensitivity-analysis",
+    "title": "Outline and Plan for RHESSys manual",
+    "section": "Part 4: Calibration and Sensitivity Analysis",
+    "text": "Part 4: Calibration and Sensitivity Analysis\n\nParameter selection\nCalibration workflows\nPerformance metrics"
+  },
+  {
+    "objectID": "Outline.html#part-5-advanced-features",
+    "href": "Outline.html#part-5-advanced-features",
+    "title": "Outline and Plan for RHESSys manual",
+    "section": "Part 5: Advanced Features",
+    "text": "Part 5: Advanced Features\n\nDisturbance modeling (fire, drought)\nVegetation change\nMulti-scale routing\nTarget-driven spin-up"
+  },
+  {
+    "objectID": "Outline.html#part-6-appendices",
+    "href": "Outline.html#part-6-appendices",
+    "title": "Outline and Plan for RHESSys manual",
+    "section": "Part 6: Appendices",
+    "text": "Part 6: Appendices\n\nCommand-line reference\nCode structure\nAdditional figures"
   }
 ]
