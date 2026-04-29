@@ -18,7 +18,7 @@
     "href": "Outline.html",
     "title": "Outline and Plan for RHESSys manual",
     "section": "",
-    "text": "The purpose of this project is to improve the usability and accessibility of the Regional Hydro-Ecologic Simulation System (RHESSys) by developing comprehensive documentation and training materials. These materials are intended to support California Air Resources Board (CARB) staff, researchers, and the broader RHESSys modeling community in efficiently learning and applying the model.\nBy reducing the learning curve associated with RHESSys, these training materials will allow users to focus more on scientific analysis of model results rather than model setup and execution.\nRHESSys is a key tool used to project carbon dynamics in forests, shrublands, and grasslands. However, its complexity presents a significant barrier for new users. This project addresses that challenge by developing a user manual and accompanying video tutorials that demonstrate common modeling workflows. All materials will be publicly available and designed to support both CARB staff and the broader RHESSys user community."
+    "text": "The purpose of this project is to improve the usability and accessibility of the Regional Hydro-Ecologic Simulation System (RHESSys) by developing comprehensive documentation and training materials. These materials are intended to support California Air Resources Board (CARB) staff, researchers, and the broader RHESSys modeling community in efficiently learning and applying the model.\nBy reducing the learning curve associated with setting up a RHESSys modeling project, these training materials will allow users to focus more on scientific analysis of model results rather than model setup and execution."
   },
   {
     "objectID": "Outline.html#objective",
@@ -32,14 +32,14 @@
     "href": "Outline.html#work-to-be-performed",
     "title": "Outline and Plan for RHESSys manual",
     "section": "Work to Be Performed",
-    "text": "Work to Be Performed\nThis project will produce two primary training resources:\n\n1. RHESSys Training Manual\nA comprehensive, standalone manual that includes:\n\nStep-by-step instructions\nGuided tutorial exercises\nExample datasets\n\nThe manual will be designed so that a user with limited programming experience can independently set up and run RHESSys for CARB-related applications.\n\n\n2. Training Videos\nA set of videos aligned with topics covered in the manual that:\n\nDemonstrate key workflows\nWalk through tutorial exercises\nProvide visual guidance for common tasks\n\nAll materials will be publicly accessible and designed for both CARB staff and external users, including graduate students and researchers."
+    "text": "Work to Be Performed\nThis project will produce two primary training resources:\n\n1. RHESSys Training Manual\nA comprehensive, standalone manual that includes:\n\nStep-by-step instructions\nGuided tutorial exercises\nPre-built example datasets\n\nMulti-scale design (three spatial scales)\n\n\nThe manual will be designed so that a user with limited programming experience can independently set up and run RHESSys for CARB-related applications.\n\n\n2. Training Videos\nA set of videos aligned with topics covered in the manual that:\n\nDemonstrate key workflows\nWalk through tutorial exercises\nProvide visual guidance for common tasks\n\nAll materials will be publicly accessible and designed for both CARB staff and external users, including graduate students and researchers."
   },
   {
     "objectID": "Outline.html#methodology",
     "href": "Outline.html#methodology",
     "title": "Outline and Plan for RHESSys manual",
     "section": "Methodology",
-    "text": "Methodology\n\nData Collection and Preparation\n\nCompile spatial datasets (e.g., DEM, soils, land cover)\nClimate data acquisition and formatting\nDevelop a standardized example dataset for training\n\n\n\nWorkflow Development\n\nCreate preprocessing workflows for RHESSys inputs\nDevelop simulation and analysis workflows\nSensitivity analysis and calibration approaches\nEnsure all processes are reproducible using R\n\n\n\nOutput Interpretation\n\nDevelop approaches for visualizing and interpreting model outputs\nProvide reproducible examples for evaluating model performance"
+    "text": "Methodology\n\nInstallation\n\nRHESSys Compute and Execution Environments\nDependencies\nWorkflow and Analysis Tools\n\n\n\nData Collection and Preparation\n\nCompile spatial datasets (e.g., DEM, soils, land cover)\nClimate data acquisition and formatting\nDevelop a standardized example dataset for training\n\n\n\nWorkflow Development\n\nCreate preprocessing workflows for RHESSys inputs\nDevelop simulation and analysis workflows\nSpin-up, Sensitivity analysis and calibration approaches\nEnsure all processes are reproducible using R\n\n\n\nOutput Interpretation\n\nDevelop approaches for processing, visualizing and interpreting model outputs\nProvide reproducible examples for evaluating model performance"
   },
   {
     "objectID": "Outline.html#expected-outcomes",
@@ -81,14 +81,14 @@
     "href": "Outline.html#part-1-introduction-and-setup",
     "title": "Outline and Plan for RHESSys manual",
     "section": "Part 1: Introduction and Setup",
-    "text": "Part 1: Introduction and Setup\n\nOverview of RHESSys\nInstallation (MacOS, Linux, Docker)\n\nalso address Singularity Container Platform using a Singularity Image Format (.sif file) for running RHESSys on a cloud computing service (AWS)"
+    "text": "Part 1: Introduction and Setup\n\nOverview of RHESSys\n\nPhysically based\nIntegrated ecohydrology (coupling of water, carbon/nitrogen, climate)\nDynamic relationship\nNested hierarchy\nLateral/Vertical processes\n\nInstallation\n\nCompute & execution environment\n\nLocal (MacOS, Linux)\nContainerized (Docker)\nHPC/Cloud (SIF/Singularity)\nDependencies\n\nWorkflow & Analysis Tools\n\nR/Rstudio & packages\nWhiteboxTools with R\nRHESSys R packages\n\nRHESSysPreprocessing\nRHESSysIOinR"
   },
   {
     "objectID": "Outline.html#part-2-data-and-preprocessing",
     "href": "Outline.html#part-2-data-and-preprocessing",
     "title": "Outline and Plan for RHESSys manual",
     "section": "Part 2: Data and Preprocessing",
-    "text": "Part 2: Data and Preprocessing\n\nInput data requirements\n\nSpatial Data\nClimate\nDefinition Files - parameter configuration files that define the physical, biological, and hydrological characteristics of spatial units (soil, vegetation, landuse)\nWorldfile\n\nHierarchical spatial containment structure\nState variables and linking identifiers\n\nFlowtable\n\nPatch connectivity\nmovement of water and nutrients across the landscapte\n\nTecfile (Temporal Event Control file)\n\nManage timing of output printing\nControl simulation events (schedule when non-continuous events occur, i.e. fire, land use change)\nTrigger a worldfile redefinition to update properties of the landscape\n\nOutput filters - specify criteria for selecting and filtering the output data generated by a RHESSys simulation\n\nTime interval (i.e. daily, monthly)\nSpatial level (i.e. Basin, patch)\nParticular processes\n\n\nPreprocessing\n\nSpatial processing using WhiteboxTools and R\nWorldfile and flowtable generation\n\nWorldfile template\nRHESSysPreprocessing Tools"
+    "text": "Part 2: Data and Preprocessing\n\nInput data requirements\n\nSpatial Data\n\nRequired\nRecommended\n\nWorldfile\n\nHierarchical spatial containment structure\nState variables and pointers (linking identifiers)\nTemplate\nHeader\nRequired and optional state variables\n\nFlowtable\n\nPatch connectivity\nMovement of water and nutrients across the landscape\n\nClimate\n\nInput Formats (point, grid, NetCDF)\nRequired and optional meteorologic data\n\nDefinition (default) Files\n\nEco-physiologic, hydro-geologic, land-use, and meteorologic parameters\nBase files & Default values\n\nTecfile (Temporal Event Control file)\n\nManage timing of output printing\nControl simulation events (schedule when non-continuous events occur, i.e. fire, land use change)\nTrigger a worldfile redefinition to update properties of the landscape\n\nOutput filters - specify criteria for selecting and filtering the output data\n\nFilter rules\nFilter conditions\nProcesses associated with temporal interval and spatial level\n\nsub-level output\nsub-routine output\n\n\n\nPreprocessing\n\nStandard directory structure and naming convention\nSpatial processing using WhiteboxTools and R\nWorldfile and flowtable generation\n\nRequired rasters\nEditing the worldfile template\nRHESSysPreprocessing R package"
   },
   {
     "objectID": "Outline.html#part-3-running-rhessys",
@@ -102,14 +102,14 @@
     "href": "Outline.html#part-4-calibration-and-sensitivity-analysis",
     "title": "Outline and Plan for RHESSys manual",
     "section": "Part 4: Calibration and Sensitivity Analysis",
-    "text": "Part 4: Calibration and Sensitivity Analysis\n\nParameter selection\nCalibration workflows\nPerformance metrics"
+    "text": "Part 4: Calibration and Sensitivity Analysis\n\nSensitivity Analysis and Parameter Selection (identifying influential variables)\nParameter Space Characterization (establishing realistic bounds/ranges)\nCalibration Frameworks and Optimization Workflows\nObjective Functions and Performance Metrics"
   },
   {
     "objectID": "Outline.html#part-5-advanced-features",
     "href": "Outline.html#part-5-advanced-features",
     "title": "Outline and Plan for RHESSys manual",
     "section": "Part 5: Advanced Features",
-    "text": "Part 5: Advanced Features\n\nDisturbance modeling (fire, drought)\nVegetation change\nMulti-scale routing\nTarget-driven spin-up"
+    "text": "Part 5: Advanced Features\n\nDisturbance modeling\n\ndrought induced mortality\nfire spread and fire effects\n\nLand Cover/Vegetation change\n\nfuel treatments - thinning, controlled burns\n\nMulti-scale routing - fine-scale heterogeneity\nTarget-driven spin-up (run to reach spatially explicit targets, i.e. LAI)"
   },
   {
     "objectID": "Outline.html#part-6-appendices",
@@ -117,5 +117,75 @@
     "title": "Outline and Plan for RHESSys manual",
     "section": "Part 6: Appendices",
     "text": "Part 6: Appendices\n\nCommand-line reference\nCode structure\nAdditional figures"
+  },
+  {
+    "objectID": "Outline.html#rhessys-documentation-and-training-materials",
+    "href": "Outline.html#rhessys-documentation-and-training-materials",
+    "title": "Outline and Plan for RHESSys manual",
+    "section": "RHESSys Documentation and Training Materials",
+    "text": "RHESSys Documentation and Training Materials\n\nOverview\nThis task focuses on developing a comprehensive manual, training videos, and supporting datasets to enable independent use of RHESSys.\n\n\nDeliverables\n\nTraining Material Development\n\n\n\nDeliverable\nDescription\nDue (after start)\n\n\n\n\n1.1\nDraft outline: Manual\n1 month (5/1/2026)\n\n\n1.2\nFinal outline: Manual\n2 months (6/1/2026)\n\n\n1.3\nExample dataset\n3 months (7/1/2026)\n\n\n1.4\nIntro + Installation\n5 months (9/1/2026)\n\n\n1.5\nPreprocessing preparation\n7 months (11/1/2026)\n\n\n1.6\nRunning RHESSys\n9 months (1/1/2027)\n\n\n1.7\nSensitivity/Calibration\n11 months (3/1/2027)\n\n\n1.8\nAdvanced features\n15 months (7/1/2027)\n\n\n1.9\nAppendices/Figures\n16 months (8/1/2027)\n\n\n1.10\nDraft outline: Videos\n19 months (11/20/2027)\n\n\n1.11\nVideo examples\n21 months (1/30/2028)\n\n\n1.12–1.14\nFinal Manual & Videos\n24 months (4/30/2028)\n\n\n\n\n\nCommunication\n\n\n\nType\nFrequency\n\n\n\n\nWeekly meetings\nWeekly\n\n\nConference Presentations\nTBD\n\n\nPublications/Outreach\nTBD\n\n\nCARB Symposium\nAnnual"
+  },
+  {
+    "objectID": "Outline.html#part-3-rhessys-implementation-and-workflow",
+    "href": "Outline.html#part-3-rhessys-implementation-and-workflow",
+    "title": "Outline and Plan for RHESSys manual",
+    "section": "Part 3: RHESSys Implementation and workflow",
+    "text": "Part 3: RHESSys Implementation and workflow\n\nModel configuration via RHESSysIOinR tools\n\nFuctions for providing the inputs necessary to run RHESSys\n\nOutput filter design\n\nTecfile/Output Filter interaction for expected output\nSelecting RHESSys output variables\n\nFocus on variables relevant to your research questions and analysis goals\nReassigning/Combining variables\n\n\nExecuting simulations in R\n\nSingle run\nMultiple runs\n\nPost-processing vi RHESSysIOinR tools\n\nFunctions for integrating, synthesizing, and visualizing spatiotemporal output"
+  },
+  {
+    "objectID": "Outline.html#part-4-initialization-calibration-sensitivity-analysis",
+    "href": "Outline.html#part-4-initialization-calibration-sensitivity-analysis",
+    "title": "Outline and Plan for RHESSys manual",
+    "section": "Part 4: Initialization, Calibration & Sensitivity Analysis",
+    "text": "Part 4: Initialization, Calibration & Sensitivity Analysis\n\nInitialization approaches (Spin-up to a state of equilibrium)\nSensitivity Analysis and Parameter Selection (identifying influential variables)\nParameter Space Characterization (establishing realistic bounds/ranges)\nCalibration Frameworks and Optimization Workflows\nObjective Functions and Performance Metrics"
+  },
+  {
+    "objectID": "AbbrevOutline.html",
+    "href": "AbbrevOutline.html",
+    "title": "Outline and Plan for RHESSys manual",
+    "section": "",
+    "text": "Overview of RHESSys\n\nPhysically based\nIntegrated ecohydrology\nDynamic relationship\nNested hierarchy\nLateral/Vertical processes\n\nInstallation (MacOS, Linux, Docker, Singularity)\n\n\n\n\n\nInput data requirements\n\nSpatial Data\nWorldfile\nFlowtable\nClimate\nDefinition (default) Files\nTecfile (Temporal Event Control file)\nOutput filters\n\nPreprocessing\n\nStandard directory structure and naming convention\nWorldfile and flowtable generation\n\n\n\n\n\n\nModel configuration via RHESSysIOinR tools\nOutput filter design\nExecuting simulations in R\nPost-processing: integrating, synthesizing, and visualizing spatio-temporal output\n\n\n\n\n\nInitialization approaches (Spin-up to a state of equilibrium)\nSensitivity Analysis and Parameter Selection (identifying influential variables)\nParameter Space Characterization (establishing realistic bounds/ranges)\nCalibration Frameworks and Optimization Workflows\nObjective Functions and Performance Metrics\n\n\n\n\n\nDisturbance modeling\nLand Cover/Vegetation change\nMulti-scale routing - fine-scale heterogeneity\nTarget-driven spin-up\n\n\n\n\n\nCommand-line reference\nCode structure\nAdditional figures"
+  },
+  {
+    "objectID": "AbbrevOutline.html#part-1-introduction-and-setup",
+    "href": "AbbrevOutline.html#part-1-introduction-and-setup",
+    "title": "Outline and Plan for RHESSys manual",
+    "section": "",
+    "text": "Overview of RHESSys\n\nPhysically based\nIntegrated ecohydrology\nDynamic relationship\nNested hierarchy\nLateral/Vertical processes\n\nInstallation (MacOS, Linux, Docker, Singularity)"
+  },
+  {
+    "objectID": "AbbrevOutline.html#part-2-data-and-preprocessing",
+    "href": "AbbrevOutline.html#part-2-data-and-preprocessing",
+    "title": "Outline and Plan for RHESSys manual",
+    "section": "",
+    "text": "Input data requirements\n\nSpatial Data\nWorldfile\nFlowtable\nClimate\nDefinition (default) Files\nTecfile (Temporal Event Control file)\nOutput filters\n\nPreprocessing\n\nStandard directory structure and naming convention\nWorldfile and flowtable generation"
+  },
+  {
+    "objectID": "AbbrevOutline.html#part-3-rhessys-implementation-and-workflow",
+    "href": "AbbrevOutline.html#part-3-rhessys-implementation-and-workflow",
+    "title": "Outline and Plan for RHESSys manual",
+    "section": "",
+    "text": "Model configuration via RHESSysIOinR tools\nOutput filter design\nExecuting simulations in R\nPost-processing: integrating, synthesizing, and visualizing spatio-temporal output"
+  },
+  {
+    "objectID": "AbbrevOutline.html#part-4-initialization-calibration-sensitivity-analysis",
+    "href": "AbbrevOutline.html#part-4-initialization-calibration-sensitivity-analysis",
+    "title": "Outline and Plan for RHESSys manual",
+    "section": "",
+    "text": "Initialization approaches (Spin-up to a state of equilibrium)\nSensitivity Analysis and Parameter Selection (identifying influential variables)\nParameter Space Characterization (establishing realistic bounds/ranges)\nCalibration Frameworks and Optimization Workflows\nObjective Functions and Performance Metrics"
+  },
+  {
+    "objectID": "AbbrevOutline.html#part-5-advanced-features",
+    "href": "AbbrevOutline.html#part-5-advanced-features",
+    "title": "Outline and Plan for RHESSys manual",
+    "section": "",
+    "text": "Disturbance modeling\nLand Cover/Vegetation change\nMulti-scale routing - fine-scale heterogeneity\nTarget-driven spin-up"
+  },
+  {
+    "objectID": "AbbrevOutline.html#part-6-appendices",
+    "href": "AbbrevOutline.html#part-6-appendices",
+    "title": "Outline and Plan for RHESSys manual",
+    "section": "",
+    "text": "Command-line reference\nCode structure\nAdditional figures"
   }
 ]

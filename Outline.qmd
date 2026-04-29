@@ -5,13 +5,11 @@ format: html
 editor: visual
 ---
 
-# Project Summary / Abstract
+# Project Summary
 
 The purpose of this project is to improve the usability and accessibility of the Regional Hydro-Ecologic Simulation System (RHESSys) by developing comprehensive documentation and training materials. These materials are intended to support California Air Resources Board (CARB) staff, researchers, and the broader RHESSys modeling community in efficiently learning and applying the model.
 
-By reducing the learning curve associated with RHESSys, these training materials will allow users to focus more on scientific analysis of model results rather than model setup and execution.
-
-RHESSys is a key tool used to project carbon dynamics in forests, shrublands, and grasslands. However, its complexity presents a significant barrier for new users. This project addresses that challenge by developing a user manual and accompanying video tutorials that demonstrate common modeling workflows. All materials will be publicly available and designed to support both CARB staff and the broader RHESSys user community.
+By reducing the learning curve associated with setting up a RHESSys modeling project, these training materials will allow users to focus more on scientific analysis of model results rather than model setup and execution.
 
 # Scope of Work
 
@@ -29,7 +27,8 @@ A comprehensive, standalone manual that includes:
 
 -   Step-by-step instructions
 -   Guided tutorial exercises
--   Example datasets
+-   Pre-built example datasets
+    -   Multi-scale design (three spatial scales)
 
 The manual will be designed so that a user with limited programming experience can independently set up and run RHESSys for CARB-related applications.
 
@@ -45,6 +44,12 @@ All materials will be publicly accessible and designed for both CARB staff and e
 
 ## Methodology
 
+### Installation
+
+-   RHESSys Compute and Execution Environments
+-   Dependencies
+-   Workflow and Analysis Tools
+
 ### Data Collection and Preparation
 
 -   Compile spatial datasets (e.g., DEM, soils, land cover)
@@ -55,12 +60,12 @@ All materials will be publicly accessible and designed for both CARB staff and e
 
 -   Create preprocessing workflows for RHESSys inputs
 -   Develop simulation and analysis workflows
--   Sensitivity analysis and calibration approaches
+-   Spin-up, Sensitivity analysis and calibration approaches
 -   Ensure all processes are reproducible using R
 
 ### Output Interpretation
 
--   Develop approaches for visualizing and interpreting model outputs
+-   Develop approaches for processing, visualizing and interpreting model outputs
 -   Provide reproducible examples for evaluating model performance
 
 ## Expected Outcomes
@@ -75,7 +80,7 @@ All materials will be publicly accessible and designed for both CARB staff and e
 ## Potential Challenges and Mitigation Strategies
 
 | Challenge                 | Mitigation Strategy                                       |
-|-------------------------|-----------------------------------------------|
+|---------------------------|-----------------------------------------------------------|
 | Steep learning curve      | Structured tutorials and progressive exercises            |
 | Data complexity           | Develop a standardized example dataset                    |
 | Software dependencies     | Use open-source tools and clear installation instructions |
@@ -95,137 +100,150 @@ Success will be evaluated based on:
 All materials developed in this project will:
 
 -   Be fully documented and reproducible
--   Support independent use without contractor assistance
--   Meet accessibility standards (WCAG 2.0 AA)
+-   Support independent use
+-   Comply with accessibility standards (WCAG 2.0 AA)
 -   Use open-source tools and permissive licensing
 -   Avoid reliance on paid platforms
+-   Be clearly organized for long-term use and transferability
 
-All datasets, workflows, and documentation will be delivered in a clean, well-organized format suitable for long-term use and transferability.
-
-# Tasks and Deliverables
-
-## Task 1: RHESSys Documentation and Training Materials
-
-### Overview
-
-This task focuses on developing a comprehensive manual, training videos, and supporting datasets to enable independent use of RHESSys.
+# Timeline
 
 ### Deliverables
 
-#### Manual Development
+#### Training Material Development
 
--   1.1 Draft outline and plan
--   1.2 Final outline and plan
--   1.4 Introduction and Installation sections
--   1.5 Preprocessing sections
--   1.6 Running RHESSys sections
--   1.7 Sensitivity analysis and calibration
--   1.8 Advanced features
--   1.9 Appendices and figures
--   1.12 Final manual
-
-#### Dataset Development
-
--   1.3 Standalone example dataset
-
-#### Video Development
-
--   1.10 Video outline
--   1.11 Example videos
--   1.13 Final videos
-
-#### Final Package
-
--   1.14 Complete deliverable package
-
-## Task 2: Communication and Finalization
-
--   2.1 Weekly meetings
-
--   2.2 Conference presentations
-
--   2.3 Publications and outreach
-
--   2.4 CARB Contractor Symposium presentation
-
-### Timelines
-
-#### Deliverables
-
-| Deliverable | Description             | Timeline       |
-|-------------|-------------------------|----------------|
-| 1.1         | Draft outline           | 1 month        |
-| 1.2         | Final outline           | 2 months       |
-| 1.3         | Example dataset         | 3 months       |
-| 1.4         | Intro + Installation    | 5 months       |
-| 1.5         | Preprocessing           | 7 months       |
-| 1.6         | Running RHESSys         | 9 months       |
-| 1.7         | Sensitivity/Calibration | 11 months      |
-| 1.8         | Advanced features       | 15 months      |
-| 1.9         | Appendices              | 16 months      |
-| 1.12--1.14  | Final deliverables      | Final 2 months |
+| Deliverable | Description               | Due Date               |
+|-------------|---------------------------|------------------------|
+| 1.1         | Draft outline: Manual     | 1 month (5/1/2026)     |
+| 1.2         | Final outline: Manual     | 2 months (6/1/2026)    |
+| 1.3         | Example dataset           | 3 months (7/1/2026)    |
+| 1.4         | Intro + Installation      | 5 months (9/1/2026)    |
+| 1.5         | Preprocessing preparation | 7 months (11/1/2026)   |
+| 1.6         | Running RHESSys           | 9 months (1/1/2027)    |
+| 1.7         | Sensitivity/Calibration   | 11 months (3/1/2027)   |
+| 1.8         | Advanced features         | 15 months (7/1/2027)   |
+| 1.9         | Appendices/Figures        | 16 months (8/1/2027)   |
+| 1.10        | Draft outline: Videos     | 19 months (11/20/2027) |
+| 1.11        | Video examples            | 21 months (1/30/2028)  |
+| 1.12--1.14  | Final Manual & Videos     | 24 months (4/30/2028)  |
 
 #### Communication
 
-| Type            | Frequency |
-|-----------------|-----------|
-| Weekly meetings | Weekly    |
-| Conferences     | TBD       |
-| Publications    | TBD       |
-| Symposium       | Annual    |
+| Type                     | Frequency |
+|--------------------------|-----------|
+| Weekly meetings          | Weekly    |
+| Conference Presentations | TBD       |
+| Publications/Outreach    | TBD       |
+| CARB Symposium           | Annual    |
 
-# Training Materials Structure (Manual Outline)
+#### Implementation Details
+
+| Activity                    | Tool                    |
+|-----------------------------|-------------------------|
+| Project Management          | Trello                  |
+| Documentation Development   | Quarto + R              |
+| Version Control & Hosting   | GitHub + GitHub Pages   |
+| Example Dataset Development | RStudio + WhiteboxTools |
+
+| Final Product    | Publicly Accessible       |
+|------------------|---------------------------|
+| Manual & Dataset | RHESSys GitHub Repository |
+| Training Videos  | YouTube                   |
+
+# Training Materials Structure and Content (Manual Outline)
 
 ## Part 1: Introduction and Setup
 
 -   Overview of RHESSys
--   Installation (MacOS, Linux, Docker)
-    -   also address Singularity Container Platform using a Singularity Image Format (.sif file) for running RHESSys on a cloud computing service (AWS)
+    -   Physically based
+    -   Integrated ecohydrology (coupling of water, carbon/nitrogen, climate)
+    -   Dynamic relationship
+    -   Nested hierarchy
+    -   Lateral/Vertical processes
+-   Installation
+    -   Compute & execution environment
+        -   Local (MacOS, Linux)
+        -   Containerized (Docker)
+        -   HPC/Cloud (SIF/Singularity)
+        -   Dependencies
+    -   Workflow & Analysis Tools
+        -   R/Rstudio & packages
+        -   WhiteboxTools with R
+        -   RHESSys R packages
+            -   RHESSysPreprocessing
+            -   RHESSysIOinR
 
 ## Part 2: Data and Preprocessing
 
 -   Input data requirements
     -   Spatial Data
-    -   Climate
-    -   Definition Files - parameter configuration files that define the physical, biological, and hydrological characteristics of spatial units (soil, vegetation, landuse)
+        -   Required
+        -   Recommended
     -   Worldfile
         -   Hierarchical spatial containment structure
-        -   State variables and linking identifiers
+        -   State variables and pointers (linking identifiers)
+        -   Template
+        -   Header
+        -   Required and optional state variables
     -   Flowtable
         -   Patch connectivity
-        -   movement of water and nutrients across the landscapte
+        -   Movement of water and nutrients across the landscape
+    -   Climate
+        -   Input Formats (point, grid, NetCDF)
+        -   Required and optional meteorologic data
+    -   Definition (default) Files
+        -   Eco-physiologic, hydro-geologic, land-use, and meteorologic parameters
+        -   Base files & Default values
     -   Tecfile (Temporal Event Control file)
         -   Manage timing of output printing
         -   Control simulation events (schedule when non-continuous events occur, i.e. fire, land use change)
         -   Trigger a worldfile redefinition to update properties of the landscape
-    -   Output filters - specify criteria for selecting and filtering the output data generated by a RHESSys simulation
-        -   Time interval (i.e. daily, monthly)
-        -   Spatial level (i.e. Basin, patch)
-        -   Particular processes
+    -   Output filters - specify criteria for selecting and filtering the output data
+        -   Filter rules
+        -   Filter conditions
+        -   Processes associated with temporal interval and spatial level
+            -   sub-level output
+            -   sub-routine output
 -   Preprocessing
+    -   Standard directory structure and naming convention
     -   Spatial processing using WhiteboxTools and R
     -   Worldfile and flowtable generation
-        -   Worldfile template
-        -   RHESSysPreprocessing Tools
+        -   Required rasters
+        -   Editing the worldfile template
+        -   RHESSysPreprocessing R package
 
-## Part 3: Running RHESSys
+## Part 3: RHESSys Implementation and workflow
 
--   Model configuration - RHESSysIOinR tools
--   Executing simulations
--   Output handling
+-   Model configuration via RHESSysIOinR tools
+    -   Fuctions for providing the inputs necessary to run RHESSys
+-   Output filter design
+    -   Tecfile/Output Filter interaction for expected output
+    -   Selecting RHESSys output variables
+        -   Focus on variables relevant to your research questions and analysis goals
+        -   Reassigning/Combining variables
+-   Executing simulations in R
+    -   Single run
+    -   Multiple runs
+-   Post-processing vi RHESSysIOinR tools
+    -   Functions for integrating, synthesizing, and visualizing spatiotemporal output
 
-## Part 4: Calibration and Sensitivity Analysis
+## Part 4: Initialization, Calibration & Sensitivity Analysis
 
--   Parameter selection
--   Calibration workflows
--   Performance metrics
+-   Initialization approaches (Spin-up to a state of equilibrium)
+-   Sensitivity Analysis and Parameter Selection (identifying influential variables)
+-   Parameter Space Characterization (establishing realistic bounds/ranges)
+-   Calibration Frameworks and Optimization Workflows
+-   Objective Functions and Performance Metrics
 
 ## Part 5: Advanced Features
 
--   Disturbance modeling (fire, drought)
--   Vegetation change
--   Multi-scale routing
--   Target-driven spin-up
+-   Disturbance modeling
+    -   drought induced mortality
+    -   fire spread and fire effects
+-   Land Cover/Vegetation change
+    -   fuel treatments - thinning, controlled burns
+-   Multi-scale routing - fine-scale heterogeneity
+-   Target-driven spin-up (run to reach spatially explicit targets, i.e. LAI)
 
 ## Part 6: Appendices
 
@@ -239,7 +257,7 @@ All materials will be:
 
 -   Hosted online (e.g., GitHub Pages)
 -   Available as downloadable datasets and PDFs
--   Accompanied by video tutorials
+-   Accompanied by video tutorials (e.g., YouTube)
 -   Designed for long-term public access
 
 # Review and Approval Process

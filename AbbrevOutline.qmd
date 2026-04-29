@@ -1,0 +1,73 @@
+---
+title: "Outline and Plan for RHESSys manual "
+author: "Janet Choate"
+format: html
+editor: visual
+---
+
+# Training Materials Structure and Content (Manual Outline)
+
+## Part 1: Introduction and Setup
+
+-   Overview of RHESSys
+    -   Physically based
+    -   Integrated ecohydrology
+    -   Dynamic relationship
+    -   Nested hierarchy
+    -   Lateral/Vertical processes
+-   Installation (MacOS, Linux, Docker, Singularity)
+
+## Part 2: Data and Preprocessing
+
+-   Input data requirements
+    -   Spatial Data
+    -   Worldfile
+    -   Flowtable
+    -   Climate
+    -   Definition (default) Files
+    -   Tecfile (Temporal Event Control file)
+    -   Output filters
+-   Preprocessing
+    -   Standard directory structure and naming convention
+    -   Worldfile and flowtable generation
+
+## Part 3: RHESSys Implementation and workflow
+
+-   Model configuration via RHESSysIOinR tools
+-   Output filter design
+-   Executing simulations in R
+-   Post-processing: integrating, synthesizing, and visualizing spatio-temporal output
+
+## Part 4: Initialization, Calibration & Sensitivity Analysis
+
+-   Initialization approaches (Spin-up to a state of equilibrium)
+-   Sensitivity Analysis and Parameter Selection (identifying influential variables)
+-   Parameter Space Characterization (establishing realistic bounds/ranges)
+-   Calibration Frameworks and Optimization Workflows
+-   Objective Functions and Performance Metrics
+
+## Part 5: Advanced Features
+
+-   Disturbance modeling
+-   Land Cover/Vegetation change
+-   Multi-scale routing - fine-scale heterogeneity
+-   Target-driven spin-up
+
+## Part 6: Appendices
+
+-   Command-line reference
+-   Code structure
+-   Additional figures
+
+# Resource Sharing and Accessibility
+
+All materials will be:
+
+-   Hosted online (e.g., GitHub Pages)
+-   Available as downloadable datasets and PDFs
+-   Accompanied by video tutorials
+-   Designed for long-term public access
+
+# Review and Approval Process
+
+All outputs---including publications, presentations, and media---will undergo CARB review prior to release. CARB will provide timely feedback to ensure alignment with project goals and standards.
