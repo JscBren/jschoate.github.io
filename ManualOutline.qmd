@@ -1,0 +1,224 @@
+---
+title: "Outline and Plan for RHESSys manual "
+author: "Janet Choate"
+format: html
+editor: visual
+---
+
+# Welcome
+
+### Purpose
+
+-   About the manual, why it exists, what it is for
+
+### Intended Audience
+
+-   Who this is for/Who should be reading this
+-   Assumed prerequisite knowledge (i.e. assumes basic knowledge of...provide links to resources)
+    -   General Modeling
+    -   Basic R
+    -   GIS and Raster/Vector
+    -   Basic Unix/Linux environment (shell, command line, text editor)
+    -   Git/GitHub
+
+### Scope
+
+-   What to expect from this book (user will learn....)
+-   What the manual covers (practical step-by-step guidance)
+-   What it does not cover (underlying theory of the model, all possible functionality)
+
+### Conventions (potentially)
+
+-   How to read this document
+-   Key/Legend for document formatting - regarding use of icons, symbols, different font indications
+
+### Manual Structure
+
+-   organization
+-   navigation
+-   links to sections
+-   potentially a quick start guide
+
+### Support/Resources
+
+-   Potentially include author info (Naomi, Janet (contact info?), Ryan)
+-   RHESSys GitHub repositories
+-   RHESSys Wiki(s)
+-   Potentially a FAQ page, user community forum (i.e. 'issues' section on RHESSys Github repo?)
+
+# 1 Introduction
+
+## 1.1 Overview of RHESSys
+
+### What RHESSys is
+
+-   Description
+
+#### Capabilities
+
+-   Integrated Ecohydological Modeling
+-   Spatial distribution of the landscape
+-   Feedback loops
+-   Fire model
+
+#### Limitations
+
+-   High data demands
+-   Can be computationally intensive
+-   Maybe any processes that are not well represented?
+
+## 1.2 Recommended reading/Publications
+
+-   Foundational papers
+-   Overview/Review papers
+-   Applications
+
+## 1.3 RHESSys workflow overview
+
+### Key concepts and terminology (Frequently used terms)
+
+-   Spatial hierarchy (basin, hillslope, zone, patch, stratum)
+-   File types (Worldfile, Flowtable, Tecfile, Parameter/Climate files)
+-   State variables (store quantities) and fluxes
+-   Spatial/Temporal step
+-   Inputs (i.e., climate, parameters)
+-   Outputs (i.e., streamflow, LAI)
+
+# 2 Setup
+
+2.  Installation
+    -   Setup Options (description, who should use/recommendation)
+        -   Local Installation (MacOS, Linux)
+        -   Containerized setup (Docker)
+        -   HPC/Cloud (SIF/Singularity)
+    -   Setup Execution
+        -   Local
+            -   System Dependencies and Compilation Requirements
+                -   Terminal - command line access
+                -   Privileges (i.e. Administrator access)
+                -   Compilers/Build tools (gcc, clang, make)
+                -   Libraries (i.e. NetCDF)
+                -   Installation steps:
+                    -   MacOS - Homebrew, command examples
+                    -   Linux - command examples
+            -   Installing RHESSys code
+                -   Clone repository
+                -   Compile
+                -   Verify installation
+                -   Shell configuration (adding to path)
+                -   Common issue and solutions
+        -   Docker
+            -   Requirements
+            -   Steps
+        -   SIF
+            -   Requirements
+            -   Steps
+    -   Workflow & Analysis Tools
+        -   R/Rstudio & packages (i.e., Tidyverse)
+        -   WhiteboxTools with R
+        -   RHESSys R packages
+            -   RHESSysPreprocessing
+            -   RHESSysIOinR
+
+## Part 2: Data Preparation and Preprocessing
+
+-   Input data requirements
+    -   Spatial Data
+        -   Required
+            -   DEM
+                -   resolution
+                -   reprojection
+            -   Waterhsed basin
+            -   Slope/Aspect
+            -   Sub-basin structure
+            -   Stream network (gage location)
+            -   Patch structure
+                -   approaches
+        -   Recommended
+            -   Horizon maps
+            -   vegetation
+            -   soils/soil attributes
+            -   land cover history
+            -   climate station locations (if applicable)
+    -   Climate Data
+        -   Input Formats (point, grid, NetCDF)
+        -   Required meteorological variables
+        -   Optional meteorological variables
+        -   Base station
+    -   Worldfile
+        -   Hierarchical spatial containment structure
+        -   State variables and pointers (linking identifiers)
+        -   Template
+        -   Header
+        -   Required and optional state variables
+    -   Flowtable
+        -   Patch connectivity
+        -   Lateral processes
+    -   Definition (default) Files
+        -   Eco-physiologic, hydro-geologic, land-use, and meteorologic parameters
+        -   Base files & Default values
+    -   Tecfile (Temporal Event Control file)
+        -   Manage timing of output printing
+        -   Control simulation events (schedule when non-continuous events occur, i.e. fire, land use change)
+        -   Trigger a worldfile redefinition to update properties of the landscape
+    -   Output filters - specify criteria for selecting and filtering the output data
+        -   Filter rules
+        -   Filter conditions
+        -   Processes associated with temporal interval and spatial level
+            -   sub-level output
+            -   sub-routine output
+-   Preprocessing
+    -   Standard directory structure and naming convention
+    -   Spatial processing using WhiteboxTools and R
+    -   Worldfile and flowtable generation
+        -   Required rasters
+        -   Editing the worldfile template
+        -   RHESSysPreprocessing R package
+
+## Part 3: RHESSys Implementation and workflow
+
+-   Model configuration via RHESSysIOinR tools
+    -   Fuctions to provide the inputs necessary to run RHESSys
+-   Output filter design
+    -   Tecfile/Output Filter interaction for expected output
+    -   Selecting RHESSys output variables
+        -   Focus on variables relevant to your research questions and analysis goals
+        -   Reassigning/Combining variables
+-   Executing simulations in R
+    -   Single run
+    -   Multiple runs
+-   Post-processing vi RHESSysIOinR tools
+    -   Functions for integrating, synthesizing, and visualizing spatiotemporal output
+
+## Part 4: Initialization, Calibration & Sensitivity Analysis
+
+-   Initialization approaches (Spin-up to a state of equilibrium)
+-   Sensitivity Analysis and Parameter Selection (identifying influential variables)
+-   Parameter Space Characterization (establishing realistic bounds/ranges)
+-   Calibration Frameworks and Optimization Workflows
+-   Objective Functions and Performance Metrics
+
+## Part 5: Advanced Features
+
+-   Disturbance modeling
+    -   drought induced mortality
+    -   fire spread and fire effects
+-   Land Cover/Vegetation change
+    -   fuel treatments - thinning, controlled burns
+-   Multi-scale routing - fine-scale heterogeneity
+-   Target-driven spin-up (run to reach spatially explicit targets, i.e. LAI)
+
+## Part 6: Appendices
+
+-   Command-line reference
+-   Code structure
+-   Additional figures
+
+# Resource Sharing and Accessibility
+
+All materials will be:
+
+-   Hosted online (e.g., GitHub Pages)
+-   Available as downloadable datasets and PDFs
+-   Accompanied by video tutorials (e.g., YouTube)
+-   Designed for long-term public access

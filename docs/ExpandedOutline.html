@@ -90,7 +90,7 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./Outline.html" rel="" target="" aria-current="page">
+    <a class="nav-link" href="./Outline.html" rel="" target="">
  <span class="menu-text">Outline and Plan for RHESSys manual</span></a>
   </li>  
 </ul>
@@ -132,7 +132,6 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#timeline" id="toc-timeline" class="nav-link" data-scroll-target="#timeline">Timeline</a>
   <ul class="collapse">
   <li><a href="#deliverables" id="toc-deliverables" class="nav-link" data-scroll-target="#deliverables">Deliverables</a></li>
-  <li><a href="#implementation-details" id="toc-implementation-details" class="nav-link" data-scroll-target="#implementation-details">Implementation Details</a></li>
   </ul></li>
   <li><a href="#training-materials-structure-and-content-manual-outline" id="toc-training-materials-structure-and-content-manual-outline" class="nav-link" data-scroll-target="#training-materials-structure-and-content-manual-outline">Training Materials Structure and Content (Manual Outline)</a>
   <ul class="collapse">
@@ -384,9 +383,8 @@ ul.task-list li input[type="checkbox"] {
 </tbody>
 </table>
 </section>
-</section>
-<section id="implementation-details" class="level3">
-<h3 class="anchored" data-anchor-id="implementation-details">Implementation Details</h3>
+<section id="implementation-details" class="level4">
+<h4 class="anchored" data-anchor-id="implementation-details">Implementation Details</h4>
 <table class="table">
 <thead>
 <tr class="header">
@@ -433,27 +431,47 @@ ul.task-list li input[type="checkbox"] {
 </table>
 </section>
 </section>
+</section>
 <section id="training-materials-structure-and-content-manual-outline" class="level1">
 <h1>Training Materials Structure and Content (Manual Outline)</h1>
+<p>Welcome</p>
 <section id="part-1-introduction-and-setup" class="level2">
 <h2 class="anchored" data-anchor-id="part-1-introduction-and-setup">Part 1: Introduction and Setup</h2>
 <ol type="1">
 <li>Manual Introduction
 <ul>
-<li>Purpose</li>
+<li>Purpose (i.e.&nbsp;mission statement, paragraph or two)
+<ul>
+<li>What this manual provides/scope</li>
+<li>Expected outcomes (how to install, configure, run, understand output)</li>
+<li>Provides practical step-by-step guidance</li>
+<li>What is not covered in depth (underlying theory, full functional spectrum)</li>
+</ul></li>
 <li>Intended Audience</li>
-<li>Overview of RHESSys</li>
+<li>Overview of RHESSys
+<ul>
+<li>What RHESSys is</li>
+<li>What it is used for/What it simulates</li>
+</ul></li>
 <li>Model capabilities and limitations</li>
 <li>Prerequisites and requirements</li>
 <li>RHESSys workflow overview</li>
-<li>Key concepts and terminology</li>
-<li>Manual structure</li>
+<li>Key concepts and terminology (Frequently used terms)
+<ul>
+<li>Spatial hierarchy (basin, hillslope, zone, patch, stratum)</li>
+<li>File types (Worldfile, Flowtable, Tecfile, Parameter/Climate files)</li>
+<li>State variables (store quantities) and fluxes</li>
+<li>Spatial/Temporal step</li>
+<li>Inputs (i.e., climate, parameters)</li>
+<li>Outputs (i.e., streamflow, LAI)</li>
+</ul></li>
+<li>Manual structure (navigation, organization - links to each section)</li>
 <li>References and Additional Resources</li>
 <li>Quick start guide</li>
 </ul></li>
 <li>Installation
 <ul>
-<li>Setup Options
+<li>Setup Options (description, who should use/recommendation)
 <ul>
 <li>Local Installation (MacOS, Linux)</li>
 <li>Containerized setup (Docker)</li>
@@ -461,13 +479,43 @@ ul.task-list li input[type="checkbox"] {
 </ul></li>
 <li>Setup Execution
 <ul>
-<li>Local</li>
-<li>Docker</li>
-<li>SIF</li>
+<li>Local
+<ul>
+<li>System Dependencies and Compilation Requirements
+<ul>
+<li>Terminal - command line access</li>
+<li>Privileges (i.e.&nbsp;Administrator access)</li>
+<li>Compilers/Build tools (gcc, clang, make)</li>
+<li>Libraries (i.e.&nbsp;NetCDF)</li>
+<li>Installation steps:
+<ul>
+<li>MacOS - Homebrew, command examples</li>
+<li>Linux - command examples</li>
+</ul></li>
+</ul></li>
+<li>Installing RHESSys code
+<ul>
+<li>Clone repository</li>
+<li>Compile</li>
+<li>Verify installation</li>
+<li>Shell configuration (adding to path)</li>
+<li>Common issue and solutions</li>
+</ul></li>
+</ul></li>
+<li>Docker
+<ul>
+<li>Requirements</li>
+<li>Steps</li>
+</ul></li>
+<li>SIF
+<ul>
+<li>Requirements</li>
+<li>Steps</li>
+</ul></li>
 </ul></li>
 <li>Workflow &amp; Analysis Tools
 <ul>
-<li>R/Rstudio &amp; packages</li>
+<li>R/Rstudio &amp; packages (i.e., Tidyverse)</li>
 <li>WhiteboxTools with R</li>
 <li>RHESSys R packages
 <ul>
@@ -485,14 +533,37 @@ ul.task-list li input[type="checkbox"] {
 <ul>
 <li>Spatial Data
 <ul>
-<li>Required</li>
-<li>Recommended</li>
+<li>Required
+<ul>
+<li>DEM
+<ul>
+<li>resolution</li>
+<li>reprojection</li>
+</ul></li>
+<li>Waterhsed basin</li>
+<li>Slope/Aspect</li>
+<li>Sub-basin structure</li>
+<li>Stream network (gage location)</li>
+<li>Patch structure
+<ul>
+<li>approaches</li>
+</ul></li>
+</ul></li>
+<li>Recommended
+<ul>
+<li>Horizon maps</li>
+<li>vegetation</li>
+<li>soils/soil attributes</li>
+<li>land cover history</li>
+<li>climate station locations (if applicable)</li>
+</ul></li>
 </ul></li>
 <li>Climate Data
 <ul>
 <li>Input Formats (point, grid, NetCDF)</li>
 <li>Required meteorological variables</li>
 <li>Optional meteorological variables</li>
+<li>Base station</li>
 </ul></li>
 <li>Worldfile
 <ul>

@@ -126,7 +126,7 @@ All materials developed in this project will:
 | Publications/Outreach    | TBD       |
 | CARB Symposium           | Annual    |
 
-### Implementation Details
+#### Implementation Details
 
 | Activity                    | Tool                    |
 |-----------------------------|-------------------------|
@@ -142,30 +142,62 @@ All materials developed in this project will:
 
 # Training Materials Structure and Content (Manual Outline)
 
+Welcome
+
 ## Part 1: Introduction and Setup
 
 1.  Manual Introduction
-    -   Purpose
+    -   Purpose (i.e. mission statement, paragraph or two)
+        -   What this manual provides/scope
+        -   Expected outcomes (how to install, configure, run, understand output)
+        -   Provides practical step-by-step guidance
+        -   What is not covered in depth (underlying theory, full functional spectrum)
     -   Intended Audience
     -   Overview of RHESSys
+        -   What RHESSys is
+        -   What it is used for/What it simulates
     -   Model capabilities and limitations
     -   Prerequisites and requirements
     -   RHESSys workflow overview
-    -   Key concepts and terminology
-    -   Manual structure
+    -   Key concepts and terminology (Frequently used terms)
+        -   Spatial hierarchy (basin, hillslope, zone, patch, stratum)
+        -   File types (Worldfile, Flowtable, Tecfile, Parameter/Climate files)
+        -   State variables (store quantities) and fluxes
+        -   Spatial/Temporal step
+        -   Inputs (i.e., climate, parameters)
+        -   Outputs (i.e., streamflow, LAI)
+    -   Manual structure (navigation, organization - links to each section)
     -   References and Additional Resources
     -   Quick start guide
 2.  Installation
-    -   Setup Options
+    -   Setup Options (description, who should use/recommendation)
         -   Local Installation (MacOS, Linux)
         -   Containerized setup (Docker)
         -   HPC/Cloud (SIF/Singularity)
     -   Setup Execution
         -   Local
+            -   System Dependencies and Compilation Requirements
+                -   Terminal - command line access
+                -   Privileges (i.e. Administrator access)
+                -   Compilers/Build tools (gcc, clang, make)
+                -   Libraries (i.e. NetCDF)
+                -   Installation steps:
+                    -   MacOS - Homebrew, command examples
+                    -   Linux - command examples
+            -   Installing RHESSys code
+                -   Clone repository
+                -   Compile
+                -   Verify installation
+                -   Shell configuration (adding to path)
+                -   Common issue and solutions
         -   Docker
+            -   Requirements
+            -   Steps
         -   SIF
+            -   Requirements
+            -   Steps
     -   Workflow & Analysis Tools
-        -   R/Rstudio & packages
+        -   R/Rstudio & packages (i.e., Tidyverse)
         -   WhiteboxTools with R
         -   RHESSys R packages
             -   RHESSysPreprocessing
@@ -176,11 +208,26 @@ All materials developed in this project will:
 -   Input data requirements
     -   Spatial Data
         -   Required
+            -   DEM
+                -   resolution
+                -   reprojection
+            -   Waterhsed basin
+            -   Slope/Aspect
+            -   Sub-basin structure
+            -   Stream network (gage location)
+            -   Patch structure
+                -   approaches
         -   Recommended
+            -   Horizon maps
+            -   vegetation
+            -   soils/soil attributes
+            -   land cover history
+            -   climate station locations (if applicable)
     -   Climate Data
         -   Input Formats (point, grid, NetCDF)
         -   Required meteorological variables
         -   Optional meteorological variables
+        -   Base station
     -   Worldfile
         -   Hierarchical spatial containment structure
         -   State variables and pointers (linking identifiers)
