@@ -1,5 +1,5 @@
 ---
-title: "Test for RHESSys manual"
+title: "Development for RHESSys manual"
 image: media/RhessysLogo_nobckgrnd.jpg
 about: 
   template: jolla
@@ -14,4 +14,4 @@ about:
       href: mailto:jsc.eco@gmail.com
 ---
 
-This is a test for setting up the RHESSys manual online.
+Development pages for RHESSys manual
