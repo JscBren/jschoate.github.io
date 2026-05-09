@@ -1,0 +1,29 @@
+---
+title: "Example Dataset"
+---
+
+# 4 Example Dataset (The Sandbox)
+
+![**Instructional System Design**](images/InstructionalSystemDesign.jpeg){fig-alt="Instructional System Design" width="1000"}
+
+## 4.1 Study Site Overview
+
+-   Location
+-   Characteristics
+
+## 4.2 Dataset Contents
+
+-   Raw Data: spatial (and workflow file to generate rasters), formatted climate and observational data
+-   Preprocessing data: Workflow script, all prerequisite files necessary for generating Worldfile/Flowtable, and completed Worldfiles and Flowtables (for a patch, hillslope, and full basin)
+-   Simulation files: Ready-to-run workflow scripts with functions to generate all necessary instruction to run the model for different strategies (i.e., single run, multi-run, for calibration & sensitivity analysis)
+-   Reference outputs: Sample model results
+-   How to get it
+
+## 4.3 How to use this data
+
+-   Contextual understanding
+-   Performance Evaluation - verification for user generated files
+-   Troubleshooting
+-   Modular learning - start at any step in the manual
+
+# 

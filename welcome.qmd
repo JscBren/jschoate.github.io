@@ -1,18 +1,5 @@
 ---
-title: "Development for RHESSys manual"
-author: "Janet Choate"
-image: media/RhessysLogo_nobckgrnd.jpg
-about: 
-  template: solana
-  image-shape: rectangle
-  image-width: 15em
-  links:
-    - text: TagueTeamLab
-      href: https://tagueteamlab.org/
-    - text: GitHub
-      href: https://github.com/JscBren/jschoate.github.io
-    - text: Email
-      href: mailto:jsc.eco@gmail.com
+title: "Welcome"
 ---
 
 # Welcome

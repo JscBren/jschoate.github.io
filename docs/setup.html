@@ -6,9 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Janet Choate">
 
-<title>RHESSys Manual - Development for RHESSys manual</title>
+<title>RHESSys Manual - Setup</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -34,6 +33,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
@@ -72,7 +72,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">Welcome</a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./introduction.html">Part I: Foundations &amp; Environment</a></li><li class="breadcrumb-item"><a href="./setup.html">Setup</a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -99,19 +99,19 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link active">
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Welcome</span></a>
   </div>
 </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
  <span class="menu-text">Part I: Foundations &amp; Environment</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./introduction.html" class="sidebar-item-text sidebar-link">
@@ -120,7 +120,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./setup.html" class="sidebar-item-text sidebar-link">
+  <a href="./setup.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Setup</span></a>
   </div>
 </li>
@@ -246,103 +246,146 @@ ul.task-list li input[type="checkbox"] {
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">On this page</h2>
+   
   <ul>
-  <li><a href="#welcome" id="toc-welcome" class="nav-link active" data-scroll-target="#welcome">Welcome</a>
+  <li><a href="#setup-the-software" id="toc-setup-the-software" class="nav-link active" data-scroll-target="#setup-the-software">2 Setup (The Software)</a>
   <ul class="collapse">
-  <li><a href="#purpose" id="toc-purpose" class="nav-link" data-scroll-target="#purpose">Purpose</a></li>
-  <li><a href="#intended-audience" id="toc-intended-audience" class="nav-link" data-scroll-target="#intended-audience">Intended Audience</a></li>
-  <li><a href="#scope" id="toc-scope" class="nav-link" data-scroll-target="#scope">Scope</a></li>
-  <li><a href="#conventions-potentially" id="toc-conventions-potentially" class="nav-link" data-scroll-target="#conventions-potentially">Conventions (potentially)</a></li>
-  <li><a href="#manual-structure" id="toc-manual-structure" class="nav-link" data-scroll-target="#manual-structure">Manual Structure</a></li>
-  <li><a href="#supportresources" id="toc-supportresources" class="nav-link" data-scroll-target="#supportresources">Support/Resources</a></li>
+  <li><a href="#setup-options" id="toc-setup-options" class="nav-link" data-scroll-target="#setup-options">2.1 Setup options</a>
+  <ul class="collapse">
+  <li><a href="#local-installation-macos-linux" id="toc-local-installation-macos-linux" class="nav-link" data-scroll-target="#local-installation-macos-linux">2.1.1 Local Installation (MacOS, Linux)</a></li>
+  <li><a href="#containerized-setup-docker" id="toc-containerized-setup-docker" class="nav-link" data-scroll-target="#containerized-setup-docker">2.1.2 Containerized setup (Docker)</a></li>
+  <li><a href="#hpccloud-sifsingularity" id="toc-hpccloud-sifsingularity" class="nav-link" data-scroll-target="#hpccloud-sifsingularity">2.1.3 HPC/Cloud (SIF/Singularity)</a></li>
+  </ul></li>
+  <li><a href="#rhessys-installation" id="toc-rhessys-installation" class="nav-link" data-scroll-target="#rhessys-installation">2.2 RHESSys Installation</a>
+  <ul class="collapse">
+  <li><a href="#macos-include-section-for-linux-as-well-if-necessary-or-where-differs" id="toc-macos-include-section-for-linux-as-well-if-necessary-or-where-differs" class="nav-link" data-scroll-target="#macos-include-section-for-linux-as-well-if-necessary-or-where-differs">2.2.1 MacOS (include section for Linux as well if necessary or where differs)</a></li>
+  <li><a href="#docker" id="toc-docker" class="nav-link" data-scroll-target="#docker">2.2.2 Docker</a></li>
+  <li><a href="#sif" id="toc-sif" class="nav-link" data-scroll-target="#sif">2.2.3 SIF</a></li>
+  </ul></li>
+  <li><a href="#installing-workflow-analysis-tools" id="toc-installing-workflow-analysis-tools" class="nav-link" data-scroll-target="#installing-workflow-analysis-tools">2.3 Installing Workflow &amp; Analysis Tools</a>
+  <ul class="collapse">
+  <li><a href="#r-ecosystem" id="toc-r-ecosystem" class="nav-link" data-scroll-target="#r-ecosystem">2.3.1 R Ecosystem</a></li>
+  <li><a href="#whiteboxtools-for-geospatial-processing" id="toc-whiteboxtools-for-geospatial-processing" class="nav-link" data-scroll-target="#whiteboxtools-for-geospatial-processing">2.3.2 WhiteboxTools for Geospatial Processing</a></li>
+  <li><a href="#rhessys-specific-r-packages" id="toc-rhessys-specific-r-packages" class="nav-link" data-scroll-target="#rhessys-specific-r-packages">2.3.3 RHESSys-Specific R packages</a></li>
+  </ul></li>
   </ul></li>
   <li><a href="#section" id="toc-section" class="nav-link" data-scroll-target="#section"></a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
-<div class="quarto-about-solana column-body">
-  <div class="about-entity">
-    <div class="entity-contents">
-      <header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">Development for RHESSys manual</h1>
-</div>
-<div class="quarto-title-meta">
-    <div>
-    <div class="quarto-title-meta-heading">Author</div>
-    <div class="quarto-title-meta-contents">
-             <p>Janet Choate </p>
-          </div>
-  </div>
-  </div>
-</header> <div class="about-links">
-  <a href="https://tagueteamlab.org/" class="about-link" rel="" target="">
-     <span class="about-link-text">TagueTeamLab</span>
-  </a>
-  <a href="https://github.com/JscBren/jschoate.github.io" class="about-link" rel="" target="">
-     <span class="about-link-text">GitHub</span>
-  </a>
-  <a href="mailto:jsc.eco@gmail.com" class="about-link" rel="" target="">
-     <span class="about-link-text">Email</span>
-  </a>
-</div>
-      <div class="about-contents"><main class="content column-body" id="quarto-document-content">
+<main class="content column-body" id="quarto-document-content">
 
-<section id="welcome" class="level1">
-<h1>Welcome</h1>
-<section id="purpose" class="level2">
-<h2 data-anchor-id="purpose">Purpose</h2>
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Setup</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<section id="setup-the-software" class="level1">
+<h1>2 Setup (The Software)</h1>
+<section id="setup-options" class="level2">
+<h2 class="anchored" data-anchor-id="setup-options">2.1 Setup options</h2>
+<p>(description of each, who should use, when to use, recommendation, link to corresponding install instructions)</p>
+<section id="local-installation-macos-linux" class="level3">
+<h3 class="anchored" data-anchor-id="local-installation-macos-linux">2.1.1 Local Installation (MacOS, Linux)</h3>
 <ul>
-<li>About the manual, why it exists, what it is for</li>
+<li>more advanced users</li>
+<li>users who want more flexibility</li>
 </ul>
 </section>
-<section id="intended-audience" class="level2">
-<h2 data-anchor-id="intended-audience">Intended Audience</h2>
+<section id="containerized-setup-docker" class="level3">
+<h3 class="anchored" data-anchor-id="containerized-setup-docker">2.1.2 Containerized setup (Docker)</h3>
 <ul>
-<li>Who this is for/Who should be reading this</li>
-<li>Assumed prerequisite knowledge (i.e.&nbsp;assumes basic knowledge of…provide links to resources where appropriate)
+<li>beginners</li>
+<li>Windows users</li>
+<li>portability</li>
+</ul>
+</section>
+<section id="hpccloud-sifsingularity" class="level3">
+<h3 class="anchored" data-anchor-id="hpccloud-sifsingularity">2.1.3 HPC/Cloud (SIF/Singularity)</h3>
 <ul>
-<li>General Modeling</li>
-<li>Basic R/Rstudio</li>
-<li>GIS and Raster/Vector</li>
-<li>Basic Unix/Linux environment (shell, command line, text editor)</li>
-<li>Git/GitHub</li>
+<li>high-performance computing environments</li>
+<li>cluster users</li>
+<li>large scale, high resolution simulations</li>
+</ul>
+</section>
+</section>
+<section id="rhessys-installation" class="level2">
+<h2 class="anchored" data-anchor-id="rhessys-installation">2.2 RHESSys Installation</h2>
+<section id="macos-include-section-for-linux-as-well-if-necessary-or-where-differs" class="level3">
+<h3 class="anchored" data-anchor-id="macos-include-section-for-linux-as-well-if-necessary-or-where-differs">2.2.1 MacOS (include section for Linux as well if necessary or where differs)</h3>
+<section id="code-dependencies-and-operational-requirements" class="level4">
+<h4 class="anchored" data-anchor-id="code-dependencies-and-operational-requirements">Code Dependencies and Operational Requirements</h4>
+<ul>
+<li>Terminal application</li>
+<li>Xcode Command Line Tools (compilers/build tools)</li>
+<li>Privileges (i.e.&nbsp;Administrator access)</li>
+<li>Homebrew</li>
+<li>Git</li>
+<li>Libraries (i.e.&nbsp;NetCDF)</li>
+</ul>
+</section>
+<section id="installation-steps" class="level4">
+<h4 class="anchored" data-anchor-id="installation-steps">Installation steps</h4>
+<ul>
+<li>Download code from GitHub
+<ul>
+<li>Zip file</li>
+<li>Clone repository (main, develop)</li>
 </ul></li>
+<li>Compile</li>
+<li>Shell configuration (adding to path)</li>
+<li>Verify installation</li>
+<li>Common issue and solutions</li>
 </ul>
 </section>
-<section id="scope" class="level2">
-<h2 data-anchor-id="scope">Scope</h2>
+</section>
+<section id="docker" class="level3">
+<h3 class="anchored" data-anchor-id="docker">2.2.2 Docker</h3>
 <ul>
-<li>What to expect from this book (user will learn….)</li>
-<li>What the manual covers (practical step-by-step guidance)</li>
-<li>What it does not cover (underlying theory of the model, all possible functionality)</li>
+<li>Install Docker Desktop</li>
+<li>Obtaining RHESSys image from the Docker Hub</li>
 </ul>
 </section>
-<section id="conventions-potentially" class="level2">
-<h2 data-anchor-id="conventions-potentially">Conventions (potentially)</h2>
+<section id="sif" class="level3">
+<h3 class="anchored" data-anchor-id="sif">2.2.3 SIF</h3>
 <ul>
-<li>How to read this document</li>
-<li>Key/Legend for document formatting - regarding use of icons, symbols, different font indications</li>
+<li>Obtaining RHESSys .sif image</li>
 </ul>
 </section>
-<section id="manual-structure" class="level2">
-<h2 data-anchor-id="manual-structure">Manual Structure</h2>
+</section>
+<section id="installing-workflow-analysis-tools" class="level2">
+<h2 class="anchored" data-anchor-id="installing-workflow-analysis-tools">2.3 Installing Workflow &amp; Analysis Tools</h2>
+<section id="r-ecosystem" class="level3">
+<h3 class="anchored" data-anchor-id="r-ecosystem">2.3.1 R Ecosystem</h3>
 <ul>
-<li>organization</li>
-<li>navigation</li>
-<li>links to sections</li>
-<li>potentially a link to a quick start guide</li>
+<li>R (The engine)</li>
+<li>RStudio (The interface)</li>
+<li>Standard Packages (Extensions - Libraries that expand functionality)</li>
 </ul>
 </section>
-<section id="supportresources" class="level2">
-<h2 data-anchor-id="supportresources">Support/Resources</h2>
+<section id="whiteboxtools-for-geospatial-processing" class="level3">
+<h3 class="anchored" data-anchor-id="whiteboxtools-for-geospatial-processing">2.3.2 WhiteboxTools for Geospatial Processing</h3>
+</section>
+<section id="rhessys-specific-r-packages" class="level3">
+<h3 class="anchored" data-anchor-id="rhessys-specific-r-packages">2.3.3 RHESSys-Specific R packages</h3>
 <ul>
-<li>Potentially include author info (Naomi, Janet (contact info?), Ryan)</li>
-<li>RHESSys GitHub repositories (RHESSys code, RHESSysPreProcessing, RHESSysIOinR, ParameterLibrary)</li>
-<li>RHESSys Wiki(s)</li>
-<li>Potentially a FAQ page, a user community forum (i.e.&nbsp;‘issues’ section on RHESSys Github repo?)</li>
+<li>RHESSysPreprocessing</li>
+<li>RHESSysIOinR</li>
 </ul>
+</section>
 </section>
 </section>
 <section id="section" class="level1">
@@ -350,13 +393,8 @@ ul.task-list li input[type="checkbox"] {
 
 
 </section>
-</main></div>
-    </div>
-    <img src="media/RhessysLogo_nobckgrnd.jpg" class="about-image
-  rectangle " style="width: 15em;">
-  </div>
-</div>
- <!-- /main -->
+
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -377,6 +415,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
   toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
   const isCodeAnnotation = (el) => {
     for (const clz of el.classList) {
       if (clz.startsWith('code-annotation-')) {                     

@@ -1,0 +1,28 @@
+---
+title: "Project Design & Planning"
+---
+
+# 3 Project Design & Planning (The Strategy)
+
+-   will discuss what a user should consider, i.e.:
+
+## 3.1 Spatial resolution vs. computational cost
+
+-   patch resolution/number of patches impact on processing needs & time
+-   scale - what is necessary to answer users questions: is fine-scale processing necessary?
+
+## 3.2 Data synchronization & temporal extent
+
+-   overlap - i.e., does the temporal period of climate data & observed streamflow data conincide?
+-   spin-up and calibration time requirements
+
+## 3.3 Functional constraints
+
+-   Feature specific inputs - i.e. to run the fire model, is wind speed/direction and relative humidity data available?
+-   Does RHESSys output what is needed to answer research questions?
+
+## 3.4 Defining the project boundaries
+
+-   use full basin boundary, representative hillslope, single patch?
+
+# 

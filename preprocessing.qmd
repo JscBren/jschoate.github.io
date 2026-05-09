@@ -1,0 +1,41 @@
+---
+title: "Preprocessing"
+---
+
+# 7 Preprocessing (The Foundation)
+
+## 7.1 Environmental Setup
+
+-   Standard directory structure
+-   naming convention
+
+## 7.2 Raster Processing
+
+-   Spatial processing using WhiteboxTools and R
+
+## 7.3 Generating the Worldfile and Flowtable
+
+### 7.3.1 The Template File: Recipe for the worldfile
+
+-   Format and Initialization
+    -   World objects
+    -   State variables
+    -   Default and base station ID's
+-   Required and Optional state variables
+-   Redefinition template (introduce here or later in advanced?)
+-   Editing the template, initial conditions
+
+### 7.3.2 Aspatial rules file for Multi-scale routing
+
+-   Format
+-   Set up for single rule
+-   Set up for multiple rules - requires map
+
+### 7.3.3 RHESSysPreprocessing R package
+
+-   About
+-   Prerequisites: spatial data, template, asp rules file if applicable
+-   R markdown workflow/script - functions
+-   Run the function to generate Worldfile/Flowtable
+
+# 

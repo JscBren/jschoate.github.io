@@ -1,0 +1,56 @@
+---
+title: "RHESSys-specific Input Files"
+---
+
+# 6 RHESSys-specific Input Files (The Anatomy)
+
+## 6.1 Definition (Default) Files: The Library
+
+-   About
+-   File types association with each level
+    -   some parameters may need expanded information, i.e. phenolog flag: static,dynamic,drought
+-   Format - required (ID) and optional parameters
+-   Parameter values constant
+-   Base Files/Default values
+-   Parameter file library
+
+## 6.2 Worldfile: The Spatial Blueprint
+
+-   Hierarchical spatial containment structure - landscape partioning
+    -   Basin
+    -   Hillslope (sub-basin)
+    -   Zone
+    -   Patch, Patch Families/Asptatial patches for multiscale routing
+    -   Stratum
+-   Architecture
+-   Identifiers: Pointers (ID's) linking identifiers to the Climate and Definition files
+-   State variables, values for stores/fluxes associated with each level
+-   Header File - conduit between the Worldfile and Climate/Definiton files
+
+## 6.3 Flowtable: The Pumbing
+
+-   Architecture
+-   Topographic data about each patch
+-   Routing, Patch connectivity, neighbors
+-   Partitioning flow, upland patches, stream patches
+
+## 6.4 Tecfile and Output Filters: Simulation Control
+
+### 6.4.1 Tecfile: The Alarm Clock
+
+-   Manage timing of output printing
+-   Control simulation events (schedule when non-continuous events occur, i.e. fire, land use change)
+-   Trigger a worldfile redefinition to update properties of the landscape
+
+### 6.4.2 Output filters: The Sieve
+
+-   specify criteria for selecting and filtering the output data
+-   Filter rules
+-   Filter conditions
+-   Filter Parts: timestep, spatial level, output format/name
+-   Variables associated with Spatial/Temporal leval of output
+    -   sub-level output
+    -   sub-routine output
+-   Variable reassignment: name reassignment, arithmetic expressions
+
+# 

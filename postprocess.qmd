@@ -1,0 +1,11 @@
+---
+title: "Post-processing"
+---
+
+# 9 Post-processing (The Insight)
+
+-   Output data wrangling - reading output into R, synthesizing, transforming, rearranging data for use-case
+-   Analyzing
+-   Visualizing
+
+# 

@@ -1,0 +1,75 @@
+---
+title: "Setup"
+---
+
+# 2 Setup (The Software)
+
+## 2.1 Setup options
+
+(description of each, who should use, when to use, recommendation, link to corresponding install instructions)
+
+### 2.1.1 Local Installation (MacOS, Linux)
+
+-   more advanced users
+-   users who want more flexibility
+
+### 2.1.2 Containerized setup (Docker)
+
+-   beginners
+-   Windows users
+-   portability
+
+### 2.1.3 HPC/Cloud (SIF/Singularity)
+
+-   high-performance computing environments
+-   cluster users
+-   large scale, high resolution simulations
+
+## 2.2 RHESSys Installation
+
+### 2.2.1 MacOS (include section for Linux as well if necessary or where differs)
+
+#### Code Dependencies and Operational Requirements
+
+-   Terminal application
+-   Xcode Command Line Tools (compilers/build tools)
+-   Privileges (i.e. Administrator access)
+-   Homebrew
+-   Git
+-   Libraries (i.e. NetCDF)
+
+#### Installation steps
+
+-   Download code from GitHub
+    -   Zip file
+    -   Clone repository (main, develop)
+-   Compile
+-   Shell configuration (adding to path)
+-   Verify installation
+-   Common issue and solutions
+
+### 2.2.2 Docker
+
+-   Install Docker Desktop
+-   Obtaining RHESSys image from the Docker Hub
+
+### 2.2.3 SIF
+
+-   Obtaining RHESSys .sif image
+
+## 2.3 Installing Workflow & Analysis Tools
+
+### 2.3.1 R Ecosystem
+
+-   R (The engine)
+-   RStudio (The interface)
+-   Standard Packages (Extensions - Libraries that expand functionality)
+
+### 2.3.2 WhiteboxTools for Geospatial Processing
+
+### 2.3.3 RHESSys-Specific R packages
+
+-   RHESSysPreprocessing
+-   RHESSysIOinR
+
+# 

@@ -8,7 +8,7 @@
 
 <meta name="author" content="Janet Choate">
 
-<title>RHESSys manual development - Outline (Manual Blueprint)</title>
+<title>RHESSys Manual - Outline (Manual Blueprint)</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -41,11 +41,11 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
-  "location": "navbar",
+  "location": "sidebar",
   "copy-button": false,
   "collapse-after": 3,
-  "panel-placement": "end",
-  "type": "overlay",
+  "panel-placement": "start",
+  "type": "textbox",
   "limit": 20,
   "language": {
     "search-no-results-text": "No results",
@@ -64,52 +64,194 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="nav-fixed">
+<body class="nav-sidebar floating">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand-lg navbar-dark ">
-      <div class="navbar-container container-fluid">
-      <div class="navbar-brand-container">
-    <a class="navbar-brand" href="./index.html">
-    <span class="navbar-title">RHESSys manual development</span>
-    </a>
-  </div>
-            <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-  <span class="navbar-toggler-icon"></span>
-</button>
-          <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav navbar-nav-scroll me-auto">
-  <li class="nav-item">
-    <a class="nav-link" href="./index.html" rel="" target="">
- <span class="menu-text">Home</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./about.html" rel="" target="">
- <span class="menu-text">About</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link active" href="./ManualOutline.html" rel="" target="" aria-current="page">
- <span class="menu-text">Outline (Manual Blueprint)</span></a>
-  </li>  
-</ul>
-            <div class="quarto-navbar-tools ms-auto">
-</div>
-          </div> <!-- /navcollapse -->
-      </div> <!-- /container-fluid -->
-    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">
+      RHESSys Manual
+      </li></ol></nav>
+      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+      </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full">
 <!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">RHESSys Manual</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Welcome</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="false">
+ <span class="menu-text">Part I: Foundations &amp; Environment</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./introduction.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Introduction</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./setup.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Setup</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./projectdesign.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Project Design &amp; Planning</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./exampledataset.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Example Dataset</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="false">
+ <span class="menu-text">Part II: Building and Executing</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./userdata.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">User-Acquired Data</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./inputfiles.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">RHESSys-specific Input Files</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./preprocessing.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Preprocessing</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./implementation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">RHESSys Implementation &amp; Execution</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./postprocess.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Post-processing</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="false">
+ <span class="menu-text">Part III: Refinement and Evaluation</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./initialization.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Initialization</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./sensanal.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Sensitivity Analysis</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./calibration.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Calibration</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./validation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Validation</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="false">
+ <span class="menu-text">Part IV: Advanced Application</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./advancedfeatures.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Advanced Features</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="px-0"><hr class="sidebar-divider hi "></li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./appendices.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Appendices</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#welcome-the-book" id="toc-welcome-the-book" class="nav-link active" data-scroll-target="#welcome-the-book">Welcome (The Book)</a>
+  <li><a href="#welcome" id="toc-welcome" class="nav-link active" data-scroll-target="#welcome">Welcome</a>
   <ul class="collapse">
   <li><a href="#purpose" id="toc-purpose" class="nav-link" data-scroll-target="#purpose">Purpose</a></li>
   <li><a href="#intended-audience" id="toc-intended-audience" class="nav-link" data-scroll-target="#intended-audience">Intended Audience</a></li>
@@ -118,6 +260,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#manual-structure" id="toc-manual-structure" class="nav-link" data-scroll-target="#manual-structure">Manual Structure</a></li>
   <li><a href="#supportresources" id="toc-supportresources" class="nav-link" data-scroll-target="#supportresources">Support/Resources</a></li>
   </ul></li>
+  <li><a href="#part-i-foundations-environment" id="toc-part-i-foundations-environment" class="nav-link" data-scroll-target="#part-i-foundations-environment"><span style="color:blue;"><u>Part I: Foundations &amp; Environment</u></span></a></li>
   <li><a href="#introduction-the-model" id="toc-introduction-the-model" class="nav-link" data-scroll-target="#introduction-the-model">1 Introduction (The Model)</a>
   <ul class="collapse">
   <li><a href="#overview-of-rhessys" id="toc-overview-of-rhessys" class="nav-link" data-scroll-target="#overview-of-rhessys">1.1 Overview of RHESSys</a>
@@ -140,7 +283,7 @@ ul.task-list li input[type="checkbox"] {
   </ul></li>
   <li><a href="#rhessys-installation" id="toc-rhessys-installation" class="nav-link" data-scroll-target="#rhessys-installation">2.2 RHESSys Installation</a>
   <ul class="collapse">
-  <li><a href="#macos" id="toc-macos" class="nav-link" data-scroll-target="#macos">2.2.1 MacOS</a></li>
+  <li><a href="#macos-include-section-for-linux-as-well-if-necessary-or-where-differs" id="toc-macos-include-section-for-linux-as-well-if-necessary-or-where-differs" class="nav-link" data-scroll-target="#macos-include-section-for-linux-as-well-if-necessary-or-where-differs">2.2.1 MacOS (include section for Linux as well if necessary or where differs)</a></li>
   <li><a href="#docker" id="toc-docker" class="nav-link" data-scroll-target="#docker">2.2.2 Docker</a></li>
   <li><a href="#sif" id="toc-sif" class="nav-link" data-scroll-target="#sif">2.2.3 SIF</a></li>
   </ul></li>
@@ -164,6 +307,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#dataset-contents" id="toc-dataset-contents" class="nav-link" data-scroll-target="#dataset-contents">4.2 Dataset Contents</a></li>
   <li><a href="#how-to-use-this-data" id="toc-how-to-use-this-data" class="nav-link" data-scroll-target="#how-to-use-this-data">4.3 How to use this data</a></li>
   </ul></li>
+  <li><a href="#part-ii-building-and-executing" id="toc-part-ii-building-and-executing" class="nav-link" data-scroll-target="#part-ii-building-and-executing"><span style="color:blue;"><u>Part II: Building and Executing</u></span></a></li>
   <li><a href="#user-acquired-data-the-ingredients" id="toc-user-acquired-data-the-ingredients" class="nav-link" data-scroll-target="#user-acquired-data-the-ingredients">5 User-Acquired Data (The Ingredients)</a>
   <ul class="collapse">
   <li><a href="#spatial-data" id="toc-spatial-data" class="nav-link" data-scroll-target="#spatial-data">5.1 Spatial Data</a></li>
@@ -192,30 +336,31 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#rhessyspreprocessing-r-package" id="toc-rhessyspreprocessing-r-package" class="nav-link" data-scroll-target="#rhessyspreprocessing-r-package">7.3.3 RHESSysPreprocessing R package</a></li>
   </ul></li>
   </ul></li>
-  <li><a href="#rhessys-implementation-and-execution-the-ignition" id="toc-rhessys-implementation-and-execution-the-ignition" class="nav-link" data-scroll-target="#rhessys-implementation-and-execution-the-ignition">8 RHESSys Implementation and Execution (The Ignition)</a></li>
-  <li><a href="#post-processing-the-insight" id="toc-post-processing-the-insight" class="nav-link" data-scroll-target="#post-processing-the-insight">8 Post-processing (The Insight)</a></li>
-  <li><a href="#initialization-the-equilibrium" id="toc-initialization-the-equilibrium" class="nav-link" data-scroll-target="#initialization-the-equilibrium">9 Initialization (The Equilibrium)</a></li>
-  <li><a href="#calibration-the-optimization" id="toc-calibration-the-optimization" class="nav-link" data-scroll-target="#calibration-the-optimization">10 Calibration (The Optimization)</a></li>
+  <li><a href="#rhessys-implementation-execution-the-ignition" id="toc-rhessys-implementation-execution-the-ignition" class="nav-link" data-scroll-target="#rhessys-implementation-execution-the-ignition">8 RHESSys Implementation &amp; Execution (The Ignition)</a></li>
+  <li><a href="#post-processing-the-insight" id="toc-post-processing-the-insight" class="nav-link" data-scroll-target="#post-processing-the-insight">9 Post-processing (The Insight)</a></li>
+  <li><a href="#part-iii-refinement-and-evaluation" id="toc-part-iii-refinement-and-evaluation" class="nav-link" data-scroll-target="#part-iii-refinement-and-evaluation"><span style="color:blue;"><u>Part III: Refinement and Evaluation</u></span></a></li>
+  <li><a href="#initialization-the-equilibrium" id="toc-initialization-the-equilibrium" class="nav-link" data-scroll-target="#initialization-the-equilibrium">10 Initialization (The Equilibrium)</a></li>
   <li><a href="#sensitivity-analysis-the-influence" id="toc-sensitivity-analysis-the-influence" class="nav-link" data-scroll-target="#sensitivity-analysis-the-influence">11 Sensitivity Analysis (The Influence)</a></li>
-  <li><a href="#advanced-features-the-expansion" id="toc-advanced-features-the-expansion" class="nav-link" data-scroll-target="#advanced-features-the-expansion">12 Advanced Features (The Expansion)</a>
+  <li><a href="#calibration-the-optimization" id="toc-calibration-the-optimization" class="nav-link" data-scroll-target="#calibration-the-optimization">12 Calibration (The Optimization)</a></li>
+  <li><a href="#validation-the-verification-or-the-credibility" id="toc-validation-the-verification-or-the-credibility" class="nav-link" data-scroll-target="#validation-the-verification-or-the-credibility">13 Validation (The Verification or The Credibility)</a></li>
+  <li><a href="#part-iv-advanced-application" id="toc-part-iv-advanced-application" class="nav-link" data-scroll-target="#part-iv-advanced-application"><span style="color:blue;"><u>Part IV: Advanced Application</u></span></a></li>
+  <li><a href="#advanced-features-the-expansion" id="toc-advanced-features-the-expansion" class="nav-link" data-scroll-target="#advanced-features-the-expansion">14 Advanced Features (The Expansion)</a>
   <ul class="collapse">
-  <li><a href="#disturbance-modeling" id="toc-disturbance-modeling" class="nav-link" data-scroll-target="#disturbance-modeling">12.1 Disturbance modeling</a>
+  <li><a href="#disturbance-modeling" id="toc-disturbance-modeling" class="nav-link" data-scroll-target="#disturbance-modeling">14.1 Disturbance modeling</a>
   <ul class="collapse">
-  <li><a href="#fire-spread-and-fire-effects" id="toc-fire-spread-and-fire-effects" class="nav-link" data-scroll-target="#fire-spread-and-fire-effects">12.1.1 Fire Spread and Fire Effects</a></li>
-  <li><a href="#drought-induced-mortality" id="toc-drought-induced-mortality" class="nav-link" data-scroll-target="#drought-induced-mortality">12.1.2 Drought induced mortality</a></li>
-  <li><a href="#land-covervegetation-change" id="toc-land-covervegetation-change" class="nav-link" data-scroll-target="#land-covervegetation-change">12.1.3 Land Cover/Vegetation change</a></li>
+  <li><a href="#fire-spread-and-fire-effects" id="toc-fire-spread-and-fire-effects" class="nav-link" data-scroll-target="#fire-spread-and-fire-effects">14.1.1 Fire Spread and Fire Effects</a></li>
+  <li><a href="#land-covervegetation-change" id="toc-land-covervegetation-change" class="nav-link" data-scroll-target="#land-covervegetation-change">14.1.2 Land Cover/Vegetation change</a></li>
   </ul></li>
-  <li><a href="#multi-scale-routing---fine-scale-heterogeneity" id="toc-multi-scale-routing---fine-scale-heterogeneity" class="nav-link" data-scroll-target="#multi-scale-routing---fine-scale-heterogeneity">12.2 Multi-scale routing - fine-scale heterogeneity</a></li>
-  <li><a href="#target-driven-spin-up" id="toc-target-driven-spin-up" class="nav-link" data-scroll-target="#target-driven-spin-up">12.3 Target-driven spin-up</a></li>
-  <li><a href="#parallelization-maybe-include" id="toc-parallelization-maybe-include" class="nav-link" data-scroll-target="#parallelization-maybe-include">12.4 Parallelization (maybe include?)</a></li>
+  <li><a href="#multi-scale-routing---fine-scale-heterogeneity" id="toc-multi-scale-routing---fine-scale-heterogeneity" class="nav-link" data-scroll-target="#multi-scale-routing---fine-scale-heterogeneity">14.2 Multi-scale routing - fine-scale heterogeneity</a></li>
+  <li><a href="#target-driven-spin-up" id="toc-target-driven-spin-up" class="nav-link" data-scroll-target="#target-driven-spin-up">14.3 Target-driven spin-up</a></li>
+  <li><a href="#parallelization-maybe-include" id="toc-parallelization-maybe-include" class="nav-link" data-scroll-target="#parallelization-maybe-include">14.4 Parallelization (maybe include?)</a></li>
   </ul></li>
-  <li><a href="#appendices-the-vault" id="toc-appendices-the-vault" class="nav-link" data-scroll-target="#appendices-the-vault">13 Appendices (The Vault)</a></li>
-  <li><a href="#resource-sharing-and-accessibility" id="toc-resource-sharing-and-accessibility" class="nav-link" data-scroll-target="#resource-sharing-and-accessibility">Resource Sharing and Accessibility</a></li>
+  <li><a href="#appendices-the-vault" id="toc-appendices-the-vault" class="nav-link" data-scroll-target="#appendices-the-vault">15 Appendices (The Vault)</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
-<main class="content column-page-left" id="quarto-document-content">
+<main class="content column-body" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
@@ -240,8 +385,8 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<section id="welcome-the-book" class="level1">
-<h1>Welcome (The Book)</h1>
+<section id="welcome" class="level1">
+<h1>Welcome</h1>
 <section id="purpose" class="level2">
 <h2 class="anchored" data-anchor-id="purpose">Purpose</h2>
 <ul>
@@ -296,6 +441,14 @@ ul.task-list li input[type="checkbox"] {
 </ul>
 </section>
 </section>
+<section id="part-i-foundations-environment" class="level1">
+<h1><span style="color:blue;"><u>Part I: Foundations &amp; Environment</u></span></h1>
+<ul>
+<li>This part is about understanding the logic of this tool and setting the computational environment</li>
+<li>intro to what is covered in the section</li>
+<li>expected outcome for this section: functioning modeling environment and clear strategic plan</li>
+</ul>
+</section>
 <section id="introduction-the-model" class="level1">
 <h1>1 Introduction (The Model)</h1>
 <section id="overview-of-rhessys" class="level2">
@@ -337,15 +490,15 @@ ul.task-list li input[type="checkbox"] {
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/ModelingWorkflowOverview-01.jpeg" class="img-fluid figure-img" alt="RHESSys Modeling Workflow Overview" width="1000"></p>
-<figcaption class="figure-caption">RHESSys Modeling Workflow Overview</figcaption>
+<figcaption class="figure-caption"><strong>RHESSys Modeling Workflow Overview</strong></figcaption>
 </figure>
 </div>
 <ul>
 <li>Step 1: Installation - Set up the RHESSys environment</li>
 <li>Step 2: Data Preparation - Gather and format spatial, climate, and validation data</li>
 <li>Step 3: Preprocessing - Generate the landscape representation (Worldfile) and routing (Flowtable) input files</li>
-<li>Step 4: Model Setup and Execution - Configure the command line inputs and run RHESSys</li>
-<li>Step 5: Initialization, Calibration, and Sensitivity Analysis - Spin-up, tune parameters to match observed data</li>
+<li>Step 4: Model Setup and Execution - Define the simulation rules and run RHESSys</li>
+<li>Step 5: Calibration &amp; Sensitivity Analysis - Condition the model (Initialize/reach equilibrium), refine parameters, validate performance</li>
 <li>Step 6: Post Processing - wrangle, analyze, and visualize output data</li>
 </ul>
 <section id="key-concepts-and-terminology" class="level3">
@@ -391,8 +544,8 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="rhessys-installation" class="level2">
 <h2 class="anchored" data-anchor-id="rhessys-installation">2.2 RHESSys Installation</h2>
-<section id="macos" class="level3">
-<h3 class="anchored" data-anchor-id="macos">2.2.1 MacOS</h3>
+<section id="macos-include-section-for-linux-as-well-if-necessary-or-where-differs" class="level3">
+<h3 class="anchored" data-anchor-id="macos-include-section-for-linux-as-well-if-necessary-or-where-differs">2.2.1 MacOS (include section for Linux as well if necessary or where differs)</h3>
 <section id="code-dependencies-and-operational-requirements" class="level4">
 <h4 class="anchored" data-anchor-id="code-dependencies-and-operational-requirements">Code Dependencies and Operational Requirements</h4>
 <ul>
@@ -490,6 +643,12 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="example-dataset-the-sandbox" class="level1">
 <h1>4 Example Dataset (The Sandbox)</h1>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/InstructionalSystemDesign.jpeg" class="img-fluid figure-img" alt="Instructional System Design" width="1000"></p>
+<figcaption class="figure-caption"><strong>Instructional System Design</strong></figcaption>
+</figure>
+</div>
 <section id="study-site-overview" class="level2">
 <h2 class="anchored" data-anchor-id="study-site-overview">4.1 Study Site Overview</h2>
 <ul>
@@ -504,16 +663,25 @@ ul.task-list li input[type="checkbox"] {
 <li>Preprocessing data: Workflow script, all prerequisite files necessary for generating Worldfile/Flowtable, and completed Worldfiles and Flowtables (for a patch, hillslope, and full basin)</li>
 <li>Simulation files: Ready-to-run workflow scripts with functions to generate all necessary instruction to run the model for different strategies (i.e., single run, multi-run, for calibration &amp; sensitivity analysis)</li>
 <li>Reference outputs: Sample model results</li>
+<li>How to get it</li>
 </ul>
 </section>
 <section id="how-to-use-this-data" class="level2">
 <h2 class="anchored" data-anchor-id="how-to-use-this-data">4.3 How to use this data</h2>
 <ul>
-<li>How to get it</li>
-<li>Verification for user generated files</li>
+<li>Contextual understanding</li>
+<li>Performance Evaluation - verification for user generated files</li>
+<li>Troubleshooting</li>
 <li>Modular learning - start at any step in the manual</li>
 </ul>
 </section>
+</section>
+<section id="part-ii-building-and-executing" class="level1">
+<h1><span style="color:blue;"><u>Part II: Building and Executing</u></span></h1>
+<ul>
+<li>This part is about building the model, constructing the foundation for a fuctional simulation</li>
+<li>expected outcome for this section: creating input in order to run the model, generate output, and interpret results</li>
+</ul>
 </section>
 <section id="user-acquired-data-the-ingredients" class="level1">
 <h1>5 User-Acquired Data (The Ingredients)</h1>
@@ -573,9 +741,12 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored" data-anchor-id="definition-default-files-the-library">6.1 Definition (Default) Files: The Library</h2>
 <ul>
 <li>About</li>
-<li>Types association with each level</li>
+<li>File types association with each level
+<ul>
+<li>some parameters may need expanded information, i.e.&nbsp;phenolog flag: static,dynamic,drought</li>
+</ul></li>
 <li>Format - required (ID) and optional parameters</li>
-<li>Constant parameter values</li>
+<li>Parameter values constant</li>
 <li>Base Files/Default values</li>
 <li>Parameter file library</li>
 </ul>
@@ -660,7 +831,7 @@ ul.task-list li input[type="checkbox"] {
 <li>Default and base station ID’s</li>
 </ul></li>
 <li>Required and Optional state variables</li>
-<li>Redefinition template</li>
+<li>Redefinition template (introduce here or later in advanced?)</li>
 <li>Editing the template, initial conditions</li>
 </ul>
 </section>
@@ -683,8 +854,8 @@ ul.task-list li input[type="checkbox"] {
 </section>
 </section>
 </section>
-<section id="rhessys-implementation-and-execution-the-ignition" class="level1">
-<h1>8 RHESSys Implementation and Execution (The Ignition)</h1>
+<section id="rhessys-implementation-execution-the-ignition" class="level1">
+<h1>8 RHESSys Implementation &amp; Execution (The Ignition)</h1>
 <ul>
 <li>Define the simulation rules
 <ul>
@@ -707,77 +878,147 @@ ul.task-list li input[type="checkbox"] {
 </ul>
 </section>
 <section id="post-processing-the-insight" class="level1">
-<h1>8 Post-processing (The Insight)</h1>
+<h1>9 Post-processing (The Insight)</h1>
 <ul>
 <li>Output data wrangling - reading output into R, synthesizing, transforming, rearranging data for use-case</li>
 <li>Analyzing</li>
 <li>Visualizing</li>
 </ul>
 </section>
-<section id="initialization-the-equilibrium" class="level1">
-<h1>9 Initialization (The Equilibrium)</h1>
+<section id="part-iii-refinement-and-evaluation" class="level1">
+<h1><span style="color:blue;"><u>Part III: Refinement and Evaluation</u></span></h1>
 <ul>
-<li>Spin-up/Initializing approaches (to reach a state of equilibrium)</li>
+<li>This part is about moving from just a running model to a credible scientific tool.</li>
+<li>intro to what is covered in the section
+<ul>
+<li>the iterative cycle - cyclincal refinement loop</li>
+<li>include a figure/diagram/flowchart about the feedback loop</li>
+<li>refinement not linear path - changing one parameter may require re-balancing the system</li>
+<li>each phase informs the next - often requiring return to previous step</li>
+</ul></li>
+<li>expected outcome for this section: learning the process to ensure a balanced system</li>
+</ul>
+</section>
+<section id="initialization-the-equilibrium" class="level1">
+<h1>10 Initialization (The Equilibrium)</h1>
+<ul>
+<li>Spin-up/Initializing approaches</li>
+<li>Achieving steady-state</li>
 <li>Spin-up Tec event</li>
 <li>State-of-the world output Worldfile</li>
 <li>Typical spin-up output variables</li>
-<li>Determining equilibrium</li>
-</ul>
-</section>
-<section id="calibration-the-optimization" class="level1">
-<h1>10 Calibration (The Optimization)</h1>
-<ul>
-<li>Methodology</li>
-<li>Optimization Workflows</li>
-<li>Objective Functions and Performance Metrics</li>
+<li>Determining baseline equilibrium</li>
 </ul>
 </section>
 <section id="sensitivity-analysis-the-influence" class="level1">
 <h1>11 Sensitivity Analysis (The Influence)</h1>
 <ul>
-<li>Identifying influential variables</li>
+<li>Identifying influential variables - understanding the ‘knobs’, which to turn</li>
 <li>Parameter Space Characterization (establishing realistic bounds/ranges)</li>
 <li>Parameter Selection</li>
 </ul>
 </section>
-<section id="advanced-features-the-expansion" class="level1">
-<h1>12 Advanced Features (The Expansion)</h1>
-<section id="disturbance-modeling" class="level2">
-<h2 class="anchored" data-anchor-id="disturbance-modeling">12.1 Disturbance modeling</h2>
-<section id="fire-spread-and-fire-effects" class="level3">
-<h3 class="anchored" data-anchor-id="fire-spread-and-fire-effects">12.1.1 Fire Spread and Fire Effects</h3>
+<section id="calibration-the-optimization" class="level1">
+<h1>12 Calibration (The Optimization)</h1>
 <ul>
-<li>compiling RHESSys/WMFire</li>
-<li></li>
+<li>Methodology</li>
+<li>Optimization Workflows - (corresponding with ‘real world’ observations)</li>
+<li>Objective Functions and Performance Metrics</li>
+<li>The challenge of equifinality</li>
 </ul>
 </section>
-<section id="drought-induced-mortality" class="level3">
-<h3 class="anchored" data-anchor-id="drought-induced-mortality">12.1.2 Drought induced mortality</h3>
+<section id="validation-the-verification-or-the-credibility" class="level1">
+<h1>13 Validation (The Verification or The Credibility)</h1>
+<ul>
+<li>judging/evaluation performance</li>
+<li>testing calibrated parameters against data set independent of calibration period</li>
+</ul>
+</section>
+<section id="part-iv-advanced-application" class="level1">
+<h1><span style="color:blue;"><u>Part IV: Advanced Application</u></span></h1>
+<ul>
+<li>This part is about exploring complex eco-hydrological scenarios</li>
+<li>intro to what is covered in the section</li>
+<li>expected outcome for this section: ability to move from model development to high impact scientific inquiry</li>
+</ul>
+</section>
+<section id="advanced-features-the-expansion" class="level1">
+<h1>14 Advanced Features (The Expansion)</h1>
+<ul>
+<li>beyond the baseline</li>
+<li>moving into specialized simulations</li>
+</ul>
+<section id="disturbance-modeling" class="level2">
+<h2 class="anchored" data-anchor-id="disturbance-modeling">14.1 Disturbance modeling</h2>
+<ul>
+<li>disturbance in RHESSys: altering the carbon cycles and redirecting the flow of water and nutrients from the baseline</li>
+<li>predicting ecosystem resilience and recovery over time</li>
+</ul>
+<section id="fire-spread-and-fire-effects" class="level3">
+<h3 class="anchored" data-anchor-id="fire-spread-and-fire-effects">14.1.1 Fire Spread and Fire Effects</h3>
+<ul>
+<li>about</li>
+<li>compiling RHESSys-WMFire: Boost/WMFire library</li>
+<li>Prerequisites to running the fire model:
+<ul>
+<li>Wind speed and direction data</li>
+<li>Fire definition file parameters
+<ul>
+<li>calculating the fire return interval</li>
+<li>calculating wind parameters (EstimateWindDistrExample.R script)</li>
+</ul></li>
+<li>Fire effects parameters in vegetation and soil(patch) definition files</li>
+<li>Worldfile header edits</li>
+<li>Add worldfile state variable</li>
+<li>Command line option</li>
+</ul></li>
+<li>Outputs
+<ul>
+<li>fire write parameter generated output</li>
+<li>spatial level fire outputs and specific fire effects output files</li>
+</ul></li>
+<li>stochastic</li>
+<li>prescribed</li>
+</ul>
 </section>
 <section id="land-covervegetation-change" class="level3">
-<h3 class="anchored" data-anchor-id="land-covervegetation-change">12.1.3 Land Cover/Vegetation change</h3>
+<h3 class="anchored" data-anchor-id="land-covervegetation-change">14.1.2 Land Cover/Vegetation change</h3>
 <ul>
-<li>fuel treatments</li>
+<li>biomass pool changes</li>
+<li>drought induced mortality</li>
+<li>fuel treatments
+<ul>
 <li>thinning, controlled burns</li>
-<li>redefine world options (redefine_world_: multiplier, thin_remain, thin_harvest, thin_snags, thin_harvest)</li>
+</ul></li>
+<li>redefine world functionality (redefine_world_: multiplier, thin_remain, thin_harvest, thin_snags, thin_harvest)</li>
 </ul>
 </section>
 </section>
 <section id="multi-scale-routing---fine-scale-heterogeneity" class="level2">
-<h2 class="anchored" data-anchor-id="multi-scale-routing---fine-scale-heterogeneity">12.2 Multi-scale routing - fine-scale heterogeneity</h2>
+<h2 class="anchored" data-anchor-id="multi-scale-routing---fine-scale-heterogeneity">14.2 Multi-scale routing - fine-scale heterogeneity</h2>
 <ul>
-<li>not sure this belongs in advanced features because it has become pretty standard, and I have introduced it above</li>
+<li>not sure this belongs in advanced features anymore because it has become pretty standard, and I have introduced it above</li>
 <li>this can be debated!</li>
 </ul>
 </section>
 <section id="target-driven-spin-up" class="level2">
-<h2 class="anchored" data-anchor-id="target-driven-spin-up">12.3 Target-driven spin-up</h2>
+<h2 class="anchored" data-anchor-id="target-driven-spin-up">14.3 Target-driven spin-up</h2>
 <ul>
+<li>advanced method of spin-up to reach varying stages of observed ecological states</li>
 <li>run to reach spatially explicit targets, i.e.&nbsp;LAI</li>
+<li>types of spin-up targets</li>
+<li>sources for deriving targets</li>
+<li>Prerequisites to running:</li>
+<li>spin-up target file</li>
+<li>target file header</li>
+<li>spin-up definition file</li>
+<li>worldfile with spinup object ID</li>
+<li>worldfile header pointer</li>
+<li>command line options</li>
 </ul>
 </section>
 <section id="parallelization-maybe-include" class="level2">
-<h2 class="anchored" data-anchor-id="parallelization-maybe-include">12.4 Parallelization (maybe include?)</h2>
+<h2 class="anchored" data-anchor-id="parallelization-maybe-include">14.4 Parallelization (maybe include?)</h2>
 <ul>
 <li>run a large watershed in parallel in order to speed up the simulation process</li>
 <li>compiling with openmp</li>
@@ -785,21 +1026,12 @@ ul.task-list li input[type="checkbox"] {
 </section>
 </section>
 <section id="appendices-the-vault" class="level1">
-<h1>13 Appendices (The Vault)</h1>
+<h1>15 Appendices (The Vault)</h1>
 <ul>
 <li>Command-line functionality</li>
 <li>History/Legacy tools/functionality</li>
 <li>Code organization</li>
-</ul>
-</section>
-<section id="resource-sharing-and-accessibility" class="level1">
-<h1>Resource Sharing and Accessibility</h1>
-<p>All materials will be:</p>
-<ul>
-<li>Hosted online (e.g., GitHub Pages)</li>
-<li>Available as downloadable datasets and PDFs</li>
-<li>Accompanied by video tutorials (e.g., YouTube)</li>
-<li>Designed for long-term public access</li>
+<li>additional items will become clear as I go along!</li>
 </ul>
 
 

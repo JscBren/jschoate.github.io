@@ -3,14 +3,44 @@ project:
   output-dir: docs
 
 website:
-  title: "RHESSys manual development"
-  navbar:
-    left:
-      - href: index.qmd
-        text: Home
-      - about.qmd
-      - ManualOutline.qmd
-
+  title: "RHESSys Manual"
+  sidebar: 
+    style: "floating"
+    collapse-level: 1
+    contents:
+      - text: "Welcome"
+        file: index.qmd
+    
+      - section: "Part I: Foundations & Environment"
+        contents:
+          - introduction.qmd
+          - setup.qmd
+          - projectdesign.qmd
+          - exampledataset.qmd
+      
+      - section: "Part II: Building and Executing"
+        contents:
+          - userdata.qmd
+          - inputfiles.qmd
+          - preprocessing.qmd
+          - implementation.qmd
+          - postprocess.qmd
+      
+      - section: "Part III: Refinement and Evaluation"
+        contents:
+          - initialization.qmd
+          - sensanal.qmd
+          - calibration.qmd
+          - validation.qmd
+      
+      - section: "Part IV: Advanced Application"
+        contents:
+          - advancedfeatures.qmd
+      
+      - text: "---" # separator line
+      - text: "Appendices"
+        file: appendices.qmd
+    
 format:
   html:
     theme: cosmo

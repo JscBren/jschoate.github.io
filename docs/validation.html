@@ -6,9 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Janet Choate">
 
-<title>RHESSys Manual - Development for RHESSys manual</title>
+<title>RHESSys Manual - Validation</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -34,6 +33,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
@@ -72,7 +72,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">Welcome</a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./initialization.html">Part III: Refinement and Evaluation</a></li><li class="breadcrumb-item"><a href="./validation.html">Validation</a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -99,7 +99,7 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link active">
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Welcome</span></a>
   </div>
 </li>
@@ -181,13 +181,13 @@ ul.task-list li input[type="checkbox"] {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true">
  <span class="menu-text">Part III: Refinement and Evaluation</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./initialization.html" class="sidebar-item-text sidebar-link">
@@ -208,7 +208,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./validation.html" class="sidebar-item-text sidebar-link">
+  <a href="./validation.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Validation</span></a>
   </div>
 </li>
@@ -246,117 +246,47 @@ ul.task-list li input[type="checkbox"] {
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">On this page</h2>
+   
   <ul>
-  <li><a href="#welcome" id="toc-welcome" class="nav-link active" data-scroll-target="#welcome">Welcome</a>
-  <ul class="collapse">
-  <li><a href="#purpose" id="toc-purpose" class="nav-link" data-scroll-target="#purpose">Purpose</a></li>
-  <li><a href="#intended-audience" id="toc-intended-audience" class="nav-link" data-scroll-target="#intended-audience">Intended Audience</a></li>
-  <li><a href="#scope" id="toc-scope" class="nav-link" data-scroll-target="#scope">Scope</a></li>
-  <li><a href="#conventions-potentially" id="toc-conventions-potentially" class="nav-link" data-scroll-target="#conventions-potentially">Conventions (potentially)</a></li>
-  <li><a href="#manual-structure" id="toc-manual-structure" class="nav-link" data-scroll-target="#manual-structure">Manual Structure</a></li>
-  <li><a href="#supportresources" id="toc-supportresources" class="nav-link" data-scroll-target="#supportresources">Support/Resources</a></li>
-  </ul></li>
+  <li><a href="#validation-the-verification-or-the-credibility" id="toc-validation-the-verification-or-the-credibility" class="nav-link active" data-scroll-target="#validation-the-verification-or-the-credibility">13 Validation (The Verification or The Credibility)</a></li>
   <li><a href="#section" id="toc-section" class="nav-link" data-scroll-target="#section"></a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
-<div class="quarto-about-solana column-body">
-  <div class="about-entity">
-    <div class="entity-contents">
-      <header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">Development for RHESSys manual</h1>
-</div>
-<div class="quarto-title-meta">
-    <div>
-    <div class="quarto-title-meta-heading">Author</div>
-    <div class="quarto-title-meta-contents">
-             <p>Janet Choate </p>
-          </div>
-  </div>
-  </div>
-</header> <div class="about-links">
-  <a href="https://tagueteamlab.org/" class="about-link" rel="" target="">
-     <span class="about-link-text">TagueTeamLab</span>
-  </a>
-  <a href="https://github.com/JscBren/jschoate.github.io" class="about-link" rel="" target="">
-     <span class="about-link-text">GitHub</span>
-  </a>
-  <a href="mailto:jsc.eco@gmail.com" class="about-link" rel="" target="">
-     <span class="about-link-text">Email</span>
-  </a>
-</div>
-      <div class="about-contents"><main class="content column-body" id="quarto-document-content">
+<main class="content column-body" id="quarto-document-content">
 
-<section id="welcome" class="level1">
-<h1>Welcome</h1>
-<section id="purpose" class="level2">
-<h2 data-anchor-id="purpose">Purpose</h2>
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Validation</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<section id="validation-the-verification-or-the-credibility" class="level1">
+<h1>13 Validation (The Verification or The Credibility)</h1>
 <ul>
-<li>About the manual, why it exists, what it is for</li>
+<li>judging/evaluation performance</li>
+<li>testing calibrated parameters against data set independent of calibration period</li>
 </ul>
-</section>
-<section id="intended-audience" class="level2">
-<h2 data-anchor-id="intended-audience">Intended Audience</h2>
-<ul>
-<li>Who this is for/Who should be reading this</li>
-<li>Assumed prerequisite knowledge (i.e.&nbsp;assumes basic knowledge of…provide links to resources where appropriate)
-<ul>
-<li>General Modeling</li>
-<li>Basic R/Rstudio</li>
-<li>GIS and Raster/Vector</li>
-<li>Basic Unix/Linux environment (shell, command line, text editor)</li>
-<li>Git/GitHub</li>
-</ul></li>
-</ul>
-</section>
-<section id="scope" class="level2">
-<h2 data-anchor-id="scope">Scope</h2>
-<ul>
-<li>What to expect from this book (user will learn….)</li>
-<li>What the manual covers (practical step-by-step guidance)</li>
-<li>What it does not cover (underlying theory of the model, all possible functionality)</li>
-</ul>
-</section>
-<section id="conventions-potentially" class="level2">
-<h2 data-anchor-id="conventions-potentially">Conventions (potentially)</h2>
-<ul>
-<li>How to read this document</li>
-<li>Key/Legend for document formatting - regarding use of icons, symbols, different font indications</li>
-</ul>
-</section>
-<section id="manual-structure" class="level2">
-<h2 data-anchor-id="manual-structure">Manual Structure</h2>
-<ul>
-<li>organization</li>
-<li>navigation</li>
-<li>links to sections</li>
-<li>potentially a link to a quick start guide</li>
-</ul>
-</section>
-<section id="supportresources" class="level2">
-<h2 data-anchor-id="supportresources">Support/Resources</h2>
-<ul>
-<li>Potentially include author info (Naomi, Janet (contact info?), Ryan)</li>
-<li>RHESSys GitHub repositories (RHESSys code, RHESSysPreProcessing, RHESSysIOinR, ParameterLibrary)</li>
-<li>RHESSys Wiki(s)</li>
-<li>Potentially a FAQ page, a user community forum (i.e.&nbsp;‘issues’ section on RHESSys Github repo?)</li>
-</ul>
-</section>
 </section>
 <section id="section" class="level1">
 <h1></h1>
 
 
 </section>
-</main></div>
-    </div>
-    <img src="media/RhessysLogo_nobckgrnd.jpg" class="about-image
-  rectangle " style="width: 15em;">
-  </div>
-</div>
- <!-- /main -->
+
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -377,6 +307,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
   toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
   const isCodeAnnotation = (el) => {
     for (const clz of el.classList) {
       if (clz.startsWith('code-annotation-')) {                     

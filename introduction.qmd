@@ -1,0 +1,58 @@
+---
+title: "Introduction"
+---
+
+# [[Part I: Foundations & Environment]{.underline}]{style="color:blue;"}
+
+-   This part is about understanding the logic of this tool and setting the computational environment
+-   intro to what is covered in the section
+-   expected outcome for this section: functioning modeling environment and clear strategic plan
+
+# 1 Introduction (The Model)
+
+## 1.1 Overview of RHESSys
+
+### What RHESSys is
+
+-   Description
+
+#### Capabilities
+
+-   Integrated Ecohydological Modeling
+-   Spatial distribution of the landscape
+-   Feedback loops
+-   Fire model
+
+#### Limitations
+
+-   High data demands
+-   Can be computationally intensive
+-   Maybe any processes that are not well represented? Let users know if the model won't fit their research question
+
+## 1.2 Recommended reading/Publications
+
+-   Foundational papers
+-   Overview/Review papers
+-   Applications
+
+## 1.3 Workflow overview
+
+![**RHESSys Modeling Workflow Overview**](images/ModelingWorkflowOverview-01.jpeg){fig-alt="RHESSys Modeling Workflow Overview" width="1000"}
+
+-   Step 1: Installation - Set up the RHESSys environment
+-   Step 2: Data Preparation - Gather and format spatial, climate, and validation data
+-   Step 3: Preprocessing - Generate the landscape representation (Worldfile) and routing (Flowtable) input files
+-   Step 4: Model Setup and Execution - Define the simulation rules and run RHESSys
+-   Step 5: Calibration & Sensitivity Analysis - Condition the model (Initialize/reach equilibrium), refine parameters, validate performance
+-   Step 6: Post Processing - wrangle, analyze, and visualize output data
+
+### Key concepts and terminology
+
+(define frequently used terms)
+
+-   Spatial hierarchy (basin, hillslope, zone, patch, stratum)
+-   Input File types (Worldfile, Header, Flowtable, Tecfile, Parameter/Climate files, Output filters)
+-   State variables (store quantities) and fluxes
+-   Spatial/Temporal step (i.e., basin daily, patch monthly)
+
+# 

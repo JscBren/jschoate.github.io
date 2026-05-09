@@ -1,0 +1,47 @@
+---
+title: "User-Acquired Data"
+---
+
+# [[Part II: Building and Executing]{.underline}]{style="color:blue;"}
+
+-   This part is about building the model, constructing the foundation for a fuctional simulation
+-   expected outcome for this section: creating input in order to run the model, generate output, and interpret results
+
+# 5 User-Acquired Data (The Ingredients)
+
+## 5.1 Spatial Data
+
+-   Required
+    -   DEM (source to obtain)
+    -   Watershed outlet - gauge location coordinates
+        -   DEM Derivatives - generation discussed in later section:
+            -   Watershed Basin boundary
+            -   Sub-basins (hillslopes)
+            -   Slope/Aspect
+            -   E/W Horizons
+            -   Stream Network
+            -   Patches
+-   Recommended (typical) or when applicable:
+    -   Vegetation cover
+    -   Soils
+    -   Landcover/Landuse
+    -   Roads
+    -   Impervious areas
+    -   Climate base stations
+    -   Aspatial rules ID map for multi-scale routing
+
+## 5.2 Climate Data
+
+-   Timeseries data
+-   Required meteorologic data
+-   Optional meteorologic data
+-   Base station
+-   Supported Input Formats - point, grid, NetCDF - and how to format each
+
+## 5.3 Observational Data
+
+-   used to constrain and evaluate hydrologic and ecophysiological parameterization
+-   Hydrologic (i.e., Streamflow, Snow, Soil moisture)
+-   Vegetation (i.e, LAI, Height, NPP, ET, rooting depth)
+
+# 

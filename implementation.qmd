@@ -1,0 +1,18 @@
+---
+title: "RHESSys Implementation & Execution"
+---
+
+# 8 RHESSys Implementation & Execution (The Ignition)
+
+-   Define the simulation rules
+    -   RHESSysIOinR Functions to provide the directions necessary to run RHESSys
+-   Output filter design
+    -   Tecfile/Output Filter interaction for expected output
+    -   Selecting RHESSys output variables
+        -   Choosing variables relevant to the research questions and analysis goals
+        -   Reassigning/Combining variables
+-   Executing simulations in R
+    -   Single run
+    -   Multiple runs
+
+# 

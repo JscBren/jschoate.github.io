@@ -1,0 +1,10 @@
+---
+title: "Appendices"
+---
+
+# 15 Appendices (The Vault)
+
+-   Command-line functionality
+-   History/Legacy tools/functionality
+-   Code organization
+-   additional items will become clear as I go along!

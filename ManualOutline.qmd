@@ -5,7 +5,7 @@ format: html
 editor: visual
 ---
 
-# Welcome (The Book)
+# Welcome
 
 ## Purpose
 
@@ -46,6 +46,11 @@ editor: visual
 -   RHESSys Wiki(s)
 -   Potentially a FAQ page, a user community forum (i.e. 'issues' section on RHESSys Github repo?)
 
+# [[Part I: Foundations & Environment]{.underline}]{style="color:blue;"}
+-   This part is about understanding the logic of this tool and setting the computational environment
+-   intro to what is covered in the section
+-   expected outcome for this section: functioning modeling environment and clear strategic plan
+
 # 1 Introduction (The Model)
 
 ## 1.1 Overview of RHESSys
@@ -75,13 +80,13 @@ editor: visual
 
 ## 1.3 Workflow overview
 
-![RHESSys Modeling Workflow Overview](images/ModelingWorkflowOverview-01.jpeg){fig-alt="RHESSys Modeling Workflow Overview" width="1000"}
+![**RHESSys Modeling Workflow Overview**](images/ModelingWorkflowOverview-01.jpeg){fig-alt="RHESSys Modeling Workflow Overview" width="1000"}
 
 -   Step 1: Installation - Set up the RHESSys environment
 -   Step 2: Data Preparation - Gather and format spatial, climate, and validation data
 -   Step 3: Preprocessing - Generate the landscape representation (Worldfile) and routing (Flowtable) input files
--   Step 4: Model Setup and Execution - Configure the command line inputs and run RHESSys
--   Step 5: Initialization, Calibration, and Sensitivity Analysis - Spin-up, tune parameters to match observed data
+-   Step 4: Model Setup and Execution - Define the simulation rules and run RHESSys
+-   Step 5: Calibration & Sensitivity Analysis - Condition the model (Initialize/reach equilibrium), refine parameters, validate performance
 -   Step 6: Post Processing - wrangle, analyze, and visualize output data
 
 ### Key concepts and terminology
@@ -118,7 +123,7 @@ editor: visual
 
 ## 2.2 RHESSys Installation
 
-### 2.2.1 MacOS
+### 2.2.1 MacOS (include section for Linux as well if necessary or where differs)
 
 #### Code Dependencies and Operational Requirements
 
@@ -164,39 +169,55 @@ editor: visual
 -   RHESSysIOinR
 
 # 3 Project Design & Planning (The Strategy)
+
 -   will discuss what a user should consider, i.e.:
 
 ## 3.1 Spatial resolution vs. computational cost
+
 -   patch resolution/number of patches impact on processing needs & time
 -   scale - what is necessary to answer users questions: is fine-scale processing necessary?
 
 ## 3.2 Data synchronization & temporal extent
+
 -   overlap - i.e., does the temporal period of climate data & observed streamflow data conincide?
 -   spin-up and calibration time requirements
 
 ## 3.3 Functional constraints
+
 -   Feature specific inputs - i.e. to run the fire model, is wind speed/direction and relative humidity data available?
 -   Does RHESSys output what is needed to answer research questions?
 
 ## 3.4 Defining the project boundaries
+
 -   use full basin boundary, representative hillslope, single patch?
 
 # 4 Example Dataset (The Sandbox)
 
+![**Instructional System Design**](images/InstructionalSystemDesign.jpeg){fig-alt="Instructional System Design" width="1000"}
+
 ## 4.1 Study Site Overview
+
 -   Location
 -   Characteristics
 
 ## 4.2 Dataset Contents
+
 -   Raw Data: spatial (and workflow file to generate rasters), formatted climate and observational data
 -   Preprocessing data: Workflow script, all prerequisite files necessary for generating Worldfile/Flowtable, and completed Worldfiles and Flowtables (for a patch, hillslope, and full basin)
--   Simulation files: Ready-to-run workflow scripts with functions to generate all necessary instruction to run the model for different strategies (i.e., single run, multi-run, for calibration & sensitivity analysis) 
--   Reference outputs: Sample model results 
+-   Simulation files: Ready-to-run workflow scripts with functions to generate all necessary instruction to run the model for different strategies (i.e., single run, multi-run, for calibration & sensitivity analysis)
+-   Reference outputs: Sample model results
+-   How to get it
 
 ## 4.3 How to use this data
--   How to get it
--   Verification for user generated files
+
+-   Contextual understanding
+-   Performance Evaluation - verification for user generated files
+-   Troubleshooting
 -   Modular learning - start at any step in the manual
+
+# [[Part II: Building and Executing]{.underline}]{style="color:blue;"}
+-   This part is about building the model, constructing the foundation for a fuctional simulation
+-   expected outcome for this section: creating input in order to run the model, generate output, and interpret results
 
 # 5 User-Acquired Data (The Ingredients)
 
@@ -220,8 +241,9 @@ editor: visual
     -   Impervious areas
     -   Climate base stations
     -   Aspatial rules ID map for multi-scale routing
-    
+
 ## 5.2 Climate Data
+
 -   Timeseries data
 -   Required meteorologic data
 -   Optional meteorologic data
@@ -229,6 +251,7 @@ editor: visual
 -   Supported Input Formats - point, grid, NetCDF - and how to format each
 
 ## 5.3 Observational Data
+
 -   used to constrain and evaluate hydrologic and ecophysiological parameterization
 -   Hydrologic (i.e., Streamflow, Snow, Soil moisture)
 -   Vegetation (i.e, LAI, Height, NPP, ET, rooting depth)
@@ -238,9 +261,10 @@ editor: visual
 ## 6.1 Definition (Default) Files: The Library
 
 -   About
--   Types association with each level
+-   File types association with each level
+    -   some parameters may need expanded information, i.e. phenolog flag: static,dynamic,drought 
 -   Format - required (ID) and optional parameters
--   Constant parameter values
+-   Parameter values constant
 -   Base Files/Default values
 -   Parameter file library
 
@@ -297,27 +321,29 @@ editor: visual
 ## 7.3 Generating the Worldfile and Flowtable
 
 ### 7.3.1 The Template File: Recipe for the worldfile
+
 -   Format and Initialization
     -   World objects
     -   State variables
     -   Default and base station ID's
 -   Required and Optional state variables
--   Redefinition template
+-   Redefinition template (introduce here or later in advanced?)
 -   Editing the template, initial conditions
 
 ### 7.3.2 Aspatial rules file for Multi-scale routing
+
 -   Format
 -   Set up for single rule
 -   Set up for multiple rules - requires map
 
 ### 7.3.3 RHESSysPreprocessing R package
+
 -   About
 -   Prerequisites: spatial data, template, asp rules file if applicable
 -   R markdown workflow/script - functions
--   Run the function to generate Worldfile/Flowtable 
+-   Run the function to generate Worldfile/Flowtable
 
-
-# 8 RHESSys Implementation and Execution (The Ignition)
+# 8 RHESSys Implementation & Execution (The Ignition)
 
 -   Define the simulation rules
     -   RHESSysIOinR Functions to provide the directions necessary to run RHESSys
@@ -330,67 +356,116 @@ editor: visual
     -   Single run
     -   Multiple runs
 
-# 8 Post-processing (The Insight)
+# 9 Post-processing (The Insight)
+
 -   Output data wrangling - reading output into R, synthesizing, transforming, rearranging data for use-case
 -   Analyzing
 -   Visualizing
 
+# [[Part III: Refinement and Evaluation]{.underline}]{style="color:blue;"}
+-   This part is about moving from just a running model to a credible scientific tool.
+-   intro to what is covered in the section
+    -   the iterative cycle - cyclincal refinement loop
+    -   include a figure/diagram/flowchart about the feedback loop
+    -   refinement not linear path - changing one parameter may require re-balancing the system
+    -   each phase informs the next - often requiring return to previous step
+-   expected outcome for this section: learning the process to ensure a balanced system
 
-# 9 Initialization (The Equilibrium)
--   Spin-up/Initializing approaches (to reach a state of equilibrium)
+# 10 Initialization (The Equilibrium)
+
+-   Spin-up/Initializing approaches 
+-   Achieving steady-state
 -   Spin-up Tec event
 -   State-of-the world output Worldfile
 -   Typical spin-up output variables
--   Determining equilibrium
-
-# 10 Calibration (The Optimization)
--   Methodology
--   Optimization Workflows
--   Objective Functions and Performance Metrics
+-   Determining baseline equilibrium
 
 # 11 Sensitivity Analysis (The Influence)
--   Identifying influential variables
+
+-   Identifying influential variables - understanding the 'knobs', which to turn
 -   Parameter Space Characterization (establishing realistic bounds/ranges)
 -   Parameter Selection
 
+# 12 Calibration (The Optimization)
 
-# 12 Advanced Features (The Expansion)
+-   Methodology
+-   Optimization Workflows - (corresponding with 'real world' observations)
+-   Objective Functions and Performance Metrics
+-   The challenge of equifinality 
 
-## 12.1 Disturbance modeling
+# 13 Validation (The Verification or The Credibility)
+-   judging/evaluation performance
+-   testing calibrated parameters against data set independent of calibration period
 
-### 12.1.1 Fire Spread and Fire Effects
--   compiling RHESSys/WMFire
--   
 
-### 12.1.2 Drought induced mortality
+# [[Part IV: Advanced Application]{.underline}]{style="color:blue;"}
+-   This part is about exploring complex eco-hydrological scenarios
+-   intro to what is covered in the section
+-   expected outcome for this section: ability to move from model development to high impact scientific inquiry
 
-### 12.1.3 Land Cover/Vegetation change
+# 14 Advanced Features (The Expansion)
+-   beyond the baseline
+-   moving into specialized simulations
+
+## 14.1 Disturbance modeling
+-   disturbance in RHESSys: altering the carbon cycles and redirecting the flow of water and nutrients from the baseline
+-   predicting ecosystem resilience and recovery over time
+
+### 14.1.1 Fire Spread and Fire Effects
+
+-   about
+-   compiling RHESSys-WMFire: Boost/WMFire library
+-   Prerequisites to running the fire model:
+    -   Wind speed and direction data
+    -   Fire definition file parameters
+        -   calculating the fire return interval
+        -   calculating wind parameters (EstimateWindDistrExample.R script)
+    -   Fire effects parameters in vegetation and soil(patch) definition files
+    -   Worldfile header edits
+    -   Add worldfile state variable
+    -   Command line option
+-   Outputs 
+    -   fire write parameter generated output
+    -   spatial level fire outputs and specific fire effects output files
+-   stochastic
+-   prescribed
+
+
+### 14.1.2 Land Cover/Vegetation change
+-   biomass pool changes
+-   drought induced mortality
 -   fuel treatments
--   thinning, controlled burns
--   redefine world options (redefine_world_: multiplier, thin_remain, thin_harvest, thin_snags, thin_harvest)
+    -   thinning, controlled burns
+-   redefine world functionality (redefine_world\_: multiplier, thin_remain, thin_harvest, thin_snags, thin_harvest)
 
-## 12.2 Multi-scale routing - fine-scale heterogeneity
--   not sure this belongs in advanced features because it has become pretty standard, and I have introduced it above
+## 14.2 Multi-scale routing - fine-scale heterogeneity
+
+-   not sure this belongs in advanced features anymore because it has become pretty standard, and I have introduced it above
 -   this can be debated!
 
-## 12.3 Target-driven spin-up
--   run to reach spatially explicit targets, i.e. LAI
+## 14.3 Target-driven spin-up
 
-## 12.4 Parallelization (maybe include?)
+-   advanced method of spin-up to reach varying stages of observed ecological states
+-   run to reach spatially explicit targets, i.e. LAI
+-   types of spin-up targets
+-   sources for deriving targets
+-   Prerequisites to running:
+  -   spin-up target file
+  -   target file header
+  -   spin-up definition file
+  -   worldfile with spinup object ID
+  -   worldfile header pointer
+  -   command line options
+
+## 14.4 Parallelization (maybe include?)
+
 -   run a large watershed in parallel in order to speed up the simulation process
 -   compiling with openmp
 
-# 13 Appendices (The Vault)
+# 15 Appendices (The Vault)
 
 -   Command-line functionality
 -   History/Legacy tools/functionality
 -   Code organization
+-   additional items will become clear as I go along!
 
-# Resource Sharing and Accessibility
-
-All materials will be:
-
--   Hosted online (e.g., GitHub Pages)
--   Available as downloadable datasets and PDFs
--   Accompanied by video tutorials (e.g., YouTube)
--   Designed for long-term public access

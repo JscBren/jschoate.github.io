@@ -1,0 +1,12 @@
+---
+title: "Calibration"
+---
+
+# 12 Calibration (The Optimization)
+
+-   Methodology
+-   Optimization Workflows - (corresponding with 'real world' observations)
+-   Objective Functions and Performance Metrics
+-   The challenge of equifinality
+
+# 
