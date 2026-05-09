@@ -16,64 +16,239 @@
   {
     "objectID": "ManualOutline.html",
     "href": "ManualOutline.html",
-    "title": "Outline and Plan for RHESSys manual",
+    "title": "Outline (Manual Blueprint)",
     "section": "",
-    "text": "About the manual, why it exists, what it is for\n\n\n\n\n\nWho this is for/Who should be reading this\nAssumed prerequisite knowledge (i.e. assumes basic knowledge of…provide links to resources)\n\nGeneral Modeling\nBasic R\nGIS and Raster/Vector\nBasic Unix/Linux environment (shell, command line, text editor)\nGit/GitHub\n\n\n\n\n\n\nWhat to expect from this book (user will learn….)\nWhat the manual covers (practical step-by-step guidance)\nWhat it does not cover (underlying theory of the model, all possible functionality)\n\n\n\n\n\nHow to read this document\nKey/Legend for document formatting - regarding use of icons, symbols, different font indications\n\n\n\n\n\norganization\nnavigation\nlinks to sections\npotentially a quick start guide\n\n\n\n\n\nPotentially include author info (Naomi, Janet (contact info?), Ryan)\nRHESSys GitHub repositories\nRHESSys Wiki(s)\nPotentially a FAQ page, user community forum (i.e. ‘issues’ section on RHESSys Github repo?)"
+    "text": "About the manual, why it exists, what it is for\n\n\n\n\n\nWho this is for/Who should be reading this\nAssumed prerequisite knowledge (i.e. assumes basic knowledge of…provide links to resources where appropriate)\n\nGeneral Modeling\nBasic R/Rstudio\nGIS and Raster/Vector\nBasic Unix/Linux environment (shell, command line, text editor)\nGit/GitHub\n\n\n\n\n\n\nWhat to expect from this book (user will learn….)\nWhat the manual covers (practical step-by-step guidance)\nWhat it does not cover (underlying theory of the model, all possible functionality)\n\n\n\n\n\nHow to read this document\nKey/Legend for document formatting - regarding use of icons, symbols, different font indications\n\n\n\n\n\norganization\nnavigation\nlinks to sections\npotentially a link to a quick start guide\n\n\n\n\n\nPotentially include author info (Naomi, Janet (contact info?), Ryan)\nRHESSys GitHub repositories (RHESSys code, RHESSysPreProcessing, RHESSysIOinR, ParameterLibrary)\nRHESSys Wiki(s)\nPotentially a FAQ page, a user community forum (i.e. ‘issues’ section on RHESSys Github repo?)"
+  },
+  {
+    "objectID": "ManualOutline.html#purpose",
+    "href": "ManualOutline.html#purpose",
+    "title": "Outline (Manual Blueprint)",
+    "section": "",
+    "text": "About the manual, why it exists, what it is for"
+  },
+  {
+    "objectID": "ManualOutline.html#intended-audience",
+    "href": "ManualOutline.html#intended-audience",
+    "title": "Outline (Manual Blueprint)",
+    "section": "",
+    "text": "Who this is for/Who should be reading this\nAssumed prerequisite knowledge (i.e. assumes basic knowledge of…provide links to resources where appropriate)\n\nGeneral Modeling\nBasic R/Rstudio\nGIS and Raster/Vector\nBasic Unix/Linux environment (shell, command line, text editor)\nGit/GitHub"
+  },
+  {
+    "objectID": "ManualOutline.html#scope",
+    "href": "ManualOutline.html#scope",
+    "title": "Outline (Manual Blueprint)",
+    "section": "",
+    "text": "What to expect from this book (user will learn….)\nWhat the manual covers (practical step-by-step guidance)\nWhat it does not cover (underlying theory of the model, all possible functionality)"
+  },
+  {
+    "objectID": "ManualOutline.html#conventions-potentially",
+    "href": "ManualOutline.html#conventions-potentially",
+    "title": "Outline (Manual Blueprint)",
+    "section": "",
+    "text": "How to read this document\nKey/Legend for document formatting - regarding use of icons, symbols, different font indications"
+  },
+  {
+    "objectID": "ManualOutline.html#manual-structure",
+    "href": "ManualOutline.html#manual-structure",
+    "title": "Outline (Manual Blueprint)",
+    "section": "",
+    "text": "organization\nnavigation\nlinks to sections\npotentially a link to a quick start guide"
+  },
+  {
+    "objectID": "ManualOutline.html#supportresources",
+    "href": "ManualOutline.html#supportresources",
+    "title": "Outline (Manual Blueprint)",
+    "section": "",
+    "text": "Potentially include author info (Naomi, Janet (contact info?), Ryan)\nRHESSys GitHub repositories (RHESSys code, RHESSysPreProcessing, RHESSysIOinR, ParameterLibrary)\nRHESSys Wiki(s)\nPotentially a FAQ page, a user community forum (i.e. ‘issues’ section on RHESSys Github repo?)"
   },
   {
     "objectID": "ManualOutline.html#overview-of-rhessys",
     "href": "ManualOutline.html#overview-of-rhessys",
-    "title": "Outline and Plan for RHESSys manual",
+    "title": "Outline (Manual Blueprint)",
     "section": "1.1 Overview of RHESSys",
-    "text": "1.1 Overview of RHESSys\n\nWhat RHESSys is\n\nDescription\n\n\nCapabilities\n\nIntegrated Ecohydological Modeling\nSpatial distribution of the landscape\nFeedback loops\nFire model\n\n\n\nLimitations\n\nHigh data demands\nCan be computationally intensive\nMaybe any processes that are not well represented?"
+    "text": "1.1 Overview of RHESSys\n\nWhat RHESSys is\n\nDescription\n\n\nCapabilities\n\nIntegrated Ecohydological Modeling\nSpatial distribution of the landscape\nFeedback loops\nFire model\n\n\n\nLimitations\n\nHigh data demands\nCan be computationally intensive\nMaybe any processes that are not well represented? Let users know if the model won’t fit their research question"
   },
   {
     "objectID": "ManualOutline.html#recommended-readingpublications",
     "href": "ManualOutline.html#recommended-readingpublications",
-    "title": "Outline and Plan for RHESSys manual",
+    "title": "Outline (Manual Blueprint)",
     "section": "1.2 Recommended reading/Publications",
     "text": "1.2 Recommended reading/Publications\n\nFoundational papers\nOverview/Review papers\nApplications"
   },
   {
-    "objectID": "ManualOutline.html#rhessys-workflow-overview",
-    "href": "ManualOutline.html#rhessys-workflow-overview",
-    "title": "Outline and Plan for RHESSys manual",
-    "section": "1.3 RHESSys workflow overview",
-    "text": "1.3 RHESSys workflow overview\n\nKey concepts and terminology (Frequently used terms)\n\nSpatial hierarchy (basin, hillslope, zone, patch, stratum)\nFile types (Worldfile, Flowtable, Tecfile, Parameter/Climate files)\nState variables (store quantities) and fluxes\nSpatial/Temporal step\nInputs (i.e., climate, parameters)\nOutputs (i.e., streamflow, LAI)"
+    "objectID": "ManualOutline.html#workflow-overview",
+    "href": "ManualOutline.html#workflow-overview",
+    "title": "Outline (Manual Blueprint)",
+    "section": "1.3 Workflow overview",
+    "text": "1.3 Workflow overview\n\n\n\nRHESSys Modeling Workflow Overview\n\n\n\nStep 1: Installation - Set up the RHESSys environment\nStep 2: Data Preparation - Gather and format spatial, climate, and validation data\nStep 3: Preprocessing - Generate the landscape representation (Worldfile) and routing (Flowtable) input files\nStep 4: Model Setup and Execution - Configure the command line inputs and run RHESSys\nStep 5: Initialization, Calibration, and Sensitivity Analysis - Spin-up, tune parameters to match observed data\nStep 6: Post Processing - wrangle, analyze, and visualize output data\n\n\nKey concepts and terminology\n(define frequently used terms)\n\nSpatial hierarchy (basin, hillslope, zone, patch, stratum)\nInput File types (Worldfile, Header, Flowtable, Tecfile, Parameter/Climate files, Output filters)\nState variables (store quantities) and fluxes\nSpatial/Temporal step (i.e., basin daily, patch monthly)"
   },
   {
-    "objectID": "ManualOutline.html#part-2-data-preparation-and-preprocessing",
-    "href": "ManualOutline.html#part-2-data-preparation-and-preprocessing",
-    "title": "Outline and Plan for RHESSys manual",
-    "section": "Part 2: Data Preparation and Preprocessing",
-    "text": "Part 2: Data Preparation and Preprocessing\n\nInput data requirements\n\nSpatial Data\n\nRequired\n\nDEM\n\nresolution\nreprojection\n\nWaterhsed basin\nSlope/Aspect\nSub-basin structure\nStream network (gage location)\nPatch structure\n\napproaches\n\n\nRecommended\n\nHorizon maps\nvegetation\nsoils/soil attributes\nland cover history\nclimate station locations (if applicable)\n\n\nClimate Data\n\nInput Formats (point, grid, NetCDF)\nRequired meteorological variables\nOptional meteorological variables\nBase station\n\nWorldfile\n\nHierarchical spatial containment structure\nState variables and pointers (linking identifiers)\nTemplate\nHeader\nRequired and optional state variables\n\nFlowtable\n\nPatch connectivity\nLateral processes\n\nDefinition (default) Files\n\nEco-physiologic, hydro-geologic, land-use, and meteorologic parameters\nBase files & Default values\n\nTecfile (Temporal Event Control file)\n\nManage timing of output printing\nControl simulation events (schedule when non-continuous events occur, i.e. fire, land use change)\nTrigger a worldfile redefinition to update properties of the landscape\n\nOutput filters - specify criteria for selecting and filtering the output data\n\nFilter rules\nFilter conditions\nProcesses associated with temporal interval and spatial level\n\nsub-level output\nsub-routine output\n\n\n\nPreprocessing\n\nStandard directory structure and naming convention\nSpatial processing using WhiteboxTools and R\nWorldfile and flowtable generation\n\nRequired rasters\nEditing the worldfile template\nRHESSysPreprocessing R package"
+    "objectID": "ManualOutline.html#setup-options",
+    "href": "ManualOutline.html#setup-options",
+    "title": "Outline (Manual Blueprint)",
+    "section": "2.1 Setup options",
+    "text": "2.1 Setup options\n(description of each, who should use, when to use, recommendation, link to corresponding install instructions)\n\n2.1.1 Local Installation (MacOS, Linux)\n\nmore advanced users\nusers who want more flexibility\n\n\n\n2.1.2 Containerized setup (Docker)\n\nbeginners\nWindows users\nportability\n\n\n\n2.1.3 HPC/Cloud (SIF/Singularity)\n\nhigh-performance computing environments\ncluster users\nlarge scale, high resolution simulations"
   },
   {
-    "objectID": "ManualOutline.html#part-3-rhessys-implementation-and-workflow",
-    "href": "ManualOutline.html#part-3-rhessys-implementation-and-workflow",
-    "title": "Outline and Plan for RHESSys manual",
-    "section": "Part 3: RHESSys Implementation and workflow",
-    "text": "Part 3: RHESSys Implementation and workflow\n\nModel configuration via RHESSysIOinR tools\n\nFuctions to provide the inputs necessary to run RHESSys\n\nOutput filter design\n\nTecfile/Output Filter interaction for expected output\nSelecting RHESSys output variables\n\nFocus on variables relevant to your research questions and analysis goals\nReassigning/Combining variables\n\n\nExecuting simulations in R\n\nSingle run\nMultiple runs\n\nPost-processing vi RHESSysIOinR tools\n\nFunctions for integrating, synthesizing, and visualizing spatiotemporal output"
+    "objectID": "ManualOutline.html#rhessys-installation",
+    "href": "ManualOutline.html#rhessys-installation",
+    "title": "Outline (Manual Blueprint)",
+    "section": "2.2 RHESSys Installation",
+    "text": "2.2 RHESSys Installation\n\n2.2.1 MacOS\n\nCode Dependencies and Operational Requirements\n\nTerminal application\nXcode Command Line Tools (compilers/build tools)\nPrivileges (i.e. Administrator access)\nHomebrew\nGit\nLibraries (i.e. NetCDF)\n\n\n\nInstallation steps\n\nDownload code from GitHub\n\nZip file\nClone repository (main, develop)\n\nCompile\nShell configuration (adding to path)\nVerify installation\nCommon issue and solutions\n\n\n\n\n2.2.2 Docker\n\nInstall Docker Desktop\nObtaining RHESSys image from the Docker Hub\n\n\n\n2.2.3 SIF\n\nObtaining RHESSys .sif image"
   },
   {
-    "objectID": "ManualOutline.html#part-4-initialization-calibration-sensitivity-analysis",
-    "href": "ManualOutline.html#part-4-initialization-calibration-sensitivity-analysis",
-    "title": "Outline and Plan for RHESSys manual",
-    "section": "Part 4: Initialization, Calibration & Sensitivity Analysis",
-    "text": "Part 4: Initialization, Calibration & Sensitivity Analysis\n\nInitialization approaches (Spin-up to a state of equilibrium)\nSensitivity Analysis and Parameter Selection (identifying influential variables)\nParameter Space Characterization (establishing realistic bounds/ranges)\nCalibration Frameworks and Optimization Workflows\nObjective Functions and Performance Metrics"
+    "objectID": "ManualOutline.html#installing-workflow-analysis-tools",
+    "href": "ManualOutline.html#installing-workflow-analysis-tools",
+    "title": "Outline (Manual Blueprint)",
+    "section": "2.3 Installing Workflow & Analysis Tools",
+    "text": "2.3 Installing Workflow & Analysis Tools\n\n2.3.1 R Ecosystem\n\nR (The engine)\nRStudio (The interface)\nStandard Packages (Extensions - Libraries that expand functionality)\n\n\n\n2.3.2 WhiteboxTools for Geospatial Processing\n\n\n2.3.3 RHESSys-Specific R packages\n\nRHESSysPreprocessing\nRHESSysIOinR"
   },
   {
-    "objectID": "ManualOutline.html#part-5-advanced-features",
-    "href": "ManualOutline.html#part-5-advanced-features",
-    "title": "Outline and Plan for RHESSys manual",
-    "section": "Part 5: Advanced Features",
-    "text": "Part 5: Advanced Features\n\nDisturbance modeling\n\ndrought induced mortality\nfire spread and fire effects\n\nLand Cover/Vegetation change\n\nfuel treatments - thinning, controlled burns\n\nMulti-scale routing - fine-scale heterogeneity\nTarget-driven spin-up (run to reach spatially explicit targets, i.e. LAI)"
+    "objectID": "ManualOutline.html#spatial-resolution-vs.-computational-cost",
+    "href": "ManualOutline.html#spatial-resolution-vs.-computational-cost",
+    "title": "Outline (Manual Blueprint)",
+    "section": "3.1 Spatial resolution vs. computational cost",
+    "text": "3.1 Spatial resolution vs. computational cost\n\npatch resolution/number of patches impact on processing needs & time\nscale - what is necessary to answer users questions: is fine-scale processing necessary?"
   },
   {
-    "objectID": "ManualOutline.html#part-6-appendices",
-    "href": "ManualOutline.html#part-6-appendices",
-    "title": "Outline and Plan for RHESSys manual",
-    "section": "Part 6: Appendices",
-    "text": "Part 6: Appendices\n\nCommand-line reference\nCode structure\nAdditional figures"
+    "objectID": "ManualOutline.html#data-synchronization-temporal-extent",
+    "href": "ManualOutline.html#data-synchronization-temporal-extent",
+    "title": "Outline (Manual Blueprint)",
+    "section": "3.2 Data synchronization & temporal extent",
+    "text": "3.2 Data synchronization & temporal extent\n\noverlap - i.e., does the temporal period of climate data & observed streamflow data conincide?\nspin-up and calibration time requirements"
+  },
+  {
+    "objectID": "ManualOutline.html#functional-constraints",
+    "href": "ManualOutline.html#functional-constraints",
+    "title": "Outline (Manual Blueprint)",
+    "section": "3.3 Functional constraints",
+    "text": "3.3 Functional constraints\n\nFeature specific inputs - i.e. to run the fire model, is wind speed/direction and relative humidity data available?\nDoes RHESSys output what is needed to answer research questions?"
+  },
+  {
+    "objectID": "ManualOutline.html#defining-the-project-boundaries",
+    "href": "ManualOutline.html#defining-the-project-boundaries",
+    "title": "Outline (Manual Blueprint)",
+    "section": "3.4 Defining the project boundaries",
+    "text": "3.4 Defining the project boundaries\n\nuse full basin boundary, representative hillslope, single patch?"
+  },
+  {
+    "objectID": "ManualOutline.html#study-site-overview",
+    "href": "ManualOutline.html#study-site-overview",
+    "title": "Outline (Manual Blueprint)",
+    "section": "4.1 Study Site Overview",
+    "text": "4.1 Study Site Overview\n\nLocation\nCharacteristics"
+  },
+  {
+    "objectID": "ManualOutline.html#dataset-contents",
+    "href": "ManualOutline.html#dataset-contents",
+    "title": "Outline (Manual Blueprint)",
+    "section": "4.2 Dataset Contents",
+    "text": "4.2 Dataset Contents\n\nRaw Data: spatial (and workflow file to generate rasters), formatted climate and observational data\nPreprocessing data: Workflow script, all prerequisite files necessary for generating Worldfile/Flowtable, and completed Worldfiles and Flowtables (for a patch, hillslope, and full basin)\nSimulation files: Ready-to-run workflow scripts with functions to generate all necessary instruction to run the model for different strategies (i.e., single run, multi-run, for calibration & sensitivity analysis)\nReference outputs: Sample model results"
+  },
+  {
+    "objectID": "ManualOutline.html#how-to-use-this-data",
+    "href": "ManualOutline.html#how-to-use-this-data",
+    "title": "Outline (Manual Blueprint)",
+    "section": "4.3 How to use this data",
+    "text": "4.3 How to use this data\n\nHow to get it\nVerification for user generated files\nModular learning - start at any step in the manual"
+  },
+  {
+    "objectID": "ManualOutline.html#spatial-data",
+    "href": "ManualOutline.html#spatial-data",
+    "title": "Outline (Manual Blueprint)",
+    "section": "5.1 Spatial Data",
+    "text": "5.1 Spatial Data\n\nRequired\n\nDEM (source to obtain)\nWatershed outlet - gauge location coordinates\n\nDEM Derivatives - generation discussed in later section:\n\nWatershed Basin boundary\nSub-basins (hillslopes)\nSlope/Aspect\nE/W Horizons\nStream Network\nPatches\n\n\n\nRecommended (typical) or when applicable:\n\nVegetation cover\nSoils\nLandcover/Landuse\nRoads\nImpervious areas\nClimate base stations\nAspatial rules ID map for multi-scale routing"
+  },
+  {
+    "objectID": "ManualOutline.html#climate-data",
+    "href": "ManualOutline.html#climate-data",
+    "title": "Outline (Manual Blueprint)",
+    "section": "5.2 Climate Data",
+    "text": "5.2 Climate Data\n\nTimeseries data\nRequired meteorologic data\nOptional meteorologic data\nBase station\nSupported Input Formats - point, grid, NetCDF - and how to format each"
+  },
+  {
+    "objectID": "ManualOutline.html#observational-data",
+    "href": "ManualOutline.html#observational-data",
+    "title": "Outline (Manual Blueprint)",
+    "section": "5.3 Observational Data",
+    "text": "5.3 Observational Data\n\nused to constrain and evaluate hydrologic and ecophysiological parameterization\nHydrologic (i.e., Streamflow, Snow, Soil moisture)\nVegetation (i.e, LAI, Height, NPP, ET, rooting depth)"
+  },
+  {
+    "objectID": "ManualOutline.html#definition-default-files-the-library",
+    "href": "ManualOutline.html#definition-default-files-the-library",
+    "title": "Outline (Manual Blueprint)",
+    "section": "6.1 Definition (Default) Files: The Library",
+    "text": "6.1 Definition (Default) Files: The Library\n\nAbout\nTypes association with each level\nFormat - required (ID) and optional parameters\nConstant parameter values\nBase Files/Default values\nParameter file library"
+  },
+  {
+    "objectID": "ManualOutline.html#worldfile-the-spatial-blueprint",
+    "href": "ManualOutline.html#worldfile-the-spatial-blueprint",
+    "title": "Outline (Manual Blueprint)",
+    "section": "6.2 Worldfile: The Spatial Blueprint",
+    "text": "6.2 Worldfile: The Spatial Blueprint\n\nHierarchical spatial containment structure - landscape partioning\n\nBasin\nHillslope (sub-basin)\nZone\nPatch, Patch Families/Asptatial patches for multiscale routing\nStratum\n\nArchitecture\nIdentifiers: Pointers (ID’s) linking identifiers to the Climate and Definition files\nState variables, values for stores/fluxes associated with each level\nHeader File - conduit between the Worldfile and Climate/Definiton files"
+  },
+  {
+    "objectID": "ManualOutline.html#flowtable-the-pumbing",
+    "href": "ManualOutline.html#flowtable-the-pumbing",
+    "title": "Outline (Manual Blueprint)",
+    "section": "6.3 Flowtable: The Pumbing",
+    "text": "6.3 Flowtable: The Pumbing\n\nArchitecture\nTopographic data about each patch\nRouting, Patch connectivity, neighbors\nPartitioning flow, upland patches, stream patches"
+  },
+  {
+    "objectID": "ManualOutline.html#tecfile-and-output-filters-simulation-control",
+    "href": "ManualOutline.html#tecfile-and-output-filters-simulation-control",
+    "title": "Outline (Manual Blueprint)",
+    "section": "6.4 Tecfile and Output Filters: Simulation Control",
+    "text": "6.4 Tecfile and Output Filters: Simulation Control\n\n6.4.1 Tecfile: The Alarm Clock\n\nManage timing of output printing\nControl simulation events (schedule when non-continuous events occur, i.e. fire, land use change)\nTrigger a worldfile redefinition to update properties of the landscape\n\n\n\n6.4.2 Output filters: The Sieve\n\nspecify criteria for selecting and filtering the output data\nFilter rules\nFilter conditions\nFilter Parts: timestep, spatial level, output format/name\nVariables associated with Spatial/Temporal leval of output\n\nsub-level output\nsub-routine output\n\nVariable reassignment: name reassignment, arithmetic expressions"
+  },
+  {
+    "objectID": "ManualOutline.html#environmental-setup",
+    "href": "ManualOutline.html#environmental-setup",
+    "title": "Outline (Manual Blueprint)",
+    "section": "7.1 Environmental Setup",
+    "text": "7.1 Environmental Setup\n\nStandard directory structure\nnaming convention"
+  },
+  {
+    "objectID": "ManualOutline.html#raster-processing",
+    "href": "ManualOutline.html#raster-processing",
+    "title": "Outline (Manual Blueprint)",
+    "section": "7.2 Raster Processing",
+    "text": "7.2 Raster Processing\n\nSpatial processing using WhiteboxTools and R"
+  },
+  {
+    "objectID": "ManualOutline.html#generating-the-worldfile-and-flowtable",
+    "href": "ManualOutline.html#generating-the-worldfile-and-flowtable",
+    "title": "Outline (Manual Blueprint)",
+    "section": "7.3 Generating the Worldfile and Flowtable",
+    "text": "7.3 Generating the Worldfile and Flowtable\n\n7.3.1 The Template File: Recipe for the worldfile\n\nFormat and Initialization\n\nWorld objects\nState variables\nDefault and base station ID’s\n\nRequired and Optional state variables\nRedefinition template\nEditing the template, initial conditions\n\n\n\n7.3.2 Aspatial rules file for Multi-scale routing\n\nFormat\nSet up for single rule\nSet up for multiple rules - requires map\n\n\n\n7.3.3 RHESSysPreprocessing R package\n\nAbout\nPrerequisites: spatial data, template, asp rules file if applicable\nR markdown workflow/script - functions\nRun the function to generate Worldfile/Flowtable"
+  },
+  {
+    "objectID": "ManualOutline.html#disturbance-modeling",
+    "href": "ManualOutline.html#disturbance-modeling",
+    "title": "Outline (Manual Blueprint)",
+    "section": "12.1 Disturbance modeling",
+    "text": "12.1 Disturbance modeling\n\n12.1.1 Fire Spread and Fire Effects\n\ncompiling RHESSys/WMFire\n\n\n\n\n12.1.2 Drought induced mortality\n\n\n12.1.3 Land Cover/Vegetation change\n\nfuel treatments\nthinning, controlled burns\nredefine world options (redefine_world_: multiplier, thin_remain, thin_harvest, thin_snags, thin_harvest)"
+  },
+  {
+    "objectID": "ManualOutline.html#multi-scale-routing---fine-scale-heterogeneity",
+    "href": "ManualOutline.html#multi-scale-routing---fine-scale-heterogeneity",
+    "title": "Outline (Manual Blueprint)",
+    "section": "12.2 Multi-scale routing - fine-scale heterogeneity",
+    "text": "12.2 Multi-scale routing - fine-scale heterogeneity\n\nnot sure this belongs in advanced features because it has become pretty standard, and I have introduced it above\nthis can be debated!"
+  },
+  {
+    "objectID": "ManualOutline.html#target-driven-spin-up",
+    "href": "ManualOutline.html#target-driven-spin-up",
+    "title": "Outline (Manual Blueprint)",
+    "section": "12.3 Target-driven spin-up",
+    "text": "12.3 Target-driven spin-up\n\nrun to reach spatially explicit targets, i.e. LAI"
+  },
+  {
+    "objectID": "ManualOutline.html#parallelization-maybe-include",
+    "href": "ManualOutline.html#parallelization-maybe-include",
+    "title": "Outline (Manual Blueprint)",
+    "section": "12.4 Parallelization (maybe include?)",
+    "text": "12.4 Parallelization (maybe include?)\n\nrun a large watershed in parallel in order to speed up the simulation process\ncompiling with openmp"
   }
 ]

@@ -8,7 +8,7 @@
 
 <meta name="author" content="Janet Choate">
 
-<title>RHESSys manual development - Outline and Plan for RHESSys manual</title>
+<title>RHESSys manual development - Outline (Manual Blueprint)</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -91,7 +91,7 @@ ul.task-list li input[type="checkbox"] {
   </li>  
   <li class="nav-item">
     <a class="nav-link active" href="./ManualOutline.html" rel="" target="" aria-current="page">
- <span class="menu-text">Outline and Plan for RHESSys manual</span></a>
+ <span class="menu-text">Outline (Manual Blueprint)</span></a>
   </li>  
 </ul>
             <div class="quarto-navbar-tools ms-auto">
@@ -109,7 +109,7 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#welcome" id="toc-welcome" class="nav-link active" data-scroll-target="#welcome">Welcome</a>
+  <li><a href="#welcome-the-book" id="toc-welcome-the-book" class="nav-link active" data-scroll-target="#welcome-the-book">Welcome (The Book)</a>
   <ul class="collapse">
   <li><a href="#purpose" id="toc-purpose" class="nav-link" data-scroll-target="#purpose">Purpose</a></li>
   <li><a href="#intended-audience" id="toc-intended-audience" class="nav-link" data-scroll-target="#intended-audience">Intended Audience</a></li>
@@ -118,26 +118,98 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#manual-structure" id="toc-manual-structure" class="nav-link" data-scroll-target="#manual-structure">Manual Structure</a></li>
   <li><a href="#supportresources" id="toc-supportresources" class="nav-link" data-scroll-target="#supportresources">Support/Resources</a></li>
   </ul></li>
-  <li><a href="#introduction" id="toc-introduction" class="nav-link" data-scroll-target="#introduction">1 Introduction</a>
+  <li><a href="#introduction-the-model" id="toc-introduction-the-model" class="nav-link" data-scroll-target="#introduction-the-model">1 Introduction (The Model)</a>
   <ul class="collapse">
   <li><a href="#overview-of-rhessys" id="toc-overview-of-rhessys" class="nav-link" data-scroll-target="#overview-of-rhessys">1.1 Overview of RHESSys</a>
   <ul class="collapse">
   <li><a href="#what-rhessys-is" id="toc-what-rhessys-is" class="nav-link" data-scroll-target="#what-rhessys-is">What RHESSys is</a></li>
   </ul></li>
   <li><a href="#recommended-readingpublications" id="toc-recommended-readingpublications" class="nav-link" data-scroll-target="#recommended-readingpublications">1.2 Recommended reading/Publications</a></li>
-  <li><a href="#rhessys-workflow-overview" id="toc-rhessys-workflow-overview" class="nav-link" data-scroll-target="#rhessys-workflow-overview">1.3 RHESSys workflow overview</a>
+  <li><a href="#workflow-overview" id="toc-workflow-overview" class="nav-link" data-scroll-target="#workflow-overview">1.3 Workflow overview</a>
   <ul class="collapse">
-  <li><a href="#key-concepts-and-terminology-frequently-used-terms" id="toc-key-concepts-and-terminology-frequently-used-terms" class="nav-link" data-scroll-target="#key-concepts-and-terminology-frequently-used-terms">Key concepts and terminology (Frequently used terms)</a></li>
+  <li><a href="#key-concepts-and-terminology" id="toc-key-concepts-and-terminology" class="nav-link" data-scroll-target="#key-concepts-and-terminology">Key concepts and terminology</a></li>
   </ul></li>
   </ul></li>
-  <li><a href="#setup" id="toc-setup" class="nav-link" data-scroll-target="#setup">2 Setup</a>
+  <li><a href="#setup-the-software" id="toc-setup-the-software" class="nav-link" data-scroll-target="#setup-the-software">2 Setup (The Software)</a>
   <ul class="collapse">
-  <li><a href="#part-2-data-preparation-and-preprocessing" id="toc-part-2-data-preparation-and-preprocessing" class="nav-link" data-scroll-target="#part-2-data-preparation-and-preprocessing">Part 2: Data Preparation and Preprocessing</a></li>
-  <li><a href="#part-3-rhessys-implementation-and-workflow" id="toc-part-3-rhessys-implementation-and-workflow" class="nav-link" data-scroll-target="#part-3-rhessys-implementation-and-workflow">Part 3: RHESSys Implementation and workflow</a></li>
-  <li><a href="#part-4-initialization-calibration-sensitivity-analysis" id="toc-part-4-initialization-calibration-sensitivity-analysis" class="nav-link" data-scroll-target="#part-4-initialization-calibration-sensitivity-analysis">Part 4: Initialization, Calibration &amp; Sensitivity Analysis</a></li>
-  <li><a href="#part-5-advanced-features" id="toc-part-5-advanced-features" class="nav-link" data-scroll-target="#part-5-advanced-features">Part 5: Advanced Features</a></li>
-  <li><a href="#part-6-appendices" id="toc-part-6-appendices" class="nav-link" data-scroll-target="#part-6-appendices">Part 6: Appendices</a></li>
+  <li><a href="#setup-options" id="toc-setup-options" class="nav-link" data-scroll-target="#setup-options">2.1 Setup options</a>
+  <ul class="collapse">
+  <li><a href="#local-installation-macos-linux" id="toc-local-installation-macos-linux" class="nav-link" data-scroll-target="#local-installation-macos-linux">2.1.1 Local Installation (MacOS, Linux)</a></li>
+  <li><a href="#containerized-setup-docker" id="toc-containerized-setup-docker" class="nav-link" data-scroll-target="#containerized-setup-docker">2.1.2 Containerized setup (Docker)</a></li>
+  <li><a href="#hpccloud-sifsingularity" id="toc-hpccloud-sifsingularity" class="nav-link" data-scroll-target="#hpccloud-sifsingularity">2.1.3 HPC/Cloud (SIF/Singularity)</a></li>
   </ul></li>
+  <li><a href="#rhessys-installation" id="toc-rhessys-installation" class="nav-link" data-scroll-target="#rhessys-installation">2.2 RHESSys Installation</a>
+  <ul class="collapse">
+  <li><a href="#macos" id="toc-macos" class="nav-link" data-scroll-target="#macos">2.2.1 MacOS</a></li>
+  <li><a href="#docker" id="toc-docker" class="nav-link" data-scroll-target="#docker">2.2.2 Docker</a></li>
+  <li><a href="#sif" id="toc-sif" class="nav-link" data-scroll-target="#sif">2.2.3 SIF</a></li>
+  </ul></li>
+  <li><a href="#installing-workflow-analysis-tools" id="toc-installing-workflow-analysis-tools" class="nav-link" data-scroll-target="#installing-workflow-analysis-tools">2.3 Installing Workflow &amp; Analysis Tools</a>
+  <ul class="collapse">
+  <li><a href="#r-ecosystem" id="toc-r-ecosystem" class="nav-link" data-scroll-target="#r-ecosystem">2.3.1 R Ecosystem</a></li>
+  <li><a href="#whiteboxtools-for-geospatial-processing" id="toc-whiteboxtools-for-geospatial-processing" class="nav-link" data-scroll-target="#whiteboxtools-for-geospatial-processing">2.3.2 WhiteboxTools for Geospatial Processing</a></li>
+  <li><a href="#rhessys-specific-r-packages" id="toc-rhessys-specific-r-packages" class="nav-link" data-scroll-target="#rhessys-specific-r-packages">2.3.3 RHESSys-Specific R packages</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#project-design-planning-the-strategy" id="toc-project-design-planning-the-strategy" class="nav-link" data-scroll-target="#project-design-planning-the-strategy">3 Project Design &amp; Planning (The Strategy)</a>
+  <ul class="collapse">
+  <li><a href="#spatial-resolution-vs.-computational-cost" id="toc-spatial-resolution-vs.-computational-cost" class="nav-link" data-scroll-target="#spatial-resolution-vs.-computational-cost">3.1 Spatial resolution vs.&nbsp;computational cost</a></li>
+  <li><a href="#data-synchronization-temporal-extent" id="toc-data-synchronization-temporal-extent" class="nav-link" data-scroll-target="#data-synchronization-temporal-extent">3.2 Data synchronization &amp; temporal extent</a></li>
+  <li><a href="#functional-constraints" id="toc-functional-constraints" class="nav-link" data-scroll-target="#functional-constraints">3.3 Functional constraints</a></li>
+  <li><a href="#defining-the-project-boundaries" id="toc-defining-the-project-boundaries" class="nav-link" data-scroll-target="#defining-the-project-boundaries">3.4 Defining the project boundaries</a></li>
+  </ul></li>
+  <li><a href="#example-dataset-the-sandbox" id="toc-example-dataset-the-sandbox" class="nav-link" data-scroll-target="#example-dataset-the-sandbox">4 Example Dataset (The Sandbox)</a>
+  <ul class="collapse">
+  <li><a href="#study-site-overview" id="toc-study-site-overview" class="nav-link" data-scroll-target="#study-site-overview">4.1 Study Site Overview</a></li>
+  <li><a href="#dataset-contents" id="toc-dataset-contents" class="nav-link" data-scroll-target="#dataset-contents">4.2 Dataset Contents</a></li>
+  <li><a href="#how-to-use-this-data" id="toc-how-to-use-this-data" class="nav-link" data-scroll-target="#how-to-use-this-data">4.3 How to use this data</a></li>
+  </ul></li>
+  <li><a href="#user-acquired-data-the-ingredients" id="toc-user-acquired-data-the-ingredients" class="nav-link" data-scroll-target="#user-acquired-data-the-ingredients">5 User-Acquired Data (The Ingredients)</a>
+  <ul class="collapse">
+  <li><a href="#spatial-data" id="toc-spatial-data" class="nav-link" data-scroll-target="#spatial-data">5.1 Spatial Data</a></li>
+  <li><a href="#climate-data" id="toc-climate-data" class="nav-link" data-scroll-target="#climate-data">5.2 Climate Data</a></li>
+  <li><a href="#observational-data" id="toc-observational-data" class="nav-link" data-scroll-target="#observational-data">5.3 Observational Data</a></li>
+  </ul></li>
+  <li><a href="#rhessys-specific-input-files-the-anatomy" id="toc-rhessys-specific-input-files-the-anatomy" class="nav-link" data-scroll-target="#rhessys-specific-input-files-the-anatomy">6 RHESSys-specific Input Files (The Anatomy)</a>
+  <ul class="collapse">
+  <li><a href="#definition-default-files-the-library" id="toc-definition-default-files-the-library" class="nav-link" data-scroll-target="#definition-default-files-the-library">6.1 Definition (Default) Files: The Library</a></li>
+  <li><a href="#worldfile-the-spatial-blueprint" id="toc-worldfile-the-spatial-blueprint" class="nav-link" data-scroll-target="#worldfile-the-spatial-blueprint">6.2 Worldfile: The Spatial Blueprint</a></li>
+  <li><a href="#flowtable-the-pumbing" id="toc-flowtable-the-pumbing" class="nav-link" data-scroll-target="#flowtable-the-pumbing">6.3 Flowtable: The Pumbing</a></li>
+  <li><a href="#tecfile-and-output-filters-simulation-control" id="toc-tecfile-and-output-filters-simulation-control" class="nav-link" data-scroll-target="#tecfile-and-output-filters-simulation-control">6.4 Tecfile and Output Filters: Simulation Control</a>
+  <ul class="collapse">
+  <li><a href="#tecfile-the-alarm-clock" id="toc-tecfile-the-alarm-clock" class="nav-link" data-scroll-target="#tecfile-the-alarm-clock">6.4.1 Tecfile: The Alarm Clock</a></li>
+  <li><a href="#output-filters-the-sieve" id="toc-output-filters-the-sieve" class="nav-link" data-scroll-target="#output-filters-the-sieve">6.4.2 Output filters: The Sieve</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#preprocessing-the-foundation" id="toc-preprocessing-the-foundation" class="nav-link" data-scroll-target="#preprocessing-the-foundation">7 Preprocessing (The Foundation)</a>
+  <ul class="collapse">
+  <li><a href="#environmental-setup" id="toc-environmental-setup" class="nav-link" data-scroll-target="#environmental-setup">7.1 Environmental Setup</a></li>
+  <li><a href="#raster-processing" id="toc-raster-processing" class="nav-link" data-scroll-target="#raster-processing">7.2 Raster Processing</a></li>
+  <li><a href="#generating-the-worldfile-and-flowtable" id="toc-generating-the-worldfile-and-flowtable" class="nav-link" data-scroll-target="#generating-the-worldfile-and-flowtable">7.3 Generating the Worldfile and Flowtable</a>
+  <ul class="collapse">
+  <li><a href="#the-template-file-recipe-for-the-worldfile" id="toc-the-template-file-recipe-for-the-worldfile" class="nav-link" data-scroll-target="#the-template-file-recipe-for-the-worldfile">7.3.1 The Template File: Recipe for the worldfile</a></li>
+  <li><a href="#aspatial-rules-file-for-multi-scale-routing" id="toc-aspatial-rules-file-for-multi-scale-routing" class="nav-link" data-scroll-target="#aspatial-rules-file-for-multi-scale-routing">7.3.2 Aspatial rules file for Multi-scale routing</a></li>
+  <li><a href="#rhessyspreprocessing-r-package" id="toc-rhessyspreprocessing-r-package" class="nav-link" data-scroll-target="#rhessyspreprocessing-r-package">7.3.3 RHESSysPreprocessing R package</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#rhessys-implementation-and-execution-the-ignition" id="toc-rhessys-implementation-and-execution-the-ignition" class="nav-link" data-scroll-target="#rhessys-implementation-and-execution-the-ignition">8 RHESSys Implementation and Execution (The Ignition)</a></li>
+  <li><a href="#post-processing-the-insight" id="toc-post-processing-the-insight" class="nav-link" data-scroll-target="#post-processing-the-insight">8 Post-processing (The Insight)</a></li>
+  <li><a href="#initialization-the-equilibrium" id="toc-initialization-the-equilibrium" class="nav-link" data-scroll-target="#initialization-the-equilibrium">9 Initialization (The Equilibrium)</a></li>
+  <li><a href="#calibration-the-optimization" id="toc-calibration-the-optimization" class="nav-link" data-scroll-target="#calibration-the-optimization">10 Calibration (The Optimization)</a></li>
+  <li><a href="#sensitivity-analysis-the-influence" id="toc-sensitivity-analysis-the-influence" class="nav-link" data-scroll-target="#sensitivity-analysis-the-influence">11 Sensitivity Analysis (The Influence)</a></li>
+  <li><a href="#advanced-features-the-expansion" id="toc-advanced-features-the-expansion" class="nav-link" data-scroll-target="#advanced-features-the-expansion">12 Advanced Features (The Expansion)</a>
+  <ul class="collapse">
+  <li><a href="#disturbance-modeling" id="toc-disturbance-modeling" class="nav-link" data-scroll-target="#disturbance-modeling">12.1 Disturbance modeling</a>
+  <ul class="collapse">
+  <li><a href="#fire-spread-and-fire-effects" id="toc-fire-spread-and-fire-effects" class="nav-link" data-scroll-target="#fire-spread-and-fire-effects">12.1.1 Fire Spread and Fire Effects</a></li>
+  <li><a href="#drought-induced-mortality" id="toc-drought-induced-mortality" class="nav-link" data-scroll-target="#drought-induced-mortality">12.1.2 Drought induced mortality</a></li>
+  <li><a href="#land-covervegetation-change" id="toc-land-covervegetation-change" class="nav-link" data-scroll-target="#land-covervegetation-change">12.1.3 Land Cover/Vegetation change</a></li>
+  </ul></li>
+  <li><a href="#multi-scale-routing---fine-scale-heterogeneity" id="toc-multi-scale-routing---fine-scale-heterogeneity" class="nav-link" data-scroll-target="#multi-scale-routing---fine-scale-heterogeneity">12.2 Multi-scale routing - fine-scale heterogeneity</a></li>
+  <li><a href="#target-driven-spin-up" id="toc-target-driven-spin-up" class="nav-link" data-scroll-target="#target-driven-spin-up">12.3 Target-driven spin-up</a></li>
+  <li><a href="#parallelization-maybe-include" id="toc-parallelization-maybe-include" class="nav-link" data-scroll-target="#parallelization-maybe-include">12.4 Parallelization (maybe include?)</a></li>
+  </ul></li>
+  <li><a href="#appendices-the-vault" id="toc-appendices-the-vault" class="nav-link" data-scroll-target="#appendices-the-vault">13 Appendices (The Vault)</a></li>
   <li><a href="#resource-sharing-and-accessibility" id="toc-resource-sharing-and-accessibility" class="nav-link" data-scroll-target="#resource-sharing-and-accessibility">Resource Sharing and Accessibility</a></li>
   </ul>
 </nav>
@@ -147,7 +219,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Outline and Plan for RHESSys manual</h1>
+<h1 class="title">Outline (Manual Blueprint)</h1>
 </div>
 
 
@@ -168,64 +240,64 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<section id="welcome" class="level1">
-<h1>Welcome</h1>
-<section id="purpose" class="level3">
-<h3 class="anchored" data-anchor-id="purpose">Purpose</h3>
+<section id="welcome-the-book" class="level1">
+<h1>Welcome (The Book)</h1>
+<section id="purpose" class="level2">
+<h2 class="anchored" data-anchor-id="purpose">Purpose</h2>
 <ul>
 <li>About the manual, why it exists, what it is for</li>
 </ul>
 </section>
-<section id="intended-audience" class="level3">
-<h3 class="anchored" data-anchor-id="intended-audience">Intended Audience</h3>
+<section id="intended-audience" class="level2">
+<h2 class="anchored" data-anchor-id="intended-audience">Intended Audience</h2>
 <ul>
 <li>Who this is for/Who should be reading this</li>
-<li>Assumed prerequisite knowledge (i.e.&nbsp;assumes basic knowledge of…provide links to resources)
+<li>Assumed prerequisite knowledge (i.e.&nbsp;assumes basic knowledge of…provide links to resources where appropriate)
 <ul>
 <li>General Modeling</li>
-<li>Basic R</li>
+<li>Basic R/Rstudio</li>
 <li>GIS and Raster/Vector</li>
 <li>Basic Unix/Linux environment (shell, command line, text editor)</li>
 <li>Git/GitHub</li>
 </ul></li>
 </ul>
 </section>
-<section id="scope" class="level3">
-<h3 class="anchored" data-anchor-id="scope">Scope</h3>
+<section id="scope" class="level2">
+<h2 class="anchored" data-anchor-id="scope">Scope</h2>
 <ul>
 <li>What to expect from this book (user will learn….)</li>
 <li>What the manual covers (practical step-by-step guidance)</li>
 <li>What it does not cover (underlying theory of the model, all possible functionality)</li>
 </ul>
 </section>
-<section id="conventions-potentially" class="level3">
-<h3 class="anchored" data-anchor-id="conventions-potentially">Conventions (potentially)</h3>
+<section id="conventions-potentially" class="level2">
+<h2 class="anchored" data-anchor-id="conventions-potentially">Conventions (potentially)</h2>
 <ul>
 <li>How to read this document</li>
 <li>Key/Legend for document formatting - regarding use of icons, symbols, different font indications</li>
 </ul>
 </section>
-<section id="manual-structure" class="level3">
-<h3 class="anchored" data-anchor-id="manual-structure">Manual Structure</h3>
+<section id="manual-structure" class="level2">
+<h2 class="anchored" data-anchor-id="manual-structure">Manual Structure</h2>
 <ul>
 <li>organization</li>
 <li>navigation</li>
 <li>links to sections</li>
-<li>potentially a quick start guide</li>
+<li>potentially a link to a quick start guide</li>
 </ul>
 </section>
-<section id="supportresources" class="level3">
-<h3 class="anchored" data-anchor-id="supportresources">Support/Resources</h3>
+<section id="supportresources" class="level2">
+<h2 class="anchored" data-anchor-id="supportresources">Support/Resources</h2>
 <ul>
 <li>Potentially include author info (Naomi, Janet (contact info?), Ryan)</li>
-<li>RHESSys GitHub repositories</li>
+<li>RHESSys GitHub repositories (RHESSys code, RHESSysPreProcessing, RHESSysIOinR, ParameterLibrary)</li>
 <li>RHESSys Wiki(s)</li>
-<li>Potentially a FAQ page, user community forum (i.e.&nbsp;‘issues’ section on RHESSys Github repo?)</li>
+<li>Potentially a FAQ page, a user community forum (i.e.&nbsp;‘issues’ section on RHESSys Github repo?)</li>
 </ul>
 </section>
 </section>
-<section id="introduction" class="level1">
-<h1>1 Introduction</h1>
+<section id="introduction-the-model" class="level1">
+<h1>1 Introduction (The Model)</h1>
 <section id="overview-of-rhessys" class="level2">
 <h2 class="anchored" data-anchor-id="overview-of-rhessys">1.1 Overview of RHESSys</h2>
 <section id="what-rhessys-is" class="level3">
@@ -247,7 +319,7 @@ ul.task-list li input[type="checkbox"] {
 <ul>
 <li>High data demands</li>
 <li>Can be computationally intensive</li>
-<li>Maybe any processes that are not well represented?</li>
+<li>Maybe any processes that are not well represented? Let users know if the model won’t fit their research question</li>
 </ul>
 </section>
 </section>
@@ -260,180 +332,370 @@ ul.task-list li input[type="checkbox"] {
 <li>Applications</li>
 </ul>
 </section>
-<section id="rhessys-workflow-overview" class="level2">
-<h2 class="anchored" data-anchor-id="rhessys-workflow-overview">1.3 RHESSys workflow overview</h2>
-<section id="key-concepts-and-terminology-frequently-used-terms" class="level3">
-<h3 class="anchored" data-anchor-id="key-concepts-and-terminology-frequently-used-terms">Key concepts and terminology (Frequently used terms)</h3>
+<section id="workflow-overview" class="level2">
+<h2 class="anchored" data-anchor-id="workflow-overview">1.3 Workflow overview</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ModelingWorkflowOverview-01.jpeg" class="img-fluid figure-img" alt="RHESSys Modeling Workflow Overview" width="1000"></p>
+<figcaption class="figure-caption">RHESSys Modeling Workflow Overview</figcaption>
+</figure>
+</div>
+<ul>
+<li>Step 1: Installation - Set up the RHESSys environment</li>
+<li>Step 2: Data Preparation - Gather and format spatial, climate, and validation data</li>
+<li>Step 3: Preprocessing - Generate the landscape representation (Worldfile) and routing (Flowtable) input files</li>
+<li>Step 4: Model Setup and Execution - Configure the command line inputs and run RHESSys</li>
+<li>Step 5: Initialization, Calibration, and Sensitivity Analysis - Spin-up, tune parameters to match observed data</li>
+<li>Step 6: Post Processing - wrangle, analyze, and visualize output data</li>
+</ul>
+<section id="key-concepts-and-terminology" class="level3">
+<h3 class="anchored" data-anchor-id="key-concepts-and-terminology">Key concepts and terminology</h3>
+<p>(define frequently used terms)</p>
 <ul>
 <li>Spatial hierarchy (basin, hillslope, zone, patch, stratum)</li>
-<li>File types (Worldfile, Flowtable, Tecfile, Parameter/Climate files)</li>
+<li>Input File types (Worldfile, Header, Flowtable, Tecfile, Parameter/Climate files, Output filters)</li>
 <li>State variables (store quantities) and fluxes</li>
-<li>Spatial/Temporal step</li>
-<li>Inputs (i.e., climate, parameters)</li>
-<li>Outputs (i.e., streamflow, LAI)</li>
+<li>Spatial/Temporal step (i.e., basin daily, patch monthly)</li>
 </ul>
 </section>
 </section>
 </section>
-<section id="setup" class="level1">
-<h1>2 Setup</h1>
-<ol start="2" type="1">
-<li>Installation
+<section id="setup-the-software" class="level1">
+<h1>2 Setup (The Software)</h1>
+<section id="setup-options" class="level2">
+<h2 class="anchored" data-anchor-id="setup-options">2.1 Setup options</h2>
+<p>(description of each, who should use, when to use, recommendation, link to corresponding install instructions)</p>
+<section id="local-installation-macos-linux" class="level3">
+<h3 class="anchored" data-anchor-id="local-installation-macos-linux">2.1.1 Local Installation (MacOS, Linux)</h3>
 <ul>
-<li>Setup Options (description, who should use/recommendation)
+<li>more advanced users</li>
+<li>users who want more flexibility</li>
+</ul>
+</section>
+<section id="containerized-setup-docker" class="level3">
+<h3 class="anchored" data-anchor-id="containerized-setup-docker">2.1.2 Containerized setup (Docker)</h3>
 <ul>
-<li>Local Installation (MacOS, Linux)</li>
-<li>Containerized setup (Docker)</li>
-<li>HPC/Cloud (SIF/Singularity)</li>
-</ul></li>
-<li>Setup Execution
+<li>beginners</li>
+<li>Windows users</li>
+<li>portability</li>
+</ul>
+</section>
+<section id="hpccloud-sifsingularity" class="level3">
+<h3 class="anchored" data-anchor-id="hpccloud-sifsingularity">2.1.3 HPC/Cloud (SIF/Singularity)</h3>
 <ul>
-<li>Local
+<li>high-performance computing environments</li>
+<li>cluster users</li>
+<li>large scale, high resolution simulations</li>
+</ul>
+</section>
+</section>
+<section id="rhessys-installation" class="level2">
+<h2 class="anchored" data-anchor-id="rhessys-installation">2.2 RHESSys Installation</h2>
+<section id="macos" class="level3">
+<h3 class="anchored" data-anchor-id="macos">2.2.1 MacOS</h3>
+<section id="code-dependencies-and-operational-requirements" class="level4">
+<h4 class="anchored" data-anchor-id="code-dependencies-and-operational-requirements">Code Dependencies and Operational Requirements</h4>
 <ul>
-<li>System Dependencies and Compilation Requirements
-<ul>
-<li>Terminal - command line access</li>
+<li>Terminal application</li>
+<li>Xcode Command Line Tools (compilers/build tools)</li>
 <li>Privileges (i.e.&nbsp;Administrator access)</li>
-<li>Compilers/Build tools (gcc, clang, make)</li>
+<li>Homebrew</li>
+<li>Git</li>
 <li>Libraries (i.e.&nbsp;NetCDF)</li>
-<li>Installation steps:
+</ul>
+</section>
+<section id="installation-steps" class="level4">
+<h4 class="anchored" data-anchor-id="installation-steps">Installation steps</h4>
 <ul>
-<li>MacOS - Homebrew, command examples</li>
-<li>Linux - command examples</li>
-</ul></li>
-</ul></li>
-<li>Installing RHESSys code
+<li>Download code from GitHub
 <ul>
-<li>Clone repository</li>
+<li>Zip file</li>
+<li>Clone repository (main, develop)</li>
+</ul></li>
 <li>Compile</li>
-<li>Verify installation</li>
 <li>Shell configuration (adding to path)</li>
+<li>Verify installation</li>
 <li>Common issue and solutions</li>
-</ul></li>
-</ul></li>
-<li>Docker
+</ul>
+</section>
+</section>
+<section id="docker" class="level3">
+<h3 class="anchored" data-anchor-id="docker">2.2.2 Docker</h3>
 <ul>
-<li>Requirements</li>
-<li>Steps</li>
-</ul></li>
-<li>SIF
+<li>Install Docker Desktop</li>
+<li>Obtaining RHESSys image from the Docker Hub</li>
+</ul>
+</section>
+<section id="sif" class="level3">
+<h3 class="anchored" data-anchor-id="sif">2.2.3 SIF</h3>
 <ul>
-<li>Requirements</li>
-<li>Steps</li>
-</ul></li>
-</ul></li>
-<li>Workflow &amp; Analysis Tools
+<li>Obtaining RHESSys .sif image</li>
+</ul>
+</section>
+</section>
+<section id="installing-workflow-analysis-tools" class="level2">
+<h2 class="anchored" data-anchor-id="installing-workflow-analysis-tools">2.3 Installing Workflow &amp; Analysis Tools</h2>
+<section id="r-ecosystem" class="level3">
+<h3 class="anchored" data-anchor-id="r-ecosystem">2.3.1 R Ecosystem</h3>
 <ul>
-<li>R/Rstudio &amp; packages (i.e., Tidyverse)</li>
-<li>WhiteboxTools with R</li>
-<li>RHESSys R packages
+<li>R (The engine)</li>
+<li>RStudio (The interface)</li>
+<li>Standard Packages (Extensions - Libraries that expand functionality)</li>
+</ul>
+</section>
+<section id="whiteboxtools-for-geospatial-processing" class="level3">
+<h3 class="anchored" data-anchor-id="whiteboxtools-for-geospatial-processing">2.3.2 WhiteboxTools for Geospatial Processing</h3>
+</section>
+<section id="rhessys-specific-r-packages" class="level3">
+<h3 class="anchored" data-anchor-id="rhessys-specific-r-packages">2.3.3 RHESSys-Specific R packages</h3>
 <ul>
 <li>RHESSysPreprocessing</li>
 <li>RHESSysIOinR</li>
-</ul></li>
-</ul></li>
-</ul></li>
-</ol>
-<section id="part-2-data-preparation-and-preprocessing" class="level2">
-<h2 class="anchored" data-anchor-id="part-2-data-preparation-and-preprocessing">Part 2: Data Preparation and Preprocessing</h2>
+</ul>
+</section>
+</section>
+</section>
+<section id="project-design-planning-the-strategy" class="level1">
+<h1>3 Project Design &amp; Planning (The Strategy)</h1>
 <ul>
-<li>Input data requirements
+<li>will discuss what a user should consider, i.e.:</li>
+</ul>
+<section id="spatial-resolution-vs.-computational-cost" class="level2">
+<h2 class="anchored" data-anchor-id="spatial-resolution-vs.-computational-cost">3.1 Spatial resolution vs.&nbsp;computational cost</h2>
 <ul>
-<li>Spatial Data
+<li>patch resolution/number of patches impact on processing needs &amp; time</li>
+<li>scale - what is necessary to answer users questions: is fine-scale processing necessary?</li>
+</ul>
+</section>
+<section id="data-synchronization-temporal-extent" class="level2">
+<h2 class="anchored" data-anchor-id="data-synchronization-temporal-extent">3.2 Data synchronization &amp; temporal extent</h2>
+<ul>
+<li>overlap - i.e., does the temporal period of climate data &amp; observed streamflow data conincide?</li>
+<li>spin-up and calibration time requirements</li>
+</ul>
+</section>
+<section id="functional-constraints" class="level2">
+<h2 class="anchored" data-anchor-id="functional-constraints">3.3 Functional constraints</h2>
+<ul>
+<li>Feature specific inputs - i.e.&nbsp;to run the fire model, is wind speed/direction and relative humidity data available?</li>
+<li>Does RHESSys output what is needed to answer research questions?</li>
+</ul>
+</section>
+<section id="defining-the-project-boundaries" class="level2">
+<h2 class="anchored" data-anchor-id="defining-the-project-boundaries">3.4 Defining the project boundaries</h2>
+<ul>
+<li>use full basin boundary, representative hillslope, single patch?</li>
+</ul>
+</section>
+</section>
+<section id="example-dataset-the-sandbox" class="level1">
+<h1>4 Example Dataset (The Sandbox)</h1>
+<section id="study-site-overview" class="level2">
+<h2 class="anchored" data-anchor-id="study-site-overview">4.1 Study Site Overview</h2>
+<ul>
+<li>Location</li>
+<li>Characteristics</li>
+</ul>
+</section>
+<section id="dataset-contents" class="level2">
+<h2 class="anchored" data-anchor-id="dataset-contents">4.2 Dataset Contents</h2>
+<ul>
+<li>Raw Data: spatial (and workflow file to generate rasters), formatted climate and observational data</li>
+<li>Preprocessing data: Workflow script, all prerequisite files necessary for generating Worldfile/Flowtable, and completed Worldfiles and Flowtables (for a patch, hillslope, and full basin)</li>
+<li>Simulation files: Ready-to-run workflow scripts with functions to generate all necessary instruction to run the model for different strategies (i.e., single run, multi-run, for calibration &amp; sensitivity analysis)</li>
+<li>Reference outputs: Sample model results</li>
+</ul>
+</section>
+<section id="how-to-use-this-data" class="level2">
+<h2 class="anchored" data-anchor-id="how-to-use-this-data">4.3 How to use this data</h2>
+<ul>
+<li>How to get it</li>
+<li>Verification for user generated files</li>
+<li>Modular learning - start at any step in the manual</li>
+</ul>
+</section>
+</section>
+<section id="user-acquired-data-the-ingredients" class="level1">
+<h1>5 User-Acquired Data (The Ingredients)</h1>
+<section id="spatial-data" class="level2">
+<h2 class="anchored" data-anchor-id="spatial-data">5.1 Spatial Data</h2>
 <ul>
 <li>Required
 <ul>
-<li>DEM
+<li>DEM (source to obtain)</li>
+<li>Watershed outlet - gauge location coordinates
 <ul>
-<li>resolution</li>
-<li>reprojection</li>
-</ul></li>
-<li>Waterhsed basin</li>
+<li>DEM Derivatives - generation discussed in later section:
+<ul>
+<li>Watershed Basin boundary</li>
+<li>Sub-basins (hillslopes)</li>
 <li>Slope/Aspect</li>
-<li>Sub-basin structure</li>
-<li>Stream network (gage location)</li>
-<li>Patch structure
+<li>E/W Horizons</li>
+<li>Stream Network</li>
+<li>Patches</li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li>Recommended (typical) or when applicable:
 <ul>
-<li>approaches</li>
+<li>Vegetation cover</li>
+<li>Soils</li>
+<li>Landcover/Landuse</li>
+<li>Roads</li>
+<li>Impervious areas</li>
+<li>Climate base stations</li>
+<li>Aspatial rules ID map for multi-scale routing</li>
 </ul></li>
-</ul></li>
-<li>Recommended
+</ul>
+</section>
+<section id="climate-data" class="level2">
+<h2 class="anchored" data-anchor-id="climate-data">5.2 Climate Data</h2>
 <ul>
-<li>Horizon maps</li>
-<li>vegetation</li>
-<li>soils/soil attributes</li>
-<li>land cover history</li>
-<li>climate station locations (if applicable)</li>
-</ul></li>
-</ul></li>
-<li>Climate Data
-<ul>
-<li>Input Formats (point, grid, NetCDF)</li>
-<li>Required meteorological variables</li>
-<li>Optional meteorological variables</li>
+<li>Timeseries data</li>
+<li>Required meteorologic data</li>
+<li>Optional meteorologic data</li>
 <li>Base station</li>
-</ul></li>
-<li>Worldfile
+<li>Supported Input Formats - point, grid, NetCDF - and how to format each</li>
+</ul>
+</section>
+<section id="observational-data" class="level2">
+<h2 class="anchored" data-anchor-id="observational-data">5.3 Observational Data</h2>
 <ul>
-<li>Hierarchical spatial containment structure</li>
-<li>State variables and pointers (linking identifiers)</li>
-<li>Template</li>
-<li>Header</li>
-<li>Required and optional state variables</li>
-</ul></li>
-<li>Flowtable
+<li>used to constrain and evaluate hydrologic and ecophysiological parameterization</li>
+<li>Hydrologic (i.e., Streamflow, Snow, Soil moisture)</li>
+<li>Vegetation (i.e, LAI, Height, NPP, ET, rooting depth)</li>
+</ul>
+</section>
+</section>
+<section id="rhessys-specific-input-files-the-anatomy" class="level1">
+<h1>6 RHESSys-specific Input Files (The Anatomy)</h1>
+<section id="definition-default-files-the-library" class="level2">
+<h2 class="anchored" data-anchor-id="definition-default-files-the-library">6.1 Definition (Default) Files: The Library</h2>
 <ul>
-<li>Patch connectivity</li>
-<li>Lateral processes</li>
-</ul></li>
-<li>Definition (default) Files
+<li>About</li>
+<li>Types association with each level</li>
+<li>Format - required (ID) and optional parameters</li>
+<li>Constant parameter values</li>
+<li>Base Files/Default values</li>
+<li>Parameter file library</li>
+</ul>
+</section>
+<section id="worldfile-the-spatial-blueprint" class="level2">
+<h2 class="anchored" data-anchor-id="worldfile-the-spatial-blueprint">6.2 Worldfile: The Spatial Blueprint</h2>
 <ul>
-<li>Eco-physiologic, hydro-geologic, land-use, and meteorologic parameters</li>
-<li>Base files &amp; Default values</li>
+<li>Hierarchical spatial containment structure - landscape partioning
+<ul>
+<li>Basin</li>
+<li>Hillslope (sub-basin)</li>
+<li>Zone</li>
+<li>Patch, Patch Families/Asptatial patches for multiscale routing</li>
+<li>Stratum</li>
 </ul></li>
-<li>Tecfile (Temporal Event Control file)
+<li>Architecture</li>
+<li>Identifiers: Pointers (ID’s) linking identifiers to the Climate and Definition files</li>
+<li>State variables, values for stores/fluxes associated with each level</li>
+<li>Header File - conduit between the Worldfile and Climate/Definiton files</li>
+</ul>
+</section>
+<section id="flowtable-the-pumbing" class="level2">
+<h2 class="anchored" data-anchor-id="flowtable-the-pumbing">6.3 Flowtable: The Pumbing</h2>
+<ul>
+<li>Architecture</li>
+<li>Topographic data about each patch</li>
+<li>Routing, Patch connectivity, neighbors</li>
+<li>Partitioning flow, upland patches, stream patches</li>
+</ul>
+</section>
+<section id="tecfile-and-output-filters-simulation-control" class="level2">
+<h2 class="anchored" data-anchor-id="tecfile-and-output-filters-simulation-control">6.4 Tecfile and Output Filters: Simulation Control</h2>
+<section id="tecfile-the-alarm-clock" class="level3">
+<h3 class="anchored" data-anchor-id="tecfile-the-alarm-clock">6.4.1 Tecfile: The Alarm Clock</h3>
 <ul>
 <li>Manage timing of output printing</li>
 <li>Control simulation events (schedule when non-continuous events occur, i.e.&nbsp;fire, land use change)</li>
 <li>Trigger a worldfile redefinition to update properties of the landscape</li>
-</ul></li>
-<li>Output filters - specify criteria for selecting and filtering the output data
+</ul>
+</section>
+<section id="output-filters-the-sieve" class="level3">
+<h3 class="anchored" data-anchor-id="output-filters-the-sieve">6.4.2 Output filters: The Sieve</h3>
 <ul>
+<li>specify criteria for selecting and filtering the output data</li>
 <li>Filter rules</li>
 <li>Filter conditions</li>
-<li>Processes associated with temporal interval and spatial level
+<li>Filter Parts: timestep, spatial level, output format/name</li>
+<li>Variables associated with Spatial/Temporal leval of output
 <ul>
 <li>sub-level output</li>
 <li>sub-routine output</li>
 </ul></li>
-</ul></li>
-</ul></li>
-<li>Preprocessing
-<ul>
-<li>Standard directory structure and naming convention</li>
-<li>Spatial processing using WhiteboxTools and R</li>
-<li>Worldfile and flowtable generation
-<ul>
-<li>Required rasters</li>
-<li>Editing the worldfile template</li>
-<li>RHESSysPreprocessing R package</li>
-</ul></li>
-</ul></li>
+<li>Variable reassignment: name reassignment, arithmetic expressions</li>
 </ul>
 </section>
-<section id="part-3-rhessys-implementation-and-workflow" class="level2">
-<h2 class="anchored" data-anchor-id="part-3-rhessys-implementation-and-workflow">Part 3: RHESSys Implementation and workflow</h2>
+</section>
+</section>
+<section id="preprocessing-the-foundation" class="level1">
+<h1>7 Preprocessing (The Foundation)</h1>
+<section id="environmental-setup" class="level2">
+<h2 class="anchored" data-anchor-id="environmental-setup">7.1 Environmental Setup</h2>
 <ul>
-<li>Model configuration via RHESSysIOinR tools
+<li>Standard directory structure</li>
+<li>naming convention</li>
+</ul>
+</section>
+<section id="raster-processing" class="level2">
+<h2 class="anchored" data-anchor-id="raster-processing">7.2 Raster Processing</h2>
 <ul>
-<li>Fuctions to provide the inputs necessary to run RHESSys</li>
+<li>Spatial processing using WhiteboxTools and R</li>
+</ul>
+</section>
+<section id="generating-the-worldfile-and-flowtable" class="level2">
+<h2 class="anchored" data-anchor-id="generating-the-worldfile-and-flowtable">7.3 Generating the Worldfile and Flowtable</h2>
+<section id="the-template-file-recipe-for-the-worldfile" class="level3">
+<h3 class="anchored" data-anchor-id="the-template-file-recipe-for-the-worldfile">7.3.1 The Template File: Recipe for the worldfile</h3>
+<ul>
+<li>Format and Initialization
+<ul>
+<li>World objects</li>
+<li>State variables</li>
+<li>Default and base station ID’s</li>
+</ul></li>
+<li>Required and Optional state variables</li>
+<li>Redefinition template</li>
+<li>Editing the template, initial conditions</li>
+</ul>
+</section>
+<section id="aspatial-rules-file-for-multi-scale-routing" class="level3">
+<h3 class="anchored" data-anchor-id="aspatial-rules-file-for-multi-scale-routing">7.3.2 Aspatial rules file for Multi-scale routing</h3>
+<ul>
+<li>Format</li>
+<li>Set up for single rule</li>
+<li>Set up for multiple rules - requires map</li>
+</ul>
+</section>
+<section id="rhessyspreprocessing-r-package" class="level3">
+<h3 class="anchored" data-anchor-id="rhessyspreprocessing-r-package">7.3.3 RHESSysPreprocessing R package</h3>
+<ul>
+<li>About</li>
+<li>Prerequisites: spatial data, template, asp rules file if applicable</li>
+<li>R markdown workflow/script - functions</li>
+<li>Run the function to generate Worldfile/Flowtable</li>
+</ul>
+</section>
+</section>
+</section>
+<section id="rhessys-implementation-and-execution-the-ignition" class="level1">
+<h1>8 RHESSys Implementation and Execution (The Ignition)</h1>
+<ul>
+<li>Define the simulation rules
+<ul>
+<li>RHESSysIOinR Functions to provide the directions necessary to run RHESSys</li>
 </ul></li>
 <li>Output filter design
 <ul>
 <li>Tecfile/Output Filter interaction for expected output</li>
 <li>Selecting RHESSys output variables
 <ul>
-<li>Focus on variables relevant to your research questions and analysis goals</li>
+<li>Choosing variables relevant to the research questions and analysis goals</li>
 <li>Reassigning/Combining variables</li>
 </ul></li>
 </ul></li>
@@ -442,46 +704,93 @@ ul.task-list li input[type="checkbox"] {
 <li>Single run</li>
 <li>Multiple runs</li>
 </ul></li>
-<li>Post-processing vi RHESSysIOinR tools
-<ul>
-<li>Functions for integrating, synthesizing, and visualizing spatiotemporal output</li>
-</ul></li>
 </ul>
 </section>
-<section id="part-4-initialization-calibration-sensitivity-analysis" class="level2">
-<h2 class="anchored" data-anchor-id="part-4-initialization-calibration-sensitivity-analysis">Part 4: Initialization, Calibration &amp; Sensitivity Analysis</h2>
+<section id="post-processing-the-insight" class="level1">
+<h1>8 Post-processing (The Insight)</h1>
 <ul>
-<li>Initialization approaches (Spin-up to a state of equilibrium)</li>
-<li>Sensitivity Analysis and Parameter Selection (identifying influential variables)</li>
-<li>Parameter Space Characterization (establishing realistic bounds/ranges)</li>
-<li>Calibration Frameworks and Optimization Workflows</li>
+<li>Output data wrangling - reading output into R, synthesizing, transforming, rearranging data for use-case</li>
+<li>Analyzing</li>
+<li>Visualizing</li>
+</ul>
+</section>
+<section id="initialization-the-equilibrium" class="level1">
+<h1>9 Initialization (The Equilibrium)</h1>
+<ul>
+<li>Spin-up/Initializing approaches (to reach a state of equilibrium)</li>
+<li>Spin-up Tec event</li>
+<li>State-of-the world output Worldfile</li>
+<li>Typical spin-up output variables</li>
+<li>Determining equilibrium</li>
+</ul>
+</section>
+<section id="calibration-the-optimization" class="level1">
+<h1>10 Calibration (The Optimization)</h1>
+<ul>
+<li>Methodology</li>
+<li>Optimization Workflows</li>
 <li>Objective Functions and Performance Metrics</li>
 </ul>
 </section>
-<section id="part-5-advanced-features" class="level2">
-<h2 class="anchored" data-anchor-id="part-5-advanced-features">Part 5: Advanced Features</h2>
+<section id="sensitivity-analysis-the-influence" class="level1">
+<h1>11 Sensitivity Analysis (The Influence)</h1>
 <ul>
-<li>Disturbance modeling
-<ul>
-<li>drought induced mortality</li>
-<li>fire spread and fire effects</li>
-</ul></li>
-<li>Land Cover/Vegetation change
-<ul>
-<li>fuel treatments - thinning, controlled burns</li>
-</ul></li>
-<li>Multi-scale routing - fine-scale heterogeneity</li>
-<li>Target-driven spin-up (run to reach spatially explicit targets, i.e.&nbsp;LAI)</li>
+<li>Identifying influential variables</li>
+<li>Parameter Space Characterization (establishing realistic bounds/ranges)</li>
+<li>Parameter Selection</li>
 </ul>
 </section>
-<section id="part-6-appendices" class="level2">
-<h2 class="anchored" data-anchor-id="part-6-appendices">Part 6: Appendices</h2>
+<section id="advanced-features-the-expansion" class="level1">
+<h1>12 Advanced Features (The Expansion)</h1>
+<section id="disturbance-modeling" class="level2">
+<h2 class="anchored" data-anchor-id="disturbance-modeling">12.1 Disturbance modeling</h2>
+<section id="fire-spread-and-fire-effects" class="level3">
+<h3 class="anchored" data-anchor-id="fire-spread-and-fire-effects">12.1.1 Fire Spread and Fire Effects</h3>
 <ul>
-<li>Command-line reference</li>
-<li>Code structure</li>
-<li>Additional figures</li>
+<li>compiling RHESSys/WMFire</li>
+<li></li>
 </ul>
 </section>
+<section id="drought-induced-mortality" class="level3">
+<h3 class="anchored" data-anchor-id="drought-induced-mortality">12.1.2 Drought induced mortality</h3>
+</section>
+<section id="land-covervegetation-change" class="level3">
+<h3 class="anchored" data-anchor-id="land-covervegetation-change">12.1.3 Land Cover/Vegetation change</h3>
+<ul>
+<li>fuel treatments</li>
+<li>thinning, controlled burns</li>
+<li>redefine world options (redefine_world_: multiplier, thin_remain, thin_harvest, thin_snags, thin_harvest)</li>
+</ul>
+</section>
+</section>
+<section id="multi-scale-routing---fine-scale-heterogeneity" class="level2">
+<h2 class="anchored" data-anchor-id="multi-scale-routing---fine-scale-heterogeneity">12.2 Multi-scale routing - fine-scale heterogeneity</h2>
+<ul>
+<li>not sure this belongs in advanced features because it has become pretty standard, and I have introduced it above</li>
+<li>this can be debated!</li>
+</ul>
+</section>
+<section id="target-driven-spin-up" class="level2">
+<h2 class="anchored" data-anchor-id="target-driven-spin-up">12.3 Target-driven spin-up</h2>
+<ul>
+<li>run to reach spatially explicit targets, i.e.&nbsp;LAI</li>
+</ul>
+</section>
+<section id="parallelization-maybe-include" class="level2">
+<h2 class="anchored" data-anchor-id="parallelization-maybe-include">12.4 Parallelization (maybe include?)</h2>
+<ul>
+<li>run a large watershed in parallel in order to speed up the simulation process</li>
+<li>compiling with openmp</li>
+</ul>
+</section>
+</section>
+<section id="appendices-the-vault" class="level1">
+<h1>13 Appendices (The Vault)</h1>
+<ul>
+<li>Command-line functionality</li>
+<li>History/Legacy tools/functionality</li>
+<li>Code organization</li>
+</ul>
 </section>
 <section id="resource-sharing-and-accessibility" class="level1">
 <h1>Resource Sharing and Accessibility</h1>
