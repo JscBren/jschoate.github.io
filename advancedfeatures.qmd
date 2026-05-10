@@ -2,7 +2,7 @@
 title: "Advanced Features"
 ---
 
-# [[Part IV: Advanced Application]{.underline}]
+# [Part IV: Advanced Application]{.underline}
 
 -   This part is about exploring complex eco-hydrological scenarios
 -   intro to what is covered in the section

@@ -2,7 +2,7 @@
 title: "Initialization"
 ---
 
-# [[Part III: Refinement and Evaluation]{.underline}]
+# [Part III: Refinement and Evaluation]{.underline}
 
 -   This part is about moving from just a running model to a credible scientific tool.
 -   intro to what is covered in the section
