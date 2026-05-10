@@ -47,6 +47,7 @@ editor: visual
 -   Potentially a FAQ page, a user community forum (i.e. 'issues' section on RHESSys Github repo?)
 
 # [[Part I: Foundations & Environment]{.underline}]{style="color:blue;"}
+
 -   This part is about understanding the logic of this tool and setting the computational environment
 -   intro to what is covered in the section
 -   expected outcome for this section: functioning modeling environment and clear strategic plan
@@ -216,6 +217,7 @@ editor: visual
 -   Modular learning - start at any step in the manual
 
 # [[Part II: Building and Executing]{.underline}]{style="color:blue;"}
+
 -   This part is about building the model, constructing the foundation for a fuctional simulation
 -   expected outcome for this section: creating input in order to run the model, generate output, and interpret results
 
@@ -262,7 +264,7 @@ editor: visual
 
 -   About
 -   File types association with each level
-    -   some parameters may need expanded information, i.e. phenolog flag: static,dynamic,drought 
+    -   some parameters may need expanded information, i.e. phenolog flag: static,dynamic,drought
 -   Format - required (ID) and optional parameters
 -   Parameter values constant
 -   Base Files/Default values
@@ -363,6 +365,7 @@ editor: visual
 -   Visualizing
 
 # [[Part III: Refinement and Evaluation]{.underline}]{style="color:blue;"}
+
 -   This part is about moving from just a running model to a credible scientific tool.
 -   intro to what is covered in the section
     -   the iterative cycle - cyclincal refinement loop
@@ -373,7 +376,7 @@ editor: visual
 
 # 10 Initialization (The Equilibrium)
 
--   Spin-up/Initializing approaches 
+-   Spin-up/Initializing approaches
 -   Achieving steady-state
 -   Spin-up Tec event
 -   State-of-the world output Worldfile
@@ -391,23 +394,26 @@ editor: visual
 -   Methodology
 -   Optimization Workflows - (corresponding with 'real world' observations)
 -   Objective Functions and Performance Metrics
--   The challenge of equifinality 
+-   The challenge of equifinality
 
 # 13 Validation (The Verification or The Credibility)
+
 -   judging/evaluation performance
 -   testing calibrated parameters against data set independent of calibration period
 
-
 # [[Part IV: Advanced Application]{.underline}]{style="color:blue;"}
+
 -   This part is about exploring complex eco-hydrological scenarios
 -   intro to what is covered in the section
 -   expected outcome for this section: ability to move from model development to high impact scientific inquiry
 
 # 14 Advanced Features (The Expansion)
+
 -   beyond the baseline
 -   moving into specialized simulations
 
 ## 14.1 Disturbance modeling
+
 -   disturbance in RHESSys: altering the carbon cycles and redirecting the flow of water and nutrients from the baseline
 -   predicting ecosystem resilience and recovery over time
 
@@ -424,14 +430,14 @@ editor: visual
     -   Worldfile header edits
     -   Add worldfile state variable
     -   Command line option
--   Outputs 
+-   Outputs
     -   fire write parameter generated output
     -   spatial level fire outputs and specific fire effects output files
 -   stochastic
 -   prescribed
 
-
 ### 14.1.2 Land Cover/Vegetation change
+
 -   biomass pool changes
 -   drought induced mortality
 -   fuel treatments
@@ -450,12 +456,12 @@ editor: visual
 -   types of spin-up targets
 -   sources for deriving targets
 -   Prerequisites to running:
-  -   spin-up target file
-  -   target file header
-  -   spin-up definition file
-  -   worldfile with spinup object ID
-  -   worldfile header pointer
-  -   command line options
+-   spin-up target file
+-   target file header
+-   spin-up definition file
+-   worldfile with spinup object ID
+-   worldfile header pointer
+-   command line options
 
 ## 14.4 Parallelization (maybe include?)
 
@@ -468,4 +474,3 @@ editor: visual
 -   History/Legacy tools/functionality
 -   Code organization
 -   additional items will become clear as I go along!
-

@@ -2,7 +2,7 @@
 title: "User-Acquired Data"
 ---
 
-# [[Part II: Building and Executing]{.underline}]{style="color:blue;"}
+# [[Part II: Building and Executing]{.underline}]
 
 -   This part is about building the model, constructing the foundation for a fuctional simulation
 -   expected outcome for this section: creating input in order to run the model, generate output, and interpret results
