@@ -1,8 +1,7 @@
 ---
-title: "Preprocessing"
+title: "7 Preprocessing (The Foundation)"
 ---
 
-# 7 Preprocessing (The Foundation)
 
 ## 7.1 Environmental Setup
 

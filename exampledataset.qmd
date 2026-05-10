@@ -1,8 +1,7 @@
 ---
-title: "Example Dataset"
+title: "4 Example Dataset (The Sandbox)"
 ---
 
-# 4 Example Dataset (The Sandbox)
 
 ![**Instructional System Design**](images/InstructionalSystemDesign.jpeg){fig-alt="Instructional System Design" width="1000"}
 

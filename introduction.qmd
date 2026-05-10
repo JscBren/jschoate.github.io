@@ -1,14 +1,6 @@
 ---
-title: "Introduction"
+title: "1 Introduction (The Model)"
 ---
-
-# [Part I: Foundations & Environment]{.underline}
-
--   This part is about understanding the logic of this tool and setting the computational environment
--   intro to what is covered in the section
--   expected outcome for this section: functioning modeling environment and clear strategic plan
-
-# 1 Introduction (The Model)
 
 ## 1.1 Overview of RHESSys
 

@@ -1,35 +1,18 @@
 ---
-title: "Development for RHESSys manual"
+title: "Welcome to the RHESSys Manual"
+subtitle: "(under development)"
 author: "Janet Choate"
-image: media/RhessysLogo_nobckgrnd.jpg
-about: 
-  template: solana
-  image-shape: rectangle
-  image-width: 15em
-  links:
-    - text: TagueTeamLab
-      href: https://tagueteamlab.org/
-    - text: GitHub
-      href: https://github.com/JscBren/jschoate.github.io
-    - text: Email
-      href: mailto:jsc.eco@gmail.com
 ---
-
-# Welcome
+<div style="text-align: center; margin-top: -1px;">
+  ![](media/RhessysLogo_nobckgrnd.jpg){width="300px"}
+  
+  [Tague Team Lab](https://tagueteamlab.org/) | [GitHub](https://github.com/JscBren/jschoate.github.io) 
+</div>
+---
 
 ## Purpose
 
--   About the manual, why it exists, what it is for
-
-## Intended Audience
-
--   Who this is for/Who should be reading this
--   Assumed prerequisite knowledge (i.e. assumes basic knowledge of...provide links to resources where appropriate)
-    -   General Modeling
-    -   Basic R/Rstudio
-    -   GIS and Raster/Vector
-    -   Basic Unix/Linux environment (shell, command line, text editor)
-    -   Git/GitHub
+Include info about the manual, why it exists, what it is intended for
 
 ## Scope
 
@@ -37,23 +20,16 @@ about:
 -   What the manual covers (practical step-by-step guidance)
 -   What it does not cover (underlying theory of the model, all possible functionality)
 
-## Conventions (potentially)
+## Intended Audience
 
--   How to read this document
--   Key/Legend for document formatting - regarding use of icons, symbols, different font indications
+-   Who this is for/Who should be reading this
 
-## Manual Structure
+::: panel-tabset
+## Assumed basic prerequisite knowledge
 
--   organization
--   navigation
--   links to sections
--   potentially a link to a quick start guide
-
-## Support/Resources
-
--   Potentially include author info (Naomi, Janet (contact info?), Ryan)
--   RHESSys GitHub repositories (RHESSys code, RHESSysPreProcessing, RHESSysIOinR, ParameterLibrary)
--   RHESSys Wiki(s)
--   Potentially a FAQ page, a user community forum (i.e. 'issues' section on RHESSys Github repo?)
-
-# 
+-   **General Modeling**
+-   **Basic R/Rstudio**
+-   **GIS and Raster/Vector**
+-   **Basic Unix/Linux environment (shell, command line, text editor)**
+-   **Git/GitHub**
+:::

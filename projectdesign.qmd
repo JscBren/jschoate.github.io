@@ -1,8 +1,6 @@
 ---
-title: "Project Design & Planning"
+title: "3 Project Design & Planning (The Strategy)"
 ---
-
-# 3 Project Design & Planning (The Strategy)
 
 -   will discuss what a user should consider, i.e.:
 

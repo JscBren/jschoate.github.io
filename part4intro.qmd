@@ -1,0 +1,8 @@
+---
+title: "Part IV: Advanced Applications"
+---
+
+-   This part is about exploring complex eco-hydrological scenarios
+-   intro to what is covered in the section
+-   expected outcome for this section: ability to move from model development to high impact scientific inquiry
+

@@ -1,8 +1,7 @@
 ---
-title: "Validation"
+title: "13 Validation (The Verification or The Credibility)"
 ---
 
-# 13 Validation (The Verification or The Credibility)
 
 -   judging/evaluation performance
 -   testing calibrated parameters against data set independent of calibration period

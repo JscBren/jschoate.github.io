@@ -1,13 +1,6 @@
 ---
-title: "User-Acquired Data"
+title: "5 User-Acquired Data (The Ingredients)"
 ---
-
-# [Part II: Building and Executing]{.underline}
-
--   This part is about building the model, constructing the foundation for a fuctional simulation
--   expected outcome for this section: creating input in order to run the model, generate output, and interpret results
-
-# 5 User-Acquired Data (The Ingredients)
 
 ## 5.1 Spatial Data
 

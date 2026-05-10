@@ -1,0 +1,7 @@
+---
+title: "Part II: Building and Executing"
+---
+
+-   This part is about building the model, constructing the foundation for a fuctional simulation
+-   intro to what is covered in the section
+-   expected outcome for this section: creating input in order to run the model, generate output, and interpret results

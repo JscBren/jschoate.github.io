@@ -1,0 +1,24 @@
+---
+title: "About this Manual"
+---
+
+## Conventions
+
+-   How to read this document
+-   Key/Legend for document formatting - regarding use of icons, symbols, different font indications
+
+## Manual Structure
+
+-   organization
+-   navigation
+-   links to sections
+-   potentially a link to a quick start guide
+
+## Support/Resources
+
+-   Potentially include author info (Naomi, Janet (contact info?), Ryan)
+-   RHESSys GitHub repositories (RHESSys code, RHESSysPreProcessing, RHESSysIOinR, ParameterLibrary)
+-   RHESSys Wiki(s)
+-   Potentially a FAQ page, a user community forum (i.e. 'issues' section on RHESSys Github repo?)
+
+# 

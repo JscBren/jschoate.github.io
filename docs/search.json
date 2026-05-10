@@ -7,37 +7,65 @@
     "text": "About this site\n\n1 + 1\n\n[1] 2"
   },
   {
+    "objectID": "aboutmanual.html",
+    "href": "aboutmanual.html",
+    "title": "About this Manual",
+    "section": "",
+    "text": "How to read this document\nKey/Legend for document formatting - regarding use of icons, symbols, different font indications"
+  },
+  {
+    "objectID": "aboutmanual.html#conventions",
+    "href": "aboutmanual.html#conventions",
+    "title": "About this Manual",
+    "section": "",
+    "text": "How to read this document\nKey/Legend for document formatting - regarding use of icons, symbols, different font indications"
+  },
+  {
+    "objectID": "aboutmanual.html#manual-structure",
+    "href": "aboutmanual.html#manual-structure",
+    "title": "About this Manual",
+    "section": "Manual Structure",
+    "text": "Manual Structure\n\norganization\nnavigation\nlinks to sections\npotentially a link to a quick start guide"
+  },
+  {
+    "objectID": "aboutmanual.html#supportresources",
+    "href": "aboutmanual.html#supportresources",
+    "title": "About this Manual",
+    "section": "Support/Resources",
+    "text": "Support/Resources\n\nPotentially include author info (Naomi, Janet (contact info?), Ryan)\nRHESSys GitHub repositories (RHESSys code, RHESSysPreProcessing, RHESSysIOinR, ParameterLibrary)\nRHESSys Wiki(s)\nPotentially a FAQ page, a user community forum (i.e. ‘issues’ section on RHESSys Github repo?)"
+  },
+  {
     "objectID": "advancedfeatures.html",
     "href": "advancedfeatures.html",
-    "title": "Advanced Features",
+    "title": "14 Advanced Features (The Expansion)",
     "section": "",
-    "text": "This part is about exploring complex eco-hydrological scenarios\nintro to what is covered in the section\nexpected outcome for this section: ability to move from model development to high impact scientific inquiry"
+    "text": "beyond the baseline\nmoving into specialized simulations\nEach of the following (14.1, 14.2, 14.3, 14.4) will have its own page so it will have it’s own subject in the navigation pane"
   },
   {
     "objectID": "advancedfeatures.html#disturbance-modeling",
     "href": "advancedfeatures.html#disturbance-modeling",
-    "title": "Advanced Features",
+    "title": "14 Advanced Features (The Expansion)",
     "section": "14.1 Disturbance modeling",
     "text": "14.1 Disturbance modeling\n\ndisturbance in RHESSys: altering the carbon cycles and redirecting the flow of water and nutrients from the baseline\npredicting ecosystem resilience and recovery over time\n\n\n14.1.1 Fire Spread and Fire Effects\n\nabout\ncompiling RHESSys-WMFire: Boost/WMFire library\nPrerequisites to running the fire model:\n\nWind speed and direction data\nFire definition file parameters\n\ncalculating the fire return interval\ncalculating wind parameters (EstimateWindDistrExample.R script)\n\nFire effects parameters in vegetation and soil(patch) definition files\nWorldfile header edits\nAdd worldfile state variable\nCommand line option\n\nOutputs\n\nfire write parameter generated output\nspatial level fire outputs and specific fire effects output files\n\nstochastic\nprescribed\n\n\n\n14.1.2 Land Cover/Vegetation change\n\nbiomass pool changes\ndrought induced mortality\nfuel treatments\n\nthinning, controlled burns\n\nredefine world functionality (redefine_world_: multiplier, thin_remain, thin_harvest, thin_snags, thin_harvest)"
   },
   {
     "objectID": "advancedfeatures.html#multi-scale-routing---fine-scale-heterogeneity",
     "href": "advancedfeatures.html#multi-scale-routing---fine-scale-heterogeneity",
-    "title": "Advanced Features",
+    "title": "14 Advanced Features (The Expansion)",
     "section": "14.2 Multi-scale routing - fine-scale heterogeneity",
     "text": "14.2 Multi-scale routing - fine-scale heterogeneity\n\nnot sure this belongs in advanced features anymore because it has become pretty standard, and I have introduced it above\nthis can be debated!"
   },
   {
     "objectID": "advancedfeatures.html#target-driven-spin-up",
     "href": "advancedfeatures.html#target-driven-spin-up",
-    "title": "Advanced Features",
+    "title": "14 Advanced Features (The Expansion)",
     "section": "14.3 Target-driven spin-up",
     "text": "14.3 Target-driven spin-up\n\nadvanced method of spin-up to reach varying stages of observed ecological states\nrun to reach spatially explicit targets, i.e. LAI\ntypes of spin-up targets\nsources for deriving targets\nPrerequisites to running:\nspin-up target file\ntarget file header\nspin-up definition file\nworldfile with spinup object ID\nworldfile header pointer\ncommand line options"
   },
   {
     "objectID": "advancedfeatures.html#parallelization-maybe-include",
     "href": "advancedfeatures.html#parallelization-maybe-include",
-    "title": "Advanced Features",
+    "title": "14 Advanced Features (The Expansion)",
     "section": "14.4 Parallelization (maybe include?)",
     "text": "14.4 Parallelization (maybe include?)\n\nrun a large watershed in parallel in order to speed up the simulation process\ncompiling with openmp"
   },
@@ -51,161 +79,140 @@
   {
     "objectID": "calibration.html",
     "href": "calibration.html",
-    "title": "Calibration",
+    "title": "12 Calibration (The Optimization)",
     "section": "",
-    "text": "12 Calibration (The Optimization)\n\nMethodology\nOptimization Workflows - (corresponding with ‘real world’ observations)\nObjective Functions and Performance Metrics\nThe challenge of equifinality"
+    "text": "Methodology\nOptimization Workflows - (corresponding with ‘real world’ observations)\nObjective Functions and Performance Metrics\nThe challenge of equifinality"
   },
   {
     "objectID": "exampledataset.html",
     "href": "exampledataset.html",
-    "title": "Example Dataset",
+    "title": "4 Example Dataset (The Sandbox)",
     "section": "",
-    "text": "Instructional System Design\n\n\n\n\n\nLocation\nCharacteristics\n\n\n\n\n\nRaw Data: spatial (and workflow file to generate rasters), formatted climate and observational data\nPreprocessing data: Workflow script, all prerequisite files necessary for generating Worldfile/Flowtable, and completed Worldfiles and Flowtables (for a patch, hillslope, and full basin)\nSimulation files: Ready-to-run workflow scripts with functions to generate all necessary instruction to run the model for different strategies (i.e., single run, multi-run, for calibration & sensitivity analysis)\nReference outputs: Sample model results\nHow to get it\n\n\n\n\n\nContextual understanding\nPerformance Evaluation - verification for user generated files\nTroubleshooting\nModular learning - start at any step in the manual"
+    "text": "Instructional System Design"
   },
   {
     "objectID": "exampledataset.html#study-site-overview",
     "href": "exampledataset.html#study-site-overview",
-    "title": "Example Dataset",
-    "section": "",
-    "text": "Location\nCharacteristics"
+    "title": "4 Example Dataset (The Sandbox)",
+    "section": "4.1 Study Site Overview",
+    "text": "4.1 Study Site Overview\n\nLocation\nCharacteristics"
   },
   {
     "objectID": "exampledataset.html#dataset-contents",
     "href": "exampledataset.html#dataset-contents",
-    "title": "Example Dataset",
-    "section": "",
-    "text": "Raw Data: spatial (and workflow file to generate rasters), formatted climate and observational data\nPreprocessing data: Workflow script, all prerequisite files necessary for generating Worldfile/Flowtable, and completed Worldfiles and Flowtables (for a patch, hillslope, and full basin)\nSimulation files: Ready-to-run workflow scripts with functions to generate all necessary instruction to run the model for different strategies (i.e., single run, multi-run, for calibration & sensitivity analysis)\nReference outputs: Sample model results\nHow to get it"
+    "title": "4 Example Dataset (The Sandbox)",
+    "section": "4.2 Dataset Contents",
+    "text": "4.2 Dataset Contents\n\nRaw Data: spatial (and workflow file to generate rasters), formatted climate and observational data\nPreprocessing data: Workflow script, all prerequisite files necessary for generating Worldfile/Flowtable, and completed Worldfiles and Flowtables (for a patch, hillslope, and full basin)\nSimulation files: Ready-to-run workflow scripts with functions to generate all necessary instruction to run the model for different strategies (i.e., single run, multi-run, for calibration & sensitivity analysis)\nReference outputs: Sample model results\nHow to get it"
   },
   {
     "objectID": "exampledataset.html#how-to-use-this-data",
     "href": "exampledataset.html#how-to-use-this-data",
-    "title": "Example Dataset",
-    "section": "",
-    "text": "Contextual understanding\nPerformance Evaluation - verification for user generated files\nTroubleshooting\nModular learning - start at any step in the manual"
+    "title": "4 Example Dataset (The Sandbox)",
+    "section": "4.3 How to use this data",
+    "text": "4.3 How to use this data\n\nContextual understanding\nPerformance Evaluation - verification for user generated files\nTroubleshooting\nModular learning - start at any step in the manual"
   },
   {
     "objectID": "implementation.html",
     "href": "implementation.html",
-    "title": "RHESSys Implementation & Execution",
+    "title": "8 Implementation & Execution (The Ignition)",
     "section": "",
-    "text": "8 RHESSys Implementation & Execution (The Ignition)\n\nDefine the simulation rules\n\nRHESSysIOinR Functions to provide the directions necessary to run RHESSys\n\nOutput filter design\n\nTecfile/Output Filter interaction for expected output\nSelecting RHESSys output variables\n\nChoosing variables relevant to the research questions and analysis goals\nReassigning/Combining variables\n\n\nExecuting simulations in R\n\nSingle run\nMultiple runs"
+    "text": "There will be subsections for the following topics\n\nDefine the simulation rules\n\nRHESSysIOinR Functions to provide the directions necessary to run RHESSys\n\nOutput filter design\n\nTecfile/Output Filter interaction for expected output\nSelecting RHESSys output variables\n\nChoosing variables relevant to the research questions and analysis goals\nReassigning/Combining variables\n\n\nExecuting simulations in R\n\nSingle run\nMultiple runs"
   },
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Development for RHESSys manual",
+    "title": "Welcome to the RHESSys Manual",
     "section": "",
-    "text": "About the manual, why it exists, what it is for\n\n\n\n\n\nWho this is for/Who should be reading this\nAssumed prerequisite knowledge (i.e. assumes basic knowledge of…provide links to resources where appropriate)\n\nGeneral Modeling\nBasic R/Rstudio\nGIS and Raster/Vector\nBasic Unix/Linux environment (shell, command line, text editor)\nGit/GitHub\n\n\n\n\n\n\nWhat to expect from this book (user will learn….)\nWhat the manual covers (practical step-by-step guidance)\nWhat it does not cover (underlying theory of the model, all possible functionality)\n\n\n\n\n\nHow to read this document\nKey/Legend for document formatting - regarding use of icons, symbols, different font indications\n\n\n\n\n\norganization\nnavigation\nlinks to sections\npotentially a link to a quick start guide\n\n\n\n\n\nPotentially include author info (Naomi, Janet (contact info?), Ryan)\nRHESSys GitHub repositories (RHESSys code, RHESSysPreProcessing, RHESSysIOinR, ParameterLibrary)\nRHESSys Wiki(s)\nPotentially a FAQ page, a user community forum (i.e. ‘issues’ section on RHESSys Github repo?)"
+    "text": "Tague Team Lab | GitHub"
   },
   {
     "objectID": "index.html#purpose",
     "href": "index.html#purpose",
-    "title": "Development for RHESSys manual",
-    "section": "",
-    "text": "About the manual, why it exists, what it is for"
-  },
-  {
-    "objectID": "index.html#intended-audience",
-    "href": "index.html#intended-audience",
-    "title": "Development for RHESSys manual",
-    "section": "",
-    "text": "Who this is for/Who should be reading this\nAssumed prerequisite knowledge (i.e. assumes basic knowledge of…provide links to resources where appropriate)\n\nGeneral Modeling\nBasic R/Rstudio\nGIS and Raster/Vector\nBasic Unix/Linux environment (shell, command line, text editor)\nGit/GitHub"
+    "title": "Welcome to the RHESSys Manual",
+    "section": "Purpose",
+    "text": "Purpose\nInclude info about the manual, why it exists, what it is intended for"
   },
   {
     "objectID": "index.html#scope",
     "href": "index.html#scope",
-    "title": "Development for RHESSys manual",
-    "section": "",
-    "text": "What to expect from this book (user will learn….)\nWhat the manual covers (practical step-by-step guidance)\nWhat it does not cover (underlying theory of the model, all possible functionality)"
+    "title": "Welcome to the RHESSys Manual",
+    "section": "Scope",
+    "text": "Scope\n\nWhat to expect from this book (user will learn….)\nWhat the manual covers (practical step-by-step guidance)\nWhat it does not cover (underlying theory of the model, all possible functionality)"
   },
   {
-    "objectID": "index.html#conventions-potentially",
-    "href": "index.html#conventions-potentially",
-    "title": "Development for RHESSys manual",
-    "section": "",
-    "text": "How to read this document\nKey/Legend for document formatting - regarding use of icons, symbols, different font indications"
-  },
-  {
-    "objectID": "index.html#manual-structure",
-    "href": "index.html#manual-structure",
-    "title": "Development for RHESSys manual",
-    "section": "",
-    "text": "organization\nnavigation\nlinks to sections\npotentially a link to a quick start guide"
-  },
-  {
-    "objectID": "index.html#supportresources",
-    "href": "index.html#supportresources",
-    "title": "Development for RHESSys manual",
-    "section": "",
-    "text": "Potentially include author info (Naomi, Janet (contact info?), Ryan)\nRHESSys GitHub repositories (RHESSys code, RHESSysPreProcessing, RHESSysIOinR, ParameterLibrary)\nRHESSys Wiki(s)\nPotentially a FAQ page, a user community forum (i.e. ‘issues’ section on RHESSys Github repo?)"
+    "objectID": "index.html#intended-audience",
+    "href": "index.html#intended-audience",
+    "title": "Welcome to the RHESSys Manual",
+    "section": "Intended Audience",
+    "text": "Intended Audience\n\nWho this is for/Who should be reading this\n\n\nAssumed basic prerequisite knowledge\n\n\n\nGeneral Modeling\nBasic R/Rstudio\nGIS and Raster/Vector\nBasic Unix/Linux environment (shell, command line, text editor)\nGit/GitHub"
   },
   {
     "objectID": "initialization.html",
     "href": "initialization.html",
-    "title": "Initialization",
+    "title": "10 Initialization (The Equilibrium)",
     "section": "",
-    "text": "Part III: Refinement and Evaluation\n\nThis part is about moving from just a running model to a credible scientific tool.\nintro to what is covered in the section\n\nthe iterative cycle - cyclincal refinement loop\ninclude a figure/diagram/flowchart about the feedback loop\nrefinement not linear path - changing one parameter may require re-balancing the system\neach phase informs the next - often requiring return to previous step\n\nexpected outcome for this section: learning the process to ensure a balanced system\n\n\n\n10 Initialization (The Equilibrium)\n\nSpin-up/Initializing approaches\nAchieving steady-state\nSpin-up Tec event\nState-of-the world output Worldfile\nTypical spin-up output variables\nDetermining baseline equilibrium"
+    "text": "Spin-up/Initializing approaches\nAchieving steady-state\nSpin-up Tec event\nState-of-the world output Worldfile\nTypical spin-up output variables\nDetermining baseline equilibrium"
   },
   {
     "objectID": "inputfiles.html",
     "href": "inputfiles.html",
-    "title": "RHESSys-specific Input Files",
+    "title": "6 RHESSys-specific Input Files (The Anatomy)",
     "section": "",
-    "text": "About\nFile types association with each level\n\nsome parameters may need expanded information, i.e. phenolog flag: static,dynamic,drought\n\nFormat - required (ID) and optional parameters\nParameter values constant\nBase Files/Default values\nParameter file library\n\n\n\n\n\nHierarchical spatial containment structure - landscape partioning\n\nBasin\nHillslope (sub-basin)\nZone\nPatch, Patch Families/Asptatial patches for multiscale routing\nStratum\n\nArchitecture\nIdentifiers: Pointers (ID’s) linking identifiers to the Climate and Definition files\nState variables, values for stores/fluxes associated with each level\nHeader File - conduit between the Worldfile and Climate/Definiton files\n\n\n\n\n\nArchitecture\nTopographic data about each patch\nRouting, Patch connectivity, neighbors\nPartitioning flow, upland patches, stream patches\n\n\n\n\n\n\n\nManage timing of output printing\nControl simulation events (schedule when non-continuous events occur, i.e. fire, land use change)\nTrigger a worldfile redefinition to update properties of the landscape\n\n\n\n\n\nspecify criteria for selecting and filtering the output data\nFilter rules\nFilter conditions\nFilter Parts: timestep, spatial level, output format/name\nVariables associated with Spatial/Temporal leval of output\n\nsub-level output\nsub-routine output\n\nVariable reassignment: name reassignment, arithmetic expressions"
+    "text": "About\nFile types association with each level\n\nsome parameters may need expanded information, i.e. phenolog flag: static,dynamic,drought\n\nFormat - required (ID) and optional parameters\nParameter values constant\nBase Files/Default values\nParameter file library"
   },
   {
     "objectID": "inputfiles.html#definition-default-files-the-library",
     "href": "inputfiles.html#definition-default-files-the-library",
-    "title": "RHESSys-specific Input Files",
+    "title": "6 RHESSys-specific Input Files (The Anatomy)",
     "section": "",
     "text": "About\nFile types association with each level\n\nsome parameters may need expanded information, i.e. phenolog flag: static,dynamic,drought\n\nFormat - required (ID) and optional parameters\nParameter values constant\nBase Files/Default values\nParameter file library"
   },
   {
     "objectID": "inputfiles.html#worldfile-the-spatial-blueprint",
     "href": "inputfiles.html#worldfile-the-spatial-blueprint",
-    "title": "RHESSys-specific Input Files",
-    "section": "",
-    "text": "Hierarchical spatial containment structure - landscape partioning\n\nBasin\nHillslope (sub-basin)\nZone\nPatch, Patch Families/Asptatial patches for multiscale routing\nStratum\n\nArchitecture\nIdentifiers: Pointers (ID’s) linking identifiers to the Climate and Definition files\nState variables, values for stores/fluxes associated with each level\nHeader File - conduit between the Worldfile and Climate/Definiton files"
+    "title": "6 RHESSys-specific Input Files (The Anatomy)",
+    "section": "6.2 Worldfile: The Spatial Blueprint",
+    "text": "6.2 Worldfile: The Spatial Blueprint\n\nHierarchical spatial containment structure - landscape partioning\n\nBasin\nHillslope (sub-basin)\nZone\nPatch, Patch Families/Asptatial patches for multiscale routing\nStratum\n\nArchitecture\nIdentifiers: Pointers (ID’s) linking identifiers to the Climate and Definition files\nState variables, values for stores/fluxes associated with each level\nHeader File - conduit between the Worldfile and Climate/Definiton files"
   },
   {
     "objectID": "inputfiles.html#flowtable-the-pumbing",
     "href": "inputfiles.html#flowtable-the-pumbing",
-    "title": "RHESSys-specific Input Files",
-    "section": "",
-    "text": "Architecture\nTopographic data about each patch\nRouting, Patch connectivity, neighbors\nPartitioning flow, upland patches, stream patches"
+    "title": "6 RHESSys-specific Input Files (The Anatomy)",
+    "section": "6.3 Flowtable: The Pumbing",
+    "text": "6.3 Flowtable: The Pumbing\n\nArchitecture\nTopographic data about each patch\nRouting, Patch connectivity, neighbors\nPartitioning flow, upland patches, stream patches"
   },
   {
     "objectID": "inputfiles.html#tecfile-and-output-filters-simulation-control",
     "href": "inputfiles.html#tecfile-and-output-filters-simulation-control",
-    "title": "RHESSys-specific Input Files",
-    "section": "",
-    "text": "Manage timing of output printing\nControl simulation events (schedule when non-continuous events occur, i.e. fire, land use change)\nTrigger a worldfile redefinition to update properties of the landscape\n\n\n\n\n\nspecify criteria for selecting and filtering the output data\nFilter rules\nFilter conditions\nFilter Parts: timestep, spatial level, output format/name\nVariables associated with Spatial/Temporal leval of output\n\nsub-level output\nsub-routine output\n\nVariable reassignment: name reassignment, arithmetic expressions"
+    "title": "6 RHESSys-specific Input Files (The Anatomy)",
+    "section": "6.4 Tecfile and Output Filters: Simulation Control",
+    "text": "6.4 Tecfile and Output Filters: Simulation Control\n\n6.4.1 Tecfile: The Alarm Clock\n\nManage timing of output printing\nControl simulation events (schedule when non-continuous events occur, i.e. fire, land use change)\nTrigger a worldfile redefinition to update properties of the landscape\n\n\n\n6.4.2 Output filters: The Sieve\n\nspecify criteria for selecting and filtering the output data\nFilter rules\nFilter conditions\nFilter Parts: timestep, spatial level, output format/name\nVariables associated with Spatial/Temporal leval of output\n\nsub-level output\nsub-routine output\n\nVariable reassignment: name reassignment, arithmetic expressions"
   },
   {
     "objectID": "introduction.html",
     "href": "introduction.html",
-    "title": "Introduction",
+    "title": "1 Introduction (The Model)",
     "section": "",
-    "text": "This part is about understanding the logic of this tool and setting the computational environment\nintro to what is covered in the section\nexpected outcome for this section: functioning modeling environment and clear strategic plan"
+    "text": "Description\n\n\n\n\nIntegrated Ecohydological Modeling\nSpatial distribution of the landscape\nFeedback loops\nFire model\n\n\n\n\n\nHigh data demands\nCan be computationally intensive\nMaybe any processes that are not well represented? Let users know if the model won’t fit their research question"
   },
   {
     "objectID": "introduction.html#overview-of-rhessys",
     "href": "introduction.html#overview-of-rhessys",
-    "title": "Introduction",
-    "section": "1.1 Overview of RHESSys",
-    "text": "1.1 Overview of RHESSys\n\nWhat RHESSys is\n\nDescription\n\n\nCapabilities\n\nIntegrated Ecohydological Modeling\nSpatial distribution of the landscape\nFeedback loops\nFire model\n\n\n\nLimitations\n\nHigh data demands\nCan be computationally intensive\nMaybe any processes that are not well represented? Let users know if the model won’t fit their research question"
+    "title": "1 Introduction (The Model)",
+    "section": "",
+    "text": "Description\n\n\n\n\nIntegrated Ecohydological Modeling\nSpatial distribution of the landscape\nFeedback loops\nFire model\n\n\n\n\n\nHigh data demands\nCan be computationally intensive\nMaybe any processes that are not well represented? Let users know if the model won’t fit their research question"
   },
   {
     "objectID": "introduction.html#recommended-readingpublications",
     "href": "introduction.html#recommended-readingpublications",
-    "title": "Introduction",
+    "title": "1 Introduction (The Model)",
     "section": "1.2 Recommended reading/Publications",
     "text": "1.2 Recommended reading/Publications\n\nFoundational papers\nOverview/Review papers\nApplications"
   },
   {
     "objectID": "introduction.html#workflow-overview",
     "href": "introduction.html#workflow-overview",
-    "title": "Introduction",
+    "title": "1 Introduction (The Model)",
     "section": "1.3 Workflow overview",
     "text": "1.3 Workflow overview\n\n\n\nRHESSys Modeling Workflow Overview\n\n\n\nStep 1: Installation - Set up the RHESSys environment\nStep 2: Data Preparation - Gather and format spatial, climate, and validation data\nStep 3: Preprocessing - Generate the landscape representation (Worldfile) and routing (Flowtable) input files\nStep 4: Model Setup and Execution - Define the simulation rules and run RHESSys\nStep 5: Calibration & Sensitivity Analysis - Condition the model (Initialize/reach equilibrium), refine parameters, validate performance\nStep 6: Post Processing - wrangle, analyze, and visualize output data\n\n\nKey concepts and terminology\n(define frequently used terms)\n\nSpatial hierarchy (basin, hillslope, zone, patch, stratum)\nInput File types (Worldfile, Header, Flowtable, Tecfile, Parameter/Climate files, Output filters)\nState variables (store quantities) and fluxes\nSpatial/Temporal step (i.e., basin daily, patch monthly)"
   },
@@ -448,144 +455,172 @@
     "text": "14.4 Parallelization (maybe include?)\n\nrun a large watershed in parallel in order to speed up the simulation process\ncompiling with openmp"
   },
   {
+    "objectID": "part1intro.html",
+    "href": "part1intro.html",
+    "title": "Part I: Foundations & Envrionment",
+    "section": "",
+    "text": "This part is about understanding the logic of this tool and setting the computational environment\nintro to what is covered in the section\nexpected outcome for this section: functioning modeling environment and clear strategic plan"
+  },
+  {
+    "objectID": "part2intro.html",
+    "href": "part2intro.html",
+    "title": "Part II: Building and Executing",
+    "section": "",
+    "text": "This part is about building the model, constructing the foundation for a fuctional simulation\nintro to what is covered in the section\nexpected outcome for this section: creating input in order to run the model, generate output, and interpret results"
+  },
+  {
+    "objectID": "part3intro.html",
+    "href": "part3intro.html",
+    "title": "Part III: Refinement and Evaluation",
+    "section": "",
+    "text": "This part is about moving from just a running model to a credible scientific tool.\nintro to what is covered in the section\n\nthe iterative cycle - cyclincal refinement loop\ninclude a figure/diagram/flowchart about the feedback loop\nrefinement not linear path - changing one parameter may require re-balancing the system\neach phase informs the next - often requiring return to previous step\n\nexpected outcome for this section: learning the process to ensure a balanced system"
+  },
+  {
+    "objectID": "part4intro.html",
+    "href": "part4intro.html",
+    "title": "Part IV: Advanced Applications",
+    "section": "",
+    "text": "This part is about exploring complex eco-hydrological scenarios\nintro to what is covered in the section\nexpected outcome for this section: ability to move from model development to high impact scientific inquiry"
+  },
+  {
     "objectID": "postprocess.html",
     "href": "postprocess.html",
-    "title": "Post-processing",
+    "title": "9 Post-processing (The Insight)",
     "section": "",
-    "text": "9 Post-processing (The Insight)\n\nOutput data wrangling - reading output into R, synthesizing, transforming, rearranging data for use-case\nAnalyzing\nVisualizing"
+    "text": "Sub-sections for the following\n\nOutput data wrangling - reading output into R, synthesizing, transforming, rearranging data for use-case\nAnalyzing\nVisualizing"
   },
   {
     "objectID": "preprocessing.html",
     "href": "preprocessing.html",
-    "title": "Preprocessing",
+    "title": "7 Preprocessing (The Foundation)",
     "section": "",
-    "text": "Standard directory structure\nnaming convention\n\n\n\n\n\nSpatial processing using WhiteboxTools and R\n\n\n\n\n\n\n\nFormat and Initialization\n\nWorld objects\nState variables\nDefault and base station ID’s\n\nRequired and Optional state variables\nRedefinition template (introduce here or later in advanced?)\nEditing the template, initial conditions\n\n\n\n\n\nFormat\nSet up for single rule\nSet up for multiple rules - requires map\n\n\n\n\n\nAbout\nPrerequisites: spatial data, template, asp rules file if applicable\nR markdown workflow/script - functions\nRun the function to generate Worldfile/Flowtable"
+    "text": "Standard directory structure\nnaming convention"
   },
   {
     "objectID": "preprocessing.html#environmental-setup",
     "href": "preprocessing.html#environmental-setup",
-    "title": "Preprocessing",
+    "title": "7 Preprocessing (The Foundation)",
     "section": "",
     "text": "Standard directory structure\nnaming convention"
   },
   {
     "objectID": "preprocessing.html#raster-processing",
     "href": "preprocessing.html#raster-processing",
-    "title": "Preprocessing",
-    "section": "",
-    "text": "Spatial processing using WhiteboxTools and R"
+    "title": "7 Preprocessing (The Foundation)",
+    "section": "7.2 Raster Processing",
+    "text": "7.2 Raster Processing\n\nSpatial processing using WhiteboxTools and R"
   },
   {
     "objectID": "preprocessing.html#generating-the-worldfile-and-flowtable",
     "href": "preprocessing.html#generating-the-worldfile-and-flowtable",
-    "title": "Preprocessing",
-    "section": "",
-    "text": "Format and Initialization\n\nWorld objects\nState variables\nDefault and base station ID’s\n\nRequired and Optional state variables\nRedefinition template (introduce here or later in advanced?)\nEditing the template, initial conditions\n\n\n\n\n\nFormat\nSet up for single rule\nSet up for multiple rules - requires map\n\n\n\n\n\nAbout\nPrerequisites: spatial data, template, asp rules file if applicable\nR markdown workflow/script - functions\nRun the function to generate Worldfile/Flowtable"
+    "title": "7 Preprocessing (The Foundation)",
+    "section": "7.3 Generating the Worldfile and Flowtable",
+    "text": "7.3 Generating the Worldfile and Flowtable\n\n7.3.1 The Template File: Recipe for the worldfile\n\nFormat and Initialization\n\nWorld objects\nState variables\nDefault and base station ID’s\n\nRequired and Optional state variables\nRedefinition template (introduce here or later in advanced?)\nEditing the template, initial conditions\n\n\n\n7.3.2 Aspatial rules file for Multi-scale routing\n\nFormat\nSet up for single rule\nSet up for multiple rules - requires map\n\n\n\n7.3.3 RHESSysPreprocessing R package\n\nAbout\nPrerequisites: spatial data, template, asp rules file if applicable\nR markdown workflow/script - functions\nRun the function to generate Worldfile/Flowtable"
   },
   {
     "objectID": "projectdesign.html",
     "href": "projectdesign.html",
-    "title": "Project Design & Planning",
+    "title": "3 Project Design & Planning (The Strategy)",
     "section": "",
-    "text": "will discuss what a user should consider, i.e.:\n\n\n\n\npatch resolution/number of patches impact on processing needs & time\nscale - what is necessary to answer users questions: is fine-scale processing necessary?\n\n\n\n\n\noverlap - i.e., does the temporal period of climate data & observed streamflow data conincide?\nspin-up and calibration time requirements\n\n\n\n\n\nFeature specific inputs - i.e. to run the fire model, is wind speed/direction and relative humidity data available?\nDoes RHESSys output what is needed to answer research questions?\n\n\n\n\n\nuse full basin boundary, representative hillslope, single patch?"
+    "text": "will discuss what a user should consider, i.e.:"
   },
   {
     "objectID": "projectdesign.html#spatial-resolution-vs.-computational-cost",
     "href": "projectdesign.html#spatial-resolution-vs.-computational-cost",
-    "title": "Project Design & Planning",
-    "section": "",
-    "text": "patch resolution/number of patches impact on processing needs & time\nscale - what is necessary to answer users questions: is fine-scale processing necessary?"
+    "title": "3 Project Design & Planning (The Strategy)",
+    "section": "3.1 Spatial resolution vs. computational cost",
+    "text": "3.1 Spatial resolution vs. computational cost\n\npatch resolution/number of patches impact on processing needs & time\nscale - what is necessary to answer users questions: is fine-scale processing necessary?"
   },
   {
     "objectID": "projectdesign.html#data-synchronization-temporal-extent",
     "href": "projectdesign.html#data-synchronization-temporal-extent",
-    "title": "Project Design & Planning",
-    "section": "",
-    "text": "overlap - i.e., does the temporal period of climate data & observed streamflow data conincide?\nspin-up and calibration time requirements"
+    "title": "3 Project Design & Planning (The Strategy)",
+    "section": "3.2 Data synchronization & temporal extent",
+    "text": "3.2 Data synchronization & temporal extent\n\noverlap - i.e., does the temporal period of climate data & observed streamflow data conincide?\nspin-up and calibration time requirements"
   },
   {
     "objectID": "projectdesign.html#functional-constraints",
     "href": "projectdesign.html#functional-constraints",
-    "title": "Project Design & Planning",
-    "section": "",
-    "text": "Feature specific inputs - i.e. to run the fire model, is wind speed/direction and relative humidity data available?\nDoes RHESSys output what is needed to answer research questions?"
+    "title": "3 Project Design & Planning (The Strategy)",
+    "section": "3.3 Functional constraints",
+    "text": "3.3 Functional constraints\n\nFeature specific inputs - i.e. to run the fire model, is wind speed/direction and relative humidity data available?\nDoes RHESSys output what is needed to answer research questions?"
   },
   {
     "objectID": "projectdesign.html#defining-the-project-boundaries",
     "href": "projectdesign.html#defining-the-project-boundaries",
-    "title": "Project Design & Planning",
-    "section": "",
-    "text": "use full basin boundary, representative hillslope, single patch?"
+    "title": "3 Project Design & Planning (The Strategy)",
+    "section": "3.4 Defining the project boundaries",
+    "text": "3.4 Defining the project boundaries\n\nuse full basin boundary, representative hillslope, single patch?"
   },
   {
     "objectID": "sensanal.html",
     "href": "sensanal.html",
-    "title": "Sensitivity Analysis",
+    "title": "11 Sensitivity Analysis (The Influence)",
     "section": "",
-    "text": "11 Sensitivity Analysis (The Influence)\n\nIdentifying influential variables - understanding the ‘knobs’, which to turn\nParameter Space Characterization (establishing realistic bounds/ranges)\nParameter Selection"
+    "text": "Identifying influential variables - understanding the ‘knobs’, which to turn\nParameter Space Characterization (establishing realistic bounds/ranges)\nParameter Selection"
   },
   {
     "objectID": "setup.html",
     "href": "setup.html",
-    "title": "Setup",
+    "title": "2 Setup (The Software)",
     "section": "",
-    "text": "(description of each, who should use, when to use, recommendation, link to corresponding install instructions)\n\n\n\nmore advanced users\nusers who want more flexibility\n\n\n\n\n\nbeginners\nWindows users\nportability\n\n\n\n\n\nhigh-performance computing environments\ncluster users\nlarge scale, high resolution simulations\n\n\n\n\n\n\n\n\n\n\nTerminal application\nXcode Command Line Tools (compilers/build tools)\nPrivileges (i.e. Administrator access)\nHomebrew\nGit\nLibraries (i.e. NetCDF)\n\n\n\n\n\nDownload code from GitHub\n\nZip file\nClone repository (main, develop)\n\nCompile\nShell configuration (adding to path)\nVerify installation\nCommon issue and solutions\n\n\n\n\n\n\nInstall Docker Desktop\nObtaining RHESSys image from the Docker Hub\n\n\n\n\n\nObtaining RHESSys .sif image\n\n\n\n\n\n\n\n\nR (The engine)\nRStudio (The interface)\nStandard Packages (Extensions - Libraries that expand functionality)\n\n\n\n\n\n\n\n\nRHESSysPreprocessing\nRHESSysIOinR"
+    "text": "(description of each, who should use, when to use, recommendation, link to corresponding install instructions)\n\n\n\nmore advanced users\nusers who want more flexibility\n\n\n\n\n\nbeginners\nWindows users\nportability\n\n\n\n\n\nhigh-performance computing environments\ncluster users\nlarge scale, high resolution simulations"
   },
   {
     "objectID": "setup.html#setup-options",
     "href": "setup.html#setup-options",
-    "title": "Setup",
+    "title": "2 Setup (The Software)",
     "section": "",
     "text": "(description of each, who should use, when to use, recommendation, link to corresponding install instructions)\n\n\n\nmore advanced users\nusers who want more flexibility\n\n\n\n\n\nbeginners\nWindows users\nportability\n\n\n\n\n\nhigh-performance computing environments\ncluster users\nlarge scale, high resolution simulations"
   },
   {
     "objectID": "setup.html#rhessys-installation",
     "href": "setup.html#rhessys-installation",
-    "title": "Setup",
-    "section": "",
-    "text": "Terminal application\nXcode Command Line Tools (compilers/build tools)\nPrivileges (i.e. Administrator access)\nHomebrew\nGit\nLibraries (i.e. NetCDF)\n\n\n\n\n\nDownload code from GitHub\n\nZip file\nClone repository (main, develop)\n\nCompile\nShell configuration (adding to path)\nVerify installation\nCommon issue and solutions\n\n\n\n\n\n\nInstall Docker Desktop\nObtaining RHESSys image from the Docker Hub\n\n\n\n\n\nObtaining RHESSys .sif image"
+    "title": "2 Setup (The Software)",
+    "section": "2.2 RHESSys Installation",
+    "text": "2.2 RHESSys Installation\n\n2.2.1 MacOS (include section for Linux as well if necessary or where differs)\n\nCode Dependencies and Operational Requirements\n\nTerminal application\nXcode Command Line Tools (compilers/build tools)\nPrivileges (i.e. Administrator access)\nHomebrew\nGit\nLibraries (i.e. NetCDF)\n\n\n\nInstallation steps\n\nDownload code from GitHub\n\nZip file\nClone repository (main, develop)\n\nCompile\nShell configuration (adding to path)\nVerify installation\nCommon issue and solutions\n\n\n\n\n2.2.2 Docker\n\nInstall Docker Desktop\nObtaining RHESSys image from the Docker Hub\n\n\n\n2.2.3 SIF\n\nObtaining RHESSys .sif image"
   },
   {
     "objectID": "setup.html#installing-workflow-analysis-tools",
     "href": "setup.html#installing-workflow-analysis-tools",
-    "title": "Setup",
-    "section": "",
-    "text": "R (The engine)\nRStudio (The interface)\nStandard Packages (Extensions - Libraries that expand functionality)\n\n\n\n\n\n\n\n\nRHESSysPreprocessing\nRHESSysIOinR"
+    "title": "2 Setup (The Software)",
+    "section": "2.3 Installing Workflow & Analysis Tools",
+    "text": "2.3 Installing Workflow & Analysis Tools\n\n2.3.1 R Ecosystem\n\nR (The engine)\nRStudio (The interface)\nStandard Packages (Extensions - Libraries that expand functionality)\n\n\n\n2.3.2 WhiteboxTools for Geospatial Processing\n\n\n2.3.3 RHESSys-Specific R packages\n\nRHESSysPreprocessing\nRHESSysIOinR"
   },
   {
     "objectID": "userdata.html",
     "href": "userdata.html",
-    "title": "User-Acquired Data",
+    "title": "5 User-Acquired Data (The Ingredients)",
     "section": "",
-    "text": "This part is about building the model, constructing the foundation for a fuctional simulation\nexpected outcome for this section: creating input in order to run the model, generate output, and interpret results"
+    "text": "Required\n\nDEM (source to obtain)\nWatershed outlet - gauge location coordinates\n\nDEM Derivatives - generation discussed in later section:\n\nWatershed Basin boundary\nSub-basins (hillslopes)\nSlope/Aspect\nE/W Horizons\nStream Network\nPatches\n\n\n\nRecommended (typical) or when applicable:\n\nVegetation cover\nSoils\nLandcover/Landuse\nRoads\nImpervious areas\nClimate base stations\nAspatial rules ID map for multi-scale routing"
   },
   {
     "objectID": "userdata.html#spatial-data",
     "href": "userdata.html#spatial-data",
-    "title": "User-Acquired Data",
-    "section": "5.1 Spatial Data",
-    "text": "5.1 Spatial Data\n\nRequired\n\nDEM (source to obtain)\nWatershed outlet - gauge location coordinates\n\nDEM Derivatives - generation discussed in later section:\n\nWatershed Basin boundary\nSub-basins (hillslopes)\nSlope/Aspect\nE/W Horizons\nStream Network\nPatches\n\n\n\nRecommended (typical) or when applicable:\n\nVegetation cover\nSoils\nLandcover/Landuse\nRoads\nImpervious areas\nClimate base stations\nAspatial rules ID map for multi-scale routing"
+    "title": "5 User-Acquired Data (The Ingredients)",
+    "section": "",
+    "text": "Required\n\nDEM (source to obtain)\nWatershed outlet - gauge location coordinates\n\nDEM Derivatives - generation discussed in later section:\n\nWatershed Basin boundary\nSub-basins (hillslopes)\nSlope/Aspect\nE/W Horizons\nStream Network\nPatches\n\n\n\nRecommended (typical) or when applicable:\n\nVegetation cover\nSoils\nLandcover/Landuse\nRoads\nImpervious areas\nClimate base stations\nAspatial rules ID map for multi-scale routing"
   },
   {
     "objectID": "userdata.html#climate-data",
     "href": "userdata.html#climate-data",
-    "title": "User-Acquired Data",
+    "title": "5 User-Acquired Data (The Ingredients)",
     "section": "5.2 Climate Data",
     "text": "5.2 Climate Data\n\nTimeseries data\nRequired meteorologic data\nOptional meteorologic data\nBase station\nSupported Input Formats - point, grid, NetCDF - and how to format each"
   },
   {
     "objectID": "userdata.html#observational-data",
     "href": "userdata.html#observational-data",
-    "title": "User-Acquired Data",
+    "title": "5 User-Acquired Data (The Ingredients)",
     "section": "5.3 Observational Data",
     "text": "5.3 Observational Data\n\nused to constrain and evaluate hydrologic and ecophysiological parameterization\nHydrologic (i.e., Streamflow, Snow, Soil moisture)\nVegetation (i.e, LAI, Height, NPP, ET, rooting depth)"
   },
   {
     "objectID": "validation.html",
     "href": "validation.html",
-    "title": "Validation",
+    "title": "13 Validation (The Verification or The Credibility)",
     "section": "",
-    "text": "13 Validation (The Verification or The Credibility)\n\njudging/evaluation performance\ntesting calibrated parameters against data set independent of calibration period"
+    "text": "judging/evaluation performance\ntesting calibrated parameters against data set independent of calibration period"
   },
   {
     "objectID": "welcome.html",

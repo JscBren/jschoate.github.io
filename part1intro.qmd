@@ -1,0 +1,11 @@
+---
+title: "Part I: Foundations & Envrionment"
+---
+
+# 
+
+-   This part is about understanding the logic of this tool and setting the computational environment
+-   intro to what is covered in the section
+-   expected outcome for this section: functioning modeling environment and clear strategic plan
+
+# 

@@ -1,17 +1,11 @@
 ---
-title: "Advanced Features"
+title: "14 Advanced Features (The Expansion)"
 ---
-
-# [Part IV: Advanced Application]{.underline}
-
--   This part is about exploring complex eco-hydrological scenarios
--   intro to what is covered in the section
--   expected outcome for this section: ability to move from model development to high impact scientific inquiry
-
-# 14 Advanced Features (The Expansion)
 
 -   beyond the baseline
 -   moving into specialized simulations
+
+Each of the following (14.1, 14.2, 14.3, 14.4) will have its own page so it will have it's own subject in the navigation pane
 
 ## 14.1 Disturbance modeling
 

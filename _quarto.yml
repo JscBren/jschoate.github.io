@@ -10,32 +10,53 @@ website:
     contents:
       - text: "Welcome"
         file: index.qmd
+      - text: "About this Manual"
+        file: aboutmanual.qmd
     
       - section: "Part I: Foundations & Environment"
+        href: part1intro.qmd
         contents:
-          - introduction.qmd
-          - setup.qmd
-          - projectdesign.qmd
-          - exampledataset.qmd
+          - text: "Introduction"
+            file: introduction.qmd
+          - text: "Setup"
+            file: setup.qmd
+          - text: "Project Design"
+            file: projectdesign.qmd
+          - text: "Example Dataset"
+            file: exampledataset.qmd
       
       - section: "Part II: Building and Executing"
+        href: part2intro.qmd
         contents:
-          - userdata.qmd
-          - inputfiles.qmd
-          - preprocessing.qmd
-          - implementation.qmd
-          - postprocess.qmd
+          - text: "User-Aquired Data"
+            file: userdata.qmd
+          - text: "RHESSys Specific Input Files"
+            file: inputfiles.qmd
+          - text: "Preprocessing"
+            file: preprocessing.qmd
+          - text: "Implementation & Execution"
+            file: implementation.qmd
+          - text: "Postprocessing"
+            file: postprocess.qmd
+   
       
       - section: "Part III: Refinement and Evaluation"
+        href: part3intro.qmd
         contents:
-          - initialization.qmd
-          - sensanal.qmd
-          - calibration.qmd
-          - validation.qmd
+          - text: "Initialization"
+            file: initialization.qmd
+          - text: "Sensitivity Analysis"
+            file: sensanal.qmd
+          - text: "Calibration"
+            file: calibration.qmd
+          - text: "Validation"
+            file: validation.qmd
       
-      - section: "Part IV: Advanced Application"
+      - section: "Part IV: Advanced Applications"
+        href: part4intro.qmd
         contents:
-          - advancedfeatures.qmd
+          - text: "Advanced Features"
+            file: advancedfeatures.qmd
       
       - text: "---" # separator line
       - text: "Appendices"

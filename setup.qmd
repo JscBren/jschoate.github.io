@@ -1,8 +1,6 @@
 ---
-title: "Setup"
+title: "2 Setup (The Software)"
 ---
-
-# 2 Setup (The Software)
 
 ## 2.1 Setup options
 

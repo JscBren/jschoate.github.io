@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>RHESSys Manual - 7 Preprocessing (The Foundation)</title>
+<title>RHESSys Manual - Part IV: Advanced Applications</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -72,7 +72,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./part2intro.html">Part II: Building and Executing</a></li><li class="breadcrumb-item"><a href="./preprocessing.html">Preprocessing</a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./part4intro.html">Part IV: Advanced Applications</a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -148,11 +148,11 @@ ul.task-list li input[type="checkbox"] {
       <div class="sidebar-item-container"> 
             <a href="./part2intro.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Part II: Building and Executing</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./userdata.html" class="sidebar-item-text sidebar-link">
@@ -167,7 +167,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./preprocessing.html" class="sidebar-item-text sidebar-link active">
+  <a href="./preprocessing.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Preprocessing</span></a>
   </div>
 </li>
@@ -222,13 +222,13 @@ ul.task-list li input[type="checkbox"] {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="./part4intro.html" class="sidebar-item-text sidebar-link">
+            <a href="./part4intro.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Part IV: Advanced Applications</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./advancedfeatures.html" class="sidebar-item-text sidebar-link">
@@ -249,29 +249,15 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#environmental-setup" id="toc-environmental-setup" class="nav-link active" data-scroll-target="#environmental-setup">7.1 Environmental Setup</a></li>
-  <li><a href="#raster-processing" id="toc-raster-processing" class="nav-link" data-scroll-target="#raster-processing">7.2 Raster Processing</a></li>
-  <li><a href="#generating-the-worldfile-and-flowtable" id="toc-generating-the-worldfile-and-flowtable" class="nav-link" data-scroll-target="#generating-the-worldfile-and-flowtable">7.3 Generating the Worldfile and Flowtable</a>
-  <ul class="collapse">
-  <li><a href="#the-template-file-recipe-for-the-worldfile" id="toc-the-template-file-recipe-for-the-worldfile" class="nav-link" data-scroll-target="#the-template-file-recipe-for-the-worldfile">7.3.1 The Template File: Recipe for the worldfile</a></li>
-  <li><a href="#aspatial-rules-file-for-multi-scale-routing" id="toc-aspatial-rules-file-for-multi-scale-routing" class="nav-link" data-scroll-target="#aspatial-rules-file-for-multi-scale-routing">7.3.2 Aspatial rules file for Multi-scale routing</a></li>
-  <li><a href="#rhessyspreprocessing-r-package" id="toc-rhessyspreprocessing-r-package" class="nav-link" data-scroll-target="#rhessyspreprocessing-r-package">7.3.3 RHESSysPreprocessing R package</a></li>
-  </ul></li>
-  <li><a href="#section" id="toc-section" class="nav-link" data-scroll-target="#section"></a></li>
-  </ul>
-</nav>
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
     </div>
 <!-- main -->
-<main class="content column-body" id="quarto-document-content">
+<main class="content column-page-right" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">7 Preprocessing (The Foundation)</h1>
+<h1 class="title">Part IV: Advanced Applications</h1>
 </div>
 
 
@@ -286,58 +272,13 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<section id="environmental-setup" class="level2">
-<h2 class="anchored" data-anchor-id="environmental-setup">7.1 Environmental Setup</h2>
 <ul>
-<li>Standard directory structure</li>
-<li>naming convention</li>
+<li>This part is about exploring complex eco-hydrological scenarios</li>
+<li>intro to what is covered in the section</li>
+<li>expected outcome for this section: ability to move from model development to high impact scientific inquiry</li>
 </ul>
-</section>
-<section id="raster-processing" class="level2">
-<h2 class="anchored" data-anchor-id="raster-processing">7.2 Raster Processing</h2>
-<ul>
-<li>Spatial processing using WhiteboxTools and R</li>
-</ul>
-</section>
-<section id="generating-the-worldfile-and-flowtable" class="level2">
-<h2 class="anchored" data-anchor-id="generating-the-worldfile-and-flowtable">7.3 Generating the Worldfile and Flowtable</h2>
-<section id="the-template-file-recipe-for-the-worldfile" class="level3">
-<h3 class="anchored" data-anchor-id="the-template-file-recipe-for-the-worldfile">7.3.1 The Template File: Recipe for the worldfile</h3>
-<ul>
-<li>Format and Initialization
-<ul>
-<li>World objects</li>
-<li>State variables</li>
-<li>Default and base station ID’s</li>
-</ul></li>
-<li>Required and Optional state variables</li>
-<li>Redefinition template (introduce here or later in advanced?)</li>
-<li>Editing the template, initial conditions</li>
-</ul>
-</section>
-<section id="aspatial-rules-file-for-multi-scale-routing" class="level3">
-<h3 class="anchored" data-anchor-id="aspatial-rules-file-for-multi-scale-routing">7.3.2 Aspatial rules file for Multi-scale routing</h3>
-<ul>
-<li>Format</li>
-<li>Set up for single rule</li>
-<li>Set up for multiple rules - requires map</li>
-</ul>
-</section>
-<section id="rhessyspreprocessing-r-package" class="level3">
-<h3 class="anchored" data-anchor-id="rhessyspreprocessing-r-package">7.3.3 RHESSysPreprocessing R package</h3>
-<ul>
-<li>About</li>
-<li>Prerequisites: spatial data, template, asp rules file if applicable</li>
-<li>R markdown workflow/script - functions</li>
-<li>Run the function to generate Worldfile/Flowtable</li>
-</ul>
-</section>
-</section>
-<section id="section" class="level1">
-<h1></h1>
 
 
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

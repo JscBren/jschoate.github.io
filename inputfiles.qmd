@@ -1,8 +1,6 @@
 ---
-title: "RHESSys-specific Input Files"
+title: "6 RHESSys-specific Input Files (The Anatomy)"
 ---
-
-# 6 RHESSys-specific Input Files (The Anatomy)
 
 ## 6.1 Definition (Default) Files: The Library
 
