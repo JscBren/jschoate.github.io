@@ -57,6 +57,16 @@ website:
         contents:
           - text: "Advanced Features"
             file: advancedfeatures.qmd
+          - text: "Disturbance: Fire"
+            file: fire.qmd
+          - text: "Disturbance:Vegetation Dynamics"
+            file: vegchange.qmd
+          - text: "Multi-scale routing"
+            file: msr.qmd
+          - text: "Target-driven spin-up"
+            file: targetspinup.qmd
+          - text: "Parallelization"
+            file: parallelization.qmd
       
       - text: "---" # separator line
       - text: "Appendices"

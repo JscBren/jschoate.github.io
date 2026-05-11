@@ -1,0 +1,11 @@
+---
+title: "16 Disturbance: Vegetation Dynamics (The Evolution)"
+---
+
+-   Land Cover/Vegetation change
+-   biomass pool changes
+-   redefine world functionality (redefine_world\_: multiplier, thin_remain, thin_harvest, thin_snags, thin_harvest) to invoke:
+    -   drought induced mortality
+    -   fuel treatments
+        -   thinning, controlled burns
+-   maybe include redefine world info on urbanization?

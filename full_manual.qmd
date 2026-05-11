@@ -1,0 +1,19 @@
+---
+title: "RHESSys Manual"
+author: "Janet Choate"
+format:
+  pdf:
+    toc: true
+    number-sections: false
+    documentclass: report
+---
+
+{{< include index.qmd >}}
+
+{{< include aboutmanual.qmd >}}
+
+{{< include part1intro.qmd >}}
+
+{{< include introduction.qmd >}}
+
+{{< include setup.qmd >}}

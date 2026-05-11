@@ -1,0 +1,10 @@
+---
+title: "19 Parallelization (The Accelerator)"
+---
+
+Maybe Include this?
+
+-   run a large watershed in parallel in order to speed up the simulation process
+-   compiling with openmp
+
+# 

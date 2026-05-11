@@ -1,0 +1,39 @@
+---
+title: "17 Fine-scale heterogeneity (The Granularity)"
+---
+
+not sure this belongs in advanced features anymore because it has become pretty standard
+
+**This can be debated!**
+
+I have introduced the term above in Part II because I needed to include preparation of the Aspatial rules file, and about if there are multiple rules a map is needed of rule ID's, so need to include at least that under spatial data.
+
+Also, I was planning for the example dataset worldfile(s) to use msr, and to discuss that worldfile structure in chapter 6
+
+Perhaps the msr information should be introduced in Part I chapter 3 - Project design & planning? So user knows that as they proceed they will need to make a rules file & possibly a rules map. (maybe in project design introduce standard & msr with info about if you choose this option you need this, if you choose this option you may additionally need this?)
+
+Because that would mean they need to think about the veg makeup of their watershed & perhaps obtain veg maps to base it on?
+
+So either need to stick with standard worldfile structure all the way through and not include anything about msr until advanced topics (include the example worldfiles) - or make msr the standard approach & introduce the topic early on, and it should perhaps have it's own chapter - or at least it's own sub-chapter earlier on.
+
+It has quite a bit of information - so i'm leaning toward it's own chapter - which it has now in advanced topics - but I think it should be introduced earlier
+
+or
+
+MSR could be referred to in project design, and when/why it would be good to use it - with a link to where it lives in advanced topics
+
+Then if user decides to use that option, they go read all about it
+
+This way the topic is introduced so can include reference to it data preparation and preprocessing chapters.
+
+That still leaves the question of whether the example dataset should be standard or msr - or if both are necessary as examples? (perhaps) (but the actual work, with the scripts and the output i think should be done with the msr worldfile)
+
+-   About Multi-scale routing
+-   How it works
+-   Generating MSR input files
+    -   asp rules file
+    -   rules map if multiple rules
+-   Generating msr worldfile
+-   Running RHESSys with msr
+-   Patch families
+-   Output of multiple patches that belog to a patch family

@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>RHESSys Manual - Part II: Building and Executing</title>
+<title>RHESSys Manual - 17 Fine-scale heterogeneity (The Granularity)</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -72,7 +72,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./part2intro.html">Part II: Building and Executing</a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./part4intro.html">Part IV: Advanced Applications</a></li><li class="breadcrumb-item"><a href="./msr.html">Multi-scale routing</a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -146,13 +146,13 @@ ul.task-list li input[type="checkbox"] {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="./part2intro.html" class="sidebar-item-text sidebar-link active">
+            <a href="./part2intro.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Part II: Building and Executing</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./userdata.html" class="sidebar-item-text sidebar-link">
@@ -224,11 +224,11 @@ ul.task-list li input[type="checkbox"] {
       <div class="sidebar-item-container"> 
             <a href="./part4intro.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Part IV: Advanced Applications</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./advancedfeatures.html" class="sidebar-item-text sidebar-link">
@@ -249,7 +249,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./msr.html" class="sidebar-item-text sidebar-link">
+  <a href="./msr.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Multi-scale routing</span></a>
   </div>
 </li>
@@ -287,7 +287,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Part II: Building and Executing</h1>
+<h1 class="title">17 Fine-scale heterogeneity (The Granularity)</h1>
 </div>
 
 
@@ -302,10 +302,31 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
+<p>not sure this belongs in advanced features anymore because it has become pretty standard</p>
+<p><strong>This can be debated!</strong></p>
+<p>I have introduced the term above in Part II because I needed to include preparation of the Aspatial rules file, and about if there are multiple rules a map is needed of rule ID’s, so need to include at least that under spatial data.</p>
+<p>Also, I was planning for the example dataset worldfile(s) to use msr, and to discuss that worldfile structure in chapter 6</p>
+<p>Perhaps the msr information should be introduced in Part I chapter 3 - Project design &amp; planning? So user knows that as they proceed they will need to make a rules file &amp; possibly a rules map. (maybe in project design introduce standard &amp; msr with info about if you choose this option you need this, if you choose this option you may additionally need this?)</p>
+<p>Because that would mean they need to think about the veg makeup of their watershed &amp; perhaps obtain veg maps to base it on?</p>
+<p>So either need to stick with standard worldfile structure all the way through and not include anything about msr until advanced topics (include the example worldfiles) - or make msr the standard approach &amp; introduce the topic early on, and it should perhaps have it’s own chapter - or at least it’s own sub-chapter earlier on.</p>
+<p>It has quite a bit of information - so i’m leaning toward it’s own chapter - which it has now in advanced topics - but I think it should be introduced earlier</p>
+<p>or</p>
+<p>MSR could be referred to in project design, and when/why it would be good to use it - with a link to where it lives in advanced topics</p>
+<p>Then if user decides to use that option, they go read all about it</p>
+<p>This way the topic is introduced so can include reference to it data preparation and preprocessing chapters.</p>
+<p>That still leaves the question of whether the example dataset should be standard or msr - or if both are necessary as examples? (perhaps) (but the actual work, with the scripts and the output i think should be done with the msr worldfile)</p>
 <ul>
-<li>This part is about building the model, constructing the foundation for a fuctional simulation</li>
-<li>intro to what is covered in the section</li>
-<li>expected outcome for this section: creating input in order to run the model, generate output, and interpret results</li>
+<li>About Multi-scale routing</li>
+<li>How it works</li>
+<li>Generating MSR input files
+<ul>
+<li>asp rules file</li>
+<li>rules map if multiple rules</li>
+</ul></li>
+<li>Generating msr worldfile</li>
+<li>Running RHESSys with msr</li>
+<li>Patch families</li>
+<li>Output of multiple patches that belog to a patch family</li>
 </ul>
 
 

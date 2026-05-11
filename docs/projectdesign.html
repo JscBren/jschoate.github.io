@@ -235,6 +235,36 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">Advanced Features</span></a>
   </div>
 </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./fire.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Disturbance: Fire</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./vegchange.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Disturbance:Vegetation Dynamics</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./msr.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Multi-scale routing</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./targetspinup.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Target-driven spin-up</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./parallelization.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Parallelization</span></a>
+  </div>
+</li>
       </ul>
   </li>
         <li class="px-0"><hr class="sidebar-divider hi "></li>
@@ -255,6 +285,7 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#spatial-resolution-vs.-computational-cost" id="toc-spatial-resolution-vs.-computational-cost" class="nav-link active" data-scroll-target="#spatial-resolution-vs.-computational-cost">3.1 Spatial resolution vs.&nbsp;computational cost</a></li>
+  <li><a href="#standard-patches-or-patch-families" id="toc-standard-patches-or-patch-families" class="nav-link" data-scroll-target="#standard-patches-or-patch-families">3.1 Standard patches or patch families</a></li>
   <li><a href="#data-synchronization-temporal-extent" id="toc-data-synchronization-temporal-extent" class="nav-link" data-scroll-target="#data-synchronization-temporal-extent">3.2 Data synchronization &amp; temporal extent</a></li>
   <li><a href="#functional-constraints" id="toc-functional-constraints" class="nav-link" data-scroll-target="#functional-constraints">3.3 Functional constraints</a></li>
   <li><a href="#defining-the-project-boundaries" id="toc-defining-the-project-boundaries" class="nav-link" data-scroll-target="#defining-the-project-boundaries">3.4 Defining the project boundaries</a></li>
@@ -283,13 +314,24 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 <ul>
-<li>will discuss what a user should consider, i.e.:</li>
+<li>This chapter will discuss what a user should consider, i.e.:</li>
 </ul>
+<p>Please see my comments in the msr documentation where it is placed now - because I think info about msr/asp setup need to be included earlier in the data acquisition &amp; preprocessing sections. Also I think the example dataset should be set up with msr - because it’s easier for a user to “downgrade” their understanding to a standard worldfile than it is to learn the standard and then have to unlearn/retool for MSR later.</p>
+<p><a href="./msr.html">Fine-scale Heterogeneity section</a></p>
+<p>To ensure users don’t have to redo their spatial data prep, I think the concept of MSR should be introduced here in Part I chapter 3 (Project Design). This allows the user to decide their model architecture early -</p>
+<p>because users will hate getting to the advanced features section and realizing they should have gathered or considered different data earlier. Introducing the MSR/aspatial option here allows them to make an informed architectural decision for their project before they start</p>
+<p>The detailed technical execution can remain in Part IV (Advanced Applications) effectively treating Part IV as the ‘Expert Reference Library’ - but I think introduce the concept here, either standard patches or msr patch families and what the difference is - and provide a link to the msr section in advanced topics where they can find the info if they choose that option before moving on to data/setup.</p>
 <section id="spatial-resolution-vs.-computational-cost" class="level2">
 <h2 class="anchored" data-anchor-id="spatial-resolution-vs.-computational-cost">3.1 Spatial resolution vs.&nbsp;computational cost</h2>
 <ul>
 <li>patch resolution/number of patches impact on processing needs &amp; time</li>
 <li>scale - what is necessary to answer users questions: is fine-scale processing necessary?</li>
+</ul>
+</section>
+<section id="standard-patches-or-patch-families" class="level2">
+<h2 class="anchored" data-anchor-id="standard-patches-or-patch-families">3.1 Standard patches or patch families</h2>
+<ul>
+<li>propose introduction here - with link to advanced features section</li>
 </ul>
 </section>
 <section id="data-synchronization-temporal-extent" class="level2">

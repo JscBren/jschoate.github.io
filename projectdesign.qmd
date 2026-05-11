@@ -2,12 +2,26 @@
 title: "3 Project Design & Planning (The Strategy)"
 ---
 
--   will discuss what a user should consider, i.e.:
+-   This chapter will discuss what a user should consider, i.e.:
+
+Please see my comments in the msr documentation where it is placed now - because I think info about msr/asp setup need to be included earlier in the data acquisition & preprocessing sections. Also I think the example dataset should be set up with msr - because it's easier for a user to "downgrade" their understanding to a standard worldfile than it is to learn the standard and then have to unlearn/retool for MSR later.
+
+[Fine-scale Heterogeneity section](msr.qmd)
+
+To ensure users don't have to redo their spatial data prep, I think the concept of MSR should be introduced here in Part I chapter 3 (Project Design). This allows the user to decide their model architecture early -
+
+because users will hate getting to the advanced features section and realizing they should have gathered or considered different data earlier. Introducing the MSR/aspatial option here allows them to make an informed architectural decision for their project before they start
+
+The detailed technical execution can remain in Part IV (Advanced Applications) effectively treating Part IV as the 'Expert Reference Library' - but I think introduce the concept here, either standard patches or msr patch families and what the difference is - and provide a link to the msr section in advanced topics where they can find the info if they choose that option before moving on to data/setup.
 
 ## 3.1 Spatial resolution vs. computational cost
 
 -   patch resolution/number of patches impact on processing needs & time
 -   scale - what is necessary to answer users questions: is fine-scale processing necessary?
+
+## 3.1 Standard patches or patch families
+
+-   propose introduction here - with link to advanced features section
 
 ## 3.2 Data synchronization & temporal extent
 

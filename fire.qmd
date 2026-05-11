@@ -1,0 +1,31 @@
+---
+title: "15 Disturbance: Fire (The Inferno)"
+---
+
+
+### 15.1 Fire Spread
+
+-   about
+-   compiling RHESSys-WMFire: Boost/WMFire library
+-   Prerequisites to running the fire model:
+    -   Wind speed and direction data
+    -   Fire definition file parameters
+        -   calculating the fire return interval
+        -   calculating wind parameters (EstimateWindDistrExample.R script)
+    -   Worldfile header edits
+    -   Add worldfile state variable
+    -   Command line option
+-   Outputs
+    -   fire write parameter generated output
+    -   spatial level fire outputs
+-   stochastic
+-   prescribed
+
+### 15.2 Fire Effects
+
+-   about
+-   Fire effects parameters in vegetation and soil(patch) definition files
+-   specific fire effects output files
+
+
+

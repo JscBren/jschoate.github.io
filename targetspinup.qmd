@@ -1,0 +1,16 @@
+---
+title: "18 Target-driven spin-up (The Alignment)"
+---
+
+-   advanced method of spin-up to reach varying stages of observed ecological states
+-   run to reach spatially explicit targets, i.e. LAI
+-   types of spin-up targets
+-   sources for deriving targets
+-   Prerequisites to running:
+-   spin-up target file
+-   target file header
+-   spin-up definition file
+-   worldfile with spinup object ID
+-   worldfile header pointer
+-   command line options
+

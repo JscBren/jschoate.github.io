@@ -39,35 +39,7 @@
     "href": "advancedfeatures.html",
     "title": "14 Advanced Features (The Expansion)",
     "section": "",
-    "text": "beyond the baseline\nmoving into specialized simulations\nEach of the following (14.1, 14.2, 14.3, 14.4) will have its own page so it will have it’s own subject in the navigation pane"
-  },
-  {
-    "objectID": "advancedfeatures.html#disturbance-modeling",
-    "href": "advancedfeatures.html#disturbance-modeling",
-    "title": "14 Advanced Features (The Expansion)",
-    "section": "14.1 Disturbance modeling",
-    "text": "14.1 Disturbance modeling\n\ndisturbance in RHESSys: altering the carbon cycles and redirecting the flow of water and nutrients from the baseline\npredicting ecosystem resilience and recovery over time\n\n\n14.1.1 Fire Spread and Fire Effects\n\nabout\ncompiling RHESSys-WMFire: Boost/WMFire library\nPrerequisites to running the fire model:\n\nWind speed and direction data\nFire definition file parameters\n\ncalculating the fire return interval\ncalculating wind parameters (EstimateWindDistrExample.R script)\n\nFire effects parameters in vegetation and soil(patch) definition files\nWorldfile header edits\nAdd worldfile state variable\nCommand line option\n\nOutputs\n\nfire write parameter generated output\nspatial level fire outputs and specific fire effects output files\n\nstochastic\nprescribed\n\n\n\n14.1.2 Land Cover/Vegetation change\n\nbiomass pool changes\ndrought induced mortality\nfuel treatments\n\nthinning, controlled burns\n\nredefine world functionality (redefine_world_: multiplier, thin_remain, thin_harvest, thin_snags, thin_harvest)"
-  },
-  {
-    "objectID": "advancedfeatures.html#multi-scale-routing---fine-scale-heterogeneity",
-    "href": "advancedfeatures.html#multi-scale-routing---fine-scale-heterogeneity",
-    "title": "14 Advanced Features (The Expansion)",
-    "section": "14.2 Multi-scale routing - fine-scale heterogeneity",
-    "text": "14.2 Multi-scale routing - fine-scale heterogeneity\n\nnot sure this belongs in advanced features anymore because it has become pretty standard, and I have introduced it above\nthis can be debated!"
-  },
-  {
-    "objectID": "advancedfeatures.html#target-driven-spin-up",
-    "href": "advancedfeatures.html#target-driven-spin-up",
-    "title": "14 Advanced Features (The Expansion)",
-    "section": "14.3 Target-driven spin-up",
-    "text": "14.3 Target-driven spin-up\n\nadvanced method of spin-up to reach varying stages of observed ecological states\nrun to reach spatially explicit targets, i.e. LAI\ntypes of spin-up targets\nsources for deriving targets\nPrerequisites to running:\nspin-up target file\ntarget file header\nspin-up definition file\nworldfile with spinup object ID\nworldfile header pointer\ncommand line options"
-  },
-  {
-    "objectID": "advancedfeatures.html#parallelization-maybe-include",
-    "href": "advancedfeatures.html#parallelization-maybe-include",
-    "title": "14 Advanced Features (The Expansion)",
-    "section": "14.4 Parallelization (maybe include?)",
-    "text": "14.4 Parallelization (maybe include?)\n\nrun a large watershed in parallel in order to speed up the simulation process\ncompiling with openmp"
+    "text": "beyond the baseline\nmoving into specialized simulations\nroadmap of why and when to use these advanced tools\ndisturbance modeling in RHESSys: altering the carbon cycles and redirecting the flow of water and nutrients from the baseline\npredicting ecosystem resilience and recovery over time"
   },
   {
     "objectID": "appendices.html",
@@ -110,6 +82,13 @@
     "title": "4 Example Dataset (The Sandbox)",
     "section": "4.3 How to use this data",
     "text": "4.3 How to use this data\n\nContextual understanding\nPerformance Evaluation - verification for user generated files\nTroubleshooting\nModular learning - start at any step in the manual"
+  },
+  {
+    "objectID": "fire.html",
+    "href": "fire.html",
+    "title": "15 Disturbance: Fire (The Inferno)",
+    "section": "",
+    "text": "15.1 Fire Spread\n\nabout\ncompiling RHESSys-WMFire: Boost/WMFire library\nPrerequisites to running the fire model:\n\nWind speed and direction data\nFire definition file parameters\n\ncalculating the fire return interval\ncalculating wind parameters (EstimateWindDistrExample.R script)\n\nWorldfile header edits\nAdd worldfile state variable\nCommand line option\n\nOutputs\n\nfire write parameter generated output\nspatial level fire outputs\n\nstochastic\nprescribed\n\n\n\n15.2 Fire Effects\n\nabout\nFire effects parameters in vegetation and soil(patch) definition files\nspecific fire effects output files"
   },
   {
     "objectID": "implementation.html",
@@ -455,6 +434,20 @@
     "text": "14.4 Parallelization (maybe include?)\n\nrun a large watershed in parallel in order to speed up the simulation process\ncompiling with openmp"
   },
   {
+    "objectID": "msr.html",
+    "href": "msr.html",
+    "title": "17 Fine-scale heterogeneity (The Granularity)",
+    "section": "",
+    "text": "not sure this belongs in advanced features anymore because it has become pretty standard\nThis can be debated!\nI have introduced the term above in Part II because I needed to include preparation of the Aspatial rules file, and about if there are multiple rules a map is needed of rule ID’s, so need to include at least that under spatial data.\nAlso, I was planning for the example dataset worldfile(s) to use msr, and to discuss that worldfile structure in chapter 6\nPerhaps the msr information should be introduced in Part I chapter 3 - Project design & planning? So user knows that as they proceed they will need to make a rules file & possibly a rules map. (maybe in project design introduce standard & msr with info about if you choose this option you need this, if you choose this option you may additionally need this?)\nBecause that would mean they need to think about the veg makeup of their watershed & perhaps obtain veg maps to base it on?\nSo either need to stick with standard worldfile structure all the way through and not include anything about msr until advanced topics (include the example worldfiles) - or make msr the standard approach & introduce the topic early on, and it should perhaps have it’s own chapter - or at least it’s own sub-chapter earlier on.\nIt has quite a bit of information - so i’m leaning toward it’s own chapter - which it has now in advanced topics - but I think it should be introduced earlier\nor\nMSR could be referred to in project design, and when/why it would be good to use it - with a link to where it lives in advanced topics\nThen if user decides to use that option, they go read all about it\nThis way the topic is introduced so can include reference to it data preparation and preprocessing chapters.\nThat still leaves the question of whether the example dataset should be standard or msr - or if both are necessary as examples? (perhaps) (but the actual work, with the scripts and the output i think should be done with the msr worldfile)\n\nAbout Multi-scale routing\nHow it works\nGenerating MSR input files\n\nasp rules file\nrules map if multiple rules\n\nGenerating msr worldfile\nRunning RHESSys with msr\nPatch families\nOutput of multiple patches that belog to a patch family"
+  },
+  {
+    "objectID": "parallelization.html",
+    "href": "parallelization.html",
+    "title": "19 Parallelization (The Accelerator)",
+    "section": "",
+    "text": "Maybe Include this?\n\nrun a large watershed in parallel in order to speed up the simulation process\ncompiling with openmp"
+  },
+  {
     "objectID": "part1intro.html",
     "href": "part1intro.html",
     "title": "Part I: Foundations & Envrionment",
@@ -522,7 +515,7 @@
     "href": "projectdesign.html",
     "title": "3 Project Design & Planning (The Strategy)",
     "section": "",
-    "text": "will discuss what a user should consider, i.e.:"
+    "text": "This chapter will discuss what a user should consider, i.e.:\nPlease see my comments in the msr documentation where it is placed now - because I think info about msr/asp setup need to be included earlier in the data acquisition & preprocessing sections. Also I think the example dataset should be set up with msr - because it’s easier for a user to “downgrade” their understanding to a standard worldfile than it is to learn the standard and then have to unlearn/retool for MSR later.\nFine-scale Heterogeneity section\nTo ensure users don’t have to redo their spatial data prep, I think the concept of MSR should be introduced here in Part I chapter 3 (Project Design). This allows the user to decide their model architecture early -\nbecause users will hate getting to the advanced features section and realizing they should have gathered or considered different data earlier. Introducing the MSR/aspatial option here allows them to make an informed architectural decision for their project before they start\nThe detailed technical execution can remain in Part IV (Advanced Applications) effectively treating Part IV as the ‘Expert Reference Library’ - but I think introduce the concept here, either standard patches or msr patch families and what the difference is - and provide a link to the msr section in advanced topics where they can find the info if they choose that option before moving on to data/setup."
   },
   {
     "objectID": "projectdesign.html#spatial-resolution-vs.-computational-cost",
@@ -530,6 +523,13 @@
     "title": "3 Project Design & Planning (The Strategy)",
     "section": "3.1 Spatial resolution vs. computational cost",
     "text": "3.1 Spatial resolution vs. computational cost\n\npatch resolution/number of patches impact on processing needs & time\nscale - what is necessary to answer users questions: is fine-scale processing necessary?"
+  },
+  {
+    "objectID": "projectdesign.html#standard-patches-or-patch-families",
+    "href": "projectdesign.html#standard-patches-or-patch-families",
+    "title": "3 Project Design & Planning (The Strategy)",
+    "section": "3.1 Standard patches or patch families",
+    "text": "3.1 Standard patches or patch families\n\npropose introduction here - with link to advanced features section"
   },
   {
     "objectID": "projectdesign.html#data-synchronization-temporal-extent",
@@ -588,6 +588,13 @@
     "text": "2.3 Installing Workflow & Analysis Tools\n\n2.3.1 R Ecosystem\n\nR (The engine)\nRStudio (The interface)\nStandard Packages (Extensions - Libraries that expand functionality)\n\n\n\n2.3.2 WhiteboxTools for Geospatial Processing\n\n\n2.3.3 RHESSys-Specific R packages\n\nRHESSysPreprocessing\nRHESSysIOinR"
   },
   {
+    "objectID": "targetspinup.html",
+    "href": "targetspinup.html",
+    "title": "18 Target-driven spin-up (The Alignment)",
+    "section": "",
+    "text": "advanced method of spin-up to reach varying stages of observed ecological states\nrun to reach spatially explicit targets, i.e. LAI\ntypes of spin-up targets\nsources for deriving targets\nPrerequisites to running:\nspin-up target file\ntarget file header\nspin-up definition file\nworldfile with spinup object ID\nworldfile header pointer\ncommand line options"
+  },
+  {
     "objectID": "userdata.html",
     "href": "userdata.html",
     "title": "5 User-Acquired Data (The Ingredients)",
@@ -621,6 +628,13 @@
     "title": "13 Validation (The Verification or The Credibility)",
     "section": "",
     "text": "judging/evaluation performance\ntesting calibrated parameters against data set independent of calibration period"
+  },
+  {
+    "objectID": "vegchange.html",
+    "href": "vegchange.html",
+    "title": "16 Disturbance: Vegetation Dynamics (The Evolution)",
+    "section": "",
+    "text": "Land Cover/Vegetation change\nbiomass pool changes\nredefine world functionality (redefine_world_: multiplier, thin_remain, thin_harvest, thin_snags, thin_harvest) to invoke:\n\ndrought induced mortality\nfuel treatments\n\nthinning, controlled burns\n\n\nmaybe include redefine world info on urbanization?"
   },
   {
     "objectID": "welcome.html",

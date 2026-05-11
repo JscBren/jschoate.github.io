@@ -235,6 +235,36 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">Advanced Features</span></a>
   </div>
 </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./fire.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Disturbance: Fire</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./vegchange.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Disturbance:Vegetation Dynamics</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./msr.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Multi-scale routing</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./targetspinup.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Target-driven spin-up</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./parallelization.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Parallelization</span></a>
+  </div>
+</li>
       </ul>
   </li>
         <li class="px-0"><hr class="sidebar-divider hi "></li>
@@ -249,25 +279,11 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#disturbance-modeling" id="toc-disturbance-modeling" class="nav-link active" data-scroll-target="#disturbance-modeling">14.1 Disturbance modeling</a>
-  <ul class="collapse">
-  <li><a href="#fire-spread-and-fire-effects" id="toc-fire-spread-and-fire-effects" class="nav-link" data-scroll-target="#fire-spread-and-fire-effects">14.1.1 Fire Spread and Fire Effects</a></li>
-  <li><a href="#land-covervegetation-change" id="toc-land-covervegetation-change" class="nav-link" data-scroll-target="#land-covervegetation-change">14.1.2 Land Cover/Vegetation change</a></li>
-  </ul></li>
-  <li><a href="#multi-scale-routing---fine-scale-heterogeneity" id="toc-multi-scale-routing---fine-scale-heterogeneity" class="nav-link" data-scroll-target="#multi-scale-routing---fine-scale-heterogeneity">14.2 Multi-scale routing - fine-scale heterogeneity</a></li>
-  <li><a href="#target-driven-spin-up" id="toc-target-driven-spin-up" class="nav-link" data-scroll-target="#target-driven-spin-up">14.3 Target-driven spin-up</a></li>
-  <li><a href="#parallelization-maybe-include" id="toc-parallelization-maybe-include" class="nav-link" data-scroll-target="#parallelization-maybe-include">14.4 Parallelization (maybe include?)</a></li>
-  <li><a href="#section" id="toc-section" class="nav-link" data-scroll-target="#section"></a></li>
-  </ul>
-</nav>
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
     </div>
 <!-- main -->
-<main class="content column-body" id="quarto-document-content">
+<main class="content column-page-right" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
@@ -289,89 +305,12 @@ ul.task-list li input[type="checkbox"] {
 <ul>
 <li>beyond the baseline</li>
 <li>moving into specialized simulations</li>
-</ul>
-<p>Each of the following (14.1, 14.2, 14.3, 14.4) will have its own page so it will have it’s own subject in the navigation pane</p>
-<section id="disturbance-modeling" class="level2">
-<h2 class="anchored" data-anchor-id="disturbance-modeling">14.1 Disturbance modeling</h2>
-<ul>
-<li>disturbance in RHESSys: altering the carbon cycles and redirecting the flow of water and nutrients from the baseline</li>
+<li>roadmap of why and when to use these advanced tools</li>
+<li>disturbance modeling in RHESSys: altering the carbon cycles and redirecting the flow of water and nutrients from the baseline</li>
 <li>predicting ecosystem resilience and recovery over time</li>
 </ul>
-<section id="fire-spread-and-fire-effects" class="level3">
-<h3 class="anchored" data-anchor-id="fire-spread-and-fire-effects">14.1.1 Fire Spread and Fire Effects</h3>
-<ul>
-<li>about</li>
-<li>compiling RHESSys-WMFire: Boost/WMFire library</li>
-<li>Prerequisites to running the fire model:
-<ul>
-<li>Wind speed and direction data</li>
-<li>Fire definition file parameters
-<ul>
-<li>calculating the fire return interval</li>
-<li>calculating wind parameters (EstimateWindDistrExample.R script)</li>
-</ul></li>
-<li>Fire effects parameters in vegetation and soil(patch) definition files</li>
-<li>Worldfile header edits</li>
-<li>Add worldfile state variable</li>
-<li>Command line option</li>
-</ul></li>
-<li>Outputs
-<ul>
-<li>fire write parameter generated output</li>
-<li>spatial level fire outputs and specific fire effects output files</li>
-</ul></li>
-<li>stochastic</li>
-<li>prescribed</li>
-</ul>
-</section>
-<section id="land-covervegetation-change" class="level3">
-<h3 class="anchored" data-anchor-id="land-covervegetation-change">14.1.2 Land Cover/Vegetation change</h3>
-<ul>
-<li>biomass pool changes</li>
-<li>drought induced mortality</li>
-<li>fuel treatments
-<ul>
-<li>thinning, controlled burns</li>
-</ul></li>
-<li>redefine world functionality (redefine_world_: multiplier, thin_remain, thin_harvest, thin_snags, thin_harvest)</li>
-</ul>
-</section>
-</section>
-<section id="multi-scale-routing---fine-scale-heterogeneity" class="level2">
-<h2 class="anchored" data-anchor-id="multi-scale-routing---fine-scale-heterogeneity">14.2 Multi-scale routing - fine-scale heterogeneity</h2>
-<ul>
-<li>not sure this belongs in advanced features anymore because it has become pretty standard, and I have introduced it above</li>
-<li>this can be debated!</li>
-</ul>
-</section>
-<section id="target-driven-spin-up" class="level2">
-<h2 class="anchored" data-anchor-id="target-driven-spin-up">14.3 Target-driven spin-up</h2>
-<ul>
-<li>advanced method of spin-up to reach varying stages of observed ecological states</li>
-<li>run to reach spatially explicit targets, i.e.&nbsp;LAI</li>
-<li>types of spin-up targets</li>
-<li>sources for deriving targets</li>
-<li>Prerequisites to running:</li>
-<li>spin-up target file</li>
-<li>target file header</li>
-<li>spin-up definition file</li>
-<li>worldfile with spinup object ID</li>
-<li>worldfile header pointer</li>
-<li>command line options</li>
-</ul>
-</section>
-<section id="parallelization-maybe-include" class="level2">
-<h2 class="anchored" data-anchor-id="parallelization-maybe-include">14.4 Parallelization (maybe include?)</h2>
-<ul>
-<li>run a large watershed in parallel in order to speed up the simulation process</li>
-<li>compiling with openmp</li>
-</ul>
-</section>
-<section id="section" class="level1">
-<h1></h1>
 
 
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
