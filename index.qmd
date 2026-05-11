@@ -3,12 +3,14 @@ title: "Welcome to the RHESSys Manual"
 subtitle: "(under development)"
 author: "Janet Choate"
 ---
-<div style="text-align: center; margin-top: -1px;">
-  ![](media/RhessysLogo_nobckgrnd.jpg){width="300px"}
-  
-  [Tague Team Lab](https://tagueteamlab.org/) | [GitHub](https://github.com/JscBren/jschoate.github.io) 
-</div>
----
+
+::: {style="text-align: center; margin-top: -1px;"}
+![](media/RhessysLogo_nobckgrnd.jpg){width="300px"}
+
+[Tague Team Lab](https://tagueteamlab.org/) \| [GitHub](https://github.com/JscBren/jschoate.github.io)
+:::
+
+------------------------------------------------------------------------
 
 ## Purpose
 

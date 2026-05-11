@@ -5,3 +5,29 @@ title: "Part II: Building and Executing"
 -   This part is about building the model, constructing the foundation for a fuctional simulation
 -   intro to what is covered in the section
 -   expected outcome for this section: creating input in order to run the model, generate output, and interpret results
+
+## Chapters in this section
+
+<div>
+
+### [Chapter 5: User-Aquired Data](userdata.qmd)
+
+Gathering and formatting the necessary ingredients
+
+### [Chapter 6: RHESSys Specific Input Files](inputfiles.qmd)
+
+Understanding the core file anatomy
+
+### [Chapter 7: Preprocessing](preprocessing.qmd)
+
+Assembling the model foundation
+
+### [Chapter 8: Implementation & Execution](implementation.qmd)
+
+Launching the simulation
+
+### [Chapter 9: Postprocessing](postprocess.qmd)
+
+Gaining model result insight
+
+</div>

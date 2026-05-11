@@ -10,3 +10,24 @@ title: "Part III: Refinement and Evaluation"
     -   each phase informs the next - often requiring return to previous step
 -   expected outcome for this section: learning the process to ensure a balanced system
 
+## Chapters in this section
+
+<div>
+
+### [Chapter 10: Initialization](initialization.qmd)
+
+Achieving model equilibrium
+
+### [Chapter 11: Sensitivity Analysis](sensanal.qmd)
+
+Identifying influencing parameters
+
+### [Chapter 12: Calibration](calibration.qmd)
+
+Fine-tuning parameters
+
+### [Chapter 13: Validation](validation.qmd)
+
+Evaluating parameter performance
+
+</div>

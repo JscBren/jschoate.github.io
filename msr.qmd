@@ -1,5 +1,5 @@
 ---
-title: "17 Fine-scale heterogeneity (The Granularity)"
+title: "17 Fine-scale heterogeneity (The Mosaic)"
 ---
 
 not sure this belongs in advanced features anymore because it has become pretty standard

@@ -6,3 +6,32 @@ title: "Part IV: Advanced Applications"
 -   intro to what is covered in the section
 -   expected outcome for this section: ability to move from model development to high impact scientific inquiry
 
+## Chapters in this section
+
+<div>
+
+### [Chapter 14: Advanced Features](advancedfeatures.qmd)
+
+Expanding beyond the baseline
+
+### [Chapter 15: Fire Disturbance](fire.qmd)
+
+Simulating the spark and igniting the inferno
+
+### [Chapter 16: Disturbance:Vegetation Dynamics](vegchange.qmd)
+
+Transforming an evolving landscape
+
+### [Chapter 17: Multi-scale routing](msr.qmd)
+
+Creating a mosaic landscape
+
+### [Chapter 18: Target-driven spin-up](targetspinup.qmd)
+
+Aligning with observed ecological states
+
+### [Chapter 19: Parallelization](parallelization.qmd)
+
+Accelerating model simulations
+
+</div>

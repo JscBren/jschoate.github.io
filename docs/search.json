@@ -93,7 +93,7 @@
   {
     "objectID": "implementation.html",
     "href": "implementation.html",
-    "title": "8 Implementation & Execution (The Ignition)",
+    "title": "8 Implementation & Execution (The Launch)",
     "section": "",
     "text": "There will be subsections for the following topics\n\nDefine the simulation rules\n\nRHESSysIOinR Functions to provide the directions necessary to run RHESSys\n\nOutput filter design\n\nTecfile/Output Filter interaction for expected output\nSelecting RHESSys output variables\n\nChoosing variables relevant to the research questions and analysis goals\nReassigning/Combining variables\n\n\nExecuting simulations in R\n\nSingle run\nMultiple runs"
   },
@@ -436,7 +436,7 @@
   {
     "objectID": "msr.html",
     "href": "msr.html",
-    "title": "17 Fine-scale heterogeneity (The Granularity)",
+    "title": "17 Fine-scale heterogeneity (The Mosaic)",
     "section": "",
     "text": "not sure this belongs in advanced features anymore because it has become pretty standard\nThis can be debated!\nI have introduced the term above in Part II because I needed to include preparation of the Aspatial rules file, and about if there are multiple rules a map is needed of rule ID’s, so need to include at least that under spatial data.\nAlso, I was planning for the example dataset worldfile(s) to use msr, and to discuss that worldfile structure in chapter 6\nPerhaps the msr information should be introduced in Part I chapter 3 - Project design & planning? So user knows that as they proceed they will need to make a rules file & possibly a rules map. (maybe in project design introduce standard & msr with info about if you choose this option you need this, if you choose this option you may additionally need this?)\nBecause that would mean they need to think about the veg makeup of their watershed & perhaps obtain veg maps to base it on?\nSo either need to stick with standard worldfile structure all the way through and not include anything about msr until advanced topics (include the example worldfiles) - or make msr the standard approach & introduce the topic early on, and it should perhaps have it’s own chapter - or at least it’s own sub-chapter earlier on.\nIt has quite a bit of information - so i’m leaning toward it’s own chapter - which it has now in advanced topics - but I think it should be introduced earlier\nor\nMSR could be referred to in project design, and when/why it would be good to use it - with a link to where it lives in advanced topics\nThen if user decides to use that option, they go read all about it\nThis way the topic is introduced so can include reference to it data preparation and preprocessing chapters.\nThat still leaves the question of whether the example dataset should be standard or msr - or if both are necessary as examples? (perhaps) (but the actual work, with the scripts and the output i think should be done with the msr worldfile)\n\nAbout Multi-scale routing\nHow it works\nGenerating MSR input files\n\nasp rules file\nrules map if multiple rules\n\nGenerating msr worldfile\nRunning RHESSys with msr\nPatch families\nOutput of multiple patches that belog to a patch family"
   },
@@ -455,11 +455,25 @@
     "text": "This part is about understanding the logic of this tool and setting the computational environment\nintro to what is covered in the section\nexpected outcome for this section: functioning modeling environment and clear strategic plan"
   },
   {
+    "objectID": "part1intro.html#chapters-in-this-section",
+    "href": "part1intro.html#chapters-in-this-section",
+    "title": "Part I: Foundations & Envrionment",
+    "section": "Chapters in this section",
+    "text": "Chapters in this section\n\n\nChapter 1: Introduction\nUnderstanding what RHESSys is\n\n\nChapter 2: Installation\nEstablishing the modeling environment\n\n\nChapter 3: Project Design\nPlanning your project strategy\n\n\nChapter 4: Example Dataset\nExplore the example data set"
+  },
+  {
     "objectID": "part2intro.html",
     "href": "part2intro.html",
     "title": "Part II: Building and Executing",
     "section": "",
     "text": "This part is about building the model, constructing the foundation for a fuctional simulation\nintro to what is covered in the section\nexpected outcome for this section: creating input in order to run the model, generate output, and interpret results"
+  },
+  {
+    "objectID": "part2intro.html#chapters-in-this-section",
+    "href": "part2intro.html#chapters-in-this-section",
+    "title": "Part II: Building and Executing",
+    "section": "Chapters in this section",
+    "text": "Chapters in this section\n\n\nChapter 5: User-Aquired Data\nGathering and formatting the necessary ingredients\n\n\nChapter 6: RHESSys Specific Input Files\nUnderstanding the core file anatomy\n\n\nChapter 7: Preprocessing\nAssembling the model foundation\n\n\nChapter 8: Implementation & Execution\nLaunching the simulation\n\n\nChapter 9: Postprocessing\nGaining model result insight"
   },
   {
     "objectID": "part3intro.html",
@@ -469,11 +483,25 @@
     "text": "This part is about moving from just a running model to a credible scientific tool.\nintro to what is covered in the section\n\nthe iterative cycle - cyclincal refinement loop\ninclude a figure/diagram/flowchart about the feedback loop\nrefinement not linear path - changing one parameter may require re-balancing the system\neach phase informs the next - often requiring return to previous step\n\nexpected outcome for this section: learning the process to ensure a balanced system"
   },
   {
+    "objectID": "part3intro.html#chapters-in-this-section",
+    "href": "part3intro.html#chapters-in-this-section",
+    "title": "Part III: Refinement and Evaluation",
+    "section": "Chapters in this section",
+    "text": "Chapters in this section\n\n\nChapter 10: Initialization\nAchieving model equilibrium\n\n\nChapter 11: Sensitivity Analysis\nIdentifying influencing parameters\n\n\nChapter 12: Calibration\nFine-tuning parameters\n\n\nChapter 13: Validation\nEvaluating parameter performance"
+  },
+  {
     "objectID": "part4intro.html",
     "href": "part4intro.html",
     "title": "Part IV: Advanced Applications",
     "section": "",
     "text": "This part is about exploring complex eco-hydrological scenarios\nintro to what is covered in the section\nexpected outcome for this section: ability to move from model development to high impact scientific inquiry"
+  },
+  {
+    "objectID": "part4intro.html#chapters-in-this-section",
+    "href": "part4intro.html#chapters-in-this-section",
+    "title": "Part IV: Advanced Applications",
+    "section": "Chapters in this section",
+    "text": "Chapters in this section\n\n\nChapter 14: Advanced Features\nExpanding beyond the baseline\n\n\nChapter 15: Fire Disturbance\nSimulating the spark and igniting the inferno\n\n\nChapter 16: Disturbance:Vegetation Dynamics\nTransforming an evolving landscape\n\n\nChapter 17: Multi-scale routing\nCreating a mosaic landscape\n\n\nChapter 18: Target-driven spin-up\nAligning with observed ecological states\n\n\nChapter 19: Parallelization\nAccelerating model simulations"
   },
   {
     "objectID": "postprocess.html",
@@ -485,28 +513,28 @@
   {
     "objectID": "preprocessing.html",
     "href": "preprocessing.html",
-    "title": "7 Preprocessing (The Foundation)",
+    "title": "7 Preprocessing (The Assembly)",
     "section": "",
     "text": "Standard directory structure\nnaming convention"
   },
   {
     "objectID": "preprocessing.html#environmental-setup",
     "href": "preprocessing.html#environmental-setup",
-    "title": "7 Preprocessing (The Foundation)",
+    "title": "7 Preprocessing (The Assembly)",
     "section": "",
     "text": "Standard directory structure\nnaming convention"
   },
   {
     "objectID": "preprocessing.html#raster-processing",
     "href": "preprocessing.html#raster-processing",
-    "title": "7 Preprocessing (The Foundation)",
+    "title": "7 Preprocessing (The Assembly)",
     "section": "7.2 Raster Processing",
     "text": "7.2 Raster Processing\n\nSpatial processing using WhiteboxTools and R"
   },
   {
     "objectID": "preprocessing.html#generating-the-worldfile-and-flowtable",
     "href": "preprocessing.html#generating-the-worldfile-and-flowtable",
-    "title": "7 Preprocessing (The Foundation)",
+    "title": "7 Preprocessing (The Assembly)",
     "section": "7.3 Generating the Worldfile and Flowtable",
     "text": "7.3 Generating the Worldfile and Flowtable\n\n7.3.1 The Template File: Recipe for the worldfile\n\nFormat and Initialization\n\nWorld objects\nState variables\nDefault and base station ID’s\n\nRequired and Optional state variables\nRedefinition template (introduce here or later in advanced?)\nEditing the template, initial conditions\n\n\n\n7.3.2 Aspatial rules file for Multi-scale routing\n\nFormat\nSet up for single rule\nSet up for multiple rules - requires map\n\n\n\n7.3.3 RHESSysPreprocessing R package\n\nAbout\nPrerequisites: spatial data, template, asp rules file if applicable\nR markdown workflow/script - functions\nRun the function to generate Worldfile/Flowtable"
   },
@@ -562,28 +590,28 @@
   {
     "objectID": "setup.html",
     "href": "setup.html",
-    "title": "2 Setup (The Software)",
+    "title": "2 Installation (The Software)",
     "section": "",
     "text": "(description of each, who should use, when to use, recommendation, link to corresponding install instructions)\n\n\n\nmore advanced users\nusers who want more flexibility\n\n\n\n\n\nbeginners\nWindows users\nportability\n\n\n\n\n\nhigh-performance computing environments\ncluster users\nlarge scale, high resolution simulations"
   },
   {
     "objectID": "setup.html#setup-options",
     "href": "setup.html#setup-options",
-    "title": "2 Setup (The Software)",
+    "title": "2 Installation (The Software)",
     "section": "",
     "text": "(description of each, who should use, when to use, recommendation, link to corresponding install instructions)\n\n\n\nmore advanced users\nusers who want more flexibility\n\n\n\n\n\nbeginners\nWindows users\nportability\n\n\n\n\n\nhigh-performance computing environments\ncluster users\nlarge scale, high resolution simulations"
   },
   {
     "objectID": "setup.html#rhessys-installation",
     "href": "setup.html#rhessys-installation",
-    "title": "2 Setup (The Software)",
+    "title": "2 Installation (The Software)",
     "section": "2.2 RHESSys Installation",
     "text": "2.2 RHESSys Installation\n\n2.2.1 MacOS (include section for Linux as well if necessary or where differs)\n\nCode Dependencies and Operational Requirements\n\nTerminal application\nXcode Command Line Tools (compilers/build tools)\nPrivileges (i.e. Administrator access)\nHomebrew\nGit\nLibraries (i.e. NetCDF)\n\n\n\nInstallation steps\n\nDownload code from GitHub\n\nZip file\nClone repository (main, develop)\n\nCompile\nShell configuration (adding to path)\nVerify installation\nCommon issue and solutions\n\n\n\n\n2.2.2 Docker\n\nInstall Docker Desktop\nObtaining RHESSys image from the Docker Hub\n\n\n\n2.2.3 SIF\n\nObtaining RHESSys .sif image"
   },
   {
     "objectID": "setup.html#installing-workflow-analysis-tools",
     "href": "setup.html#installing-workflow-analysis-tools",
-    "title": "2 Setup (The Software)",
+    "title": "2 Installation (The Software)",
     "section": "2.3 Installing Workflow & Analysis Tools",
     "text": "2.3 Installing Workflow & Analysis Tools\n\n2.3.1 R Ecosystem\n\nR (The engine)\nRStudio (The interface)\nStandard Packages (Extensions - Libraries that expand functionality)\n\n\n\n2.3.2 WhiteboxTools for Geospatial Processing\n\n\n2.3.3 RHESSys-Specific R packages\n\nRHESSysPreprocessing\nRHESSysIOinR"
   },
@@ -625,7 +653,7 @@
   {
     "objectID": "validation.html",
     "href": "validation.html",
-    "title": "13 Validation (The Verification or The Credibility)",
+    "title": "13 Validation (The Confirmation)",
     "section": "",
     "text": "judging/evaluation performance\ntesting calibrated parameters against data set independent of calibration period"
   },

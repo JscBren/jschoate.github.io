@@ -9,3 +9,25 @@ title: "Part I: Foundations & Envrionment"
 -   expected outcome for this section: functioning modeling environment and clear strategic plan
 
 # 
+
+## Chapters in this section
+
+<div>
+
+### [Chapter 1: Introduction](introduction.qmd)
+
+Understanding what RHESSys is
+
+### [Chapter 2: Installation](setup.qmd)
+
+Establishing the modeling environment
+
+### [Chapter 3: Project Design](projectdesign.qmd)
+
+Planning your project strategy
+
+### [Chapter 4: Example Dataset](exampledataset.qmd)
+
+Explore the example data set
+
+</div>
