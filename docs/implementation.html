@@ -284,7 +284,13 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#section" id="toc-section" class="nav-link active" data-scroll-target="#section"></a></li>
+  <li><a href="#simulation-prerequisites" id="toc-simulation-prerequisites" class="nav-link active" data-scroll-target="#simulation-prerequisites">8.1 Simulation Prerequisites</a></li>
+  <li><a href="#the-rhessysioinr-environment" id="toc-the-rhessysioinr-environment" class="nav-link" data-scroll-target="#the-rhessysioinr-environment">8.2 The RHESSysIOinR environment</a></li>
+  <li><a href="#script-configuration" id="toc-script-configuration" class="nav-link" data-scroll-target="#script-configuration">8.3 Script configuration</a></li>
+  <li><a href="#data-output-filtering" id="toc-data-output-filtering" class="nav-link" data-scroll-target="#data-output-filtering">8.4 Data output filtering</a></li>
+  <li><a href="#running-the-model" id="toc-running-the-model" class="nav-link" data-scroll-target="#running-the-model">8.5 Running the model</a></li>
+  <li><a href="#example-dataset" id="toc-example-dataset" class="nav-link" data-scroll-target="#example-dataset">8.6 Example Dataset</a></li>
+  <li><a href="#section" id="toc-section" class="nav-link" data-scroll-target="#section"></a></li>
   </ul>
 </nav>
     </div>
@@ -309,26 +315,51 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 <p>There will be subsections for the following topics</p>
+<section id="simulation-prerequisites" class="level2">
+<h2 class="anchored" data-anchor-id="simulation-prerequisites">8.1 Simulation Prerequisites</h2>
 <ul>
-<li>Define the simulation rules
+<li>i.e.&nbsp;RHESSys environment already set up (i.e.&nbsp;Docker image, compiled version of RHESSys, SIF file)</li>
+<li>Worldfile</li>
+<li>Flowtable</li>
+<li>Formatted climate files</li>
+<li>Set of definition files corresponding to the project</li>
+</ul>
+</section>
+<section id="the-rhessysioinr-environment" class="level2">
+<h2 class="anchored" data-anchor-id="the-rhessysioinr-environment">8.2 The RHESSysIOinR environment</h2>
 <ul>
-<li>RHESSysIOinR Functions to provide the directions necessary to run RHESSys</li>
-</ul></li>
-<li>Output filter design
+<li>Package overview</li>
+<li>Bridge between RHESSys code and R environment</li>
+</ul>
+</section>
+<section id="script-configuration" class="level2">
+<h2 class="anchored" data-anchor-id="script-configuration">8.3 Script configuration</h2>
 <ul>
-<li>Tecfile/Output Filter interaction for expected output</li>
-<li>Selecting RHESSys output variables
+<li>Rmd script</li>
+<li>input mapping</li>
+<li>temporal parameters (setting start/end dates)</li>
+</ul>
+</section>
+<section id="data-output-filtering" class="level2">
+<h2 class="anchored" data-anchor-id="data-output-filtering">8.4 Data output filtering</h2>
 <ul>
-<li>Choosing variables relevant to the research questions and analysis goals</li>
-<li>Reassigning/Combining variables</li>
-</ul></li>
-</ul></li>
-<li>Executing simulations in R
+<li>Building filter</li>
+<li>Combine multiple filters into single R object</li>
+</ul>
+</section>
+<section id="running-the-model" class="level2">
+<h2 class="anchored" data-anchor-id="running-the-model">8.5 Running the model</h2>
 <ul>
 <li>Single run</li>
 <li>Multiple runs</li>
-</ul></li>
 </ul>
+</section>
+<section id="example-dataset" class="level2">
+<h2 class="anchored" data-anchor-id="example-dataset">8.6 Example Dataset</h2>
+<ul>
+<li>Files to refer to</li>
+</ul>
+</section>
 <section id="section" class="level1">
 <h1></h1>
 

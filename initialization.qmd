@@ -2,13 +2,24 @@
 title: "10 Initialization (The Equilibrium)"
 ---
 
+## 10.1 Spin-up/Initializing approaches
 
+-   Cold start
+-   Warm start
 
--   Spin-up/Initializing approaches
--   Achieving steady-state
+## 10.2 Spin-up Process
+
 -   Spin-up Tec event
 -   State-of-the world output Worldfile
--   Typical spin-up output variables
 -   Determining baseline equilibrium
+-   Typical spin-up output variables
+-   Spin-up simulation output files
+
+
+
+
+
+
+
 
 # 

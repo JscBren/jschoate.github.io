@@ -53,7 +53,28 @@
     "href": "calibration.html",
     "title": "12 Calibration (The Optimization)",
     "section": "",
-    "text": "Methodology\nOptimization Workflows - (corresponding with ‘real world’ observations)\nObjective Functions and Performance Metrics\nThe challenge of equifinality"
+    "text": "Rscripts/tools\nsimulation period"
+  },
+  {
+    "objectID": "calibration.html#method",
+    "href": "calibration.html#method",
+    "title": "12 Calibration (The Optimization)",
+    "section": "",
+    "text": "Rscripts/tools\nsimulation period"
+  },
+  {
+    "objectID": "calibration.html#target-data",
+    "href": "calibration.html#target-data",
+    "title": "12 Calibration (The Optimization)",
+    "section": "12.2 Target Data",
+    "text": "12.2 Target Data\n\nobserved data\nOptimization Workflows - (corresponding with ‘real world’ observations)"
+  },
+  {
+    "objectID": "calibration.html#evaluation",
+    "href": "calibration.html#evaluation",
+    "title": "12 Calibration (The Optimization)",
+    "section": "12.3 Evaluation",
+    "text": "12.3 Evaluation\n\nObjective Functions and Performance Metrics\nThe challenge of equifinality"
   },
   {
     "objectID": "exampledataset.html",
@@ -95,7 +116,49 @@
     "href": "implementation.html",
     "title": "8 Implementation & Execution (The Launch)",
     "section": "",
-    "text": "There will be subsections for the following topics\n\nDefine the simulation rules\n\nRHESSysIOinR Functions to provide the directions necessary to run RHESSys\n\nOutput filter design\n\nTecfile/Output Filter interaction for expected output\nSelecting RHESSys output variables\n\nChoosing variables relevant to the research questions and analysis goals\nReassigning/Combining variables\n\n\nExecuting simulations in R\n\nSingle run\nMultiple runs"
+    "text": "There will be subsections for the following topics"
+  },
+  {
+    "objectID": "implementation.html#simulation-prerequisites",
+    "href": "implementation.html#simulation-prerequisites",
+    "title": "8 Implementation & Execution (The Launch)",
+    "section": "8.1 Simulation Prerequisites",
+    "text": "8.1 Simulation Prerequisites\n\ni.e. RHESSys environment already set up (i.e. Docker image, compiled version of RHESSys, SIF file)\nWorldfile\nFlowtable\nFormatted climate files\nSet of definition files corresponding to the project"
+  },
+  {
+    "objectID": "implementation.html#the-rhessysioinr-environment",
+    "href": "implementation.html#the-rhessysioinr-environment",
+    "title": "8 Implementation & Execution (The Launch)",
+    "section": "8.2 The RHESSysIOinR environment",
+    "text": "8.2 The RHESSysIOinR environment\n\nPackage overview\nBridge between RHESSys code and R environment"
+  },
+  {
+    "objectID": "implementation.html#script-configuration",
+    "href": "implementation.html#script-configuration",
+    "title": "8 Implementation & Execution (The Launch)",
+    "section": "8.3 Script configuration",
+    "text": "8.3 Script configuration\n\nRmd script\ninput mapping\ntemporal parameters (setting start/end dates)"
+  },
+  {
+    "objectID": "implementation.html#data-output-filtering",
+    "href": "implementation.html#data-output-filtering",
+    "title": "8 Implementation & Execution (The Launch)",
+    "section": "8.4 Data output filtering",
+    "text": "8.4 Data output filtering\n\nBuilding filter\nCombine multiple filters into single R object"
+  },
+  {
+    "objectID": "implementation.html#running-the-model",
+    "href": "implementation.html#running-the-model",
+    "title": "8 Implementation & Execution (The Launch)",
+    "section": "8.5 Running the model",
+    "text": "8.5 Running the model\n\nSingle run\nMultiple runs"
+  },
+  {
+    "objectID": "implementation.html#example-dataset",
+    "href": "implementation.html#example-dataset",
+    "title": "8 Implementation & Execution (The Launch)",
+    "section": "8.6 Example Dataset",
+    "text": "8.6 Example Dataset\n\nFiles to refer to"
   },
   {
     "objectID": "index.html",
@@ -130,7 +193,21 @@
     "href": "initialization.html",
     "title": "10 Initialization (The Equilibrium)",
     "section": "",
-    "text": "Spin-up/Initializing approaches\nAchieving steady-state\nSpin-up Tec event\nState-of-the world output Worldfile\nTypical spin-up output variables\nDetermining baseline equilibrium"
+    "text": "Cold start\nWarm start"
+  },
+  {
+    "objectID": "initialization.html#spin-upinitializing-approaches",
+    "href": "initialization.html#spin-upinitializing-approaches",
+    "title": "10 Initialization (The Equilibrium)",
+    "section": "",
+    "text": "Cold start\nWarm start"
+  },
+  {
+    "objectID": "initialization.html#spin-up-process",
+    "href": "initialization.html#spin-up-process",
+    "title": "10 Initialization (The Equilibrium)",
+    "section": "10.2 Spin-up Process",
+    "text": "10.2 Spin-up Process\n\nSpin-up Tec event\nState-of-the world output Worldfile\nDetermining baseline equilibrium\nTypical spin-up output variables\nSpin-up simulation output files"
   },
   {
     "objectID": "inputfiles.html",
@@ -508,7 +585,28 @@
     "href": "postprocess.html",
     "title": "9 Post-processing (The Insight)",
     "section": "",
-    "text": "Sub-sections for the following\n\nOutput data wrangling - reading output into R, synthesizing, transforming, rearranging data for use-case\nAnalyzing\nVisualizing"
+    "text": "reading output into R\nsynthesizing, transforming, rearranging data for use-case"
+  },
+  {
+    "objectID": "postprocess.html#output-data-wrangling",
+    "href": "postprocess.html#output-data-wrangling",
+    "title": "9 Post-processing (The Insight)",
+    "section": "",
+    "text": "reading output into R\nsynthesizing, transforming, rearranging data for use-case"
+  },
+  {
+    "objectID": "postprocess.html#output-interpretation",
+    "href": "postprocess.html#output-interpretation",
+    "title": "9 Post-processing (The Insight)",
+    "section": "9.2 Output Interpretation",
+    "text": "9.2 Output Interpretation\n\nAnalyzing\nVisualizing"
+  },
+  {
+    "objectID": "postprocess.html#example-dataset",
+    "href": "postprocess.html#example-dataset",
+    "title": "9 Post-processing (The Insight)",
+    "section": "9.3 Example Dataset",
+    "text": "9.3 Example Dataset\n\nFiles to refer to"
   },
   {
     "objectID": "preprocessing.html",
@@ -543,28 +641,28 @@
     "href": "projectdesign.html",
     "title": "3 Project Design & Planning (The Strategy)",
     "section": "",
-    "text": "This chapter will discuss what a user should consider, i.e.:\nPlease see my comments in the msr documentation where it is placed now - because I think info about msr/asp setup need to be included earlier in the data acquisition & preprocessing sections. Also I think the example dataset should be set up with msr - because it’s easier for a user to “downgrade” their understanding to a standard worldfile than it is to learn the standard and then have to unlearn/retool for MSR later.\nFine-scale Heterogeneity section\nTo ensure users don’t have to redo their spatial data prep, I think the concept of MSR should be introduced here in Part I chapter 3 (Project Design). This allows the user to decide their model architecture early -\nbecause users will hate getting to the advanced features section and realizing they should have gathered or considered different data earlier. Introducing the MSR/aspatial option here allows them to make an informed architectural decision for their project before they start\nThe detailed technical execution can remain in Part IV (Advanced Applications) effectively treating Part IV as the ‘Expert Reference Library’ - but I think introduce the concept here, either standard patches or msr patch families and what the difference is - and provide a link to the msr section in advanced topics where they can find the info if they choose that option before moving on to data/setup."
+    "text": "This chapter will discuss what a user should consider, i.e.:\nPlease see my comments in the msr documentation where it is placed now - because I think info about msr/asp setup need to be included earlier in the data acquisition & preprocessing sections. Also I think the example dataset should be set up with msr - because it’s easier for a user to “downgrade” their understanding to a standard worldfile than it is to learn the standard and then have to unlearn/retool for MSR later.\nFine-scale Heterogeneity section\nTo ensure users don’t have to redo their spatial data prep, I think the concept of MSR should be introduced here in Part I chapter 3 (Project Design). This allows the user to decide their model architecture early -\nbecause users will hate getting to the advanced features section and realizing they should have gathered or considered different data earlier. Introducing the MSR/aspatial option here allows them to make an informed architectural decision for their project before they start\nThe detailed technical execution can remain in Part IV (Advanced Applications) effectively treating Part IV as the ‘Expert Reference Library’ - but I think introduce the concept here, either standard patches or msr patch families and what the difference is - and provide a link to the msr section in advanced topics where they can find the info if they choose that option before moving on to data/setup.\nNaomi - yes to leave most discussion in advanced topics and give link,"
   },
   {
     "objectID": "projectdesign.html#spatial-resolution-vs.-computational-cost",
     "href": "projectdesign.html#spatial-resolution-vs.-computational-cost",
     "title": "3 Project Design & Planning (The Strategy)",
     "section": "3.1 Spatial resolution vs. computational cost",
-    "text": "3.1 Spatial resolution vs. computational cost\n\npatch resolution/number of patches impact on processing needs & time\nscale - what is necessary to answer users questions: is fine-scale processing necessary?"
+    "text": "3.1 Spatial resolution vs. computational cost\n\nscale - what type of set up is necessary to answer users questions\npatch resolution/number of patches - impact on processing needs & time\nexplicit spatial units (famililes), number of units within (land cover types)\n\ntrade offs between size of patch family unit & number of aspatial patches within\n\nhow many patch families - how many within each family\n\npatch family can contain 1 to many patches\npatches can be homogeneous or heterogeneous\n\ndecision tree"
   },
   {
-    "objectID": "projectdesign.html#standard-patches-or-patch-families",
-    "href": "projectdesign.html#standard-patches-or-patch-families",
+    "objectID": "projectdesign.html#patch-families",
+    "href": "projectdesign.html#patch-families",
     "title": "3 Project Design & Planning (The Strategy)",
-    "section": "3.1 Standard patches or patch families",
-    "text": "3.1 Standard patches or patch families\n\npropose introduction here - with link to advanced features section"
+    "section": "3.1 Patch families",
+    "text": "3.1 Patch families\n\npropose, introduction here - with link to advanced features section for bulk of info\nwhat it is - maybe this goes above"
   },
   {
     "objectID": "projectdesign.html#data-synchronization-temporal-extent",
     "href": "projectdesign.html#data-synchronization-temporal-extent",
     "title": "3 Project Design & Planning (The Strategy)",
     "section": "3.2 Data synchronization & temporal extent",
-    "text": "3.2 Data synchronization & temporal extent\n\noverlap - i.e., does the temporal period of climate data & observed streamflow data conincide?\nspin-up and calibration time requirements"
+    "text": "3.2 Data synchronization & temporal extent\n\noverlap - of all of the essential climate data, i.e. precip 50 years but temperature on 5 years\nspin-up scenario and calibration time requirements"
   },
   {
     "objectID": "projectdesign.html#functional-constraints",
@@ -585,7 +683,42 @@
     "href": "sensanal.html",
     "title": "11 Sensitivity Analysis (The Influence)",
     "section": "",
-    "text": "Identifying influential variables - understanding the ‘knobs’, which to turn\nParameter Space Characterization (establishing realistic bounds/ranges)\nParameter Selection"
+    "text": "R scripts/tools\n(formalize process/script and add the RHESSysIOinR?)"
+  },
+  {
+    "objectID": "sensanal.html#tools-to-get-the-job-done",
+    "href": "sensanal.html#tools-to-get-the-job-done",
+    "title": "11 Sensitivity Analysis (The Influence)",
+    "section": "",
+    "text": "R scripts/tools\n(formalize process/script and add the RHESSysIOinR?)"
+  },
+  {
+    "objectID": "sensanal.html#identifying-influential-variables",
+    "href": "sensanal.html#identifying-influential-variables",
+    "title": "11 Sensitivity Analysis (The Influence)",
+    "section": "11.1 Identifying influential variables",
+    "text": "11.1 Identifying influential variables\n\ndiscern what processes different parameters affect\nparameter interactions"
+  },
+  {
+    "objectID": "sensanal.html#parameter-space-characterization",
+    "href": "sensanal.html#parameter-space-characterization",
+    "title": "11 Sensitivity Analysis (The Influence)",
+    "section": "11.2 Parameter Space Characterization",
+    "text": "11.2 Parameter Space Characterization\n\nestablishing realistic bounds/ranges\nliterature reference\nsampling parameter space"
+  },
+  {
+    "objectID": "sensanal.html#running-simulation-iterations",
+    "href": "sensanal.html#running-simulation-iterations",
+    "title": "11 Sensitivity Analysis (The Influence)",
+    "section": "11.3 Running simulation iterations",
+    "text": "11.3 Running simulation iterations\n\nR functions/tools"
+  },
+  {
+    "objectID": "sensanal.html#parameter-selection",
+    "href": "sensanal.html#parameter-selection",
+    "title": "11 Sensitivity Analysis (The Influence)",
+    "section": "11.3 Parameter Selection",
+    "text": "11.3 Parameter Selection\n\ndefining target output\nuncertainty\nparameter importance tools?\nanalyzing & ranking performance"
   },
   {
     "objectID": "setup.html",

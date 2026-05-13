@@ -285,7 +285,7 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#spatial-resolution-vs.-computational-cost" id="toc-spatial-resolution-vs.-computational-cost" class="nav-link active" data-scroll-target="#spatial-resolution-vs.-computational-cost">3.1 Spatial resolution vs.&nbsp;computational cost</a></li>
-  <li><a href="#standard-patches-or-patch-families" id="toc-standard-patches-or-patch-families" class="nav-link" data-scroll-target="#standard-patches-or-patch-families">3.1 Standard patches or patch families</a></li>
+  <li><a href="#patch-families" id="toc-patch-families" class="nav-link" data-scroll-target="#patch-families">3.1 Patch families</a></li>
   <li><a href="#data-synchronization-temporal-extent" id="toc-data-synchronization-temporal-extent" class="nav-link" data-scroll-target="#data-synchronization-temporal-extent">3.2 Data synchronization &amp; temporal extent</a></li>
   <li><a href="#functional-constraints" id="toc-functional-constraints" class="nav-link" data-scroll-target="#functional-constraints">3.3 Functional constraints</a></li>
   <li><a href="#defining-the-project-boundaries" id="toc-defining-the-project-boundaries" class="nav-link" data-scroll-target="#defining-the-project-boundaries">3.4 Defining the project boundaries</a></li>
@@ -321,24 +321,36 @@ ul.task-list li input[type="checkbox"] {
 <p>To ensure users don’t have to redo their spatial data prep, I think the concept of MSR should be introduced here in Part I chapter 3 (Project Design). This allows the user to decide their model architecture early -</p>
 <p>because users will hate getting to the advanced features section and realizing they should have gathered or considered different data earlier. Introducing the MSR/aspatial option here allows them to make an informed architectural decision for their project before they start</p>
 <p>The detailed technical execution can remain in Part IV (Advanced Applications) effectively treating Part IV as the ‘Expert Reference Library’ - but I think introduce the concept here, either standard patches or msr patch families and what the difference is - and provide a link to the msr section in advanced topics where they can find the info if they choose that option before moving on to data/setup.</p>
+<p>Naomi - yes to leave most discussion in advanced topics and give link,</p>
 <section id="spatial-resolution-vs.-computational-cost" class="level2">
 <h2 class="anchored" data-anchor-id="spatial-resolution-vs.-computational-cost">3.1 Spatial resolution vs.&nbsp;computational cost</h2>
 <ul>
-<li>patch resolution/number of patches impact on processing needs &amp; time</li>
-<li>scale - what is necessary to answer users questions: is fine-scale processing necessary?</li>
+<li>scale - what type of set up is necessary to answer users questions</li>
+<li>patch resolution/number of patches - impact on processing needs &amp; time</li>
+<li>explicit spatial units (famililes), number of units within (land cover types)
+<ul>
+<li>trade offs between size of patch family unit &amp; number of aspatial patches within</li>
+</ul></li>
+<li>how many patch families - how many within each family
+<ul>
+<li>patch family can contain 1 to many patches</li>
+<li>patches can be homogeneous or heterogeneous</li>
+</ul></li>
+<li>decision tree</li>
 </ul>
 </section>
-<section id="standard-patches-or-patch-families" class="level2">
-<h2 class="anchored" data-anchor-id="standard-patches-or-patch-families">3.1 Standard patches or patch families</h2>
+<section id="patch-families" class="level2">
+<h2 class="anchored" data-anchor-id="patch-families">3.1 Patch families</h2>
 <ul>
-<li>propose introduction here - with link to advanced features section</li>
+<li>propose, introduction here - with link to advanced features section for bulk of info</li>
+<li>what it is - maybe this goes above</li>
 </ul>
 </section>
 <section id="data-synchronization-temporal-extent" class="level2">
 <h2 class="anchored" data-anchor-id="data-synchronization-temporal-extent">3.2 Data synchronization &amp; temporal extent</h2>
 <ul>
-<li>overlap - i.e., does the temporal period of climate data &amp; observed streamflow data conincide?</li>
-<li>spin-up and calibration time requirements</li>
+<li>overlap - of all of the essential climate data, i.e.&nbsp;precip 50 years but temperature on 5 years</li>
+<li>spin-up scenario and calibration time requirements</li>
 </ul>
 </section>
 <section id="functional-constraints" class="level2">
@@ -356,6 +368,7 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="section" class="level1">
 <h1></h1>
+<p>we don’t need streamflow to run rhessys so don’t make this a focus</p>
 
 
 </section>

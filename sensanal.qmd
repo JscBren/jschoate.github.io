@@ -2,9 +2,29 @@
 title: "11 Sensitivity Analysis (The Influence)"
 ---
 
+## 11.1 Tools to get the job done
+-   R scripts/tools
+-   (formalize process/script and add the RHESSysIOinR?)
 
--   Identifying influential variables - understanding the 'knobs', which to turn
--   Parameter Space Characterization (establishing realistic bounds/ranges)
--   Parameter Selection
+## 11.1 Identifying influential variables
+
+-   discern what processes different parameters affect
+-   parameter interactions
+
+
+## 11.2 Parameter Space Characterization
+-   establishing realistic bounds/ranges
+-   literature reference
+-   sampling parameter space
+
+## 11.3 Running simulation iterations
+-   R functions/tools
+
+##  11.3 Parameter Selection
+-   defining target output
+-   uncertainty
+-   parameter importance tools?
+-   analyzing & ranking performance
+
 
 # 

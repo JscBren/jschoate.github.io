@@ -14,19 +14,29 @@ because users will hate getting to the advanced features section and realizing t
 
 The detailed technical execution can remain in Part IV (Advanced Applications) effectively treating Part IV as the 'Expert Reference Library' - but I think introduce the concept here, either standard patches or msr patch families and what the difference is - and provide a link to the msr section in advanced topics where they can find the info if they choose that option before moving on to data/setup.
 
+Naomi - yes to leave most discussion in advanced topics and give link, 
+
 ## 3.1 Spatial resolution vs. computational cost
 
--   patch resolution/number of patches impact on processing needs & time
--   scale - what is necessary to answer users questions: is fine-scale processing necessary?
+-   scale - what type of set up is necessary to answer users questions
+-   patch resolution/number of patches - impact on processing needs & time
+-   explicit spatial units (famililes), number of units within (land cover types)
+    -   trade offs between size of patch family unit & number of aspatial patches within
+-   how many patch families - how many within each family
+    -   patch family can contain 1 to many patches
+    -   patches can be homogeneous or heterogeneous
 
-## 3.1 Standard patches or patch families
+-   decision tree
 
--   propose introduction here - with link to advanced features section
+## 3.1 Patch families
+
+-   propose, introduction here - with link to advanced features section for bulk of info
+-   what it is - maybe this goes above
 
 ## 3.2 Data synchronization & temporal extent
 
--   overlap - i.e., does the temporal period of climate data & observed streamflow data conincide?
--   spin-up and calibration time requirements
+-   overlap - of all of the essential climate data, i.e. precip 50 years but temperature on 5 years
+-   spin-up scenario and calibration time requirements
 
 ## 3.3 Functional constraints
 
@@ -38,3 +48,8 @@ The detailed technical execution can remain in Part IV (Advanced Applications) e
 -   use full basin boundary, representative hillslope, single patch?
 
 # 
+
+
+
+
+we don't need streamflow to run rhessys so don't make this a focus

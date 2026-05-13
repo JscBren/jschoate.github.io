@@ -2,10 +2,16 @@
 title: "12 Calibration (The Optimization)"
 ---
 
+## 12.1 Method
+-   Rscripts/tools
+-   simulation period
 
-
--   Methodology
+## 12.2 Target Data
+-   observed data 
 -   Optimization Workflows - (corresponding with 'real world' observations)
+
+## 12.3 Evaluation
+
 -   Objective Functions and Performance Metrics
 -   The challenge of equifinality
 

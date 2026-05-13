@@ -4,15 +4,34 @@ title: "8 Implementation & Execution (The Launch)"
 
 There will be subsections for the following topics
 
--   Define the simulation rules
-    -   RHESSysIOinR Functions to provide the directions necessary to run RHESSys
--   Output filter design
-    -   Tecfile/Output Filter interaction for expected output
-    -   Selecting RHESSys output variables
-        -   Choosing variables relevant to the research questions and analysis goals
-        -   Reassigning/Combining variables
--   Executing simulations in R
-    -   Single run
-    -   Multiple runs
+## 8.1 Simulation Prerequisites
+
+-   i.e. RHESSys environment already set up (i.e. Docker image, compiled version of RHESSys, SIF file)
+-   Worldfile
+-   Flowtable
+-   Formatted climate files
+-   Set of definition files corresponding to the project
+
+## 8.2 The RHESSysIOinR environment
+-   Package overview
+-   Bridge between RHESSys code and R environment
+
+## 8.3 Script configuration
+
+-   Rmd script
+-   input mapping
+-   temporal parameters (setting start/end dates)
+
+## 8.4 Data output filtering
+
+-   Building filter
+-   Combine multiple filters into single R object
+
+## 8.5 Running the model
+-   Single run
+-   Multiple runs
+
+## 8.6 Example Dataset
+-   Files to refer to
 
 # 

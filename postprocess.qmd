@@ -1,10 +1,17 @@
 ---
 title: "9 Post-processing (The Insight)"
 ---
-Sub-sections for the following
 
--   Output data wrangling - reading output into R, synthesizing, transforming, rearranging data for use-case
+
+## 9.1 Output data wrangling
+-   reading output into R
+-   synthesizing, transforming, rearranging data for use-case
+
+## 9.2 Output Interpretation
 -   Analyzing
 -   Visualizing
+
+## 9.3 Example Dataset
+-   Files to refer to
 
 # 
