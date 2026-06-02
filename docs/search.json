@@ -25,7 +25,7 @@
     "href": "index.html#intended-audience",
     "title": "RHESSys in Practice:",
     "section": "Intended Audience",
-    "text": "Intended Audience\n\nWho this is for/Who should be reading this\n\n\nAssumed basic prerequisite knowledge\n\n\n\nGeneral Modeling\nBasic R/Rstudio\nGIS and Raster/Vector\nBasic Unix/Linux environment (shell, command line, text editor)\nGit/GitHub"
+    "text": "Intended Audience\n\nWho this is for/Who should be reading this"
   },
   {
     "objectID": "preface.html#conventions",
@@ -51,7 +51,7 @@
   {
     "objectID": "part1intro.html#chapters-in-this-section",
     "href": "part1intro.html#chapters-in-this-section",
-    "title": "Part I: Foundations & Envrionment",
+    "title": "Foundations & Envrionment",
     "section": "Chapters in this section",
     "text": "Chapters in this section\n\n\nIntroduction\nUnderstanding what RHESSys is\n\n\nInstallation\nEstablishing the modeling environment\n\n\nProject Design\nPlanning your project strategy\n\n\nExample Dataset\nExplore the example data set"
   },
@@ -170,7 +170,7 @@
   {
     "objectID": "part2intro.html#chapters-in-this-section",
     "href": "part2intro.html#chapters-in-this-section",
-    "title": "Part II: From Data to Simulation",
+    "title": "From Data to Simulation",
     "section": "Chapters in this section",
     "text": "Chapters in this section\n\n\nUser-Aquired Data\nGathering and formatting the necessary ingredients\n\n\nRHESSys Specific Input Files\nUnderstanding the core file anatomy\n\n\nPreprocessing\nAssembling the model foundation\n\n\nImplementation & Execution\nLaunching the simulation\n\n\nPostprocessing\nGaining model result insight"
   },
@@ -394,7 +394,7 @@
   {
     "objectID": "part3intro.html#chapters-in-this-section",
     "href": "part3intro.html#chapters-in-this-section",
-    "title": "Part III: Refinement and Evaluation",
+    "title": "Refinement and Evaluation",
     "section": "Chapters in this section",
     "text": "Chapters in this section\n\n\nInitialization\nAchieving model equilibrium\n\n\nSensitivity Analysis\nIdentifying influencing parameters\n\n\nCalibration\nFine-tuning parameters\n\n\nValidation\nEvaluating parameter performance"
   },
@@ -548,7 +548,7 @@
   {
     "objectID": "part4intro.html#chapters-in-this-section",
     "href": "part4intro.html#chapters-in-this-section",
-    "title": "Part IV: Advanced Applications",
+    "title": "Advanced Applications",
     "section": "Chapters in this section",
     "text": "Chapters in this section\n\n\nAdvanced Features\nExpanding beyond the baseline\n\n\nFire Disturbance\nSimulating the spark and igniting the inferno\n\n\nDisturbance:Vegetation Dynamics\nTransforming an evolving landscape\n\n\nMulti-scale routing\nCreating a mosaic landscape\n\n\nTarget-driven spin-up\nAligning with observed ecological states\n\n\nParallelization\nAccelerating model simulations"
   },

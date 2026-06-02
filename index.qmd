@@ -1,13 +1,12 @@
 # Welcome to the RHESSys Manual {.unnumbered}
 
-::: {.title-block}
-
+::: title-block
 ### Authors
-**Janet S. Choate, Naomi Tague, Ryan R. Bart**
 
+**Janet S. Choate, Naomi Tague, Ryan R. Bart**
 :::
 
-![](media/RhessysLogo_nobckgrnd.jpg){width=320}
+![](media/RhessysLogo_nobckgrnd.jpg){width="320"}
 
 ## Purpose
 
@@ -24,7 +23,7 @@ Include info about the manual, why it exists, what it is intended for
 -   Who this is for/Who should be reading this
 
 ::: panel-tabset
-### Assumed basic prerequisite knowledge
+Assumed basic prerequisite knowledge
 
 -   **General Modeling**
 -   **Basic R/Rstudio**

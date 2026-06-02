@@ -1,5 +1,4 @@
-# Part IV: Advanced Applications {.unnumbered}
-
+# Advanced Applications {.unnumbered}
 
 -   This part is about exploring complex eco-hydrological scenarios
 -   intro to what is covered in the section
