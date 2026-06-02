@@ -24,7 +24,7 @@ Include info about the manual, why it exists, what it is intended for
 -   Who this is for/Who should be reading this
 
 ::: panel-tabset
-## Assumed basic prerequisite knowledge
+### Assumed basic prerequisite knowledge
 
 -   **General Modeling**
 -   **Basic R/Rstudio**

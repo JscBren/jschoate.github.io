@@ -12,7 +12,9 @@
 
 Multiscale routing (MSR) allows for interactions (notably the routing of water and shading between) among model units (a patch family unit containing multiple patches) and their associated vegetation types that are typically at scales too small (\<30m) to characterize explicitly. Hypothetically, this allows for the (within patch family) transfer of water between neighboring patches of thinned and unthinned trees, or from a sidewalk to a lawn -- none of which would typically be represented/accounted for when modeling at a 30m grid (patch) cell.
 
-### ![](images/HowAspatialPatchesWork.jpg){width="300"}
+![**Multi-scale routing**](images/HowAspatialPatchesWork.jpg){width="300"}
+
+
 
 ## Characterization in RHESSys
 
