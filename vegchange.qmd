@@ -1,4 +1,4 @@
-# Disturbance: Vegetation Dynamics (The Evolution)
+# Landcover Change (The Evolution)
 
 ## Types of Change
 -   Land Cover/Vegetation change

@@ -25,7 +25,7 @@
     "href": "index.html#intended-audience",
     "title": "RHESSys in Practice:",
     "section": "Intended Audience",
-    "text": "Intended Audience\n\nWho this is for/Who should be reading this"
+    "text": "Intended Audience\n\nWho this is for/Who should be reading this\n\n\nAssumed basic prerequisite knowledge\n\nGeneral Modeling\nBasic R/Rstudio\nGIS and Raster/Vector\nBasic Unix/Linux environment (shell, command line, text editor)\nGit/GitHub"
   },
   {
     "objectID": "preface.html#conventions",
@@ -576,28 +576,28 @@
   {
     "objectID": "vegchange.html#types-of-change",
     "href": "vegchange.html#types-of-change",
-    "title": "17  Disturbance: Vegetation Dynamics (The Evolution)",
+    "title": "17  Landcover Change (The Evolution)",
     "section": "17.1 Types of Change",
     "text": "17.1 Types of Change\n\nLand Cover/Vegetation change\nbiomass pool changes"
   },
   {
     "objectID": "vegchange.html#changing-the-vegetation-cover",
     "href": "vegchange.html#changing-the-vegetation-cover",
-    "title": "17  Disturbance: Vegetation Dynamics (The Evolution)",
+    "title": "17  Landcover Change (The Evolution)",
     "section": "17.2 Changing the vegetation cover",
     "text": "17.2 Changing the vegetation cover\n\nHomogeneous changes\nHeteorogeneous changes\nPartial redefinition (thinning)"
   },
   {
     "objectID": "vegchange.html#generate-a-redefined-worldfile",
     "href": "vegchange.html#generate-a-redefined-worldfile",
-    "title": "17  Disturbance: Vegetation Dynamics (The Evolution)",
+    "title": "17  Landcover Change (The Evolution)",
     "section": "17.3 Generate a Redefined worldfile",
     "text": "17.3 Generate a Redefined worldfile\n\nredefine with an awk script\nredefine with a modified worldfile (redefine worldfile)\n\nredefine template\n\nshort simulation to output a changed worldfile\nnew redefined worldfile output for use in subsequent simulations"
   },
   {
     "objectID": "vegchange.html#applying-the-change",
     "href": "vegchange.html#applying-the-change",
-    "title": "17  Disturbance: Vegetation Dynamics (The Evolution)",
+    "title": "17  Landcover Change (The Evolution)",
     "section": "17.4 Applying the Change",
     "text": "17.4 Applying the Change\n\nworldfile date extension\nTecfile date\nTecfile events\n\nredefine_world\nredefine_world_multiplier\nredefine_world_thin_remain\nredefine_world_thin_harvest\nredefine_world_thin_snags"
   },
