@@ -1,6 +1,5 @@
----
-title: "Part IV: Advanced Applications"
----
+# Part IV: Advanced Applications
+
 
 -   This part is about exploring complex eco-hydrological scenarios
 -   intro to what is covered in the section
@@ -10,27 +9,27 @@ title: "Part IV: Advanced Applications"
 
 <div>
 
-### [Chapter 14: Advanced Features](advancedfeatures.qmd)
+### [Advanced Features](advancedfeatures.qmd)
 
 Expanding beyond the baseline
 
-### [Chapter 15: Fire Disturbance](fire.qmd)
+### [Fire Disturbance](fire.qmd)
 
 Simulating the spark and igniting the inferno
 
-### [Chapter 16: Disturbance:Vegetation Dynamics](vegchange.qmd)
+### [Disturbance:Vegetation Dynamics](vegchange.qmd)
 
 Transforming an evolving landscape
 
-### [Chapter 17: Multi-scale routing](msr.qmd)
+### [Multi-scale routing](msr.qmd)
 
 Creating a mosaic landscape
 
-### [Chapter 18: Target-driven spin-up](targetspinup.qmd)
+### [Target-driven spin-up](targetspinup.qmd)
 
 Aligning with observed ecological states
 
-### [Chapter 19: Parallelization](parallelization.qmd)
+### [Parallelization](parallelization.qmd)
 
 Accelerating model simulations
 

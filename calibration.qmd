@@ -1,18 +1,43 @@
----
-title: "12 Calibration (The Optimization)"
----
+# Calibration (The Optimization)
 
-## 12.1 Method
--   Rscripts/tools
--   simulation period
+-   R scripts and supporting tools used for calibration
+-   Reference datasets used for benchmarking and testing
+-   link to video
 
-## 12.2 Target Data
--   observed data 
--   Optimization Workflows - (corresponding with 'real world' observations)
+## Calibration Strategy
 
-## 12.3 Evaluation
+-   Type of calibration approach (manual, automated, hybrid)
+-   Individual vs. simultaneous calibration of parameters
+-   Single-objective vs. multi-objective calibration
+-   What is held static vs. what is allowed to vary
+-   Temporal period for calibration (daily, moving window, seasonal period)
 
--   Objective Functions and Performance Metrics
--   The challenge of equifinality
 
-# 
+## Parameter Selection & Constraints
+
+-   Which parameters are being calibrated and why
+-   Parameter bounds and constraints (physically realistic ranges)
+-   Fixed parameters and justification for fixing them (i.e. obtained from Sensitivity Analysis)
+
+## Optimization Setup 
+
+-   Target data used (observed real world data)
+-   Optimization methods used (i.e. monte carlo)
+-   Stopping criteria (when to consider calibration is done)
+-   Number of runs or iterations
+
+## Evaluation
+-   Objective functions to measure model performance 
+-   Metrics used to compare simulations to observations
+-   Challenges of equifinality (multiple parameter sets producing similar results)
+
+## Key Challenges
+
+-   Equifinality (different parameter sets producing similar results) 
+-   Uncertainty in observations can affect calibration results
+-   Parameter uncertainty and sensitivity
+-   Implications for interpretation of calibration results
+
+
+
+

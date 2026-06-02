@@ -1,83 +1,99 @@
 project:
-  type: website
+  type: book
   output-dir: docs
+  resources:
+    - media/
+    - images/
 
-website:
-  title: "RHESSys Manual"
-  sidebar: 
-    style: "floating"
-    collapse-level: 1
-    contents:
-      - text: "Welcome"
-        file: index.qmd
-      - text: "About this Manual"
-        file: aboutmanual.qmd
+book:
+  title: "RHESSys in Practice:"
+  subtitle: "Applied Ecohydrological Modeling"
+  page-navigation: true
+  repo-url: https://github.com/JscBren/jschoate.github.io
+  
+  page-footer:
+    left: "RHESSys in Practice was written by Janet S. Choate with Naomi Tague and Ryan R. Bart."
+    right: "Built with <a href='https://quarto.org/'>Quarto</a>."
+
+  chapters:
+    - file: index.qmd
+      text: "Welcome"
     
-      - section: "Part I: Foundations & Environment"
-        href: part1intro.qmd
-        contents:
-          - text: "Introduction"
-            file: introduction.qmd
-          - text: "Installation"
-            file: setup.qmd
-          - text: "Project Design"
-            file: projectdesign.qmd
-          - text: "Example Dataset"
-            file: exampledataset.qmd
-      
-      - section: "Part II: Building and Executing"
-        href: part2intro.qmd
-        contents:
-          - text: "User-Aquired Data"
-            file: userdata.qmd
-          - text: "RHESSys Specific Input Files"
-            file: inputfiles.qmd
-          - text: "Preprocessing"
-            file: preprocessing.qmd
-          - text: "Implementation & Execution"
-            file: implementation.qmd
-          - text: "Postprocessing"
-            file: postprocess.qmd
-   
-      
-      - section: "Part III: Refinement and Evaluation"
-        href: part3intro.qmd
-        contents:
-          - text: "Initialization"
-            file: initialization.qmd
-          - text: "Sensitivity Analysis"
-            file: sensanal.qmd
-          - text: "Calibration"
-            file: calibration.qmd
-          - text: "Validation"
-            file: validation.qmd
-      
-      - section: "Part IV: Advanced Applications"
-        href: part4intro.qmd
-        contents:
-          - text: "Advanced Features"
-            file: advancedfeatures.qmd
-          - text: "Disturbance: Fire"
-            file: fire.qmd
-          - text: "Disturbance:Vegetation Dynamics"
-            file: vegchange.qmd
-          - text: "Multi-scale routing"
-            file: msr.qmd
-          - text: "Target-driven spin-up"
-            file: targetspinup.qmd
-          - text: "Parallelization"
-            file: parallelization.qmd
-      
-      - text: "---" # separator line
-      - text: "Appendices"
-        file: appendices.qmd
-    
+    - preface.qmd  
+  
+    - part: part1intro.qmd
+      chapters:
+        - file: introduction.qmd
+          text: "Introduction"
+        - file: setup.qmd
+          text: "Installation"
+        - file: projectdesign.qmd
+          text: "Project Design"
+        - file: exampledataset.qmd
+          text: "Example Dataset"
+            
+    - part: part2intro.qmd
+      chapters:
+        - file: userdata.qmd
+          text: "User-Acquired Data"
+        - file: inputfiles.qmd
+          text: "RHESSys Specific Files"
+        - file: worldfile.qmd
+          text: "Worldfile"
+        - file: preprocessing.qmd
+          text: "Preprocessing"
+        - file: implementation.qmd
+          text: "Implementation & Execution"
+        - file: postprocess.qmd
+          text: "Postprocessing"
+          
+    - part: part3intro.qmd
+      chapters:
+        - file: initialization.qmd
+          text: "Initialization"
+        - file: sensanal.qmd
+          text: "Sensitivity Analysis"
+        - file: calibration.qmd
+          text: "Calibration"
+        - file: validation.qmd
+          text: "Validation"
+        
+    - part: part4intro.qmd
+      chapters:
+        - file: advancedfeatures.qmd
+          text: "Advanced Features"
+        - file: fire.qmd
+          text: "Disturbance: Fire"
+        - file: vegchange.qmd
+          text: "Disturbance: Vegetation Dynamics"
+        - file: msr.qmd
+          text: "Multi-scale routing"
+        - file: targetspinup.qmd
+          text: "Target-driven spin-up"
+        - file: parallelization.qmd
+          text: "Parallelization"
+
+  appendices: 
+    - appendices.qmd
+
+
+
+
 format:
   html:
-    theme: cosmo
-    css: styles.css
+    theme:
+      - cosmo
+      - RHbook.scss
+    code-link: true
     toc: true
-    page-layout: full
+    number-sections: true
+    number-depth: 2
+   
+    
 
-
-
+  pdf:
+    documentclass: scrreprt
+    fontsize: 11pt
+    geometry: margin=1in
+    number-sections: true
+    number-depth: 2

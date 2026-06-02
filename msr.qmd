@@ -1,39 +1,74 @@
----
-title: "17 Fine-scale heterogeneity (The Mosaic)"
----
+# Fine-scale heterogeneity (The Mosaic)
 
-not sure this belongs in advanced features anymore because it has become pretty standard
+-   link to video
 
-**This can be debated!**
+## Advantages
 
-I have introduced the term above in Part II because I needed to include preparation of the Aspatial rules file, and about if there are multiple rules a map is needed of rule ID's, so need to include at least that under spatial data.
+-   Accounts for forest density reduction, species interactions, and urban eco-hydrology
+-   Allows for finer scale lateral water and nutrient transport
+-   Allows for within patch family) transfer of water between neighboring patches
 
-Also, I was planning for the example dataset worldfile(s) to use msr, and to discuss that worldfile structure in chapter 6
+### How It Works
 
-Perhaps the msr information should be introduced in Part I chapter 3 - Project design & planning? So user knows that as they proceed they will need to make a rules file & possibly a rules map. (maybe in project design introduce standard & msr with info about if you choose this option you need this, if you choose this option you may additionally need this?)
+Multiscale routing (MSR) allows for interactions (notably the routing of water and shading between) among model units (a patch family unit containing multiple patches) and their associated vegetation types that are typically at scales too small (\<30m) to characterize explicitly. Hypothetically, this allows for the (within patch family) transfer of water between neighboring patches of thinned and unthinned trees, or from a sidewalk to a lawn -- none of which would typically be represented/accounted for when modeling at a 30m grid (patch) cell.
 
-Because that would mean they need to think about the veg makeup of their watershed & perhaps obtain veg maps to base it on?
+### ![](images/HowAspatialPatchesWork.jpg){width="300"}
 
-So either need to stick with standard worldfile structure all the way through and not include anything about msr until advanced topics (include the example worldfiles) - or make msr the standard approach & introduce the topic early on, and it should perhaps have it's own chapter - or at least it's own sub-chapter earlier on.
+## Characterization in RHESSys
 
-It has quite a bit of information - so i'm leaning toward it's own chapter - which it has now in advanced topics - but I think it should be introduced earlier
+RHESSys uses patches as the smallest spatial unit. Multiscale routing leverages the existing spatial units in RHESSys by placing multiple patches in the exact same location. These co-located patches together are a patch family, and the routing of multiscale routing, termed "local routing" occurs between these patches, in addition to the normal topographic hillslope routing present in RHESSys which functions as normal.
 
-or
+-   Patches reflect distributions of land cover (species, open-space gaps)
 
-MSR could be referred to in project design, and when/why it would be good to use it - with a link to where it lives in advanced topics
+-   Assumes that these land covers are well mixed within a patch family
 
-Then if user decides to use that option, they go read all about it
+-   Exchanges based on rules (e.g., root accessibility) and moisture gradients
 
-This way the topic is introduced so can include reference to it data preparation and preprocessing chapters.
+-   Multiple aspatial patches within a family allow for within patch heterogeneity
 
-That still leaves the question of whether the example dataset should be standard or msr - or if both are necessary as examples? (perhaps) (but the actual work, with the scripts and the output i think should be done with the msr worldfile)
+-   Aspatial patches can differ by:
 
--   About Multi-scale routing
--   How it works
--   Generating MSR input files
-    -   asp rules file
-    -   rules map if multiple rules
+    -   vegetation type (biomass, height, root depth)
+    -   Surface coverage (open areas, thinned areas, remaining trees)
+    -   surface properties (litter)
+
+-   Exchanges of water between trees, between trees and open space (root-based access to neighboring tree stores)
+
+## Multiscale Routing Logic in RHESSys
+
+Multiscale routing can hypothetically simulate any number of water transferring processes that occur at scales smaller than RHESSys models topographically. The first demonstration though will simulate the access/lack of access that trees and other vegetation have due to their roots. New uses of multiscale routing will require rethinking the logic behind how water is routed within a patch family.
+
+## Multiscale Routing in RHESSys -- Shading
+
+Shading can occur when the vegetation of other patches within a patch family creates a higher angle to the horizon than the horizon angle map input to RHESSys.
+
+## Multiscale Routing in RHESSys -- Thinning and Fire
+
+### Thinning works
+
+-   Area can't change
+-   Percent cover changes
+-   Understory removal happens everywhere
+-   Selection thinning on specific aspatial patches \### Fire Spread
+-   Slope and wind are the same across patch family
+-   Litter load and 1-AET/PET calculated at patch level, turned into probabilities, spatially averaged across patch family \### Fire Effects
+-   Done per patch
+
+## Set-up
+
+-   MSR input files
+    -   aspatial rules file
+    -   aspatial rules map also needed if multiple rules are being used
+    -   Format
+-   Add Template state variable
 -   Generating msr worldfile
--   Running RHESSys with msr
--   Patch families
--   Output of multiple patches that belog to a patch family
+    -   add argument to use aspatial rules file to RHESSysPreprocessing
+
+## Running RHESSys with msr
+
+-   Multiscale routing is automatically triggered when the structure of the worldfile & flowtable are formatted for MSR/aspatial patches (which is generated when the asprules command is included when creating the worldfile/flowtable)
+
+## Output
+
+-   Output of multiple patches that belong to a patch family
+-   Patch Family ID in addition to Patch ID

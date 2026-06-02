@@ -1,37 +1,40 @@
----
-title: "8 Implementation & Execution (The Launch)"
----
+# Implementation & Execution (The Launch)
 
-There will be subsections for the following topics
+## Simulation Prerequisites
 
-## 8.1 Simulation Prerequisites
-
--   i.e. RHESSys environment already set up (i.e. Docker image, compiled version of RHESSys, SIF file)
+-   RHESSys environment already set up (i.e. Docker image, compiled version of RHESSys, SIF file)
 -   Worldfile
 -   Flowtable
--   Formatted climate files
+-   Formatted climate files/Base station
 -   Set of definition files corresponding to the project
 
-## 8.2 The RHESSysIOinR environment
+## The RHESSysIOinR environment
+
+-   Bridge between RHESSys code and the R environment
 -   Package overview
--   Bridge between RHESSys code and R environment
 
-## 8.3 Script configuration
+## RHESSysIOin R Script configuration
 
--   Rmd script
--   input mapping
--   temporal parameters (setting start/end dates)
+-   Rmd script description
+-   input mapping options
+    -   temporal parameters (setting start/end dates for simulation & tec events)
+    -   referencing input files (worldfile/flowtable)
+    -   directing where output is written
+    -   command line options
+-   generating the header file
+-   generating the tecfile
 
-## 8.4 Data output filtering
+## Data output filtering
 
--   Building filter
--   Combine multiple filters into single R object
+-   Building filters in R
+    -   Combine multiple filters into single R object
+-   Output filter text file outside of R
 
-## 8.5 Running the model
+## Running the model
+
 -   Single run
 -   Multiple runs
 
-## 8.6 Example Dataset
--   Files to refer to
+## Example Dataset
 
-# 
+-   Files to refer to

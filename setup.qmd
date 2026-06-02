@@ -1,33 +1,35 @@
----
-title: "2 Installation (The Software)"
----
+# Installation (The Software)
 
-## 2.1 Setup options
+## Setup options
 
 (description of each, who should use, when to use, recommendation, link to corresponding install instructions)
 
-### 2.1.1 Local Installation (MacOS, Linux)
+### [Local Installation (macos, Linux)](#macos)
 
 -   more advanced users
 -   users who want more flexibility
 
-### 2.1.2 Containerized setup (Docker)
+### [Containerized setup (Docker)](#docker)
 
 -   beginners
 -   Windows users
 -   portability
 
-### 2.1.3 HPC/Cloud (SIF/Singularity)
+### [HPC/Cloud (SIF/Singularity)](#sif)
 
 -   high-performance computing environments
 -   cluster users
 -   large scale, high resolution simulations
 
-## 2.2 RHESSys Installation
+## RHESSys Installation Steps
 
-### 2.2.1 MacOS (include section for Linux as well if necessary or where differs)
+(link to instructional video or videos if each option should be separate)
 
-#### Code Dependencies and Operational Requirements
+### MacOS {#macos}
+
+(include section for Linux as well if necessary or where differs)
+
+#### [Code Dependencies and Operational Requirements]{.underline}
 
 -   Terminal application
 -   Xcode Command Line Tools (compilers/build tools)
@@ -36,7 +38,7 @@ title: "2 Installation (The Software)"
 -   Git
 -   Libraries (i.e. NetCDF)
 
-#### Installation steps
+#### [Installation steps]{.underline}
 
 -   Download code from GitHub
     -   Zip file
@@ -46,28 +48,28 @@ title: "2 Installation (The Software)"
 -   Verify installation
 -   Common issue and solutions
 
-### 2.2.2 Docker
+### Docker
 
 -   Install Docker Desktop
 -   Obtaining RHESSys image from the Docker Hub
 
-### 2.2.3 SIF
+### SIF
 
 -   Obtaining RHESSys .sif image
 
-## 2.3 Installing Workflow & Analysis Tools
+## Installing Workflow & Analysis Tools
 
-### 2.3.1 R Ecosystem
+(link to instructional video)
+
+### R Ecosystem
 
 -   R (The engine)
 -   RStudio (The interface)
 -   Standard Packages (Extensions - Libraries that expand functionality)
 
-### 2.3.2 WhiteboxTools for Geospatial Processing
+### WhiteboxTools for Geospatial Processing
 
-### 2.3.3 RHESSys-Specific R packages
+### RHESSys-Specific R packages
 
 -   RHESSysPreprocessing
 -   RHESSysIOinR
-
-# 

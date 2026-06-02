@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>RHESSys Manual - 17 Fine-scale heterogeneity (The Mosaic)</title>
+<title>RHESSys in Practice: - 18&nbsp; Fine-scale heterogeneity (The Mosaic)</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,6 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
+<link href="./targetspinup.html" rel="next">
+<link href="./vegchange.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -60,7 +62,6 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<link rel="stylesheet" href="styles.css">
 </head>
 
 <body class="nav-sidebar floating">
@@ -72,7 +73,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./part4intro.html">Part IV: Advanced Applications</a></li><li class="breadcrumb-item"><a href="./msr.html">Multi-scale routing</a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./part4intro.html">Part IV: Advanced Applications</a></li><li class="breadcrumb-item"><a href="./msr.html"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Multi-scale routing</span></a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -82,12 +83,15 @@ ul.task-list li input[type="checkbox"] {
   </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
-      <a href="./">RHESSys Manual</a> 
+      <a href="./">RHESSys in Practice:</a> 
+        <div class="sidebar-tools-main">
+    <a href="https://github.com/JscBren/jschoate.github.io" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
+</div>
     </div>
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
@@ -105,41 +109,41 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./aboutmanual.html" class="sidebar-item-text sidebar-link">
+  <a href="./preface.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">About this Manual</span></a>
   </div>
 </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a href="./part1intro.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Part I: Foundations &amp; Environment</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="false" aria-label="Toggle section">
+ <span class="menu-text">Part I: Foundations &amp; Envrionment</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./introduction.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Introduction</span></a>
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./setup.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Installation</span></a>
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Installation</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./projectdesign.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Project Design</span></a>
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Project Design</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./exampledataset.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Example Dataset</span></a>
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Example Dataset</span></span></a>
   </div>
 </li>
       </ul>
@@ -147,40 +151,46 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a href="./part2intro.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Part II: Building and Executing</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="false" aria-label="Toggle section">
+ <span class="menu-text">Part II: From Data to Simulation</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./userdata.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">User-Aquired Data</span></a>
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">User-Acquired Data</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./inputfiles.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">RHESSys Specific Input Files</span></a>
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">RHESSys Specific Files</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./worldfile.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Worldfile</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./preprocessing.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Preprocessing</span></a>
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Preprocessing</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./implementation.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Implementation &amp; Execution</span></a>
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Implementation &amp; Execution</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./postprocess.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Postprocessing</span></a>
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Postprocessing</span></span></a>
   </div>
 </li>
       </ul>
@@ -189,33 +199,33 @@ ul.task-list li input[type="checkbox"] {
       <div class="sidebar-item-container"> 
             <a href="./part3intro.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Part III: Refinement and Evaluation</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./initialization.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Initialization</span></a>
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Initialization</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./sensanal.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Sensitivity Analysis</span></a>
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Sensitivity Analysis</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./calibration.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Calibration</span></a>
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Calibration</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./validation.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Validation</span></a>
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Validation</span></span></a>
   </div>
 </li>
       </ul>
@@ -232,62 +242,92 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./advancedfeatures.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Advanced Features</span></a>
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Advanced Features</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./fire.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Disturbance: Fire</span></a>
+ <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Disturbance: Fire</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./vegchange.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Disturbance:Vegetation Dynamics</span></a>
+ <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Disturbance: Vegetation Dynamics</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./msr.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Multi-scale routing</span></a>
+ <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Multi-scale routing</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./targetspinup.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Target-driven spin-up</span></a>
+ <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Target-driven spin-up</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./parallelization.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Parallelization</span></a>
+ <span class="menu-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Parallelization</span></span></a>
   </div>
 </li>
       </ul>
   </li>
-        <li class="px-0"><hr class="sidebar-divider hi "></li>
-        <li class="sidebar-item">
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="true">
+ <span class="menu-text">Appendices</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./appendices.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Appendices</span></a>
+ <span class="menu-text">Appendices (The Vault)</span></a>
   </div>
 </li>
+      </ul>
+  </li>
     </ul>
     </div>
 </nav>
 <div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#advantages" id="toc-advantages" class="nav-link active" data-scroll-target="#advantages"><span class="header-section-number">18.1</span> Advantages</a>
+  <ul class="collapse">
+  <li><a href="#how-it-works" id="toc-how-it-works" class="nav-link" data-scroll-target="#how-it-works">How It Works</a></li>
+  <li><a href="#section" id="toc-section" class="nav-link" data-scroll-target="#section"><img src="images/HowAspatialPatchesWork.jpg" class="img-fluid" width="300"></a></li>
+  </ul></li>
+  <li><a href="#characterization-in-rhessys" id="toc-characterization-in-rhessys" class="nav-link" data-scroll-target="#characterization-in-rhessys"><span class="header-section-number">18.2</span> Characterization in RHESSys</a></li>
+  <li><a href="#multiscale-routing-logic-in-rhessys" id="toc-multiscale-routing-logic-in-rhessys" class="nav-link" data-scroll-target="#multiscale-routing-logic-in-rhessys"><span class="header-section-number">18.3</span> Multiscale Routing Logic in RHESSys</a></li>
+  <li><a href="#multiscale-routing-in-rhessys-shading" id="toc-multiscale-routing-in-rhessys-shading" class="nav-link" data-scroll-target="#multiscale-routing-in-rhessys-shading"><span class="header-section-number">18.4</span> Multiscale Routing in RHESSys – Shading</a></li>
+  <li><a href="#multiscale-routing-in-rhessys-thinning-and-fire" id="toc-multiscale-routing-in-rhessys-thinning-and-fire" class="nav-link" data-scroll-target="#multiscale-routing-in-rhessys-thinning-and-fire"><span class="header-section-number">18.5</span> Multiscale Routing in RHESSys – Thinning and Fire</a>
+  <ul class="collapse">
+  <li><a href="#thinning-works" id="toc-thinning-works" class="nav-link" data-scroll-target="#thinning-works">Thinning works</a></li>
+  </ul></li>
+  <li><a href="#set-up" id="toc-set-up" class="nav-link" data-scroll-target="#set-up"><span class="header-section-number">18.6</span> Set-up</a></li>
+  <li><a href="#running-rhessys-with-msr" id="toc-running-rhessys-with-msr" class="nav-link" data-scroll-target="#running-rhessys-with-msr"><span class="header-section-number">18.7</span> Running RHESSys with msr</a></li>
+  <li><a href="#output" id="toc-output" class="nav-link" data-scroll-target="#output"><span class="header-section-number">18.8</span> Output</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
-<main class="content column-page-right" id="quarto-document-content">
+<main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">17 Fine-scale heterogeneity (The Mosaic)</h1>
+<h1 class="title"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Fine-scale heterogeneity (The Mosaic)</span></h1>
 </div>
 
 
@@ -302,34 +342,95 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p>not sure this belongs in advanced features anymore because it has become pretty standard</p>
-<p><strong>This can be debated!</strong></p>
-<p>I have introduced the term above in Part II because I needed to include preparation of the Aspatial rules file, and about if there are multiple rules a map is needed of rule ID’s, so need to include at least that under spatial data.</p>
-<p>Also, I was planning for the example dataset worldfile(s) to use msr, and to discuss that worldfile structure in chapter 6</p>
-<p>Perhaps the msr information should be introduced in Part I chapter 3 - Project design &amp; planning? So user knows that as they proceed they will need to make a rules file &amp; possibly a rules map. (maybe in project design introduce standard &amp; msr with info about if you choose this option you need this, if you choose this option you may additionally need this?)</p>
-<p>Because that would mean they need to think about the veg makeup of their watershed &amp; perhaps obtain veg maps to base it on?</p>
-<p>So either need to stick with standard worldfile structure all the way through and not include anything about msr until advanced topics (include the example worldfiles) - or make msr the standard approach &amp; introduce the topic early on, and it should perhaps have it’s own chapter - or at least it’s own sub-chapter earlier on.</p>
-<p>It has quite a bit of information - so i’m leaning toward it’s own chapter - which it has now in advanced topics - but I think it should be introduced earlier</p>
-<p>or</p>
-<p>MSR could be referred to in project design, and when/why it would be good to use it - with a link to where it lives in advanced topics</p>
-<p>Then if user decides to use that option, they go read all about it</p>
-<p>This way the topic is introduced so can include reference to it data preparation and preprocessing chapters.</p>
-<p>That still leaves the question of whether the example dataset should be standard or msr - or if both are necessary as examples? (perhaps) (but the actual work, with the scripts and the output i think should be done with the msr worldfile)</p>
 <ul>
-<li>About Multi-scale routing</li>
-<li>How it works</li>
-<li>Generating MSR input files
+<li>link to video</li>
+</ul>
+<section id="advantages" class="level2" data-number="18.1">
+<h2 data-number="18.1" class="anchored" data-anchor-id="advantages"><span class="header-section-number">18.1</span> Advantages</h2>
 <ul>
-<li>asp rules file</li>
-<li>rules map if multiple rules</li>
+<li>Accounts for forest density reduction, species interactions, and urban eco-hydrology</li>
+<li>Allows for finer scale lateral water and nutrient transport</li>
+<li>Allows for within patch family) transfer of water between neighboring patches</li>
+</ul>
+<section id="how-it-works" class="level3">
+<h3 class="anchored" data-anchor-id="how-it-works">How It Works</h3>
+<p>Multiscale routing (MSR) allows for interactions (notably the routing of water and shading between) among model units (a patch family unit containing multiple patches) and their associated vegetation types that are typically at scales too small (&lt;30m) to characterize explicitly. Hypothetically, this allows for the (within patch family) transfer of water between neighboring patches of thinned and unthinned trees, or from a sidewalk to a lawn – none of which would typically be represented/accounted for when modeling at a 30m grid (patch) cell.</p>
+</section>
+<section id="section" class="level3">
+<h3 class="anchored" data-anchor-id="section"><img src="images/HowAspatialPatchesWork.jpg" class="img-fluid" width="300"></h3>
+</section>
+</section>
+<section id="characterization-in-rhessys" class="level2" data-number="18.2">
+<h2 data-number="18.2" class="anchored" data-anchor-id="characterization-in-rhessys"><span class="header-section-number">18.2</span> Characterization in RHESSys</h2>
+<p>RHESSys uses patches as the smallest spatial unit. Multiscale routing leverages the existing spatial units in RHESSys by placing multiple patches in the exact same location. These co-located patches together are a patch family, and the routing of multiscale routing, termed “local routing” occurs between these patches, in addition to the normal topographic hillslope routing present in RHESSys which functions as normal.</p>
+<ul>
+<li><p>Patches reflect distributions of land cover (species, open-space gaps)</p></li>
+<li><p>Assumes that these land covers are well mixed within a patch family</p></li>
+<li><p>Exchanges based on rules (e.g., root accessibility) and moisture gradients</p></li>
+<li><p>Multiple aspatial patches within a family allow for within patch heterogeneity</p></li>
+<li><p>Aspatial patches can differ by:</p>
+<ul>
+<li>vegetation type (biomass, height, root depth)</li>
+<li>Surface coverage (open areas, thinned areas, remaining trees)</li>
+<li>surface properties (litter)</li>
 </ul></li>
-<li>Generating msr worldfile</li>
-<li>Running RHESSys with msr</li>
-<li>Patch families</li>
-<li>Output of multiple patches that belog to a patch family</li>
+<li><p>Exchanges of water between trees, between trees and open space (root-based access to neighboring tree stores)</p></li>
+</ul>
+</section>
+<section id="multiscale-routing-logic-in-rhessys" class="level2" data-number="18.3">
+<h2 data-number="18.3" class="anchored" data-anchor-id="multiscale-routing-logic-in-rhessys"><span class="header-section-number">18.3</span> Multiscale Routing Logic in RHESSys</h2>
+<p>Multiscale routing can hypothetically simulate any number of water transferring processes that occur at scales smaller than RHESSys models topographically. The first demonstration though will simulate the access/lack of access that trees and other vegetation have due to their roots. New uses of multiscale routing will require rethinking the logic behind how water is routed within a patch family.</p>
+</section>
+<section id="multiscale-routing-in-rhessys-shading" class="level2" data-number="18.4">
+<h2 data-number="18.4" class="anchored" data-anchor-id="multiscale-routing-in-rhessys-shading"><span class="header-section-number">18.4</span> Multiscale Routing in RHESSys – Shading</h2>
+<p>Shading can occur when the vegetation of other patches within a patch family creates a higher angle to the horizon than the horizon angle map input to RHESSys.</p>
+</section>
+<section id="multiscale-routing-in-rhessys-thinning-and-fire" class="level2" data-number="18.5">
+<h2 data-number="18.5" class="anchored" data-anchor-id="multiscale-routing-in-rhessys-thinning-and-fire"><span class="header-section-number">18.5</span> Multiscale Routing in RHESSys – Thinning and Fire</h2>
+<section id="thinning-works" class="level3">
+<h3 class="anchored" data-anchor-id="thinning-works">Thinning works</h3>
+<ul>
+<li>Area can’t change</li>
+<li>Percent cover changes</li>
+<li>Understory removal happens everywhere</li>
+<li>Selection thinning on specific aspatial patches ### Fire Spread</li>
+<li>Slope and wind are the same across patch family</li>
+<li>Litter load and 1-AET/PET calculated at patch level, turned into probabilities, spatially averaged across patch family ### Fire Effects</li>
+<li>Done per patch</li>
+</ul>
+</section>
+</section>
+<section id="set-up" class="level2" data-number="18.6">
+<h2 data-number="18.6" class="anchored" data-anchor-id="set-up"><span class="header-section-number">18.6</span> Set-up</h2>
+<ul>
+<li>MSR input files
+<ul>
+<li>aspatial rules file</li>
+<li>aspatial rules map also needed if multiple rules are being used</li>
+<li>Format</li>
+</ul></li>
+<li>Add Template state variable</li>
+<li>Generating msr worldfile
+<ul>
+<li>add argument to use aspatial rules file to RHESSysPreprocessing</li>
+</ul></li>
+</ul>
+</section>
+<section id="running-rhessys-with-msr" class="level2" data-number="18.7">
+<h2 data-number="18.7" class="anchored" data-anchor-id="running-rhessys-with-msr"><span class="header-section-number">18.7</span> Running RHESSys with msr</h2>
+<ul>
+<li>Multiscale routing is automatically triggered when the structure of the worldfile &amp; flowtable are formatted for MSR/aspatial patches (which is generated when the asprules command is included when creating the worldfile/flowtable)</li>
+</ul>
+</section>
+<section id="output" class="level2" data-number="18.8">
+<h2 data-number="18.8" class="anchored" data-anchor-id="output"><span class="header-section-number">18.8</span> Output</h2>
+<ul>
+<li>Output of multiple patches that belong to a patch family</li>
+<li>Patch Family ID in addition to Patch ID</li>
 </ul>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -565,7 +666,28 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./vegchange.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Disturbance: Vegetation Dynamics</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./targetspinup.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Target-driven spin-up</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
 </div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">RHESSys in Practice was written by Janet S. Choate with Naomi Tague and Ryan R. Bart.</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">Built with <a href="https://quarto.org/">Quarto</a>.</div>
+  </div>
+</footer>
 
 
 

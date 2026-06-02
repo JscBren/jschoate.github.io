@@ -1,6 +1,5 @@
----
-title: "14 Advanced Features (The Expansion)"
----
+# Advanced Features (The Expansion)
+
 
 -   beyond the baseline
 -   moving into specialized simulations

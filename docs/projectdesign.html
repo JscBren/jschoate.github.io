@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>RHESSys Manual - 3 Project Design &amp; Planning (The Strategy)</title>
+<title>RHESSys in Practice: - 3&nbsp; Project Design &amp; Planning (The Strategy)</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,6 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
+<link href="./exampledataset.html" rel="next">
+<link href="./setup.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -60,7 +62,6 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<link rel="stylesheet" href="styles.css">
 </head>
 
 <body class="nav-sidebar floating">
@@ -72,7 +73,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./part1intro.html">Part I: Foundations &amp; Environment</a></li><li class="breadcrumb-item"><a href="./projectdesign.html">Project Design</a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./part1intro.html">Part I: Foundations &amp; Envrionment</a></li><li class="breadcrumb-item"><a href="./projectdesign.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Project Design</span></a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -82,12 +83,15 @@ ul.task-list li input[type="checkbox"] {
   </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
-      <a href="./">RHESSys Manual</a> 
+      <a href="./">RHESSys in Practice:</a> 
+        <div class="sidebar-tools-main">
+    <a href="https://github.com/JscBren/jschoate.github.io" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
+</div>
     </div>
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
@@ -105,14 +109,14 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./aboutmanual.html" class="sidebar-item-text sidebar-link">
+  <a href="./preface.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">About this Manual</span></a>
   </div>
 </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a href="./part1intro.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Part I: Foundations &amp; Environment</span></a>
+ <span class="menu-text">Part I: Foundations &amp; Envrionment</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -121,25 +125,25 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./introduction.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Introduction</span></a>
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./setup.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Installation</span></a>
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Installation</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./projectdesign.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Project Design</span></a>
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Project Design</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./exampledataset.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Example Dataset</span></a>
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Example Dataset</span></span></a>
   </div>
 </li>
       </ul>
@@ -147,40 +151,46 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a href="./part2intro.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Part II: Building and Executing</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="false" aria-label="Toggle section">
+ <span class="menu-text">Part II: From Data to Simulation</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./userdata.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">User-Aquired Data</span></a>
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">User-Acquired Data</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./inputfiles.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">RHESSys Specific Input Files</span></a>
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">RHESSys Specific Files</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./worldfile.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Worldfile</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./preprocessing.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Preprocessing</span></a>
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Preprocessing</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./implementation.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Implementation &amp; Execution</span></a>
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Implementation &amp; Execution</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./postprocess.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Postprocessing</span></a>
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Postprocessing</span></span></a>
   </div>
 </li>
       </ul>
@@ -189,33 +199,33 @@ ul.task-list li input[type="checkbox"] {
       <div class="sidebar-item-container"> 
             <a href="./part3intro.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Part III: Refinement and Evaluation</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./initialization.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Initialization</span></a>
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Initialization</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./sensanal.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Sensitivity Analysis</span></a>
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Sensitivity Analysis</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./calibration.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Calibration</span></a>
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Calibration</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./validation.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Validation</span></a>
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Validation</span></span></a>
   </div>
 </li>
       </ul>
@@ -224,56 +234,66 @@ ul.task-list li input[type="checkbox"] {
       <div class="sidebar-item-container"> 
             <a href="./part4intro.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Part IV: Advanced Applications</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./advancedfeatures.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Advanced Features</span></a>
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Advanced Features</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./fire.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Disturbance: Fire</span></a>
+ <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Disturbance: Fire</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./vegchange.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Disturbance:Vegetation Dynamics</span></a>
+ <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Disturbance: Vegetation Dynamics</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./msr.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Multi-scale routing</span></a>
+ <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Multi-scale routing</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./targetspinup.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Target-driven spin-up</span></a>
+ <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Target-driven spin-up</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./parallelization.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Parallelization</span></a>
+ <span class="menu-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Parallelization</span></span></a>
   </div>
 </li>
       </ul>
   </li>
-        <li class="px-0"><hr class="sidebar-divider hi "></li>
-        <li class="sidebar-item">
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="true">
+ <span class="menu-text">Appendices</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./appendices.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Appendices</span></a>
+ <span class="menu-text">Appendices (The Vault)</span></a>
   </div>
 </li>
+      </ul>
+  </li>
     </ul>
     </div>
 </nav>
@@ -281,24 +301,25 @@ ul.task-list li input[type="checkbox"] {
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
+    <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#spatial-resolution-vs.-computational-cost" id="toc-spatial-resolution-vs.-computational-cost" class="nav-link active" data-scroll-target="#spatial-resolution-vs.-computational-cost">3.1 Spatial resolution vs.&nbsp;computational cost</a></li>
-  <li><a href="#patch-families" id="toc-patch-families" class="nav-link" data-scroll-target="#patch-families">3.1 Patch families</a></li>
-  <li><a href="#data-synchronization-temporal-extent" id="toc-data-synchronization-temporal-extent" class="nav-link" data-scroll-target="#data-synchronization-temporal-extent">3.2 Data synchronization &amp; temporal extent</a></li>
-  <li><a href="#functional-constraints" id="toc-functional-constraints" class="nav-link" data-scroll-target="#functional-constraints">3.3 Functional constraints</a></li>
-  <li><a href="#defining-the-project-boundaries" id="toc-defining-the-project-boundaries" class="nav-link" data-scroll-target="#defining-the-project-boundaries">3.4 Defining the project boundaries</a></li>
-  <li><a href="#section" id="toc-section" class="nav-link" data-scroll-target="#section"></a></li>
+  <li><a href="#model-purpose-the-anchor" id="toc-model-purpose-the-anchor" class="nav-link active" data-scroll-target="#model-purpose-the-anchor"><span class="header-section-number">3.1</span> Model Purpose (The Anchor)</a></li>
+  <li><a href="#modeling-extent-the-frame" id="toc-modeling-extent-the-frame" class="nav-link" data-scroll-target="#modeling-extent-the-frame"><span class="header-section-number">3.2</span> Modeling Extent (The Frame)</a></li>
+  <li><a href="#spatial-resolution-vs.-computational-cost-the-trade-off" id="toc-spatial-resolution-vs.-computational-cost-the-trade-off" class="nav-link" data-scroll-target="#spatial-resolution-vs.-computational-cost-the-trade-off"><span class="header-section-number">3.3</span> Spatial Resolution vs.&nbsp;Computational cost (The Trade-off)</a></li>
+  <li><a href="#spatial-landscape-partitioning-the-structural-design" id="toc-spatial-landscape-partitioning-the-structural-design" class="nav-link" data-scroll-target="#spatial-landscape-partitioning-the-structural-design"><span class="header-section-number">3.4</span> Spatial Landscape Partitioning (The Structural Design)</a></li>
+  <li><a href="#data-availability-synchronization-temporal-extent-the-feasibility" id="toc-data-availability-synchronization-temporal-extent-the-feasibility" class="nav-link" data-scroll-target="#data-availability-synchronization-temporal-extent-the-feasibility"><span class="header-section-number">3.5</span> Data Availability, Synchronization &amp; Temporal extent (The Feasibility)</a></li>
+  <li><a href="#functional-constraints-the-capability" id="toc-functional-constraints-the-capability" class="nav-link" data-scroll-target="#functional-constraints-the-capability"><span class="header-section-number">3.6</span> Functional constraints (The Capability)</a></li>
+  <li><a href="#summary-building-a-project-strategy" id="toc-summary-building-a-project-strategy" class="nav-link" data-scroll-target="#summary-building-a-project-strategy"><span class="header-section-number">3.7</span> Summary: Building a Project Strategy</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
-<main class="content column-body" id="quarto-document-content">
+<main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">3 Project Design &amp; Planning (The Strategy)</h1>
+<h1 class="title"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Project Design &amp; Planning (The Strategy)</span></h1>
 </div>
 
 
@@ -314,61 +335,132 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 <ul>
-<li>This chapter will discuss what a user should consider, i.e.:</li>
+<li>Why project design matters - what the model is being built to accomplish</li>
+<li>Project design decision should be made before gathering/preparing data and constructing the model</li>
+<li>The cost of poor planning</li>
+<li>Model design is a sequence of interconnected decision</li>
 </ul>
-<p>Please see my comments in the msr documentation where it is placed now - because I think info about msr/asp setup need to be included earlier in the data acquisition &amp; preprocessing sections. Also I think the example dataset should be set up with msr - because it’s easier for a user to “downgrade” their understanding to a standard worldfile than it is to learn the standard and then have to unlearn/retool for MSR later.</p>
-<p><a href="./msr.html">Fine-scale Heterogeneity section</a></p>
-<p>To ensure users don’t have to redo their spatial data prep, I think the concept of MSR should be introduced here in Part I chapter 3 (Project Design). This allows the user to decide their model architecture early -</p>
-<p>because users will hate getting to the advanced features section and realizing they should have gathered or considered different data earlier. Introducing the MSR/aspatial option here allows them to make an informed architectural decision for their project before they start</p>
-<p>The detailed technical execution can remain in Part IV (Advanced Applications) effectively treating Part IV as the ‘Expert Reference Library’ - but I think introduce the concept here, either standard patches or msr patch families and what the difference is - and provide a link to the msr section in advanced topics where they can find the info if they choose that option before moving on to data/setup.</p>
-<p>Naomi - yes to leave most discussion in advanced topics and give link,</p>
-<section id="spatial-resolution-vs.-computational-cost" class="level2">
-<h2 class="anchored" data-anchor-id="spatial-resolution-vs.-computational-cost">3.1 Spatial resolution vs.&nbsp;computational cost</h2>
+<section id="model-purpose-the-anchor" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="model-purpose-the-anchor"><span class="header-section-number">3.1</span> Model Purpose (The Anchor)</h2>
 <ul>
-<li>scale - what type of set up is necessary to answer users questions</li>
-<li>patch resolution/number of patches - impact on processing needs &amp; time</li>
-<li>explicit spatial units (famililes), number of units within (land cover types)
+<li>Establish the scientific objectives of the project, is the purpose to:
 <ul>
-<li>trade offs between size of patch family unit &amp; number of aspatial patches within</li>
+<li>gain system understanding through exploration</li>
+<li>predict future conditions</li>
+<li>compare management scenarios</li>
 </ul></li>
-<li>how many patch families - how many within each family
+<li>Define clear research questions that the model must address</li>
+<li>Identify needed outputs (e.g., hydrology, vegetation dynamics, carbon fluxes, fire behavior, scenario comparisons)</li>
+<li>Use research questions to constrain:
 <ul>
-<li>patch family can contain 1 to many patches</li>
-<li>patches can be homogeneous or heterogeneous</li>
+<li>spatial scale</li>
+<li>temporal scale</li>
+<li>model complexity</li>
 </ul></li>
-<li>decision tree</li>
+<li>Ensure alignment between conceptual goals and RHESSys capabilities</li>
 </ul>
 </section>
-<section id="patch-families" class="level2">
-<h2 class="anchored" data-anchor-id="patch-families">3.1 Patch families</h2>
+<section id="modeling-extent-the-frame" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="modeling-extent-the-frame"><span class="header-section-number">3.2</span> Modeling Extent (The Frame)</h2>
 <ul>
-<li>propose, introduction here - with link to advanced features section for bulk of info</li>
-<li>what it is - maybe this goes above</li>
-</ul>
-</section>
-<section id="data-synchronization-temporal-extent" class="level2">
-<h2 class="anchored" data-anchor-id="data-synchronization-temporal-extent">3.2 Data synchronization &amp; temporal extent</h2>
+<li>Define the spatial extent of the modeling domain, the area of interest:
 <ul>
-<li>overlap - of all of the essential climate data, i.e.&nbsp;precip 50 years but temperature on 5 years</li>
-<li>spin-up scenario and calibration time requirements</li>
+<li>patch-scale</li>
+<li>hillslope-scale</li>
+<li>watershed/basin-scale</li>
+</ul></li>
+<li>Match spatial extent to research questions and process scale</li>
+<li>Ensure the domain captures all relevant hydrologic/ecologic processes</li>
+<li>Restrict the model’s scope to what is needed for analysis</li>
+<li>Establish initial spatial frame before deciding resolution or structure</li>
 </ul>
 </section>
-<section id="functional-constraints" class="level2">
-<h2 class="anchored" data-anchor-id="functional-constraints">3.3 Functional constraints</h2>
+<section id="spatial-resolution-vs.-computational-cost-the-trade-off" class="level2" data-number="3.3">
+<h2 data-number="3.3" class="anchored" data-anchor-id="spatial-resolution-vs.-computational-cost-the-trade-off"><span class="header-section-number">3.3</span> Spatial Resolution vs.&nbsp;Computational cost (The Trade-off)</h2>
 <ul>
-<li>Feature specific inputs - i.e.&nbsp;to run the fire model, is wind speed/direction and relative humidity data available?</li>
-<li>Does RHESSys output what is needed to answer research questions?</li>
-</ul>
-</section>
-<section id="defining-the-project-boundaries" class="level2">
-<h2 class="anchored" data-anchor-id="defining-the-project-boundaries">3.4 Defining the project boundaries</h2>
+<li>Determine appropriate spatial resolution for the model domain</li>
+<li>Understand trade-offs between:
 <ul>
-<li>use full basin boundary, representative hillslope, single patch?</li>
+<li>fine resolution = higher realism, higher computational cost</li>
+<li>coarse resolution = faster runtime, reduced spatial detail</li>
+</ul></li>
+<li>Consider constraints:
+<ul>
+<li>available computing resources</li>
+<li>simulation time requirements</li>
+<li>data limits (DEM resolution, input data available)</li>
+</ul></li>
+<li>Ensure resolution is consistent with:
+<ul>
+<li>scale of the research questions (i.e.&nbsp;patch, subbasin, watershed)</li>
+<li>input datasets</li>
+<li>practical limits of available computing infrastructure</li>
+</ul></li>
 </ul>
 </section>
-<section id="section" class="level1">
-<h1></h1>
-<p>we don’t need streamflow to run rhessys so don’t make this a focus</p>
+<section id="spatial-landscape-partitioning-the-structural-design" class="level2" data-number="3.4">
+<h2 data-number="3.4" class="anchored" data-anchor-id="spatial-landscape-partitioning-the-structural-design"><span class="header-section-number">3.4</span> Spatial Landscape Partitioning (The Structural Design)</h2>
+<p>Multi-scale routing (MSR) allows for fine scale interactions within the smallest fundamental landscape unit. While this section briefly introduces MSR as a way of thinking about patch organization, its full implementation is deferred to <a href="./msr.html">Chapter 18</a> in the Advanced Applications section, where the methodology is discussed in full.</p>
+<ul>
+<li>Break landscape into RHESSys fundamental units (patches)</li>
+<li>Organize patches into patch families to represent spatial structure</li>
+<li>Represent land cover composition within patch families:
+<ul>
+<li>homogeneous landscapes = simpler structure (can be a single patch in a single patch family)</li>
+<li>heterogeneous landscapes = more complex partitioning to capture variability in land cover or management regimes (may be multiple/many patches per family)</li>
+</ul></li>
+<li>Determine number and configuration of patches based on:
+<ul>
+<li>vegetation diversity</li>
+<li>landcover/soil variability</li>
+<li>management objectives</li>
+</ul></li>
+<li>Consider how patch family composition will support model scenarios:
+<ul>
+<li>design for scenario comparability (consistent model structure so differences between simulations only reflect the intended experimental change)</li>
+<li>ability to pre-structure the landscape for management experiments</li>
+<li>flexible scenario implementation without redesigning the landscape configuration</li>
+</ul></li>
+<li>may include a scenario-based design example to illustrate the utility</li>
+</ul>
+</section>
+<section id="data-availability-synchronization-temporal-extent-the-feasibility" class="level2" data-number="3.5">
+<h2 data-number="3.5" class="anchored" data-anchor-id="data-availability-synchronization-temporal-extent-the-feasibility"><span class="header-section-number">3.5</span> Data Availability, Synchronization &amp; Temporal extent (The Feasibility)</h2>
+<ul>
+<li>Availability of input data resources that support project objectives</li>
+<li>Climate data continuity, consistent time periods across all inputs</li>
+<li>Simulation period supported by temporal data extent</li>
+<li>Availability of observational data for evaluating model performance</li>
+</ul>
+</section>
+<section id="functional-constraints-the-capability" class="level2" data-number="3.6">
+<h2 data-number="3.6" class="anchored" data-anchor-id="functional-constraints-the-capability"><span class="header-section-number">3.6</span> Functional constraints (The Capability)</h2>
+<ul>
+<li>ability of model setup to accomplish project goals</li>
+<li>available model processes</li>
+<li>ability of model to output variables needed to answer project questions</li>
+<li>availability of feature specific inputs to use specific process modules - i.e.&nbsp;wind speed/direction &amp; relative humidity data to run the fire model</li>
+</ul>
+</section>
+<section id="summary-building-a-project-strategy" class="level2" data-number="3.7">
+<h2 data-number="3.7" class="anchored" data-anchor-id="summary-building-a-project-strategy"><span class="header-section-number">3.7</span> Summary: Building a Project Strategy</h2>
+<ul>
+<li>Project design advances through a structured progression of limitations:
+<ul>
+<li>research questions → define purpose</li>
+<li>purpose → determines spatial extent</li>
+<li>extent → constrain resolution</li>
+<li>resolution → informs spatial partitioning</li>
+<li>partitioning → depends on data availability</li>
+<li>data availability → determines functional feasibility</li>
+</ul></li>
+<li>Each step progressively narrows design choices</li>
+<li>Ensures model is both: -&gt;
+<ul>
+<li>aligned with the projects goals</li>
+<li>practical to build and run with the available data and resources -&gt;</li>
+</ul></li>
+</ul>
 
 
 </section>
@@ -607,7 +699,28 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./setup.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Installation</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./exampledataset.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Example Dataset</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
 </div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">RHESSys in Practice was written by Janet S. Choate with Naomi Tague and Ryan R. Bart.</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">Built with <a href="https://quarto.org/">Quarto</a>.</div>
+  </div>
+</footer>
 
 
 

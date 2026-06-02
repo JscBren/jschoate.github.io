@@ -1,55 +1,93 @@
----
-title: "3 Project Design & Planning (The Strategy)"
----
+# Project Design & Planning (The Strategy)
 
--   This chapter will discuss what a user should consider, i.e.:
+-   Why project design matters - what the model is being built to accomplish
+-   Project design decision should be made before gathering/preparing data and constructing the model
+-   The cost of poor planning
+-   Model design is a sequence of interconnected decision
 
-Please see my comments in the msr documentation where it is placed now - because I think info about msr/asp setup need to be included earlier in the data acquisition & preprocessing sections. Also I think the example dataset should be set up with msr - because it's easier for a user to "downgrade" their understanding to a standard worldfile than it is to learn the standard and then have to unlearn/retool for MSR later.
+## Model Purpose (The Anchor)
 
-[Fine-scale Heterogeneity section](msr.qmd)
+-   Establish the scientific objectives of the project, is the purpose to:
+    -   gain system understanding through exploration
+    -   predict future conditions
+    -   compare management scenarios
+-   Define clear research questions that the model must address
+-   Identify needed outputs (e.g., hydrology, vegetation dynamics, carbon fluxes, fire behavior, scenario comparisons)
+-   Use research questions to constrain:
+    -   spatial scale
+    -   temporal scale
+    -   model complexity
+-   Ensure alignment between conceptual goals and RHESSys capabilities
 
-To ensure users don't have to redo their spatial data prep, I think the concept of MSR should be introduced here in Part I chapter 3 (Project Design). This allows the user to decide their model architecture early -
+## Modeling Extent (The Frame)
 
-because users will hate getting to the advanced features section and realizing they should have gathered or considered different data earlier. Introducing the MSR/aspatial option here allows them to make an informed architectural decision for their project before they start
+-   Define the spatial extent of the modeling domain, the area of interest:
+    -   patch-scale
+    -   hillslope-scale
+    -   watershed/basin-scale
+-   Match spatial extent to research questions and process scale
+-   Ensure the domain captures all relevant hydrologic/ecologic processes
+-   Restrict the model's scope to what is needed for analysis
+-   Establish initial spatial frame before deciding resolution or structure
 
-The detailed technical execution can remain in Part IV (Advanced Applications) effectively treating Part IV as the 'Expert Reference Library' - but I think introduce the concept here, either standard patches or msr patch families and what the difference is - and provide a link to the msr section in advanced topics where they can find the info if they choose that option before moving on to data/setup.
+## Spatial Resolution vs. Computational cost (The Trade-off)
 
-Naomi - yes to leave most discussion in advanced topics and give link, 
+-   Determine appropriate spatial resolution for the model domain
+-   Understand trade-offs between:
+    -   fine resolution = higher realism, higher computational cost
+    -   coarse resolution = faster runtime, reduced spatial detail
+-   Consider constraints:
+    -   available computing resources
+    -   simulation time requirements
+    -   data limits (DEM resolution, input data available)
+-   Ensure resolution is consistent with:
+    -   scale of the research questions (i.e. patch, subbasin, watershed)
+    -   input datasets
+    -   practical limits of available computing infrastructure
 
-## 3.1 Spatial resolution vs. computational cost
+## Spatial Landscape Partitioning (The Structural Design)
 
--   scale - what type of set up is necessary to answer users questions
--   patch resolution/number of patches - impact on processing needs & time
--   explicit spatial units (famililes), number of units within (land cover types)
-    -   trade offs between size of patch family unit & number of aspatial patches within
--   how many patch families - how many within each family
-    -   patch family can contain 1 to many patches
-    -   patches can be homogeneous or heterogeneous
+Multi-scale routing (MSR) allows for fine scale interactions within the smallest fundamental landscape unit. While this section briefly introduces MSR as a way of thinking about patch organization, its full implementation is deferred to [Chapter 18](msr.qmd) in the Advanced Applications section, where the methodology is discussed in full.
 
--   decision tree
+-   Break landscape into RHESSys fundamental units (patches)
+-   Organize patches into patch families to represent spatial structure
+-   Represent land cover composition within patch families:
+    -   homogeneous landscapes = simpler structure (can be a single patch in a single patch family)
+    -   heterogeneous landscapes = more complex partitioning to capture variability in land cover or management regimes (may be multiple/many patches per family)
+-   Determine number and configuration of patches based on:
+    -   vegetation diversity
+    -   landcover/soil variability
+    -   management objectives
+-   Consider how patch family composition will support model scenarios:
+    -   design for scenario comparability (consistent model structure so differences between simulations only reflect the intended experimental change)
+    -   ability to pre-structure the landscape for management experiments
+    -   flexible scenario implementation without redesigning the landscape configuration
+-   may include a scenario-based design example to illustrate the utility
 
-## 3.1 Patch families
+## Data Availability, Synchronization & Temporal extent (The Feasibility)
 
--   propose, introduction here - with link to advanced features section for bulk of info
--   what it is - maybe this goes above
+-   Availability of input data resources that support project objectives
+-   Climate data continuity, consistent time periods across all inputs
+-   Simulation period supported by temporal data extent
+-   Availability of observational data for evaluating model performance
 
-## 3.2 Data synchronization & temporal extent
+## Functional constraints (The Capability)
 
--   overlap - of all of the essential climate data, i.e. precip 50 years but temperature on 5 years
--   spin-up scenario and calibration time requirements
+-   ability of model setup to accomplish project goals
+-   available model processes
+-   ability of model to output variables needed to answer project questions
+-   availability of feature specific inputs to use specific process modules - i.e. wind speed/direction & relative humidity data to run the fire model
 
-## 3.3 Functional constraints
+## Summary: Building a Project Strategy
 
--   Feature specific inputs - i.e. to run the fire model, is wind speed/direction and relative humidity data available?
--   Does RHESSys output what is needed to answer research questions?
-
-## 3.4 Defining the project boundaries
-
--   use full basin boundary, representative hillslope, single patch?
-
-# 
-
-
-
-
-we don't need streamflow to run rhessys so don't make this a focus
+-   Project design advances through a structured progression of limitations:
+    -   research questions → define purpose
+    -   purpose → determines spatial extent
+    -   extent → constrain resolution
+    -   resolution → informs spatial partitioning
+    -   partitioning → depends on data availability
+    -   data availability → determines functional feasibility
+-   Each step progressively narrows design choices
+-   Ensures model is both: -\>
+    -   aligned with the projects goals
+    -   practical to build and run with the available data and resources -\>

@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>RHESSys Manual - 6 RHESSys-specific Input Files (The Anatomy)</title>
+<title>RHESSys in Practice: - 6&nbsp; RHESSys-specific Files (The Toolkit)</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,6 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
+<link href="./worldfile.html" rel="next">
+<link href="./userdata.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -60,7 +62,6 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<link rel="stylesheet" href="styles.css">
 </head>
 
 <body class="nav-sidebar floating">
@@ -72,7 +73,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./part2intro.html">Part II: Building and Executing</a></li><li class="breadcrumb-item"><a href="./inputfiles.html">RHESSys Specific Input Files</a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./part2intro.html">Part II: From Data to Simulation</a></li><li class="breadcrumb-item"><a href="./inputfiles.html"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">RHESSys Specific Files</span></a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -82,12 +83,15 @@ ul.task-list li input[type="checkbox"] {
   </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
-      <a href="./">RHESSys Manual</a> 
+      <a href="./">RHESSys in Practice:</a> 
+        <div class="sidebar-tools-main">
+    <a href="https://github.com/JscBren/jschoate.github.io" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
+</div>
     </div>
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
@@ -105,41 +109,41 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./aboutmanual.html" class="sidebar-item-text sidebar-link">
+  <a href="./preface.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">About this Manual</span></a>
   </div>
 </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a href="./part1intro.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Part I: Foundations &amp; Environment</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="false" aria-label="Toggle section">
+ <span class="menu-text">Part I: Foundations &amp; Envrionment</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./introduction.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Introduction</span></a>
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./setup.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Installation</span></a>
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Installation</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./projectdesign.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Project Design</span></a>
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Project Design</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./exampledataset.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Example Dataset</span></a>
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Example Dataset</span></span></a>
   </div>
 </li>
       </ul>
@@ -147,7 +151,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a href="./part2intro.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Part II: Building and Executing</span></a>
+ <span class="menu-text">Part II: From Data to Simulation</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -156,31 +160,37 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./userdata.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">User-Aquired Data</span></a>
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">User-Acquired Data</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./inputfiles.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">RHESSys Specific Input Files</span></a>
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">RHESSys Specific Files</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./worldfile.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Worldfile</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./preprocessing.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Preprocessing</span></a>
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Preprocessing</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./implementation.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Implementation &amp; Execution</span></a>
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Implementation &amp; Execution</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./postprocess.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Postprocessing</span></a>
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Postprocessing</span></span></a>
   </div>
 </li>
       </ul>
@@ -189,33 +199,33 @@ ul.task-list li input[type="checkbox"] {
       <div class="sidebar-item-container"> 
             <a href="./part3intro.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Part III: Refinement and Evaluation</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./initialization.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Initialization</span></a>
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Initialization</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./sensanal.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Sensitivity Analysis</span></a>
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Sensitivity Analysis</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./calibration.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Calibration</span></a>
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Calibration</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./validation.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Validation</span></a>
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Validation</span></span></a>
   </div>
 </li>
       </ul>
@@ -224,56 +234,66 @@ ul.task-list li input[type="checkbox"] {
       <div class="sidebar-item-container"> 
             <a href="./part4intro.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Part IV: Advanced Applications</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./advancedfeatures.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Advanced Features</span></a>
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Advanced Features</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./fire.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Disturbance: Fire</span></a>
+ <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Disturbance: Fire</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./vegchange.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Disturbance:Vegetation Dynamics</span></a>
+ <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Disturbance: Vegetation Dynamics</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./msr.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Multi-scale routing</span></a>
+ <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Multi-scale routing</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./targetspinup.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Target-driven spin-up</span></a>
+ <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Target-driven spin-up</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./parallelization.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Parallelization</span></a>
+ <span class="menu-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Parallelization</span></span></a>
   </div>
 </li>
       </ul>
   </li>
-        <li class="px-0"><hr class="sidebar-divider hi "></li>
-        <li class="sidebar-item">
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="true">
+ <span class="menu-text">Appendices</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./appendices.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Appendices</span></a>
+ <span class="menu-text">Appendices (The Vault)</span></a>
   </div>
 </li>
+      </ul>
+  </li>
     </ul>
     </div>
 </nav>
@@ -281,27 +301,28 @@ ul.task-list li input[type="checkbox"] {
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
+    <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#definition-default-files-the-library" id="toc-definition-default-files-the-library" class="nav-link active" data-scroll-target="#definition-default-files-the-library">6.1 Definition (Default) Files: The Library</a></li>
-  <li><a href="#worldfile-the-spatial-blueprint" id="toc-worldfile-the-spatial-blueprint" class="nav-link" data-scroll-target="#worldfile-the-spatial-blueprint">6.2 Worldfile: The Spatial Blueprint</a></li>
-  <li><a href="#flowtable-the-pumbing" id="toc-flowtable-the-pumbing" class="nav-link" data-scroll-target="#flowtable-the-pumbing">6.3 Flowtable: The Pumbing</a></li>
-  <li><a href="#tecfile-and-output-filters-simulation-control" id="toc-tecfile-and-output-filters-simulation-control" class="nav-link" data-scroll-target="#tecfile-and-output-filters-simulation-control">6.4 Tecfile and Output Filters: Simulation Control</a>
+  <li><a href="#definition-default-files-the-library" id="toc-definition-default-files-the-library" class="nav-link active" data-scroll-target="#definition-default-files-the-library"><span class="header-section-number">6.1</span> Definition (Default) Files: The Library</a></li>
+  <li><a href="#base-station-file-the-climate-hub" id="toc-base-station-file-the-climate-hub" class="nav-link" data-scroll-target="#base-station-file-the-climate-hub"><span class="header-section-number">6.2</span> Base station file: The Climate Hub</a></li>
+  <li><a href="#header-file-the-directory" id="toc-header-file-the-directory" class="nav-link" data-scroll-target="#header-file-the-directory"><span class="header-section-number">6.3</span> Header File: The Directory</a></li>
+  <li><a href="#flowtable-the-plumbing" id="toc-flowtable-the-plumbing" class="nav-link" data-scroll-target="#flowtable-the-plumbing"><span class="header-section-number">6.4</span> Flowtable: The Plumbing</a></li>
+  <li><a href="#tecfile-and-output-filters-simulation-control" id="toc-tecfile-and-output-filters-simulation-control" class="nav-link" data-scroll-target="#tecfile-and-output-filters-simulation-control"><span class="header-section-number">6.5</span> Tecfile and Output Filters: Simulation Control</a>
   <ul class="collapse">
-  <li><a href="#tecfile-the-alarm-clock" id="toc-tecfile-the-alarm-clock" class="nav-link" data-scroll-target="#tecfile-the-alarm-clock">6.4.1 Tecfile: The Alarm Clock</a></li>
-  <li><a href="#output-filters-the-sieve" id="toc-output-filters-the-sieve" class="nav-link" data-scroll-target="#output-filters-the-sieve">6.4.2 Output filters: The Sieve</a></li>
+  <li><a href="#tecfile-the-alarm-clock" id="toc-tecfile-the-alarm-clock" class="nav-link" data-scroll-target="#tecfile-the-alarm-clock">Tecfile: The Alarm Clock</a></li>
+  <li><a href="#output-filters-the-sieve" id="toc-output-filters-the-sieve" class="nav-link" data-scroll-target="#output-filters-the-sieve">Output filters: The Sieve</a></li>
   </ul></li>
-  <li><a href="#section" id="toc-section" class="nav-link" data-scroll-target="#section"></a></li>
+  <li><a href="#the-operational-framework" id="toc-the-operational-framework" class="nav-link" data-scroll-target="#the-operational-framework"><span class="header-section-number">6.6</span> The Operational Framework</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
-<main class="content column-body" id="quarto-document-content">
+<main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">6 RHESSys-specific Input Files (The Anatomy)</h1>
+<h1 class="title"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">RHESSys-specific Files (The Toolkit)</span></h1>
 </div>
 
 
@@ -316,39 +337,32 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<section id="definition-default-files-the-library" class="level2">
-<h2 class="anchored" data-anchor-id="definition-default-files-the-library">6.1 Definition (Default) Files: The Library</h2>
+<p>RHESSys relies on a collection of specialized files that define model parameters, climate inputs, spatial structures, routing relationships, execution schedules, and output behavior. Together, these files form the model’s anatomy. Among them, the Worldfile occupies a central role and is treated separately in Chapter 7 due to its complexity and importance. The files presented in this chapter provide the parameters, forcing data, and control information that are associated with the spatial units defined in the Worldfile.</p>
+<section id="definition-default-files-the-library" class="level2" data-number="6.1">
+<h2 data-number="6.1" class="anchored" data-anchor-id="definition-default-files-the-library"><span class="header-section-number">6.1</span> Definition (Default) Files: The Library</h2>
 <ul>
-<li>About</li>
-<li>File types association with each level
-<ul>
-<li>some parameters may need expanded information, i.e.&nbsp;phenolog flag: static,dynamic,drought</li>
-</ul></li>
-<li>Format - required (ID) and optional parameters</li>
-<li>Parameter values constant</li>
-<li>Base Files/Default values</li>
-<li>Parameter file library</li>
+<li>describe typical meteorological, soil, vegetation, and land use characteristics</li>
+<li>File types associated with each level</li>
+<li>Parameter values constant through simulation</li>
 </ul>
 </section>
-<section id="worldfile-the-spatial-blueprint" class="level2">
-<h2 class="anchored" data-anchor-id="worldfile-the-spatial-blueprint">6.2 Worldfile: The Spatial Blueprint</h2>
+<section id="base-station-file-the-climate-hub" class="level2" data-number="6.2">
+<h2 data-number="6.2" class="anchored" data-anchor-id="base-station-file-the-climate-hub"><span class="header-section-number">6.2</span> Base station file: The Climate Hub</h2>
 <ul>
-<li>Hierarchical spatial containment structure - landscape partioning
-<ul>
-<li>Basin</li>
-<li>Hillslope (sub-basin)</li>
-<li>Zone</li>
-<li>Patch, Patch Families/Asptatial patches for multiscale routing</li>
-<li>Stratum</li>
-</ul></li>
-<li>Architecture</li>
-<li>Identifiers: Pointers (ID’s) linking identifiers to the Climate and Definition files</li>
-<li>State variables, values for stores/fluxes associated with each level</li>
-<li>Header File - conduit between the Worldfile and Climate/Definiton files</li>
+<li>points to the set of climate data input files</li>
+<li>provides climate station identifier</li>
+<li>connects climate forcing to zones in the worldfile</li>
 </ul>
 </section>
-<section id="flowtable-the-pumbing" class="level2">
-<h2 class="anchored" data-anchor-id="flowtable-the-pumbing">6.3 Flowtable: The Pumbing</h2>
+<section id="header-file-the-directory" class="level2" data-number="6.3">
+<h2 data-number="6.3" class="anchored" data-anchor-id="header-file-the-directory"><span class="header-section-number">6.3</span> Header File: The Directory</h2>
+<ul>
+<li>an index of all the definition/climate files RHESSys needs to run a simulation</li>
+<li>connects the Worldfile to the Climate/Definiton files - how the ID’s get linked</li>
+</ul>
+</section>
+<section id="flowtable-the-plumbing" class="level2" data-number="6.4">
+<h2 data-number="6.4" class="anchored" data-anchor-id="flowtable-the-plumbing"><span class="header-section-number">6.4</span> Flowtable: The Plumbing</h2>
 <ul>
 <li>Architecture</li>
 <li>Topographic data about each patch</li>
@@ -356,10 +370,10 @@ ul.task-list li input[type="checkbox"] {
 <li>Partitioning flow, upland patches, stream patches</li>
 </ul>
 </section>
-<section id="tecfile-and-output-filters-simulation-control" class="level2">
-<h2 class="anchored" data-anchor-id="tecfile-and-output-filters-simulation-control">6.4 Tecfile and Output Filters: Simulation Control</h2>
+<section id="tecfile-and-output-filters-simulation-control" class="level2" data-number="6.5">
+<h2 data-number="6.5" class="anchored" data-anchor-id="tecfile-and-output-filters-simulation-control"><span class="header-section-number">6.5</span> Tecfile and Output Filters: Simulation Control</h2>
 <section id="tecfile-the-alarm-clock" class="level3">
-<h3 class="anchored" data-anchor-id="tecfile-the-alarm-clock">6.4.1 Tecfile: The Alarm Clock</h3>
+<h3 class="anchored" data-anchor-id="tecfile-the-alarm-clock">Tecfile: The Alarm Clock</h3>
 <ul>
 <li>Manage timing of output printing</li>
 <li>Control simulation events (schedule when non-continuous events occur, i.e.&nbsp;fire, land use change)</li>
@@ -367,7 +381,7 @@ ul.task-list li input[type="checkbox"] {
 </ul>
 </section>
 <section id="output-filters-the-sieve" class="level3">
-<h3 class="anchored" data-anchor-id="output-filters-the-sieve">6.4.2 Output filters: The Sieve</h3>
+<h3 class="anchored" data-anchor-id="output-filters-the-sieve">Output filters: The Sieve</h3>
 <ul>
 <li>specify criteria for selecting and filtering the output data</li>
 <li>Filter rules</li>
@@ -382,8 +396,15 @@ ul.task-list li input[type="checkbox"] {
 </ul>
 </section>
 </section>
-<section id="section" class="level1">
-<h1></h1>
+<section id="the-operational-framework" class="level2" data-number="6.6">
+<h2 data-number="6.6" class="anchored" data-anchor-id="the-operational-framework"><span class="header-section-number">6.6</span> The Operational Framework</h2>
+<p>The files described in this chapter provide the information and controls required to configure a RHESSys simulation. While each file serves a distinct purpose, together they operate through a shared set of spatial identifiers that link model inputs to discrete spatial units within the watershed.</p>
+<p>These spatial units provide the framework for mapping the model’s input data. Each parameter and climate forcing input ultimately depends on this spatial structure to determine where and how it is applied during simulation.</p>
+<p>However, the definition of this spatial structure itself has not yet been described. The files in this chapter assume the existence of a hierarchical representation of the watershed, but do not define how that structure is constructed or organized.</p>
+<p>The next chapter addresses this missing component directly by introducing the Worldfile—the hierarchical spatial framework that defines the structure of the modeled landscape and provides the foundation upon which all files described in this chapter operate.</p>
+<ul>
+<li>New figure showing connections among files</li>
+</ul>
 
 
 </section>
@@ -622,7 +643,28 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./userdata.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">User-Acquired Data</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./worldfile.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Worldfile</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
 </div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">RHESSys in Practice was written by Janet S. Choate with Naomi Tague and Ryan R. Bart.</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">Built with <a href="https://quarto.org/">Quarto</a>.</div>
+  </div>
+</footer>
 
 
 

@@ -1,40 +1,54 @@
----
-title: "7 Preprocessing (The Assembly)"
----
+# Preprocessing (The Assembly)
+-   the how to section
+-   instructions to process/generate files
+-   how to format data
+-   link to video(s)
 
 
-## 7.1 Environmental Setup
+## Environmental Setup
 
 -   Standard directory structure
 -   naming convention
 
-## 7.2 Raster Processing
+## Raster Processing
 
 -   Spatial processing using WhiteboxTools and R
 
-## 7.3 Generating the Worldfile and Flowtable
+## Climate Fles
+-   gridded product formatting
+    -   ascii format
+    -   netcdf format
+-   local station data formatting
+-   base station
 
-### 7.3.1 The Template File: Recipe for the worldfile
+## Definition Files
+-   Format - required (ID) and optional parameters
+-   Base Files/Default values
+-   Parameter file library
+-   some parameters may need expanded information, i.e. phenolog flag: static, dynamic, drought
+
+## Generating the Worldfile and Flowtable
+
+### The Template File
 
 -   Format and Initialization
     -   World objects
     -   State variables
     -   Default and base station ID's
 -   Required and Optional state variables
--   Redefinition template (introduce here or later in advanced?)
--   Editing the template, initial conditions
+-   Editing the template, setting initial conditions
 
-### 7.3.2 Aspatial rules file for Multi-scale routing
+### Aspatial rules file for Multi-scale routing
 
 -   Format
 -   Set up for single rule
 -   Set up for multiple rules - requires map
 
-### 7.3.3 RHESSysPreprocessing R package
+### RHESSysPreprocessing R package
 
 -   About
--   Prerequisites: spatial data, template, asp rules file if applicable
+-   Prerequisites: spatial data, template, asp rules file
 -   R markdown workflow/script - functions
 -   Run the function to generate Worldfile/Flowtable
 
-# 
+ 
