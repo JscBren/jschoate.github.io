@@ -1,5 +1,5 @@
 
-# Foundations & Envrionment {.unnumbered}
+# Getting Started {.unnumbered}
 
 
 # 
