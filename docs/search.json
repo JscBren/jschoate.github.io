@@ -562,14 +562,14 @@
   {
     "objectID": "fire.html#fire-spread",
     "href": "fire.html#fire-spread",
-    "title": "16  Disturbance: Fire (The Inferno)",
+    "title": "16  Fire Spread & Effects (The Inferno)",
     "section": "16.1 Fire Spread",
     "text": "16.1 Fire Spread\n\nAbout\n\ndescription\nreference key papers\n\n\n\nPreparation\n\ncompiling RHESSys-WMFire: Boost/WMFire library\nPrerequisites to running the fire model:\n\nWind speed and direction data\nFire definition file parameters\n\ncalculating the fire return interval\ncalculating wind parameters (EstimateWindDistrExample.R script)\n\nWorldfile header edits\nAdd worldfile state variable\nCommand line option\n\n\n\n\nOutputs\n\nFire definition parameter options to generate output\n\nFire Sizes output\nGrid output\n\nspatial level fire outputs\n\n\n\nFire simulation stragey\n\nstochastic\nprescribed"
   },
   {
     "objectID": "fire.html#fire-effects",
     "href": "fire.html#fire-effects",
-    "title": "16  Disturbance: Fire (The Inferno)",
+    "title": "16  Fire Spread & Effects (The Inferno)",
     "section": "16.2 Fire Effects",
     "text": "16.2 Fire Effects\n\nabout\nFire effects parameters in vegetation and soil(patch) definition files\nspecific fire effects output files"
   },

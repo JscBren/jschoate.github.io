@@ -63,9 +63,9 @@ book:
         - file: advancedfeatures.qmd
           text: "Advanced Features"
         - file: fire.qmd
-          text: "Disturbance: Fire"
+          text: "Fire Spread & Effects"
         - file: vegchange.qmd
-          text: "Disturbance: Vegetation Dynamics"
+          text: "Landcover Change"
         - file: msr.qmd
           text: "Multi-scale routing"
         - file: targetspinup.qmd
